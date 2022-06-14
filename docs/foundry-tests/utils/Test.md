@@ -1,11 +1,18 @@
 
 # Test.sol
 
+    
+
+    
 ## Methods
 ### deployCode
 ```solidity
 deployCode(string what) external nonpayable returns (address addr)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -14,23 +21,26 @@ deployCode(string what) external nonpayable returns (address addr)
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+| addr | address | - |
 
-
-### Events
-
-### Errors
 
 
 # Vm.sol
 
+    
+
+    
 ## Methods
 ### addr
 ```solidity
 addr(uint256) external nonpayable returns (address)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -39,14 +49,18 @@ addr(uint256) external nonpayable returns (address)
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### deal
 ```solidity
 deal(address, uint256) external nonpayable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -58,6 +72,10 @@ deal(address, uint256) external nonpayable
 ```solidity
 expectEmit(bool, bool, bool, bool) external nonpayable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -71,6 +89,10 @@ expectEmit(bool, bool, bool, bool) external nonpayable
 ```solidity
 expectRevert(bytes) external nonpayable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -81,6 +103,10 @@ expectRevert(bytes) external nonpayable
 ```solidity
 getCode(string) external nonpayable returns (bytes)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -89,14 +115,18 @@ getCode(string) external nonpayable returns (bytes)
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-bytes | - |
+| Name | Type | Description |
+|---|---|---|
+|  | bytes | - |
 
 ### prank
 ```solidity
 prank(address) external nonpayable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -107,6 +137,10 @@ prank(address) external nonpayable
 ```solidity
 startPrank(address) external nonpayable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -118,7 +152,7 @@ startPrank(address) external nonpayable
 stopPrank() external nonpayable
 ```
 
-### Events
+            
 
-### Errors
+            
 

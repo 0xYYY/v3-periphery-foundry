@@ -1,11 +1,9 @@
 
 # BlockTimestamp.sol
-Title: Function for getting block timestamp
-Details: Base contract that is overridden for tests
 
-## Methods
+    
+Function for getting block timestamp
+Base contract that is overridden for tests
 
-### Events
-
-### Errors
+    
 

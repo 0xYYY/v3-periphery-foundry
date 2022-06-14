@@ -1,16 +1,23 @@
 
 # ITickLens.sol
-Title: Tick Lens
-Details: This avoids the waterfall of fetching the tick bitmap, parsing the bitmap to know which ticks to fetch, and then sending additional multicalls to fetch the tick data
-Notice: Provides functions for fetching chunks of tick data for a pool
 
+    
+Tick Lens
+This avoids the waterfall of fetching the tick bitmap, parsing the bitmap to know which ticks to fetch, and then sending additional multicalls to fetch the tick data
+
+    
+*Provides functions for fetching chunks of tick data for a pool*
 ## Methods
 ### getPopulatedTicksInWord
 ```solidity
 getPopulatedTicksInWord(address pool, int16 tickBitmapIndex) external view returns ((int24,int128,uint128)[] populatedTicks)
 ```
-Details: This avoids the waterfall of fetching the tick bitmap, parsing the bitmap to know which ticks to fetch, and then sending additional multicalls to fetch the tick data
-Notice: Provides functions for fetching chunks of tick data for a pool
+
+            
+This avoids the waterfall of fetching the tick bitmap, parsing the bitmap to know which ticks to fetch, and then sending additional multicalls to fetch the tick data
+
+            
+*Provides functions for fetching chunks of tick data for a pool*
 #### Parameters
 
 | Name | Type | Description |
@@ -20,12 +27,8 @@ Notice: Provides functions for fetching chunks of tick data for a pool
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-(int24,int128,uint128)[] | An array of tick data for the given word in the tick bitmap |
+| Name | Type | Description |
+|---|---|---|
+| populatedTicks | (int24,int128,uint128)[] | An array of tick data for the given word in the tick bitmap |
 
-
-### Events
-
-### Errors
 

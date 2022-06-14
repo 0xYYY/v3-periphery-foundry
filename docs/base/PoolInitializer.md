@@ -1,22 +1,33 @@
 
 # PoolInitializer.sol
-Title: Creates and initializes V3 Pools
 
+    
+Creates and initializes V3 Pools
+
+    
 ## Methods
 ### WETH9
 ```solidity
 WETH9() external view returns (address)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### createAndInitializePoolIfNecessary
 ```solidity
 createAndInitializePoolIfNecessary(address token0, address token1, uint24 fee, uint160 sqrtPriceX96) external payable returns (address pool)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -28,22 +39,22 @@ createAndInitializePoolIfNecessary(address token0, address token1, uint24 fee, u
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | Returns the pool address based on the pair of tokens and fee, will return the newly created pool address if necessary |
+| Name | Type | Description |
+|---|---|---|
+| pool | address | Returns the pool address based on the pair of tokens and fee, will return the newly created pool address if necessary |
 
 ### factory
 ```solidity
 factory() external view returns (address)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
-
-### Events
-
-### Errors
 

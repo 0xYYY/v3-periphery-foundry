@@ -1,25 +1,36 @@
 
 # NonfungibleTokenPositionDescriptor.sol
-Title: Describes NFT token positions
-Notice: Produces a string containing the data URI for a JSON metadata string
 
+    
+Describes NFT token positions
+
+    
+*Produces a string containing the data URI for a JSON metadata string*
 ## Methods
 ### WETH9
 ```solidity
 WETH9() external view returns (address)
 ```
-Notice: Produces a string containing the data URI for a JSON metadata string
+
+            
+
+            
+*Produces a string containing the data URI for a JSON metadata string*
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### flipRatio
 ```solidity
 flipRatio(address token0, address token1, uint256 chainId) external view returns (bool)
 ```
-Notice: Produces a string containing the data URI for a JSON metadata string
+
+            
+
+            
+*Produces a string containing the data URI for a JSON metadata string*
 #### Parameters
 
 | Name | Type | Description |
@@ -30,37 +41,49 @@ Notice: Produces a string containing the data URI for a JSON metadata string
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-bool | - |
+| Name | Type | Description |
+|---|---|---|
+|  | bool | - |
 
 ### nativeCurrencyLabel
 ```solidity
 nativeCurrencyLabel() external view returns (string)
 ```
-Notice: Produces a string containing the data URI for a JSON metadata string
+
+            
+
+            
+*Produces a string containing the data URI for a JSON metadata string*
 #### Return Values
 
-| Type | Description |
-|---|---|
-string | - |
+| Name | Type | Description |
+|---|---|---|
+|  | string | - |
 
 ### nativeCurrencyLabelBytes
 ```solidity
 nativeCurrencyLabelBytes() external view returns (bytes32)
 ```
-Notice: Produces a string containing the data URI for a JSON metadata string
+
+            
+
+            
+*Produces a string containing the data URI for a JSON metadata string*
 #### Return Values
 
-| Type | Description |
-|---|---|
-bytes32 | - |
+| Name | Type | Description |
+|---|---|---|
+|  | bytes32 | - |
 
 ### tokenRatioPriority
 ```solidity
 tokenRatioPriority(address token, uint256 chainId) external view returns (int256)
 ```
-Notice: Produces a string containing the data URI for a JSON metadata string
+
+            
+
+            
+*Produces a string containing the data URI for a JSON metadata string*
 #### Parameters
 
 | Name | Type | Description |
@@ -70,15 +93,19 @@ Notice: Produces a string containing the data URI for a JSON metadata string
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-int256 | - |
+| Name | Type | Description |
+|---|---|---|
+|  | int256 | - |
 
 ### tokenURI
 ```solidity
 tokenURI(address positionManager, uint256 tokenId) external view returns (string)
 ```
-Notice: Produces a string containing the data URI for a JSON metadata string
+
+            
+
+            
+*Produces a string containing the data URI for a JSON metadata string*
 #### Parameters
 
 | Name | Type | Description |
@@ -88,12 +115,8 @@ Notice: Produces a string containing the data URI for a JSON metadata string
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-string | - |
+| Name | Type | Description |
+|---|---|---|
+|  | string | - |
 
-
-### Events
-
-### Errors
 

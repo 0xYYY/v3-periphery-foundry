@@ -1,14 +1,21 @@
 
 # IERC20PermitAllowed.sol
-Title: Interface for permit
-Notice: Interface used by DAI/CHAI for permit
 
+    
+Interface for permit
+
+    
+*Interface used by DAI/CHAI for permit*
 ## Methods
 ### permit
 ```solidity
 permit(address holder, address spender, uint256 nonce, uint256 expiry, bool allowed, uint8 v, bytes32 r, bytes32 s) external nonpayable
 ```
-Notice: Interface used by DAI/CHAI for permit
+
+            
+
+            
+*Interface used by DAI/CHAI for permit*
 #### Parameters
 
 | Name | Type | Description |
@@ -22,8 +29,4 @@ Notice: Interface used by DAI/CHAI for permit
 | r | bytes32 | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
 | s | bytes32 | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
 
-
-### Events
-
-### Errors
 

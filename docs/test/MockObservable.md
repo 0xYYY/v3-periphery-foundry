@@ -1,11 +1,18 @@
 
 # MockObservable.sol
 
+    
+
+    
 ## Methods
 ### observe
 ```solidity
 observe(uint32[] secondsAgos) external view returns (int56[] tickCumulatives, uint160[] secondsPerLiquidityCumulativeX128s)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -14,13 +21,9 @@ observe(uint32[] secondsAgos) external view returns (int56[] tickCumulatives, ui
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-int56[] | - |
-uint160[] | - |
+| Name | Type | Description |
+|---|---|---|
+| tickCumulatives | int56[] | - |
+| secondsPerLiquidityCumulativeX128s | uint160[] | - |
 
-
-### Events
-
-### Errors
 

@@ -1,19 +1,30 @@
 
 # IPeripheryPaymentsWithFee.sol
-Title: Periphery Payments
-Notice: Functions to ease deposits and withdrawals of ETH
 
+    
+Periphery Payments
+
+    
+*Functions to ease deposits and withdrawals of ETH*
 ## Methods
 ### refundETH
 ```solidity
 refundETH() external payable
 ```
-Notice: Functions to ease deposits and withdrawals of ETH
+
+            
+
+            
+*Functions to ease deposits and withdrawals of ETH*
 ### sweepToken
 ```solidity
 sweepToken(address token, uint256 amountMinimum, address recipient) external payable
 ```
-Notice: Functions to ease deposits and withdrawals of ETH
+
+            
+
+            
+*Functions to ease deposits and withdrawals of ETH*
 #### Parameters
 
 | Name | Type | Description |
@@ -26,7 +37,11 @@ Notice: Functions to ease deposits and withdrawals of ETH
 ```solidity
 sweepTokenWithFee(address token, uint256 amountMinimum, address recipient, uint256 feeBips, address feeRecipient) external payable
 ```
-Notice: Functions to ease deposits and withdrawals of ETH
+
+            
+
+            
+*Functions to ease deposits and withdrawals of ETH*
 #### Parameters
 
 | Name | Type | Description |
@@ -41,7 +56,11 @@ Notice: Functions to ease deposits and withdrawals of ETH
 ```solidity
 unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
-Notice: Functions to ease deposits and withdrawals of ETH
+
+            
+
+            
+*Functions to ease deposits and withdrawals of ETH*
 #### Parameters
 
 | Name | Type | Description |
@@ -53,7 +72,11 @@ Notice: Functions to ease deposits and withdrawals of ETH
 ```solidity
 unwrapWETH9WithFee(uint256 amountMinimum, address recipient, uint256 feeBips, address feeRecipient) external payable
 ```
-Notice: Functions to ease deposits and withdrawals of ETH
+
+            
+
+            
+*Functions to ease deposits and withdrawals of ETH*
 #### Parameters
 
 | Name | Type | Description |
@@ -63,8 +86,4 @@ Notice: Functions to ease deposits and withdrawals of ETH
 | feeBips | uint256 | - |
 | feeRecipient | address | - |
 
-
-### Events
-
-### Errors
 

@@ -1,11 +1,18 @@
 
 # TestUniswapV3Callee.sol
 
+    
+
+    
 ## Methods
 ### swap0ForExact1
 ```solidity
 swap0ForExact1(address pool, uint256 amount1Out, address recipient, uint160 sqrtPriceLimitX96) external nonpayable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -19,6 +26,10 @@ swap0ForExact1(address pool, uint256 amount1Out, address recipient, uint160 sqrt
 ```solidity
 swap1ForExact0(address pool, uint256 amount0Out, address recipient, uint160 sqrtPriceLimitX96) external nonpayable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -32,6 +43,10 @@ swap1ForExact0(address pool, uint256 amount0Out, address recipient, uint160 sqrt
 ```solidity
 swapExact0For1(address pool, uint256 amount0In, address recipient, uint160 sqrtPriceLimitX96) external nonpayable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -45,6 +60,10 @@ swapExact0For1(address pool, uint256 amount0In, address recipient, uint160 sqrtP
 ```solidity
 swapExact1For0(address pool, uint256 amount1In, address recipient, uint160 sqrtPriceLimitX96) external nonpayable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -58,6 +77,10 @@ swapExact1For0(address pool, uint256 amount1In, address recipient, uint160 sqrtP
 ```solidity
 uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes data) external nonpayable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -66,8 +89,4 @@ uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes data) exte
 | amount1Delta | int256 | The amount of token1 that was sent (negative) or must be received (positive) by the pool by the end of the swap. If positive, the callback must send that amount of token1 to the pool. |
 | data | bytes | Any data passed through by the caller via the IUniswapV3PoolActions#swap call |
 
-
-### Events
-
-### Errors
 

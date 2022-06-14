@@ -1,11 +1,18 @@
 
 # OracleTest.sol
 
+    
+
+    
 ## Methods
 ### consult
 ```solidity
 consult(address pool, uint32 secondsAgo) external view returns (int24 arithmeticMeanTick, uint128 harmonicMeanLiquidity)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -15,15 +22,19 @@ consult(address pool, uint32 secondsAgo) external view returns (int24 arithmetic
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-int24 | - |
-uint128 | - |
+| Name | Type | Description |
+|---|---|---|
+| arithmeticMeanTick | int24 | - |
+| harmonicMeanLiquidity | uint128 | - |
 
 ### getBlockStartingTickAndLiquidity
 ```solidity
 getBlockStartingTickAndLiquidity(address pool) external view returns (int24, uint128)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -32,15 +43,19 @@ getBlockStartingTickAndLiquidity(address pool) external view returns (int24, uin
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-int24 | - |
-uint128 | - |
+| Name | Type | Description |
+|---|---|---|
+|  | int24 | - |
+|  | uint128 | - |
 
 ### getChainedPrice
 ```solidity
 getChainedPrice(address[] tokens, int24[] ticks) external view returns (int256 syntheticTick)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -50,14 +65,18 @@ getChainedPrice(address[] tokens, int24[] ticks) external view returns (int256 s
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-int256 | - |
+| Name | Type | Description |
+|---|---|---|
+| syntheticTick | int256 | - |
 
 ### getGasCostOfConsult
 ```solidity
 getGasCostOfConsult(address pool, uint32 period) external view returns (uint256)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -67,14 +86,18 @@ getGasCostOfConsult(address pool, uint32 period) external view returns (uint256)
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint256 | - |
+| Name | Type | Description |
+|---|---|---|
+|  | uint256 | - |
 
 ### getGasCostOfGetQuoteAtTick
 ```solidity
 getGasCostOfGetQuoteAtTick(int24 tick, uint128 baseAmount, address baseToken, address quoteToken) external view returns (uint256)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -86,14 +109,18 @@ getGasCostOfGetQuoteAtTick(int24 tick, uint128 baseAmount, address baseToken, ad
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint256 | - |
+| Name | Type | Description |
+|---|---|---|
+|  | uint256 | - |
 
 ### getOldestObservationSecondsAgo
 ```solidity
 getOldestObservationSecondsAgo(address pool) external view returns (uint32 secondsAgo, uint32 currentTimestamp)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -102,15 +129,19 @@ getOldestObservationSecondsAgo(address pool) external view returns (uint32 secon
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint32 | - |
-uint32 | - |
+| Name | Type | Description |
+|---|---|---|
+| secondsAgo | uint32 | - |
+| currentTimestamp | uint32 | - |
 
 ### getQuoteAtTick
 ```solidity
 getQuoteAtTick(int24 tick, uint128 baseAmount, address baseToken, address quoteToken) external pure returns (uint256 quoteAmount)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -122,14 +153,18 @@ getQuoteAtTick(int24 tick, uint128 baseAmount, address baseToken, address quoteT
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint256 | - |
+| Name | Type | Description |
+|---|---|---|
+| quoteAmount | uint256 | - |
 
 ### getWeightedArithmeticMeanTick
 ```solidity
 getWeightedArithmeticMeanTick((int24,uint128)[] observations) external pure returns (int24 arithmeticMeanWeightedTick)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -138,12 +173,8 @@ getWeightedArithmeticMeanTick((int24,uint128)[] observations) external pure retu
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-int24 | - |
+| Name | Type | Description |
+|---|---|---|
+| arithmeticMeanWeightedTick | int24 | - |
 
-
-### Events
-
-### Errors
 

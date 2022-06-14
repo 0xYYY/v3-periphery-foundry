@@ -1,11 +1,18 @@
 
 # TestCallbackValidation.sol
 
+    
+
+    
 ## Methods
 ### verifyCallback
 ```solidity
 verifyCallback(address factory, address tokenA, address tokenB, uint24 fee) external view returns (address pool)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -17,12 +24,8 @@ verifyCallback(address factory, address tokenA, address tokenB, uint24 fee) exte
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+| pool | address | - |
 
-
-### Events
-
-### Errors
 

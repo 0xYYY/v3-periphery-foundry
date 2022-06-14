@@ -1,12 +1,19 @@
 
 # TickLens.sol
-Title: Tick Lens contract
 
+    
+Tick Lens contract
+
+    
 ## Methods
 ### getPopulatedTicksInWord
 ```solidity
 getPopulatedTicksInWord(address pool, int16 tickBitmapIndex) external view returns ((int24,int128,uint128)[] populatedTicks)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -16,12 +23,8 @@ getPopulatedTicksInWord(address pool, int16 tickBitmapIndex) external view retur
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-(int24,int128,uint128)[] | An array of tick data for the given word in the tick bitmap |
+| Name | Type | Description |
+|---|---|---|
+| populatedTicks | (int24,int128,uint128)[] | An array of tick data for the given word in the tick bitmap |
 
-
-### Events
-
-### Errors
 

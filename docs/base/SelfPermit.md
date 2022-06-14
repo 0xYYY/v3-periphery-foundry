@@ -1,16 +1,23 @@
 
 # SelfPermit.sol
-Title: Self Permit
-Details: These functions are expected to be embedded in multicalls to allow EOAs to approve a contract and call a function that requires an approval in a single transaction.
-Notice: Functionality to call permit on any EIP-2612-compliant token for use in the route
 
+    
+Self Permit
+These functions are expected to be embedded in multicalls to allow EOAs to approve a contract and call a function that requires an approval in a single transaction.
+
+    
+*Functionality to call permit on any EIP-2612-compliant token for use in the route*
 ## Methods
 ### selfPermit
 ```solidity
 selfPermit(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
-Details: These functions are expected to be embedded in multicalls to allow EOAs to approve a contract and call a function that requires an approval in a single transaction.
-Notice: Functionality to call permit on any EIP-2612-compliant token for use in the route
+
+            
+These functions are expected to be embedded in multicalls to allow EOAs to approve a contract and call a function that requires an approval in a single transaction.
+
+            
+*Functionality to call permit on any EIP-2612-compliant token for use in the route*
 #### Parameters
 
 | Name | Type | Description |
@@ -26,8 +33,12 @@ Notice: Functionality to call permit on any EIP-2612-compliant token for use in 
 ```solidity
 selfPermitAllowed(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
 ```
-Details: These functions are expected to be embedded in multicalls to allow EOAs to approve a contract and call a function that requires an approval in a single transaction.
-Notice: Functionality to call permit on any EIP-2612-compliant token for use in the route
+
+            
+These functions are expected to be embedded in multicalls to allow EOAs to approve a contract and call a function that requires an approval in a single transaction.
+
+            
+*Functionality to call permit on any EIP-2612-compliant token for use in the route*
 #### Parameters
 
 | Name | Type | Description |
@@ -43,8 +54,12 @@ Notice: Functionality to call permit on any EIP-2612-compliant token for use in 
 ```solidity
 selfPermitAllowedIfNecessary(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
 ```
-Details: These functions are expected to be embedded in multicalls to allow EOAs to approve a contract and call a function that requires an approval in a single transaction.
-Notice: Functionality to call permit on any EIP-2612-compliant token for use in the route
+
+            
+These functions are expected to be embedded in multicalls to allow EOAs to approve a contract and call a function that requires an approval in a single transaction.
+
+            
+*Functionality to call permit on any EIP-2612-compliant token for use in the route*
 #### Parameters
 
 | Name | Type | Description |
@@ -60,8 +75,12 @@ Notice: Functionality to call permit on any EIP-2612-compliant token for use in 
 ```solidity
 selfPermitIfNecessary(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
-Details: These functions are expected to be embedded in multicalls to allow EOAs to approve a contract and call a function that requires an approval in a single transaction.
-Notice: Functionality to call permit on any EIP-2612-compliant token for use in the route
+
+            
+These functions are expected to be embedded in multicalls to allow EOAs to approve a contract and call a function that requires an approval in a single transaction.
+
+            
+*Functionality to call permit on any EIP-2612-compliant token for use in the route*
 #### Parameters
 
 | Name | Type | Description |
@@ -73,8 +92,4 @@ Notice: Functionality to call permit on any EIP-2612-compliant token for use in 
 | r | bytes32 | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
 | s | bytes32 | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
 
-
-### Events
-
-### Errors
 

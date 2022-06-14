@@ -1,36 +1,51 @@
 
 # PairFlash.sol
-Title: Flash contract implementation
-Notice: An example contract using the Uniswap V3 flash function
 
+    
+Flash contract implementation
+
+    
+*An example contract using the Uniswap V3 flash function*
 ## Methods
 ### WETH9
 ```solidity
 WETH9() external view returns (address)
 ```
-Notice: An example contract using the Uniswap V3 flash function
+
+            
+
+            
+*An example contract using the Uniswap V3 flash function*
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### factory
 ```solidity
 factory() external view returns (address)
 ```
-Notice: An example contract using the Uniswap V3 flash function
+
+            
+
+            
+*An example contract using the Uniswap V3 flash function*
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### initFlash
 ```solidity
 initFlash((address,address,uint24,uint256,uint256,uint24,uint24) params) external nonpayable
 ```
-Notice: An example contract using the Uniswap V3 flash function
+
+            
+
+            
+*An example contract using the Uniswap V3 flash function*
 #### Parameters
 
 | Name | Type | Description |
@@ -41,23 +56,35 @@ Notice: An example contract using the Uniswap V3 flash function
 ```solidity
 refundETH() external payable
 ```
-Notice: An example contract using the Uniswap V3 flash function
+
+            
+
+            
+*An example contract using the Uniswap V3 flash function*
 ### swapRouter
 ```solidity
 swapRouter() external view returns (address)
 ```
-Notice: An example contract using the Uniswap V3 flash function
+
+            
+
+            
+*An example contract using the Uniswap V3 flash function*
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### sweepToken
 ```solidity
 sweepToken(address token, uint256 amountMinimum, address recipient) external payable
 ```
-Notice: An example contract using the Uniswap V3 flash function
+
+            
+
+            
+*An example contract using the Uniswap V3 flash function*
 #### Parameters
 
 | Name | Type | Description |
@@ -70,7 +97,11 @@ Notice: An example contract using the Uniswap V3 flash function
 ```solidity
 uniswapV3FlashCallback(uint256 fee0, uint256 fee1, bytes data) external nonpayable
 ```
-Notice: An example contract using the Uniswap V3 flash function
+
+            
+
+            
+*An example contract using the Uniswap V3 flash function*
 #### Parameters
 
 | Name | Type | Description |
@@ -83,7 +114,11 @@ Notice: An example contract using the Uniswap V3 flash function
 ```solidity
 unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
-Notice: An example contract using the Uniswap V3 flash function
+
+            
+
+            
+*An example contract using the Uniswap V3 flash function*
 #### Parameters
 
 | Name | Type | Description |
@@ -91,8 +126,4 @@ Notice: An example contract using the Uniswap V3 flash function
 | amountMinimum | uint256 | The minimum amount of WETH9 to unwrap |
 | recipient | address | The address receiving ETH |
 
-
-### Events
-
-### Errors
 

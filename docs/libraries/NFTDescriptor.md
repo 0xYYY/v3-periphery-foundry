@@ -1,11 +1,18 @@
 
 # NFTDescriptor.sol
 
+    
+
+    
 ## Methods
 ### constructTokenURI
 ```solidity
 constructTokenURI((uint256,address,address,string,string,uint8,uint8,bool,int24,int24,int24,int24,uint24,address) params) external pure returns (string)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -14,12 +21,8 @@ constructTokenURI((uint256,address,address,string,string,uint8,uint8,bool,int24,
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-string | - |
+| Name | Type | Description |
+|---|---|---|
+|  | string | - |
 
-
-### Events
-
-### Errors
 

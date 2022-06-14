@@ -1,11 +1,18 @@
 
 # TestMulticall.sol
 
+    
+
+    
 ## Methods
 ### functionThatReturnsTuple
 ```solidity
 functionThatReturnsTuple(uint256 a, uint256 b) external pure returns ((uint256,uint256) tuple)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -15,14 +22,18 @@ functionThatReturnsTuple(uint256 a, uint256 b) external pure returns ((uint256,u
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-(uint256,uint256) | - |
+| Name | Type | Description |
+|---|---|---|
+| tuple | (uint256,uint256) | - |
 
 ### functionThatRevertsWithError
 ```solidity
 functionThatRevertsWithError(string error) external pure
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -33,6 +44,10 @@ functionThatRevertsWithError(string error) external pure
 ```solidity
 multicall(bytes[] data) external payable returns (bytes[] results)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -41,36 +56,44 @@ multicall(bytes[] data) external payable returns (bytes[] results)
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-bytes[] | The results from each of the calls passed in via data |
+| Name | Type | Description |
+|---|---|---|
+| results | bytes[] | The results from each of the calls passed in via data |
 
 ### paid
 ```solidity
 paid() external view returns (uint256)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint256 | - |
+| Name | Type | Description |
+|---|---|---|
+|  | uint256 | - |
 
 ### pays
 ```solidity
 pays() external payable
 ```
+
+            
+
+            
 ### returnSender
 ```solidity
 returnSender() external view returns (address)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
-
-### Events
-
-### Errors
 

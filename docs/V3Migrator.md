@@ -1,22 +1,33 @@
 
 # V3Migrator.sol
-Title: Uniswap V3 Migrator
 
+    
+Uniswap V3 Migrator
+
+    
 ## Methods
 ### WETH9
 ```solidity
 WETH9() external view returns (address)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### createAndInitializePoolIfNecessary
 ```solidity
 createAndInitializePoolIfNecessary(address token0, address token1, uint24 fee, uint160 sqrtPriceX96) external payable returns (address pool)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -28,24 +39,32 @@ createAndInitializePoolIfNecessary(address token0, address token1, uint24 fee, u
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | Returns the pool address based on the pair of tokens and fee, will return the newly created pool address if necessary |
+| Name | Type | Description |
+|---|---|---|
+| pool | address | Returns the pool address based on the pair of tokens and fee, will return the newly created pool address if necessary |
 
 ### factory
 ```solidity
 factory() external view returns (address)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### migrate
 ```solidity
 migrate((address,uint256,uint8,address,address,uint24,int24,int24,uint256,uint256,address,uint256,bool) params) external nonpayable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -56,6 +75,10 @@ migrate((address,uint256,uint8,address,address,uint24,int24,int24,uint256,uint25
 ```solidity
 multicall(bytes[] data) external payable returns (bytes[] results)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -64,24 +87,32 @@ multicall(bytes[] data) external payable returns (bytes[] results)
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-bytes[] | The results from each of the calls passed in via data |
+| Name | Type | Description |
+|---|---|---|
+| results | bytes[] | The results from each of the calls passed in via data |
 
 ### nonfungiblePositionManager
 ```solidity
 nonfungiblePositionManager() external view returns (address)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### selfPermit
 ```solidity
 selfPermit(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -97,6 +128,10 @@ selfPermit(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, b
 ```solidity
 selfPermitAllowed(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -112,6 +147,10 @@ selfPermitAllowed(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32
 ```solidity
 selfPermitAllowedIfNecessary(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -127,6 +166,10 @@ selfPermitAllowedIfNecessary(address token, uint256 nonce, uint256 expiry, uint8
 ```solidity
 selfPermitIfNecessary(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -138,8 +181,4 @@ selfPermitIfNecessary(address token, uint256 value, uint256 deadline, uint8 v, b
 | r | bytes32 | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
 | s | bytes32 | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
 
-
-### Events
-
-### Errors
 

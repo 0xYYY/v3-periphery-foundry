@@ -1,41 +1,60 @@
 
 # LiquidityManagement.sol
-Title: Liquidity management functions
-Notice: Internal functions for safely managing liquidity in Uniswap V3
 
+    
+Liquidity management functions
+
+    
+*Internal functions for safely managing liquidity in Uniswap V3*
 ## Methods
 ### WETH9
 ```solidity
 WETH9() external view returns (address)
 ```
-Notice: Internal functions for safely managing liquidity in Uniswap V3
+
+            
+
+            
+*Internal functions for safely managing liquidity in Uniswap V3*
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### factory
 ```solidity
 factory() external view returns (address)
 ```
-Notice: Internal functions for safely managing liquidity in Uniswap V3
+
+            
+
+            
+*Internal functions for safely managing liquidity in Uniswap V3*
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### refundETH
 ```solidity
 refundETH() external payable
 ```
-Notice: Internal functions for safely managing liquidity in Uniswap V3
+
+            
+
+            
+*Internal functions for safely managing liquidity in Uniswap V3*
 ### sweepToken
 ```solidity
 sweepToken(address token, uint256 amountMinimum, address recipient) external payable
 ```
-Notice: Internal functions for safely managing liquidity in Uniswap V3
+
+            
+
+            
+*Internal functions for safely managing liquidity in Uniswap V3*
 #### Parameters
 
 | Name | Type | Description |
@@ -48,7 +67,11 @@ Notice: Internal functions for safely managing liquidity in Uniswap V3
 ```solidity
 uniswapV3MintCallback(uint256 amount0Owed, uint256 amount1Owed, bytes data) external nonpayable
 ```
-Notice: Internal functions for safely managing liquidity in Uniswap V3
+
+            
+
+            
+*Internal functions for safely managing liquidity in Uniswap V3*
 #### Parameters
 
 | Name | Type | Description |
@@ -61,7 +84,11 @@ Notice: Internal functions for safely managing liquidity in Uniswap V3
 ```solidity
 unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
-Notice: Internal functions for safely managing liquidity in Uniswap V3
+
+            
+
+            
+*Internal functions for safely managing liquidity in Uniswap V3*
 #### Parameters
 
 | Name | Type | Description |
@@ -69,8 +96,4 @@ Notice: Internal functions for safely managing liquidity in Uniswap V3
 | amountMinimum | uint256 | The minimum amount of WETH9 to unwrap |
 | recipient | address | The address receiving ETH |
 
-
-### Events
-
-### Errors
 

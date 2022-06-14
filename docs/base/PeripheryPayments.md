@@ -1,35 +1,54 @@
 
 # PeripheryPayments.sol
 
+    
+
+    
 ## Methods
 ### WETH9
 ```solidity
 WETH9() external view returns (address)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### factory
 ```solidity
 factory() external view returns (address)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### refundETH
 ```solidity
 refundETH() external payable
 ```
+
+            
+
+            
 ### sweepToken
 ```solidity
 sweepToken(address token, uint256 amountMinimum, address recipient) external payable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -42,6 +61,10 @@ sweepToken(address token, uint256 amountMinimum, address recipient) external pay
 ```solidity
 unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -49,8 +72,4 @@ unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 | amountMinimum | uint256 | The minimum amount of WETH9 to unwrap |
 | recipient | address | The address receiving ETH |
 
-
-### Events
-
-### Errors
 

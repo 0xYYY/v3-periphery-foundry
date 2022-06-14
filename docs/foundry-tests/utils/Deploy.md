@@ -1,11 +1,18 @@
 
 # CompleteFixture.sol
 
+    
+
+    
 ## Methods
 ### deployCode
 ```solidity
 deployCode(string what) external nonpayable returns (address addr)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -14,57 +21,76 @@ deployCode(string what) external nonpayable returns (address addr)
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+| addr | address | - |
 
 ### factory
 ```solidity
 factory() external view returns (address)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### router
 ```solidity
 router() external view returns (address)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### setUp
 ```solidity
 setUp() external nonpayable
 ```
+
+            
+
+            
 ### weth9
 ```solidity
 weth9() external view returns (address)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
-
-### Events
-
-### Errors
 
 
 # SwapRouterFixture.sol
 
+    
+
+    
 ## Methods
 ### deployCode
 ```solidity
 deployCode(string what) external nonpayable returns (address addr)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -73,24 +99,32 @@ deployCode(string what) external nonpayable returns (address addr)
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+| addr | address | - |
 
 ### factory
 ```solidity
 factory() external view returns (address)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### getBalances
 ```solidity
 getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -99,47 +133,62 @@ getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,u
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-(uint256,uint256,uint256,uint256) | - |
+| Name | Type | Description |
+|---|---|---|
+|  | (uint256,uint256,uint256,uint256) | - |
 
 ### router
 ```solidity
 router() external view returns (address)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### setUp
 ```solidity
 setUp() external nonpayable
 ```
+
+            
+
+            
 ### weth9
 ```solidity
 weth9() external view returns (address)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
-
-### Events
-
-### Errors
 
 
 # V3RouterFixture.sol
 
+    
+
+    
 ## Methods
 ### deployCode
 ```solidity
 deployCode(string what) external nonpayable returns (address addr)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -148,57 +197,76 @@ deployCode(string what) external nonpayable returns (address addr)
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+| addr | address | - |
 
 ### factory
 ```solidity
 factory() external view returns (address)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### router
 ```solidity
 router() external view returns (address)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### setUp
 ```solidity
 setUp() external nonpayable
 ```
+
+            
+
+            
 ### weth9
 ```solidity
 weth9() external view returns (address)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
-
-### Events
-
-### Errors
 
 
 # WETH9.sol
 
+    
+
+    
 ## Methods
 ### allowance
 ```solidity
 allowance(address owner, address spender) external view returns (uint256)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -208,14 +276,18 @@ allowance(address owner, address spender) external view returns (uint256)
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint256 | - |
+| Name | Type | Description |
+|---|---|---|
+|  | uint256 | - |
 
 ### approve
 ```solidity
 approve(address spender, uint256 amount) external nonpayable returns (bool)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -225,14 +297,18 @@ approve(address spender, uint256 amount) external nonpayable returns (bool)
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-bool | - |
+| Name | Type | Description |
+|---|---|---|
+|  | bool | - |
 
 ### balanceOf
 ```solidity
 balanceOf(address account) external view returns (uint256)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -241,18 +317,26 @@ balanceOf(address account) external view returns (uint256)
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint256 | - |
+| Name | Type | Description |
+|---|---|---|
+|  | uint256 | - |
 
 ### deposit
 ```solidity
 deposit() external payable
 ```
+
+            
+
+            
 ### transfer
 ```solidity
 transfer(address recipient, uint256 amount) external nonpayable returns (bool)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -262,14 +346,18 @@ transfer(address recipient, uint256 amount) external nonpayable returns (bool)
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-bool | - |
+| Name | Type | Description |
+|---|---|---|
+|  | bool | - |
 
 ### transferFrom
 ```solidity
 transferFrom(address sender, address recipient, uint256 amount) external nonpayable returns (bool)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -280,12 +368,8 @@ transferFrom(address sender, address recipient, uint256 amount) external nonpaya
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-bool | - |
+| Name | Type | Description |
+|---|---|---|
+|  | bool | - |
 
-
-### Events
-
-### Errors
 

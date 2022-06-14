@@ -1,19 +1,30 @@
 
 # IPeripheryPayments.sol
-Title: Periphery Payments
-Notice: Functions to ease deposits and withdrawals of ETH
 
+    
+Periphery Payments
+
+    
+*Functions to ease deposits and withdrawals of ETH*
 ## Methods
 ### refundETH
 ```solidity
 refundETH() external payable
 ```
-Notice: Functions to ease deposits and withdrawals of ETH
+
+            
+
+            
+*Functions to ease deposits and withdrawals of ETH*
 ### sweepToken
 ```solidity
 sweepToken(address token, uint256 amountMinimum, address recipient) external payable
 ```
-Notice: Functions to ease deposits and withdrawals of ETH
+
+            
+
+            
+*Functions to ease deposits and withdrawals of ETH*
 #### Parameters
 
 | Name | Type | Description |
@@ -26,7 +37,11 @@ Notice: Functions to ease deposits and withdrawals of ETH
 ```solidity
 unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
-Notice: Functions to ease deposits and withdrawals of ETH
+
+            
+
+            
+*Functions to ease deposits and withdrawals of ETH*
 #### Parameters
 
 | Name | Type | Description |
@@ -34,8 +49,4 @@ Notice: Functions to ease deposits and withdrawals of ETH
 | amountMinimum | uint256 | The minimum amount of WETH9 to unwrap |
 | recipient | address | The address receiving ETH |
 
-
-### Events
-
-### Errors
 

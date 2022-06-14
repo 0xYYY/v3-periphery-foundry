@@ -1,11 +1,18 @@
 
 # PoolTicksCounterTest.sol
 
+    
+
+    
 ## Methods
 ### countInitializedTicksCrossed
 ```solidity
 countInitializedTicksCrossed(address pool, int24 tickBefore, int24 tickAfter) external view returns (uint32 initializedTicksCrossed)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -16,12 +23,8 @@ countInitializedTicksCrossed(address pool, int24 tickBefore, int24 tickAfter) ex
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint32 | - |
+| Name | Type | Description |
+|---|---|---|
+| initializedTicksCrossed | uint32 | - |
 
-
-### Events
-
-### Errors
 

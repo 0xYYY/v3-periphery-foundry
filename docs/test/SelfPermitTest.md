@@ -1,13 +1,20 @@
 
 # SelfPermitTest.sol
-Details: Same as SelfPermit but not abstract
 
+    
+Same as SelfPermit but not abstract
+
+    
 ## Methods
 ### selfPermit
 ```solidity
 selfPermit(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
-Details: Same as SelfPermit but not abstract
+
+            
+Same as SelfPermit but not abstract
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -23,7 +30,11 @@ Details: Same as SelfPermit but not abstract
 ```solidity
 selfPermitAllowed(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
 ```
-Details: Same as SelfPermit but not abstract
+
+            
+Same as SelfPermit but not abstract
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -39,7 +50,11 @@ Details: Same as SelfPermit but not abstract
 ```solidity
 selfPermitAllowedIfNecessary(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
 ```
-Details: Same as SelfPermit but not abstract
+
+            
+Same as SelfPermit but not abstract
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -55,7 +70,11 @@ Details: Same as SelfPermit but not abstract
 ```solidity
 selfPermitIfNecessary(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
-Details: Same as SelfPermit but not abstract
+
+            
+Same as SelfPermit but not abstract
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -67,8 +86,4 @@ Details: Same as SelfPermit but not abstract
 | r | bytes32 | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
 | s | bytes32 | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
 
-
-### Events
-
-### Errors
 

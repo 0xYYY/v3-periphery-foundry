@@ -1,11 +1,9 @@
 
 # LiquidityAmounts.sol
-Title: Liquidity amount functions
-Notice: Provides functions for computing liquidity amounts from token amounts and prices
 
-## Methods
+    
+Liquidity amount functions
 
-### Events
-
-### Errors
+    
+*Provides functions for computing liquidity amounts from token amounts and prices*
 

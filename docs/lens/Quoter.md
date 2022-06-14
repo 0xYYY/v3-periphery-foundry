@@ -1,40 +1,55 @@
 
 # Quoter.sol
-Title: Provides quotes for swaps
-Details: These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
-Notice: Allows getting the expected amount out or amount in for a given swap without executing the swap
 
+    
+Provides quotes for swaps
+These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
+
+    
+*Allows getting the expected amount out or amount in for a given swap without executing the swap*
 ## Methods
 ### WETH9
 ```solidity
 WETH9() external view returns (address)
 ```
-Details: These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
-Notice: Allows getting the expected amount out or amount in for a given swap without executing the swap
+
+            
+These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
+
+            
+*Allows getting the expected amount out or amount in for a given swap without executing the swap*
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### factory
 ```solidity
 factory() external view returns (address)
 ```
-Details: These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
-Notice: Allows getting the expected amount out or amount in for a given swap without executing the swap
+
+            
+These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
+
+            
+*Allows getting the expected amount out or amount in for a given swap without executing the swap*
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### quoteExactInput
 ```solidity
 quoteExactInput(bytes path, uint256 amountIn) external nonpayable returns (uint256 amountOut)
 ```
-Details: These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
-Notice: Allows getting the expected amount out or amount in for a given swap without executing the swap
+
+            
+These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
+
+            
+*Allows getting the expected amount out or amount in for a given swap without executing the swap*
 #### Parameters
 
 | Name | Type | Description |
@@ -44,16 +59,20 @@ Notice: Allows getting the expected amount out or amount in for a given swap wit
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint256 | The amount of the last token that would be received |
+| Name | Type | Description |
+|---|---|---|
+| amountOut | uint256 | The amount of the last token that would be received |
 
 ### quoteExactInputSingle
 ```solidity
 quoteExactInputSingle(address tokenIn, address tokenOut, uint24 fee, uint256 amountIn, uint160 sqrtPriceLimitX96) external nonpayable returns (uint256 amountOut)
 ```
-Details: These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
-Notice: Allows getting the expected amount out or amount in for a given swap without executing the swap
+
+            
+These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
+
+            
+*Allows getting the expected amount out or amount in for a given swap without executing the swap*
 #### Parameters
 
 | Name | Type | Description |
@@ -66,16 +85,20 @@ Notice: Allows getting the expected amount out or amount in for a given swap wit
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint256 | The amount of `tokenOut` that would be received |
+| Name | Type | Description |
+|---|---|---|
+| amountOut | uint256 | The amount of `tokenOut` that would be received |
 
 ### quoteExactOutput
 ```solidity
 quoteExactOutput(bytes path, uint256 amountOut) external nonpayable returns (uint256 amountIn)
 ```
-Details: These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
-Notice: Allows getting the expected amount out or amount in for a given swap without executing the swap
+
+            
+These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
+
+            
+*Allows getting the expected amount out or amount in for a given swap without executing the swap*
 #### Parameters
 
 | Name | Type | Description |
@@ -85,16 +108,20 @@ Notice: Allows getting the expected amount out or amount in for a given swap wit
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint256 | The amount of first token required to be paid |
+| Name | Type | Description |
+|---|---|---|
+| amountIn | uint256 | The amount of first token required to be paid |
 
 ### quoteExactOutputSingle
 ```solidity
 quoteExactOutputSingle(address tokenIn, address tokenOut, uint24 fee, uint256 amountOut, uint160 sqrtPriceLimitX96) external nonpayable returns (uint256 amountIn)
 ```
-Details: These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
-Notice: Allows getting the expected amount out or amount in for a given swap without executing the swap
+
+            
+These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
+
+            
+*Allows getting the expected amount out or amount in for a given swap without executing the swap*
 #### Parameters
 
 | Name | Type | Description |
@@ -107,16 +134,20 @@ Notice: Allows getting the expected amount out or amount in for a given swap wit
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint256 | The amount required as the input for the swap in order to receive `amountOut` |
+| Name | Type | Description |
+|---|---|---|
+| amountIn | uint256 | The amount required as the input for the swap in order to receive `amountOut` |
 
 ### uniswapV3SwapCallback
 ```solidity
 uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes path) external view
 ```
-Details: These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
-Notice: Allows getting the expected amount out or amount in for a given swap without executing the swap
+
+            
+These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
+
+            
+*Allows getting the expected amount out or amount in for a given swap without executing the swap*
 #### Parameters
 
 | Name | Type | Description |
@@ -125,8 +156,4 @@ Notice: Allows getting the expected amount out or amount in for a given swap wit
 | amount1Delta | int256 | The amount of token1 that was sent (negative) or must be received (positive) by the pool by the end of the swap. If positive, the callback must send that amount of token1 to the pool. |
 | path | bytes | - |
 
-
-### Events
-
-### Errors
 

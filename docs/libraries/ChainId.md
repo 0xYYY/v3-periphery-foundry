@@ -1,10 +1,8 @@
 
 # ChainId.sol
-Title: Function for getting the current chain ID
 
-## Methods
+    
+Function for getting the current chain ID
 
-### Events
-
-### Errors
+    
 

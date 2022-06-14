@@ -1,12 +1,19 @@
 
 # INonfungibleTokenPositionDescriptor.sol
-Title: Describes position NFT tokens via URI
 
+    
+Describes position NFT tokens via URI
+
+    
 ## Methods
 ### tokenURI
 ```solidity
 tokenURI(address positionManager, uint256 tokenId) external view returns (string)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -16,12 +23,8 @@ tokenURI(address positionManager, uint256 tokenId) external view returns (string
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-string | - |
+| Name | Type | Description |
+|---|---|---|
+|  | string | - |
 
-
-### Events
-
-### Errors
 

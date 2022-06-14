@@ -1,21 +1,32 @@
 
 # TestERC20.sol
 
+    
+
+    
 ## Methods
 ### DOMAIN_SEPARATOR
 ```solidity
 DOMAIN_SEPARATOR() external view returns (bytes32)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-bytes32 | - |
+| Name | Type | Description |
+|---|---|---|
+|  | bytes32 | - |
 
 ### allowance
 ```solidity
 allowance(address owner, address spender) external view returns (uint256)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -25,14 +36,18 @@ allowance(address owner, address spender) external view returns (uint256)
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint256 | - |
+| Name | Type | Description |
+|---|---|---|
+|  | uint256 | - |
 
 ### approve
 ```solidity
 approve(address spender, uint256 amount) external nonpayable returns (bool)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -42,14 +57,18 @@ approve(address spender, uint256 amount) external nonpayable returns (bool)
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-bool | - |
+| Name | Type | Description |
+|---|---|---|
+|  | bool | - |
 
 ### balanceOf
 ```solidity
 balanceOf(address account) external view returns (uint256)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -58,24 +77,32 @@ balanceOf(address account) external view returns (uint256)
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint256 | - |
+| Name | Type | Description |
+|---|---|---|
+|  | uint256 | - |
 
 ### decimals
 ```solidity
 decimals() external view returns (uint8)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint8 | - |
+| Name | Type | Description |
+|---|---|---|
+|  | uint8 | - |
 
 ### decreaseAllowance
 ```solidity
 decreaseAllowance(address spender, uint256 subtractedValue) external nonpayable returns (bool)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -85,14 +112,18 @@ decreaseAllowance(address spender, uint256 subtractedValue) external nonpayable 
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-bool | - |
+| Name | Type | Description |
+|---|---|---|
+|  | bool | - |
 
 ### increaseAllowance
 ```solidity
 increaseAllowance(address spender, uint256 addedValue) external nonpayable returns (bool)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -102,24 +133,32 @@ increaseAllowance(address spender, uint256 addedValue) external nonpayable retur
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-bool | - |
+| Name | Type | Description |
+|---|---|---|
+|  | bool | - |
 
 ### name
 ```solidity
 name() external view returns (string)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-string | - |
+| Name | Type | Description |
+|---|---|---|
+|  | string | - |
 
 ### nonces
 ```solidity
 nonces(address owner) external view returns (uint256)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -128,14 +167,18 @@ nonces(address owner) external view returns (uint256)
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint256 | - |
+| Name | Type | Description |
+|---|---|---|
+|  | uint256 | - |
 
 ### permit
 ```solidity
 permit(address owner, address spender, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external nonpayable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -152,26 +195,38 @@ permit(address owner, address spender, uint256 value, uint256 deadline, uint8 v,
 ```solidity
 symbol() external view returns (string)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-string | - |
+| Name | Type | Description |
+|---|---|---|
+|  | string | - |
 
 ### totalSupply
 ```solidity
 totalSupply() external view returns (uint256)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint256 | - |
+| Name | Type | Description |
+|---|---|---|
+|  | uint256 | - |
 
 ### transfer
 ```solidity
 transfer(address recipient, uint256 amount) external nonpayable returns (bool)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -181,14 +236,18 @@ transfer(address recipient, uint256 amount) external nonpayable returns (bool)
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-bool | - |
+| Name | Type | Description |
+|---|---|---|
+|  | bool | - |
 
 ### transferFrom
 ```solidity
 transferFrom(address sender, address recipient, uint256 amount) external nonpayable returns (bool)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -199,12 +258,8 @@ transferFrom(address sender, address recipient, uint256 amount) external nonpaya
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-bool | - |
+| Name | Type | Description |
+|---|---|---|
+|  | bool | - |
 
-
-### Events
-
-### Errors
 

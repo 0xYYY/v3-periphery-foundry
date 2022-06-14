@@ -1,11 +1,9 @@
 
 # OracleLibrary.sol
-Title: Oracle library
-Notice: Provides functions to integrate with V3 pool oracle
 
-## Methods
+    
+Oracle library
 
-### Events
-
-### Errors
+    
+*Provides functions to integrate with V3 pool oracle*
 

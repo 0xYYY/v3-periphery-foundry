@@ -1,35 +1,54 @@
 
 # PeripheryPaymentsWithFee.sol
 
+    
+
+    
 ## Methods
 ### WETH9
 ```solidity
 WETH9() external view returns (address)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### factory
 ```solidity
 factory() external view returns (address)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### refundETH
 ```solidity
 refundETH() external payable
 ```
+
+            
+
+            
 ### sweepToken
 ```solidity
 sweepToken(address token, uint256 amountMinimum, address recipient) external payable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -42,6 +61,10 @@ sweepToken(address token, uint256 amountMinimum, address recipient) external pay
 ```solidity
 sweepTokenWithFee(address token, uint256 amountMinimum, address recipient, uint256 feeBips, address feeRecipient) external payable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -56,6 +79,10 @@ sweepTokenWithFee(address token, uint256 amountMinimum, address recipient, uint2
 ```solidity
 unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -67,6 +94,10 @@ unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```solidity
 unwrapWETH9WithFee(uint256 amountMinimum, address recipient, uint256 feeBips, address feeRecipient) external payable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -76,8 +107,4 @@ unwrapWETH9WithFee(uint256 amountMinimum, address recipient, uint256 feeBips, ad
 | feeBips | uint256 | - |
 | feeRecipient | address | - |
 
-
-### Events
-
-### Errors
 

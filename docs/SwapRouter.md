@@ -1,25 +1,36 @@
 
 # SwapRouter.sol
-Title: Uniswap V3 Swap Router
-Notice: Router for stateless execution of swaps against Uniswap V3
 
+    
+Uniswap V3 Swap Router
+
+    
+*Router for stateless execution of swaps against Uniswap V3*
 ## Methods
 ### WETH9
 ```solidity
 WETH9() external view returns (address)
 ```
-Notice: Router for stateless execution of swaps against Uniswap V3
+
+            
+
+            
+*Router for stateless execution of swaps against Uniswap V3*
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### exactInput
 ```solidity
 exactInput((bytes,address,uint256,uint256,uint256) params) external payable returns (uint256 amountOut)
 ```
-Notice: Router for stateless execution of swaps against Uniswap V3
+
+            
+
+            
+*Router for stateless execution of swaps against Uniswap V3*
 #### Parameters
 
 | Name | Type | Description |
@@ -28,15 +39,19 @@ Notice: Router for stateless execution of swaps against Uniswap V3
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint256 | The amount of the received token |
+| Name | Type | Description |
+|---|---|---|
+| amountOut | uint256 | The amount of the received token |
 
 ### exactInputSingle
 ```solidity
 exactInputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160) params) external payable returns (uint256 amountOut)
 ```
-Notice: Router for stateless execution of swaps against Uniswap V3
+
+            
+
+            
+*Router for stateless execution of swaps against Uniswap V3*
 #### Parameters
 
 | Name | Type | Description |
@@ -45,15 +60,19 @@ Notice: Router for stateless execution of swaps against Uniswap V3
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint256 | The amount of the received token |
+| Name | Type | Description |
+|---|---|---|
+| amountOut | uint256 | The amount of the received token |
 
 ### exactOutput
 ```solidity
 exactOutput((bytes,address,uint256,uint256,uint256) params) external payable returns (uint256 amountIn)
 ```
-Notice: Router for stateless execution of swaps against Uniswap V3
+
+            
+
+            
+*Router for stateless execution of swaps against Uniswap V3*
 #### Parameters
 
 | Name | Type | Description |
@@ -62,15 +81,19 @@ Notice: Router for stateless execution of swaps against Uniswap V3
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint256 | The amount of the input token |
+| Name | Type | Description |
+|---|---|---|
+| amountIn | uint256 | The amount of the input token |
 
 ### exactOutputSingle
 ```solidity
 exactOutputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160) params) external payable returns (uint256 amountIn)
 ```
-Notice: Router for stateless execution of swaps against Uniswap V3
+
+            
+
+            
+*Router for stateless execution of swaps against Uniswap V3*
 #### Parameters
 
 | Name | Type | Description |
@@ -79,26 +102,34 @@ Notice: Router for stateless execution of swaps against Uniswap V3
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint256 | The amount of the input token |
+| Name | Type | Description |
+|---|---|---|
+| amountIn | uint256 | The amount of the input token |
 
 ### factory
 ```solidity
 factory() external view returns (address)
 ```
-Notice: Router for stateless execution of swaps against Uniswap V3
+
+            
+
+            
+*Router for stateless execution of swaps against Uniswap V3*
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### multicall
 ```solidity
 multicall(bytes[] data) external payable returns (bytes[] results)
 ```
-Notice: Router for stateless execution of swaps against Uniswap V3
+
+            
+
+            
+*Router for stateless execution of swaps against Uniswap V3*
 #### Parameters
 
 | Name | Type | Description |
@@ -107,20 +138,28 @@ Notice: Router for stateless execution of swaps against Uniswap V3
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-bytes[] | The results from each of the calls passed in via data |
+| Name | Type | Description |
+|---|---|---|
+| results | bytes[] | The results from each of the calls passed in via data |
 
 ### refundETH
 ```solidity
 refundETH() external payable
 ```
-Notice: Router for stateless execution of swaps against Uniswap V3
+
+            
+
+            
+*Router for stateless execution of swaps against Uniswap V3*
 ### selfPermit
 ```solidity
 selfPermit(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
-Notice: Router for stateless execution of swaps against Uniswap V3
+
+            
+
+            
+*Router for stateless execution of swaps against Uniswap V3*
 #### Parameters
 
 | Name | Type | Description |
@@ -136,7 +175,11 @@ Notice: Router for stateless execution of swaps against Uniswap V3
 ```solidity
 selfPermitAllowed(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
 ```
-Notice: Router for stateless execution of swaps against Uniswap V3
+
+            
+
+            
+*Router for stateless execution of swaps against Uniswap V3*
 #### Parameters
 
 | Name | Type | Description |
@@ -152,7 +195,11 @@ Notice: Router for stateless execution of swaps against Uniswap V3
 ```solidity
 selfPermitAllowedIfNecessary(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
 ```
-Notice: Router for stateless execution of swaps against Uniswap V3
+
+            
+
+            
+*Router for stateless execution of swaps against Uniswap V3*
 #### Parameters
 
 | Name | Type | Description |
@@ -168,7 +215,11 @@ Notice: Router for stateless execution of swaps against Uniswap V3
 ```solidity
 selfPermitIfNecessary(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
-Notice: Router for stateless execution of swaps against Uniswap V3
+
+            
+
+            
+*Router for stateless execution of swaps against Uniswap V3*
 #### Parameters
 
 | Name | Type | Description |
@@ -184,7 +235,11 @@ Notice: Router for stateless execution of swaps against Uniswap V3
 ```solidity
 sweepToken(address token, uint256 amountMinimum, address recipient) external payable
 ```
-Notice: Router for stateless execution of swaps against Uniswap V3
+
+            
+
+            
+*Router for stateless execution of swaps against Uniswap V3*
 #### Parameters
 
 | Name | Type | Description |
@@ -197,7 +252,11 @@ Notice: Router for stateless execution of swaps against Uniswap V3
 ```solidity
 sweepTokenWithFee(address token, uint256 amountMinimum, address recipient, uint256 feeBips, address feeRecipient) external payable
 ```
-Notice: Router for stateless execution of swaps against Uniswap V3
+
+            
+
+            
+*Router for stateless execution of swaps against Uniswap V3*
 #### Parameters
 
 | Name | Type | Description |
@@ -212,7 +271,11 @@ Notice: Router for stateless execution of swaps against Uniswap V3
 ```solidity
 uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes _data) external nonpayable
 ```
-Notice: Router for stateless execution of swaps against Uniswap V3
+
+            
+
+            
+*Router for stateless execution of swaps against Uniswap V3*
 #### Parameters
 
 | Name | Type | Description |
@@ -225,7 +288,11 @@ Notice: Router for stateless execution of swaps against Uniswap V3
 ```solidity
 unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
-Notice: Router for stateless execution of swaps against Uniswap V3
+
+            
+
+            
+*Router for stateless execution of swaps against Uniswap V3*
 #### Parameters
 
 | Name | Type | Description |
@@ -237,7 +304,11 @@ Notice: Router for stateless execution of swaps against Uniswap V3
 ```solidity
 unwrapWETH9WithFee(uint256 amountMinimum, address recipient, uint256 feeBips, address feeRecipient) external payable
 ```
-Notice: Router for stateless execution of swaps against Uniswap V3
+
+            
+
+            
+*Router for stateless execution of swaps against Uniswap V3*
 #### Parameters
 
 | Name | Type | Description |
@@ -247,8 +318,4 @@ Notice: Router for stateless execution of swaps against Uniswap V3
 | feeBips | uint256 | - |
 | feeRecipient | address | - |
 
-
-### Events
-
-### Errors
 

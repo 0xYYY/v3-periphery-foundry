@@ -1,10 +1,8 @@
 
 # Path.sol
-Title: Functions for manipulating path data for multihop swaps
 
-## Methods
+    
+Functions for manipulating path data for multihop swaps
 
-### Events
-
-### Errors
+    
 

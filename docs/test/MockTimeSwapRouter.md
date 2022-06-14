@@ -1,21 +1,32 @@
 
 # MockTimeSwapRouter.sol
 
+    
+
+    
 ## Methods
 ### WETH9
 ```solidity
 WETH9() external view returns (address)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### exactInput
 ```solidity
 exactInput((bytes,address,uint256,uint256,uint256) params) external payable returns (uint256 amountOut)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -24,14 +35,18 @@ exactInput((bytes,address,uint256,uint256,uint256) params) external payable retu
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint256 | The amount of the received token |
+| Name | Type | Description |
+|---|---|---|
+| amountOut | uint256 | The amount of the received token |
 
 ### exactInputSingle
 ```solidity
 exactInputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160) params) external payable returns (uint256 amountOut)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -40,14 +55,18 @@ exactInputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint256 | The amount of the received token |
+| Name | Type | Description |
+|---|---|---|
+| amountOut | uint256 | The amount of the received token |
 
 ### exactOutput
 ```solidity
 exactOutput((bytes,address,uint256,uint256,uint256) params) external payable returns (uint256 amountIn)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -56,14 +75,18 @@ exactOutput((bytes,address,uint256,uint256,uint256) params) external payable ret
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint256 | The amount of the input token |
+| Name | Type | Description |
+|---|---|---|
+| amountIn | uint256 | The amount of the input token |
 
 ### exactOutputSingle
 ```solidity
 exactOutputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160) params) external payable returns (uint256 amountIn)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -72,24 +95,32 @@ exactOutputSingle((address,address,uint24,address,uint256,uint256,uint256,uint16
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-uint256 | The amount of the input token |
+| Name | Type | Description |
+|---|---|---|
+| amountIn | uint256 | The amount of the input token |
 
 ### factory
 ```solidity
 factory() external view returns (address)
 ```
+
+            
+
+            
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | - |
+| Name | Type | Description |
+|---|---|---|
+|  | address | - |
 
 ### multicall
 ```solidity
 multicall(bytes[] data) external payable returns (bytes[] results)
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -98,18 +129,26 @@ multicall(bytes[] data) external payable returns (bytes[] results)
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-bytes[] | The results from each of the calls passed in via data |
+| Name | Type | Description |
+|---|---|---|
+| results | bytes[] | The results from each of the calls passed in via data |
 
 ### refundETH
 ```solidity
 refundETH() external payable
 ```
+
+            
+
+            
 ### selfPermit
 ```solidity
 selfPermit(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -125,6 +164,10 @@ selfPermit(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, b
 ```solidity
 selfPermitAllowed(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -140,6 +183,10 @@ selfPermitAllowed(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32
 ```solidity
 selfPermitAllowedIfNecessary(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -155,6 +202,10 @@ selfPermitAllowedIfNecessary(address token, uint256 nonce, uint256 expiry, uint8
 ```solidity
 selfPermitIfNecessary(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -170,6 +221,10 @@ selfPermitIfNecessary(address token, uint256 value, uint256 deadline, uint8 v, b
 ```solidity
 setTime(uint256 _time) external nonpayable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -180,6 +235,10 @@ setTime(uint256 _time) external nonpayable
 ```solidity
 sweepToken(address token, uint256 amountMinimum, address recipient) external payable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -192,6 +251,10 @@ sweepToken(address token, uint256 amountMinimum, address recipient) external pay
 ```solidity
 sweepTokenWithFee(address token, uint256 amountMinimum, address recipient, uint256 feeBips, address feeRecipient) external payable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -206,6 +269,10 @@ sweepTokenWithFee(address token, uint256 amountMinimum, address recipient, uint2
 ```solidity
 uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes _data) external nonpayable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -218,6 +285,10 @@ uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes _data) ext
 ```solidity
 unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -229,6 +300,10 @@ unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```solidity
 unwrapWETH9WithFee(uint256 amountMinimum, address recipient, uint256 feeBips, address feeRecipient) external payable
 ```
+
+            
+
+            
 #### Parameters
 
 | Name | Type | Description |
@@ -238,8 +313,4 @@ unwrapWETH9WithFee(uint256 amountMinimum, address recipient, uint256 feeBips, ad
 | feeBips | uint256 | - |
 | feeRecipient | address | - |
 
-
-### Events
-
-### Errors
 

@@ -1,14 +1,21 @@
 
 # IPoolInitializer.sol
-Title: Creates and initializes V3 Pools
-Notice: Provides a method for creating and initializing a pool, if necessary, for bundling with other methods that require the pool to exist.
 
+    
+Creates and initializes V3 Pools
+
+    
+*Provides a method for creating and initializing a pool, if necessary, for bundling with other methods that require the pool to exist.*
 ## Methods
 ### createAndInitializePoolIfNecessary
 ```solidity
 createAndInitializePoolIfNecessary(address token0, address token1, uint24 fee, uint160 sqrtPriceX96) external payable returns (address pool)
 ```
-Notice: Provides a method for creating and initializing a pool, if necessary, for bundling with other methods that require the pool to exist.
+
+            
+
+            
+*Provides a method for creating and initializing a pool, if necessary, for bundling with other methods that require the pool to exist.*
 #### Parameters
 
 | Name | Type | Description |
@@ -20,12 +27,8 @@ Notice: Provides a method for creating and initializing a pool, if necessary, fo
 
 #### Return Values
 
-| Type | Description |
-|---|---|
-address | Returns the pool address based on the pair of tokens and fee, will return the newly created pool address if necessary |
+| Name | Type | Description |
+|---|---|---|
+| pool | address | Returns the pool address based on the pair of tokens and fee, will return the newly created pool address if necessary |
 
-
-### Events
-
-### Errors
 
