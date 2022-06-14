@@ -2,138 +2,142 @@
 # TestERC20PermitAllowed.sol
 
 ## Methods
+### DOMAIN_SEPARATOR
 ```solidity
-DOMAIN_SEPARATOR
+DOMAIN_SEPARATOR() external view returns (bytes32)
 ```
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+bytes32 | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bytes32 |  |
-
+### allowance
 ```solidity
-allowance
+allowance(address owner, address spender) external view returns (uint256)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| owner | address |  |
-| spender | address |  |
+| owner | address | - |
+| spender | address | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint256 |  |
+| Type | Description |
+|---|---|
+uint256 | - |
 
+### approve
 ```solidity
-approve
+approve(address spender, uint256 amount) external nonpayable returns (bool)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| spender | address |  |
-| amount | uint256 |  |
+| spender | address | - |
+| amount | uint256 | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bool |  |
+| Type | Description |
+|---|---|
+bool | - |
 
+### balanceOf
 ```solidity
-balanceOf
+balanceOf(address account) external view returns (uint256)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| account | address |  |
+| account | address | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint256 |  |
+| Type | Description |
+|---|---|
+uint256 | - |
 
+### decimals
 ```solidity
-decimals
+decimals() external view returns (uint8)
 ```
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+uint8 | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint8 |  |
-
+### decreaseAllowance
 ```solidity
-decreaseAllowance
+decreaseAllowance(address spender, uint256 subtractedValue) external nonpayable returns (bool)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| spender | address |  |
-| subtractedValue | uint256 |  |
+| spender | address | - |
+| subtractedValue | uint256 | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bool |  |
+| Type | Description |
+|---|---|
+bool | - |
 
+### increaseAllowance
 ```solidity
-increaseAllowance
+increaseAllowance(address spender, uint256 addedValue) external nonpayable returns (bool)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| spender | address |  |
-| addedValue | uint256 |  |
+| spender | address | - |
+| addedValue | uint256 | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bool |  |
+| Type | Description |
+|---|---|
+bool | - |
 
+### name
 ```solidity
-name
+name() external view returns (string)
 ```
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+string | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | string |  |
-
+### nonces
 ```solidity
-nonces
+nonces(address owner) external view returns (uint256)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| owner | address |  |
+| owner | address | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint256 |  |
+| Type | Description |
+|---|---|
+uint256 | - |
 
+### permit
 ```solidity
-permit
+permit(address holder, address spender, uint256 nonce, uint256 expiry, bool allowed, uint8 v, bytes32 r, bytes32 s) external nonpayable
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | holder | address | The address of the token holder, the token owner |
@@ -145,79 +149,75 @@ permit
 | r | bytes32 | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
 | s | bytes32 | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
 
-
-### Return Values
 ```solidity
-permit
+permit(address owner, address spender, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external nonpayable
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| owner | address |  |
-| spender | address |  |
-| value | uint256 |  |
-| deadline | uint256 |  |
-| v | uint8 |  |
-| r | bytes32 |  |
-| s | bytes32 |  |
+| owner | address | - |
+| spender | address | - |
+| value | uint256 | - |
+| deadline | uint256 | - |
+| v | uint8 | - |
+| r | bytes32 | - |
+| s | bytes32 | - |
 
-
-### Return Values
+### symbol
 ```solidity
-symbol
+symbol() external view returns (string)
 ```
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+string | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | string |  |
-
+### totalSupply
 ```solidity
-totalSupply
+totalSupply() external view returns (uint256)
 ```
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+uint256 | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint256 |  |
-
+### transfer
 ```solidity
-transfer
+transfer(address recipient, uint256 amount) external nonpayable returns (bool)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| recipient | address |  |
-| amount | uint256 |  |
+| recipient | address | - |
+| amount | uint256 | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bool |  |
+| Type | Description |
+|---|---|
+bool | - |
 
+### transferFrom
 ```solidity
-transferFrom
+transferFrom(address sender, address recipient, uint256 amount) external nonpayable returns (bool)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| sender | address |  |
-| recipient | address |  |
-| amount | uint256 |  |
+| sender | address | - |
+| recipient | address | - |
+| amount | uint256 | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bool |  |
+| Type | Description |
+|---|---|
+bool | - |
 
 
 ### Events

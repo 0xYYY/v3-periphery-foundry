@@ -2,35 +2,37 @@
 # Base64Test.sol
 
 ## Methods
+### encode
 ```solidity
-encode
+encode(bytes data) external pure returns (string)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| data | bytes |  |
+| data | bytes | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | string |  |
+| Type | Description |
+|---|---|
+string | - |
 
+### getGasCostOfEncode
 ```solidity
-getGasCostOfEncode
+getGasCostOfEncode(bytes data) external view returns (uint256)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| data | bytes |  |
+| data | bytes | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint256 |  |
+| Type | Description |
+|---|---|
+uint256 | - |
 
 
 ### Events

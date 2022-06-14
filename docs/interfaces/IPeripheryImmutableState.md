@@ -4,29 +4,27 @@ Title: Immutable state
 Notice: Functions that return immutable state of the router
 
 ## Methods
+### WETH9
 ```solidity
-WETH9
+WETH9() external view returns (address)
 ```
 Notice: Functions that return immutable state of the router
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### factory
 ```solidity
-factory
+factory() external view returns (address)
 ```
 Notice: Functions that return immutable state of the router
+#### Return Values
 
-### Parameters
-
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
+| Type | Description |
+|---|---|
+address | - |
 
 
 ### Events

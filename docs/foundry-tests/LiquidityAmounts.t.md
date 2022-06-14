@@ -2,41 +2,26 @@
 # GetAmountsForLiquidity.sol
 
 ## Methods
+### testAmountsForPriceAbove
 ```solidity
-testAmountsForPriceAbove
+testAmountsForPriceAbove() external pure
 ```
-
-### Parameters
-
-### Return Values
+### testAmountsForPriceBelow
 ```solidity
-testAmountsForPriceBelow
+testAmountsForPriceBelow() external pure
 ```
-
-### Parameters
-
-### Return Values
+### testAmountsForPriceInside
 ```solidity
-testAmountsForPriceInside
+testAmountsForPriceInside() external pure
 ```
-
-### Parameters
-
-### Return Values
+### testAmountsForPriceOnLowerBoundary
 ```solidity
-testAmountsForPriceOnLowerBoundary
+testAmountsForPriceOnLowerBoundary() external pure
 ```
-
-### Parameters
-
-### Return Values
+### testAmountsForPriceOnUpperBoundary
 ```solidity
-testAmountsForPriceOnUpperBoundary
+testAmountsForPriceOnUpperBoundary() external pure
 ```
-
-### Parameters
-
-### Return Values
 
 ### Events
 
@@ -46,41 +31,26 @@ testAmountsForPriceOnUpperBoundary
 # GetLiquidityForAmounts.sol
 
 ## Methods
+### testAmountsForPriceAbove
 ```solidity
-testAmountsForPriceAbove
+testAmountsForPriceAbove() external pure
 ```
-
-### Parameters
-
-### Return Values
+### testAmountsForPriceBelow
 ```solidity
-testAmountsForPriceBelow
+testAmountsForPriceBelow() external pure
 ```
-
-### Parameters
-
-### Return Values
+### testAmountsForPriceEqualToLowerBoundary
 ```solidity
-testAmountsForPriceEqualToLowerBoundary
+testAmountsForPriceEqualToLowerBoundary() external pure
 ```
-
-### Parameters
-
-### Return Values
+### testAmountsForPriceEqualToUpperBoundary
 ```solidity
-testAmountsForPriceEqualToUpperBoundary
+testAmountsForPriceEqualToUpperBoundary() external pure
 ```
-
-### Parameters
-
-### Return Values
+### testAmountsForPriceInside
 ```solidity
-testAmountsForPriceInside
+testAmountsForPriceInside() external pure
 ```
-
-### Parameters
-
-### Return Values
 
 ### Events
 

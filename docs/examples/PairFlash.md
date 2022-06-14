@@ -4,103 +4,93 @@ Title: Flash contract implementation
 Notice: An example contract using the Uniswap V3 flash function
 
 ## Methods
+### WETH9
 ```solidity
-WETH9
+WETH9() external view returns (address)
 ```
 Notice: An example contract using the Uniswap V3 flash function
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### factory
 ```solidity
-factory
+factory() external view returns (address)
 ```
 Notice: An example contract using the Uniswap V3 flash function
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### initFlash
 ```solidity
-initFlash
+initFlash((address,address,uint24,uint256,uint256,uint24,uint24) params) external nonpayable
 ```
 Notice: An example contract using the Uniswap V3 flash function
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | params | (address,address,uint24,uint256,uint256,uint24,uint24) | The parameters necessary for flash and the callback, passed in as FlashParams |
 
-
-### Return Values
+### refundETH
 ```solidity
-refundETH
+refundETH() external payable
 ```
 Notice: An example contract using the Uniswap V3 flash function
-
-### Parameters
-
-### Return Values
+### swapRouter
 ```solidity
-swapRouter
+swapRouter() external view returns (address)
 ```
 Notice: An example contract using the Uniswap V3 flash function
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### sweepToken
 ```solidity
-sweepToken
+sweepToken(address token, uint256 amountMinimum, address recipient) external payable
 ```
 Notice: An example contract using the Uniswap V3 flash function
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | token | address | The contract address of the token which will be transferred to `recipient` |
 | amountMinimum | uint256 | The minimum amount of token required for a transfer |
 | recipient | address | The destination address of the token |
 
-
-### Return Values
+### uniswapV3FlashCallback
 ```solidity
-uniswapV3FlashCallback
+uniswapV3FlashCallback(uint256 fee0, uint256 fee1, bytes data) external nonpayable
 ```
 Notice: An example contract using the Uniswap V3 flash function
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | fee0 | uint256 | The fee from calling flash for token0 |
 | fee1 | uint256 | The fee from calling flash for token1 |
 | data | bytes | The data needed in the callback passed as FlashCallbackData from `initFlash` |
 
-
-### Return Values
+### unwrapWETH9
 ```solidity
-unwrapWETH9
+unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
 Notice: An example contract using the Uniswap V3 flash function
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | amountMinimum | uint256 | The minimum amount of WETH9 to unwrap |
 | recipient | address | The address receiving ETH |
 
-
-### Return Values
 
 ### Events
 

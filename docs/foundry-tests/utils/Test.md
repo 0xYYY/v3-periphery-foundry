@@ -2,20 +2,21 @@
 # Test.sol
 
 ## Methods
+### deployCode
 ```solidity
-deployCode
+deployCode(string what) external nonpayable returns (address addr)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| what | string |  |
+| what | string | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-| addr | address |  |
+| Type | Description |
+|---|---|
+address | - |
 
 
 ### Events
@@ -26,102 +27,96 @@ deployCode
 # Vm.sol
 
 ## Methods
+### addr
 ```solidity
-addr
+addr(uint256) external nonpayable returns (address)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-|  | uint256 |  |
+|  | uint256 | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
+| Type | Description |
+|---|---|
+address | - |
 
+### deal
 ```solidity
-deal
+deal(address, uint256) external nonpayable
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-|  | address |  |
-|  | uint256 |  |
+|  | address | - |
+|  | uint256 | - |
 
-
-### Return Values
+### expectEmit
 ```solidity
-expectEmit
+expectEmit(bool, bool, bool, bool) external nonpayable
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-|  | bool |  |
-|  | bool |  |
-|  | bool |  |
-|  | bool |  |
+|  | bool | - |
+|  | bool | - |
+|  | bool | - |
+|  | bool | - |
 
-
-### Return Values
+### expectRevert
 ```solidity
-expectRevert
+expectRevert(bytes) external nonpayable
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-|  | bytes |  |
+|  | bytes | - |
 
-
-### Return Values
+### getCode
 ```solidity
-getCode
+getCode(string) external nonpayable returns (bytes)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-|  | string |  |
+|  | string | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bytes |  |
+| Type | Description |
+|---|---|
+bytes | - |
 
+### prank
 ```solidity
-prank
+prank(address) external nonpayable
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-|  | address |  |
+|  | address | - |
 
-
-### Return Values
+### startPrank
 ```solidity
-startPrank
+startPrank(address) external nonpayable
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-|  | address |  |
+|  | address | - |
 
-
-### Return Values
+### stopPrank
 ```solidity
-stopPrank
+stopPrank() external nonpayable
 ```
-
-### Parameters
-
-### Return Values
 
 ### Events
 

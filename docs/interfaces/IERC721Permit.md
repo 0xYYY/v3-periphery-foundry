@@ -4,114 +4,116 @@ Title: ERC721 with permit
 Notice: Extension to ERC721 that includes a permit function for signature based approvals
 
 ## Methods
+### DOMAIN_SEPARATOR
 ```solidity
-DOMAIN_SEPARATOR
+DOMAIN_SEPARATOR() external view returns (bytes32)
 ```
 Notice: Extension to ERC721 that includes a permit function for signature based approvals
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+bytes32 | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bytes32 |  |
-
+### PERMIT_TYPEHASH
 ```solidity
-PERMIT_TYPEHASH
+PERMIT_TYPEHASH() external pure returns (bytes32)
 ```
 Notice: Extension to ERC721 that includes a permit function for signature based approvals
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+bytes32 | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bytes32 |  |
-
+### approve
 ```solidity
-approve
+approve(address to, uint256 tokenId) external nonpayable
 ```
 Notice: Extension to ERC721 that includes a permit function for signature based approvals
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| to | address |  |
-| tokenId | uint256 |  |
+| to | address | - |
+| tokenId | uint256 | - |
 
-
-### Return Values
+### balanceOf
 ```solidity
-balanceOf
+balanceOf(address owner) external view returns (uint256 balance)
 ```
 Notice: Extension to ERC721 that includes a permit function for signature based approvals
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| owner | address |  |
+| owner | address | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-| balance | uint256 |  |
+| Type | Description |
+|---|---|
+uint256 | - |
 
+### getApproved
 ```solidity
-getApproved
+getApproved(uint256 tokenId) external view returns (address operator)
 ```
 Notice: Extension to ERC721 that includes a permit function for signature based approvals
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| tokenId | uint256 |  |
+| tokenId | uint256 | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-| operator | address |  |
+| Type | Description |
+|---|---|
+address | - |
 
+### isApprovedForAll
 ```solidity
-isApprovedForAll
+isApprovedForAll(address owner, address operator) external view returns (bool)
 ```
 Notice: Extension to ERC721 that includes a permit function for signature based approvals
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| owner | address |  |
-| operator | address |  |
+| owner | address | - |
+| operator | address | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bool |  |
+| Type | Description |
+|---|---|
+bool | - |
 
+### ownerOf
 ```solidity
-ownerOf
+ownerOf(uint256 tokenId) external view returns (address owner)
 ```
 Notice: Extension to ERC721 that includes a permit function for signature based approvals
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| tokenId | uint256 |  |
+| tokenId | uint256 | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-| owner | address |  |
+| Type | Description |
+|---|---|
+address | - |
 
+### permit
 ```solidity
-permit
+permit(address spender, uint256 tokenId, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
 Notice: Extension to ERC721 that includes a permit function for signature based approvals
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | spender | address | The account that is being approved |
@@ -121,80 +123,74 @@ Notice: Extension to ERC721 that includes a permit function for signature based 
 | r | bytes32 | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
 | s | bytes32 | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
 
-
-### Return Values
+### safeTransferFrom
 ```solidity
-safeTransferFrom
+safeTransferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
 Notice: Extension to ERC721 that includes a permit function for signature based approvals
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| from | address |  |
-| to | address |  |
-| tokenId | uint256 |  |
-
-
-### Return Values
-```solidity
-safeTransferFrom
-```
-Notice: Extension to ERC721 that includes a permit function for signature based approvals
-
-### Parameters
-| Name | Type | Description |
-|---|---|---|
-| from | address |  |
-| to | address |  |
-| tokenId | uint256 |  |
-| data | bytes |  |
-
-
-### Return Values
-```solidity
-setApprovalForAll
-```
-Notice: Extension to ERC721 that includes a permit function for signature based approvals
-
-### Parameters
-| Name | Type | Description |
-|---|---|---|
-| operator | address |  |
-| _approved | bool |  |
-
-
-### Return Values
-```solidity
-supportsInterface
-```
-Notice: Extension to ERC721 that includes a permit function for signature based approvals
-
-### Parameters
-| Name | Type | Description |
-|---|---|---|
-| interfaceId | bytes4 |  |
-
-
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bool |  |
+| from | address | - |
+| to | address | - |
+| tokenId | uint256 | - |
 
 ```solidity
-transferFrom
+safeTransferFrom(address from, address to, uint256 tokenId, bytes data) external nonpayable
 ```
 Notice: Extension to ERC721 that includes a permit function for signature based approvals
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| from | address |  |
-| to | address |  |
-| tokenId | uint256 |  |
+| from | address | - |
+| to | address | - |
+| tokenId | uint256 | - |
+| data | bytes | - |
 
+### setApprovalForAll
+```solidity
+setApprovalForAll(address operator, bool _approved) external nonpayable
+```
+Notice: Extension to ERC721 that includes a permit function for signature based approvals
+#### Parameters
 
-### Return Values
+| Name | Type | Description |
+|---|---|---|
+| operator | address | - |
+| _approved | bool | - |
+
+### supportsInterface
+```solidity
+supportsInterface(bytes4 interfaceId) external view returns (bool)
+```
+Notice: Extension to ERC721 that includes a permit function for signature based approvals
+#### Parameters
+
+| Name | Type | Description |
+|---|---|---|
+| interfaceId | bytes4 | - |
+
+#### Return Values
+
+| Type | Description |
+|---|---|
+bool | - |
+
+### transferFrom
+```solidity
+transferFrom(address from, address to, uint256 tokenId) external nonpayable
+```
+Notice: Extension to ERC721 that includes a permit function for signature based approvals
+#### Parameters
+
+| Name | Type | Description |
+|---|---|---|
+| from | address | - |
+| to | address | - |
+| tokenId | uint256 | - |
+
 
 ### Events
 

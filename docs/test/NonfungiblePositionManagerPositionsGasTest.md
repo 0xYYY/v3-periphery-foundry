@@ -2,20 +2,21 @@
 # NonfungiblePositionManagerPositionsGasTest.sol
 
 ## Methods
+### getGasCostOfPositions
 ```solidity
-getGasCostOfPositions
+getGasCostOfPositions(uint256 tokenId) external view returns (uint256)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| tokenId | uint256 |  |
+| tokenId | uint256 | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint256 |  |
+| Type | Description |
+|---|---|
+uint256 | - |
 
 
 ### Events

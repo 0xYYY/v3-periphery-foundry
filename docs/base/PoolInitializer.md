@@ -3,22 +3,22 @@
 Title: Creates and initializes V3 Pools
 
 ## Methods
+### WETH9
 ```solidity
-WETH9
+WETH9() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### createAndInitializePoolIfNecessary
 ```solidity
-createAndInitializePoolIfNecessary
+createAndInitializePoolIfNecessary(address token0, address token1, uint24 fee, uint160 sqrtPriceX96) external payable returns (address pool)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | token0 | address | The contract address of token0 of the pool |
@@ -26,22 +26,21 @@ createAndInitializePoolIfNecessary
 | fee | uint24 | The fee amount of the v3 pool for the specified token pair |
 | sqrtPriceX96 | uint160 | The initial square root price of the pool as a Q64.96 value |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-| pool | address | Returns the pool address based on the pair of tokens and fee, will return the newly created pool address if necessary |
+| Type | Description |
+|---|---|
+address | Returns the pool address based on the pair of tokens and fee, will return the newly created pool address if necessary |
 
+### factory
 ```solidity
-factory
+factory() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
-
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
+| Type | Description |
+|---|---|
+address | - |
 
 
 ### Events

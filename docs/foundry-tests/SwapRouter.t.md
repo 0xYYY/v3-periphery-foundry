@@ -2,100 +2,94 @@
 # ExactInput.sol
 
 ## Methods
+### createPool
 ```solidity
-createPool
+createPool(address tokenAddressA, address tokenAddressB) external nonpayable
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| tokenAddressA | address |  |
-| tokenAddressB | address |  |
+| tokenAddressA | address | - |
+| tokenAddressB | address | - |
 
-
-### Return Values
+### deployCode
 ```solidity
-deployCode
+deployCode(string what) external nonpayable returns (address addr)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| what | string |  |
+| what | string | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-| addr | address |  |
+| Type | Description |
+|---|---|
+address | - |
 
+### exactInput
 ```solidity
-exactInput
+exactInput(address[] tokens, uint256 amountIn, uint256 amountOutMinimum) external nonpayable
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| tokens | address[] |  |
-| amountIn | uint256 |  |
-| amountOutMinimum | uint256 |  |
+| tokens | address[] | - |
+| amountIn | uint256 | - |
+| amountOutMinimum | uint256 | - |
 
-
-### Return Values
+### factory
 ```solidity
-factory
+factory() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### getBalances
 ```solidity
-getBalances
+getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| who | address |  |
+| who | address | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | (uint256,uint256,uint256,uint256) |  |
+| Type | Description |
+|---|---|
+(uint256,uint256,uint256,uint256) | - |
 
+### router
 ```solidity
-router
+router() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### setUp
 ```solidity
-setUp
+setUp() external nonpayable
 ```
-
-### Parameters
-
-### Return Values
+### weth9
 ```solidity
-weth9
+weth9() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
-
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
+| Type | Description |
+|---|---|
+address | - |
 
 
 ### Events
@@ -106,121 +100,106 @@ weth9
 # MultiPool.sol
 
 ## Methods
+### createPool
 ```solidity
-createPool
+createPool(address tokenAddressA, address tokenAddressB) external nonpayable
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| tokenAddressA | address |  |
-| tokenAddressB | address |  |
+| tokenAddressA | address | - |
+| tokenAddressB | address | - |
 
-
-### Return Values
+### deployCode
 ```solidity
-deployCode
+deployCode(string what) external nonpayable returns (address addr)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| what | string |  |
+| what | string | - |
 
+#### Return Values
 
-### Return Values
+| Type | Description |
+|---|---|
+address | - |
+
+### exactInput
+```solidity
+exactInput(address[] tokens, uint256 amountIn, uint256 amountOutMinimum) external nonpayable
+```
+#### Parameters
+
 | Name | Type | Description |
 |---|---|---|
-| addr | address |  |
+| tokens | address[] | - |
+| amountIn | uint256 | - |
+| amountOutMinimum | uint256 | - |
 
+### factory
 ```solidity
-exactInput
+factory() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
+
+### getBalances
+```solidity
+getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
+```
+#### Parameters
+
 | Name | Type | Description |
 |---|---|---|
-| tokens | address[] |  |
-| amountIn | uint256 |  |
-| amountOutMinimum | uint256 |  |
+| who | address | - |
 
+#### Return Values
 
-### Return Values
+| Type | Description |
+|---|---|
+(uint256,uint256,uint256,uint256) | - |
+
+### router
 ```solidity
-factory
+router() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### setUp
 ```solidity
-getBalances
+setUp() external nonpayable
 ```
-
-### Parameters
-| Name | Type | Description |
-|---|---|---|
-| who | address |  |
-
-
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | (uint256,uint256,uint256,uint256) |  |
-
+### testEvents
 ```solidity
-router
+testEvents() external nonpayable
 ```
-
-### Parameters
-
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### testTwoToOneToZero
 ```solidity
-setUp
+testTwoToOneToZero() external nonpayable
 ```
-
-### Parameters
-
-### Return Values
+### testZeroToOneToTwo
 ```solidity
-testEvents
+testZeroToOneToTwo() external nonpayable
 ```
-
-### Parameters
-
-### Return Values
+### weth9
 ```solidity
-testTwoToOneToZero
+weth9() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
-
-### Return Values
-```solidity
-testZeroToOneToTwo
-```
-
-### Parameters
-
-### Return Values
-```solidity
-weth9
-```
-
-### Parameters
-
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
+| Type | Description |
+|---|---|
+address | - |
 
 
 ### Events
@@ -231,114 +210,102 @@ weth9
 # SinglePool.sol
 
 ## Methods
+### createPool
 ```solidity
-createPool
+createPool(address tokenAddressA, address tokenAddressB) external nonpayable
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| tokenAddressA | address |  |
-| tokenAddressB | address |  |
+| tokenAddressA | address | - |
+| tokenAddressB | address | - |
 
-
-### Return Values
+### deployCode
 ```solidity
-deployCode
+deployCode(string what) external nonpayable returns (address addr)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| what | string |  |
+| what | string | - |
 
+#### Return Values
 
-### Return Values
+| Type | Description |
+|---|---|
+address | - |
+
+### exactInput
+```solidity
+exactInput(address[] tokens, uint256 amountIn, uint256 amountOutMinimum) external nonpayable
+```
+#### Parameters
+
 | Name | Type | Description |
 |---|---|---|
-| addr | address |  |
+| tokens | address[] | - |
+| amountIn | uint256 | - |
+| amountOutMinimum | uint256 | - |
 
+### factory
 ```solidity
-exactInput
+factory() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
+
+### getBalances
+```solidity
+getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
+```
+#### Parameters
+
 | Name | Type | Description |
 |---|---|---|
-| tokens | address[] |  |
-| amountIn | uint256 |  |
-| amountOutMinimum | uint256 |  |
+| who | address | - |
 
+#### Return Values
 
-### Return Values
+| Type | Description |
+|---|---|
+(uint256,uint256,uint256,uint256) | - |
+
+### router
 ```solidity
-factory
+router() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### setUp
 ```solidity
-getBalances
+setUp() external nonpayable
 ```
-
-### Parameters
-| Name | Type | Description |
-|---|---|---|
-| who | address |  |
-
-
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | (uint256,uint256,uint256,uint256) |  |
-
+### testOneToZero
 ```solidity
-router
+testOneToZero() external nonpayable
 ```
-
-### Parameters
-
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### testZeroToOne
 ```solidity
-setUp
+testZeroToOne() external nonpayable
 ```
-
-### Parameters
-
-### Return Values
+### weth9
 ```solidity
-testOneToZero
+weth9() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
-
-### Return Values
-```solidity
-testZeroToOne
-```
-
-### Parameters
-
-### Return Values
-```solidity
-weth9
-```
-
-### Parameters
-
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
+| Type | Description |
+|---|---|
+address | - |
 
 
 ### Events
@@ -349,87 +316,82 @@ weth9
 # Swaps.sol
 
 ## Methods
+### createPool
 ```solidity
-createPool
+createPool(address tokenAddressA, address tokenAddressB) external nonpayable
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| tokenAddressA | address |  |
-| tokenAddressB | address |  |
+| tokenAddressA | address | - |
+| tokenAddressB | address | - |
 
-
-### Return Values
+### deployCode
 ```solidity
-deployCode
+deployCode(string what) external nonpayable returns (address addr)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| what | string |  |
+| what | string | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-| addr | address |  |
+| Type | Description |
+|---|---|
+address | - |
 
+### factory
 ```solidity
-factory
+factory() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### getBalances
 ```solidity
-getBalances
+getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| who | address |  |
+| who | address | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | (uint256,uint256,uint256,uint256) |  |
+| Type | Description |
+|---|---|
+(uint256,uint256,uint256,uint256) | - |
 
+### router
 ```solidity
-router
+router() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### setUp
 ```solidity
-setUp
+setUp() external nonpayable
 ```
-
-### Parameters
-
-### Return Values
+### weth9
 ```solidity
-weth9
+weth9() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
-
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
+| Type | Description |
+|---|---|
+address | - |
 
 
 ### Events

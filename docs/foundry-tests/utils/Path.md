@@ -2,13 +2,10 @@
 # PathsTest.sol
 
 ## Methods
+### testRoundtrip
 ```solidity
-testRoundtrip
+testRoundtrip() external nonpayable
 ```
-
-### Parameters
-
-### Return Values
 
 ### Events
 

@@ -3,115 +3,115 @@
 Title: Interface for WETH9
 
 ## Methods
+### allowance
 ```solidity
-allowance
+allowance(address owner, address spender) external view returns (uint256)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| owner | address |  |
-| spender | address |  |
+| owner | address | - |
+| spender | address | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint256 |  |
+| Type | Description |
+|---|---|
+uint256 | - |
 
+### approve
 ```solidity
-approve
+approve(address spender, uint256 amount) external nonpayable returns (bool)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| spender | address |  |
-| amount | uint256 |  |
+| spender | address | - |
+| amount | uint256 | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bool |  |
+| Type | Description |
+|---|---|
+bool | - |
 
+### balanceOf
 ```solidity
-balanceOf
+balanceOf(address account) external view returns (uint256)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| account | address |  |
+| account | address | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint256 |  |
+| Type | Description |
+|---|---|
+uint256 | - |
 
+### deposit
 ```solidity
-deposit
+deposit() external payable
 ```
-
-### Parameters
-
-### Return Values
+### totalSupply
 ```solidity
-totalSupply
+totalSupply() external view returns (uint256)
 ```
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+uint256 | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint256 |  |
-
+### transfer
 ```solidity
-transfer
+transfer(address recipient, uint256 amount) external nonpayable returns (bool)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| recipient | address |  |
-| amount | uint256 |  |
+| recipient | address | - |
+| amount | uint256 | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bool |  |
+| Type | Description |
+|---|---|
+bool | - |
 
+### transferFrom
 ```solidity
-transferFrom
+transferFrom(address sender, address recipient, uint256 amount) external nonpayable returns (bool)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| sender | address |  |
-| recipient | address |  |
-| amount | uint256 |  |
+| sender | address | - |
+| recipient | address | - |
+| amount | uint256 | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bool |  |
+| Type | Description |
+|---|---|
+bool | - |
 
+### withdraw
 ```solidity
-withdraw
+withdraw(uint256) external nonpayable
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-|  | uint256 |  |
+|  | uint256 | - |
 
-
-### Return Values
 
 ### Events
 

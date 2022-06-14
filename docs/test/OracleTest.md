@@ -2,137 +2,145 @@
 # OracleTest.sol
 
 ## Methods
+### consult
 ```solidity
-consult
+consult(address pool, uint32 secondsAgo) external view returns (int24 arithmeticMeanTick, uint128 harmonicMeanLiquidity)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| pool | address |  |
-| secondsAgo | uint32 |  |
+| pool | address | - |
+| secondsAgo | uint32 | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-| arithmeticMeanTick | int24 |  |
-| harmonicMeanLiquidity | uint128 |  |
+| Type | Description |
+|---|---|
+int24 | - |
+uint128 | - |
 
+### getBlockStartingTickAndLiquidity
 ```solidity
-getBlockStartingTickAndLiquidity
+getBlockStartingTickAndLiquidity(address pool) external view returns (int24, uint128)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| pool | address |  |
+| pool | address | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | int24 |  |
-|  | uint128 |  |
+| Type | Description |
+|---|---|
+int24 | - |
+uint128 | - |
 
+### getChainedPrice
 ```solidity
-getChainedPrice
+getChainedPrice(address[] tokens, int24[] ticks) external view returns (int256 syntheticTick)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| tokens | address[] |  |
-| ticks | int24[] |  |
+| tokens | address[] | - |
+| ticks | int24[] | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-| syntheticTick | int256 |  |
+| Type | Description |
+|---|---|
+int256 | - |
 
+### getGasCostOfConsult
 ```solidity
-getGasCostOfConsult
+getGasCostOfConsult(address pool, uint32 period) external view returns (uint256)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| pool | address |  |
-| period | uint32 |  |
+| pool | address | - |
+| period | uint32 | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint256 |  |
+| Type | Description |
+|---|---|
+uint256 | - |
 
+### getGasCostOfGetQuoteAtTick
 ```solidity
-getGasCostOfGetQuoteAtTick
+getGasCostOfGetQuoteAtTick(int24 tick, uint128 baseAmount, address baseToken, address quoteToken) external view returns (uint256)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| tick | int24 |  |
-| baseAmount | uint128 |  |
-| baseToken | address |  |
-| quoteToken | address |  |
+| tick | int24 | - |
+| baseAmount | uint128 | - |
+| baseToken | address | - |
+| quoteToken | address | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint256 |  |
+| Type | Description |
+|---|---|
+uint256 | - |
 
+### getOldestObservationSecondsAgo
 ```solidity
-getOldestObservationSecondsAgo
+getOldestObservationSecondsAgo(address pool) external view returns (uint32 secondsAgo, uint32 currentTimestamp)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| pool | address |  |
+| pool | address | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-| secondsAgo | uint32 |  |
-| currentTimestamp | uint32 |  |
+| Type | Description |
+|---|---|
+uint32 | - |
+uint32 | - |
 
+### getQuoteAtTick
 ```solidity
-getQuoteAtTick
+getQuoteAtTick(int24 tick, uint128 baseAmount, address baseToken, address quoteToken) external pure returns (uint256 quoteAmount)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| tick | int24 |  |
-| baseAmount | uint128 |  |
-| baseToken | address |  |
-| quoteToken | address |  |
+| tick | int24 | - |
+| baseAmount | uint128 | - |
+| baseToken | address | - |
+| quoteToken | address | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-| quoteAmount | uint256 |  |
+| Type | Description |
+|---|---|
+uint256 | - |
 
+### getWeightedArithmeticMeanTick
 ```solidity
-getWeightedArithmeticMeanTick
+getWeightedArithmeticMeanTick((int24,uint128)[] observations) external pure returns (int24 arithmeticMeanWeightedTick)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| observations | (int24,uint128)[] |  |
+| observations | (int24,uint128)[] | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-| arithmeticMeanWeightedTick | int24 |  |
+| Type | Description |
+|---|---|
+int24 | - |
 
 
 ### Events

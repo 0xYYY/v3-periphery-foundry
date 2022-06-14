@@ -4,29 +4,27 @@ Title: Immutable state
 Notice: Immutable state used by periphery contracts
 
 ## Methods
+### WETH9
 ```solidity
-WETH9
+WETH9() external view returns (address)
 ```
 Notice: Immutable state used by periphery contracts
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### factory
 ```solidity
-factory
+factory() external view returns (address)
 ```
 Notice: Immutable state used by periphery contracts
+#### Return Values
 
-### Parameters
-
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
+| Type | Description |
+|---|---|
+address | - |
 
 
 ### Events

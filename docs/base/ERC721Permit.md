@@ -4,138 +4,138 @@ Title: ERC721 with permit
 Notice: Nonfungible tokens that support an approve via signature, i.e. permit
 
 ## Methods
+### DOMAIN_SEPARATOR
 ```solidity
-DOMAIN_SEPARATOR
+DOMAIN_SEPARATOR() external view returns (bytes32)
 ```
 Notice: Nonfungible tokens that support an approve via signature, i.e. permit
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+bytes32 | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bytes32 |  |
-
+### PERMIT_TYPEHASH
 ```solidity
-PERMIT_TYPEHASH
+PERMIT_TYPEHASH() external view returns (bytes32)
 ```
 Notice: Nonfungible tokens that support an approve via signature, i.e. permit
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+bytes32 | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bytes32 |  |
-
+### approve
 ```solidity
-approve
+approve(address to, uint256 tokenId) external nonpayable
 ```
 Notice: Nonfungible tokens that support an approve via signature, i.e. permit
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| to | address |  |
-| tokenId | uint256 |  |
+| to | address | - |
+| tokenId | uint256 | - |
 
-
-### Return Values
+### balanceOf
 ```solidity
-balanceOf
+balanceOf(address owner) external view returns (uint256)
 ```
 Notice: Nonfungible tokens that support an approve via signature, i.e. permit
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| owner | address |  |
+| owner | address | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint256 |  |
+| Type | Description |
+|---|---|
+uint256 | - |
 
+### baseURI
 ```solidity
-baseURI
+baseURI() external view returns (string)
 ```
 Notice: Nonfungible tokens that support an approve via signature, i.e. permit
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+string | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | string |  |
-
+### getApproved
 ```solidity
-getApproved
+getApproved(uint256 tokenId) external view returns (address)
 ```
 Notice: Nonfungible tokens that support an approve via signature, i.e. permit
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| tokenId | uint256 |  |
+| tokenId | uint256 | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
+| Type | Description |
+|---|---|
+address | - |
 
+### isApprovedForAll
 ```solidity
-isApprovedForAll
+isApprovedForAll(address owner, address operator) external view returns (bool)
 ```
 Notice: Nonfungible tokens that support an approve via signature, i.e. permit
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| owner | address |  |
-| operator | address |  |
+| owner | address | - |
+| operator | address | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bool |  |
+| Type | Description |
+|---|---|
+bool | - |
 
+### name
 ```solidity
-name
+name() external view returns (string)
 ```
 Notice: Nonfungible tokens that support an approve via signature, i.e. permit
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+string | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | string |  |
-
+### ownerOf
 ```solidity
-ownerOf
+ownerOf(uint256 tokenId) external view returns (address)
 ```
 Notice: Nonfungible tokens that support an approve via signature, i.e. permit
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| tokenId | uint256 |  |
+| tokenId | uint256 | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
+| Type | Description |
+|---|---|
+address | - |
 
+### permit
 ```solidity
-permit
+permit(address spender, uint256 tokenId, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
 Notice: Nonfungible tokens that support an approve via signature, i.e. permit
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | spender | address | The account that is being approved |
@@ -145,153 +145,148 @@ Notice: Nonfungible tokens that support an approve via signature, i.e. permit
 | r | bytes32 | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
 | s | bytes32 | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
 
-
-### Return Values
+### safeTransferFrom
 ```solidity
-safeTransferFrom
+safeTransferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
 Notice: Nonfungible tokens that support an approve via signature, i.e. permit
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| from | address |  |
-| to | address |  |
-| tokenId | uint256 |  |
-
-
-### Return Values
-```solidity
-safeTransferFrom
-```
-Notice: Nonfungible tokens that support an approve via signature, i.e. permit
-
-### Parameters
-| Name | Type | Description |
-|---|---|---|
-| from | address |  |
-| to | address |  |
-| tokenId | uint256 |  |
-| _data | bytes |  |
-
-
-### Return Values
-```solidity
-setApprovalForAll
-```
-Notice: Nonfungible tokens that support an approve via signature, i.e. permit
-
-### Parameters
-| Name | Type | Description |
-|---|---|---|
-| operator | address |  |
-| approved | bool |  |
-
-
-### Return Values
-```solidity
-supportsInterface
-```
-Notice: Nonfungible tokens that support an approve via signature, i.e. permit
-
-### Parameters
-| Name | Type | Description |
-|---|---|---|
-| interfaceId | bytes4 |  |
-
-
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bool |  |
+| from | address | - |
+| to | address | - |
+| tokenId | uint256 | - |
 
 ```solidity
-symbol
+safeTransferFrom(address from, address to, uint256 tokenId, bytes _data) external nonpayable
 ```
 Notice: Nonfungible tokens that support an approve via signature, i.e. permit
+#### Parameters
 
-### Parameters
-
-### Return Values
 | Name | Type | Description |
 |---|---|---|
-|  | string |  |
+| from | address | - |
+| to | address | - |
+| tokenId | uint256 | - |
+| _data | bytes | - |
 
+### setApprovalForAll
 ```solidity
-tokenByIndex
+setApprovalForAll(address operator, bool approved) external nonpayable
 ```
 Notice: Nonfungible tokens that support an approve via signature, i.e. permit
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| index | uint256 |  |
+| operator | address | - |
+| approved | bool | - |
 
-
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint256 |  |
-
+### supportsInterface
 ```solidity
-tokenOfOwnerByIndex
+supportsInterface(bytes4 interfaceId) external view returns (bool)
 ```
 Notice: Nonfungible tokens that support an approve via signature, i.e. permit
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| owner | address |  |
-| index | uint256 |  |
+| interfaceId | bytes4 | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint256 |  |
+| Type | Description |
+|---|---|
+bool | - |
 
+### symbol
 ```solidity
-tokenURI
+symbol() external view returns (string)
 ```
 Notice: Nonfungible tokens that support an approve via signature, i.e. permit
+#### Return Values
 
-### Parameters
-| Name | Type | Description |
-|---|---|---|
-| tokenId | uint256 |  |
+| Type | Description |
+|---|---|
+string | - |
 
-
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | string |  |
-
+### tokenByIndex
 ```solidity
-totalSupply
+tokenByIndex(uint256 index) external view returns (uint256)
 ```
 Notice: Nonfungible tokens that support an approve via signature, i.e. permit
+#### Parameters
 
-### Parameters
-
-### Return Values
 | Name | Type | Description |
 |---|---|---|
-|  | uint256 |  |
+| index | uint256 | - |
 
+#### Return Values
+
+| Type | Description |
+|---|---|
+uint256 | - |
+
+### tokenOfOwnerByIndex
 ```solidity
-transferFrom
+tokenOfOwnerByIndex(address owner, uint256 index) external view returns (uint256)
 ```
 Notice: Nonfungible tokens that support an approve via signature, i.e. permit
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| from | address |  |
-| to | address |  |
-| tokenId | uint256 |  |
+| owner | address | - |
+| index | uint256 | - |
 
+#### Return Values
 
-### Return Values
+| Type | Description |
+|---|---|
+uint256 | - |
+
+### tokenURI
+```solidity
+tokenURI(uint256 tokenId) external view returns (string)
+```
+Notice: Nonfungible tokens that support an approve via signature, i.e. permit
+#### Parameters
+
+| Name | Type | Description |
+|---|---|---|
+| tokenId | uint256 | - |
+
+#### Return Values
+
+| Type | Description |
+|---|---|
+string | - |
+
+### totalSupply
+```solidity
+totalSupply() external view returns (uint256)
+```
+Notice: Nonfungible tokens that support an approve via signature, i.e. permit
+#### Return Values
+
+| Type | Description |
+|---|---|
+uint256 | - |
+
+### transferFrom
+```solidity
+transferFrom(address from, address to, uint256 tokenId) external nonpayable
+```
+Notice: Nonfungible tokens that support an approve via signature, i.e. permit
+#### Parameters
+
+| Name | Type | Description |
+|---|---|---|
+| from | address | - |
+| to | address | - |
+| tokenId | uint256 | - |
+
 
 ### Events
 

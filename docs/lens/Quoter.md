@@ -5,57 +5,57 @@ Details: These functions are not gas efficient and should _not_ be called on cha
 Notice: Allows getting the expected amount out or amount in for a given swap without executing the swap
 
 ## Methods
+### WETH9
 ```solidity
-WETH9
+WETH9() external view returns (address)
 ```
 Details: These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
 Notice: Allows getting the expected amount out or amount in for a given swap without executing the swap
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### factory
 ```solidity
-factory
+factory() external view returns (address)
 ```
 Details: These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
 Notice: Allows getting the expected amount out or amount in for a given swap without executing the swap
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### quoteExactInput
 ```solidity
-quoteExactInput
+quoteExactInput(bytes path, uint256 amountIn) external nonpayable returns (uint256 amountOut)
 ```
 Details: These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
 Notice: Allows getting the expected amount out or amount in for a given swap without executing the swap
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | path | bytes | The path of the swap, i.e. each token pair and the pool fee |
 | amountIn | uint256 | The amount of the first token to swap |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-| amountOut | uint256 | The amount of the last token that would be received |
+| Type | Description |
+|---|---|
+uint256 | The amount of the last token that would be received |
 
+### quoteExactInputSingle
 ```solidity
-quoteExactInputSingle
+quoteExactInputSingle(address tokenIn, address tokenOut, uint24 fee, uint256 amountIn, uint160 sqrtPriceLimitX96) external nonpayable returns (uint256 amountOut)
 ```
 Details: These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
 Notice: Allows getting the expected amount out or amount in for a given swap without executing the swap
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | tokenIn | address | The token being swapped in |
@@ -64,37 +64,39 @@ Notice: Allows getting the expected amount out or amount in for a given swap wit
 | amountIn | uint256 | The desired input amount |
 | sqrtPriceLimitX96 | uint160 | The price limit of the pool that cannot be exceeded by the swap |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-| amountOut | uint256 | The amount of `tokenOut` that would be received |
+| Type | Description |
+|---|---|
+uint256 | The amount of `tokenOut` that would be received |
 
+### quoteExactOutput
 ```solidity
-quoteExactOutput
+quoteExactOutput(bytes path, uint256 amountOut) external nonpayable returns (uint256 amountIn)
 ```
 Details: These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
 Notice: Allows getting the expected amount out or amount in for a given swap without executing the swap
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | path | bytes | The path of the swap, i.e. each token pair and the pool fee. Path must be provided in reverse order |
 | amountOut | uint256 | The amount of the last token to receive |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-| amountIn | uint256 | The amount of first token required to be paid |
+| Type | Description |
+|---|---|
+uint256 | The amount of first token required to be paid |
 
+### quoteExactOutputSingle
 ```solidity
-quoteExactOutputSingle
+quoteExactOutputSingle(address tokenIn, address tokenOut, uint24 fee, uint256 amountOut, uint160 sqrtPriceLimitX96) external nonpayable returns (uint256 amountIn)
 ```
 Details: These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
 Notice: Allows getting the expected amount out or amount in for a given swap without executing the swap
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | tokenIn | address | The token being swapped in |
@@ -103,27 +105,26 @@ Notice: Allows getting the expected amount out or amount in for a given swap wit
 | amountOut | uint256 | The desired output amount |
 | sqrtPriceLimitX96 | uint160 | The price limit of the pool that cannot be exceeded by the swap |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-| amountIn | uint256 | The amount required as the input for the swap in order to receive `amountOut` |
+| Type | Description |
+|---|---|
+uint256 | The amount required as the input for the swap in order to receive `amountOut` |
 
+### uniswapV3SwapCallback
 ```solidity
-uniswapV3SwapCallback
+uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes path) external view
 ```
 Details: These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
 Notice: Allows getting the expected amount out or amount in for a given swap without executing the swap
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | amount0Delta | int256 | The amount of token0 that was sent (negative) or must be received (positive) by the pool by the end of the swap. If positive, the callback must send that amount of token0 to the pool. |
 | amount1Delta | int256 | The amount of token1 that was sent (negative) or must be received (positive) by the pool by the end of the swap. If positive, the callback must send that amount of token1 to the pool. |
-| path | bytes |  |
+| path | bytes | - |
 
-
-### Return Values
 
 ### Events
 

@@ -4,12 +4,13 @@ Title: Self Permit
 Notice: Functionality to call permit on any EIP-2612-compliant token for use in the route
 
 ## Methods
+### selfPermit
 ```solidity
-selfPermit
+selfPermit(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
 Notice: Functionality to call permit on any EIP-2612-compliant token for use in the route
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | token | address | The address of the token spent |
@@ -19,14 +20,13 @@ Notice: Functionality to call permit on any EIP-2612-compliant token for use in 
 | r | bytes32 | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
 | s | bytes32 | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
 
-
-### Return Values
+### selfPermitAllowed
 ```solidity
-selfPermitAllowed
+selfPermitAllowed(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
 ```
 Notice: Functionality to call permit on any EIP-2612-compliant token for use in the route
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | token | address | The address of the token spent |
@@ -36,14 +36,13 @@ Notice: Functionality to call permit on any EIP-2612-compliant token for use in 
 | r | bytes32 | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
 | s | bytes32 | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
 
-
-### Return Values
+### selfPermitAllowedIfNecessary
 ```solidity
-selfPermitAllowedIfNecessary
+selfPermitAllowedIfNecessary(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
 ```
 Notice: Functionality to call permit on any EIP-2612-compliant token for use in the route
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | token | address | The address of the token spent |
@@ -53,14 +52,13 @@ Notice: Functionality to call permit on any EIP-2612-compliant token for use in 
 | r | bytes32 | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
 | s | bytes32 | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
 
-
-### Return Values
+### selfPermitIfNecessary
 ```solidity
-selfPermitIfNecessary
+selfPermitIfNecessary(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
 Notice: Functionality to call permit on any EIP-2612-compliant token for use in the route
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | token | address | The address of the token spent |
@@ -70,8 +68,6 @@ Notice: Functionality to call permit on any EIP-2612-compliant token for use in 
 | r | bytes32 | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
 | s | bytes32 | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
 
-
-### Return Values
 
 ### Events
 

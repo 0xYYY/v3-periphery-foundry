@@ -2,60 +2,55 @@
 # CompleteFixture.sol
 
 ## Methods
+### deployCode
 ```solidity
-deployCode
+deployCode(string what) external nonpayable returns (address addr)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| what | string |  |
+| what | string | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-| addr | address |  |
+| Type | Description |
+|---|---|
+address | - |
 
+### factory
 ```solidity
-factory
+factory() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### router
 ```solidity
-router
+router() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### setUp
 ```solidity
-setUp
+setUp() external nonpayable
 ```
-
-### Parameters
-
-### Return Values
+### weth9
 ```solidity
-weth9
+weth9() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
-
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
+| Type | Description |
+|---|---|
+address | - |
 
 
 ### Events
@@ -66,75 +61,71 @@ weth9
 # SwapRouterFixture.sol
 
 ## Methods
+### deployCode
 ```solidity
-deployCode
+deployCode(string what) external nonpayable returns (address addr)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| what | string |  |
+| what | string | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-| addr | address |  |
+| Type | Description |
+|---|---|
+address | - |
 
+### factory
 ```solidity
-factory
+factory() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### getBalances
 ```solidity
-getBalances
+getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| who | address |  |
+| who | address | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | (uint256,uint256,uint256,uint256) |  |
+| Type | Description |
+|---|---|
+(uint256,uint256,uint256,uint256) | - |
 
+### router
 ```solidity
-router
+router() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### setUp
 ```solidity
-setUp
+setUp() external nonpayable
 ```
-
-### Parameters
-
-### Return Values
+### weth9
 ```solidity
-weth9
+weth9() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
-
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
+| Type | Description |
+|---|---|
+address | - |
 
 
 ### Events
@@ -145,60 +136,55 @@ weth9
 # V3RouterFixture.sol
 
 ## Methods
+### deployCode
 ```solidity
-deployCode
+deployCode(string what) external nonpayable returns (address addr)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| what | string |  |
+| what | string | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-| addr | address |  |
+| Type | Description |
+|---|---|
+address | - |
 
+### factory
 ```solidity
-factory
+factory() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### router
 ```solidity
-router
+router() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### setUp
 ```solidity
-setUp
+setUp() external nonpayable
 ```
-
-### Parameters
-
-### Return Values
+### weth9
 ```solidity
-weth9
+weth9() external view returns (address)
 ```
+#### Return Values
 
-### Parameters
-
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
+| Type | Description |
+|---|---|
+address | - |
 
 
 ### Events
@@ -209,92 +195,94 @@ weth9
 # WETH9.sol
 
 ## Methods
+### allowance
 ```solidity
-allowance
+allowance(address owner, address spender) external view returns (uint256)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | owner | address | The account of the token owner |
 | spender | address | The account of the token spender |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint256 |  |
+| Type | Description |
+|---|---|
+uint256 | - |
 
+### approve
 ```solidity
-approve
+approve(address spender, uint256 amount) external nonpayable returns (bool)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | spender | address | The account which will be allowed to spend a given amount of the owners tokens |
 | amount | uint256 | The amount of tokens allowed to be used by `spender` |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bool |  |
+| Type | Description |
+|---|---|
+bool | - |
 
+### balanceOf
 ```solidity
-balanceOf
+balanceOf(address account) external view returns (uint256)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | account | address | The account for which to look up the number of tokens it has, i.e. its balance |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint256 |  |
+| Type | Description |
+|---|---|
+uint256 | - |
 
+### deposit
 ```solidity
-deposit
+deposit() external payable
 ```
-
-### Parameters
-
-### Return Values
+### transfer
 ```solidity
-transfer
+transfer(address recipient, uint256 amount) external nonpayable returns (bool)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | recipient | address | The account that will receive the amount transferred |
 | amount | uint256 | The number of tokens to send from the sender to the recipient |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bool |  |
+| Type | Description |
+|---|---|
+bool | - |
 
+### transferFrom
 ```solidity
-transferFrom
+transferFrom(address sender, address recipient, uint256 amount) external nonpayable returns (bool)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | sender | address | The account from which the transfer will be initiated |
 | recipient | address | The recipient of the transfer |
 | amount | uint256 | The amount of the transfer |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bool |  |
+| Type | Description |
+|---|---|
+bool | - |
 
 
 ### Events

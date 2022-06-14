@@ -4,138 +4,139 @@ Title: IERC20MetadataInterface for ERC20 Metadata
 Notice: Extension to IERC20 that includes token metadata
 
 ## Methods
+### allowance
 ```solidity
-allowance
+allowance(address owner, address spender) external view returns (uint256)
 ```
 Notice: Extension to IERC20 that includes token metadata
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| owner | address |  |
-| spender | address |  |
+| owner | address | - |
+| spender | address | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint256 |  |
+| Type | Description |
+|---|---|
+uint256 | - |
 
+### approve
 ```solidity
-approve
+approve(address spender, uint256 amount) external nonpayable returns (bool)
 ```
 Notice: Extension to IERC20 that includes token metadata
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| spender | address |  |
-| amount | uint256 |  |
+| spender | address | - |
+| amount | uint256 | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bool |  |
+| Type | Description |
+|---|---|
+bool | - |
 
+### balanceOf
 ```solidity
-balanceOf
+balanceOf(address account) external view returns (uint256)
 ```
 Notice: Extension to IERC20 that includes token metadata
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| account | address |  |
+| account | address | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint256 |  |
+| Type | Description |
+|---|---|
+uint256 | - |
 
+### decimals
 ```solidity
-decimals
+decimals() external view returns (uint8)
 ```
 Notice: Extension to IERC20 that includes token metadata
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+uint8 | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint8 |  |
-
+### name
 ```solidity
-name
+name() external view returns (string)
 ```
 Notice: Extension to IERC20 that includes token metadata
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+string | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | string |  |
-
+### symbol
 ```solidity
-symbol
+symbol() external view returns (string)
 ```
 Notice: Extension to IERC20 that includes token metadata
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+string | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | string |  |
-
+### totalSupply
 ```solidity
-totalSupply
+totalSupply() external view returns (uint256)
 ```
 Notice: Extension to IERC20 that includes token metadata
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+uint256 | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint256 |  |
-
+### transfer
 ```solidity
-transfer
+transfer(address recipient, uint256 amount) external nonpayable returns (bool)
 ```
 Notice: Extension to IERC20 that includes token metadata
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| recipient | address |  |
-| amount | uint256 |  |
+| recipient | address | - |
+| amount | uint256 | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bool |  |
+| Type | Description |
+|---|---|
+bool | - |
 
+### transferFrom
 ```solidity
-transferFrom
+transferFrom(address sender, address recipient, uint256 amount) external nonpayable returns (bool)
 ```
 Notice: Extension to IERC20 that includes token metadata
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| sender | address |  |
-| recipient | address |  |
-| amount | uint256 |  |
+| sender | address | - |
+| recipient | address | - |
+| amount | uint256 | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | bool |  |
+| Type | Description |
+|---|---|
+bool | - |
 
 
 ### Events

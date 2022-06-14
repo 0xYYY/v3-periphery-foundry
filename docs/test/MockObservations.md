@@ -2,51 +2,50 @@
 # MockObservations.sol
 
 ## Methods
+### liquidity
 ```solidity
-liquidity
+liquidity() external view returns (uint128)
 ```
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+uint128 | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint128 |  |
-
+### observations
 ```solidity
-observations
+observations(uint256 index) external view returns (uint32, int56, uint160, bool)
 ```
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
-| index | uint256 |  |
+| index | uint256 | - |
 
+#### Return Values
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint32 |  |
-|  | int56 |  |
-|  | uint160 |  |
-|  | bool |  |
+| Type | Description |
+|---|---|
+uint32 | - |
+int56 | - |
+uint160 | - |
+bool | - |
 
+### slot0
 ```solidity
-slot0
+slot0() external view returns (uint160, int24, uint16, uint16, uint16, uint8, bool)
 ```
+#### Return Values
 
-### Parameters
-
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | uint160 |  |
-|  | int24 |  |
-|  | uint16 |  |
-|  | uint16 |  |
-|  | uint16 |  |
-|  | uint8 |  |
-|  | bool |  |
+| Type | Description |
+|---|---|
+uint160 | - |
+int24 | - |
+uint16 | - |
+uint16 | - |
+uint16 | - |
+uint8 | - |
+bool | - |
 
 
 ### Events

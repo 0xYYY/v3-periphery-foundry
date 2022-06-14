@@ -4,79 +4,71 @@ Title: Liquidity management functions
 Notice: Internal functions for safely managing liquidity in Uniswap V3
 
 ## Methods
+### WETH9
 ```solidity
-WETH9
+WETH9() external view returns (address)
 ```
 Notice: Internal functions for safely managing liquidity in Uniswap V3
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### factory
 ```solidity
-factory
+factory() external view returns (address)
 ```
 Notice: Internal functions for safely managing liquidity in Uniswap V3
+#### Return Values
 
-### Parameters
+| Type | Description |
+|---|---|
+address | - |
 
-### Return Values
-| Name | Type | Description |
-|---|---|---|
-|  | address |  |
-
+### refundETH
 ```solidity
-refundETH
+refundETH() external payable
 ```
 Notice: Internal functions for safely managing liquidity in Uniswap V3
-
-### Parameters
-
-### Return Values
+### sweepToken
 ```solidity
-sweepToken
+sweepToken(address token, uint256 amountMinimum, address recipient) external payable
 ```
 Notice: Internal functions for safely managing liquidity in Uniswap V3
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | token | address | The contract address of the token which will be transferred to `recipient` |
 | amountMinimum | uint256 | The minimum amount of token required for a transfer |
 | recipient | address | The destination address of the token |
 
-
-### Return Values
+### uniswapV3MintCallback
 ```solidity
-uniswapV3MintCallback
+uniswapV3MintCallback(uint256 amount0Owed, uint256 amount1Owed, bytes data) external nonpayable
 ```
 Notice: Internal functions for safely managing liquidity in Uniswap V3
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | amount0Owed | uint256 | The amount of token0 due to the pool for the minted liquidity |
 | amount1Owed | uint256 | The amount of token1 due to the pool for the minted liquidity |
 | data | bytes | Any data passed through by the caller via the IUniswapV3PoolActions#mint call |
 
-
-### Return Values
+### unwrapWETH9
 ```solidity
-unwrapWETH9
+unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
 Notice: Internal functions for safely managing liquidity in Uniswap V3
+#### Parameters
 
-### Parameters
 | Name | Type | Description |
 |---|---|---|
 | amountMinimum | uint256 | The minimum amount of WETH9 to unwrap |
 | recipient | address | The address receiving ETH |
 
-
-### Return Values
 
 ### Events
 
