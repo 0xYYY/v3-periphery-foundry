@@ -8,7 +8,7 @@ Interface for WETH9
 ## Methods
 ### allowance
 ```solidity
-allowance(address owner, address spender) external view returns (uint256)
+allowance(address owner, address spender) external view returns (uint256 -)
 ```
 
             
@@ -25,11 +25,11 @@ allowance(address owner, address spender) external view returns (uint256)
 
 | Name | Type | Description |
 |---|---|---|
-|  | uint256 | - |
+| - | uint256 | - |
 
 ### approve
 ```solidity
-approve(address spender, uint256 amount) external nonpayable returns (bool)
+approve(address spender, uint256 amount) external nonpayable returns (bool -)
 ```
 
             
@@ -46,11 +46,11 @@ approve(address spender, uint256 amount) external nonpayable returns (bool)
 
 | Name | Type | Description |
 |---|---|---|
-|  | bool | - |
+| - | bool | - |
 
 ### balanceOf
 ```solidity
-balanceOf(address account) external view returns (uint256)
+balanceOf(address account) external view returns (uint256 -)
 ```
 
             
@@ -66,7 +66,7 @@ balanceOf(address account) external view returns (uint256)
 
 | Name | Type | Description |
 |---|---|---|
-|  | uint256 | - |
+| - | uint256 | - |
 
 ### deposit
 ```solidity
@@ -78,7 +78,7 @@ deposit() external payable
             
 ### totalSupply
 ```solidity
-totalSupply() external view returns (uint256)
+totalSupply() external view returns (uint256 -)
 ```
 
             
@@ -88,11 +88,11 @@ totalSupply() external view returns (uint256)
 
 | Name | Type | Description |
 |---|---|---|
-|  | uint256 | - |
+| - | uint256 | - |
 
 ### transfer
 ```solidity
-transfer(address recipient, uint256 amount) external nonpayable returns (bool)
+transfer(address recipient, uint256 amount) external nonpayable returns (bool -)
 ```
 
             
@@ -109,11 +109,11 @@ transfer(address recipient, uint256 amount) external nonpayable returns (bool)
 
 | Name | Type | Description |
 |---|---|---|
-|  | bool | - |
+| - | bool | - |
 
 ### transferFrom
 ```solidity
-transferFrom(address sender, address recipient, uint256 amount) external nonpayable returns (bool)
+transferFrom(address sender, address recipient, uint256 amount) external nonpayable returns (bool -)
 ```
 
             
@@ -131,11 +131,11 @@ transferFrom(address sender, address recipient, uint256 amount) external nonpaya
 
 | Name | Type | Description |
 |---|---|---|
-|  | bool | - |
+| - | bool | - |
 
 ### withdraw
 ```solidity
-withdraw(uint256) external nonpayable
+withdraw(uint256 -) external nonpayable
 ```
 
             
@@ -145,6 +145,6 @@ withdraw(uint256) external nonpayable
 
 | Name | Type | Description |
 |---|---|---|
-|  | uint256 | - |
+| - | uint256 | - |
 
 

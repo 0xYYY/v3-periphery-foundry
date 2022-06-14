@@ -7,7 +7,7 @@
 ## Methods
 ### WETH9
 ```solidity
-WETH9() external view returns (address)
+WETH9() external view returns (address -)
 ```
 
             
@@ -17,11 +17,11 @@ WETH9() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 ### factory
 ```solidity
-factory() external view returns (address)
+factory() external view returns (address -)
 ```
 
             
@@ -31,7 +31,7 @@ factory() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 ### refundETH
 ```solidity

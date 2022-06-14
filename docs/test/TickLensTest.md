@@ -8,7 +8,7 @@ Tick Lens contract
 ## Methods
 ### getGasCostOfGetPopulatedTicksInWord
 ```solidity
-getGasCostOfGetPopulatedTicksInWord(address pool, int16 tickBitmapIndex) external view returns (uint256)
+getGasCostOfGetPopulatedTicksInWord(address pool, int16 tickBitmapIndex) external view returns (uint256 -)
 ```
 
             
@@ -25,7 +25,7 @@ getGasCostOfGetPopulatedTicksInWord(address pool, int16 tickBitmapIndex) externa
 
 | Name | Type | Description |
 |---|---|---|
-|  | uint256 | - |
+| - | uint256 | - |
 
 ### getPopulatedTicksInWord
 ```solidity

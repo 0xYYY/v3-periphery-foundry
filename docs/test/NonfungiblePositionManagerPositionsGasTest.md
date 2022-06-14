@@ -7,7 +7,7 @@
 ## Methods
 ### getGasCostOfPositions
 ```solidity
-getGasCostOfPositions(uint256 tokenId) external view returns (uint256)
+getGasCostOfPositions(uint256 tokenId) external view returns (uint256 -)
 ```
 
             
@@ -23,6 +23,6 @@ getGasCostOfPositions(uint256 tokenId) external view returns (uint256)
 
 | Name | Type | Description |
 |---|---|---|
-|  | uint256 | - |
+| - | uint256 | - |
 
 

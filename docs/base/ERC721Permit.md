@@ -9,7 +9,7 @@ ERC721 with permit
 ## Methods
 ### DOMAIN_SEPARATOR
 ```solidity
-DOMAIN_SEPARATOR() external view returns (bytes32)
+DOMAIN_SEPARATOR() external view returns (bytes32 -)
 ```
 
             
@@ -20,11 +20,11 @@ DOMAIN_SEPARATOR() external view returns (bytes32)
 
 | Name | Type | Description |
 |---|---|---|
-|  | bytes32 | - |
+| - | bytes32 | - |
 
 ### PERMIT_TYPEHASH
 ```solidity
-PERMIT_TYPEHASH() external view returns (bytes32)
+PERMIT_TYPEHASH() external view returns (bytes32 -)
 ```
 
             
@@ -35,7 +35,7 @@ PERMIT_TYPEHASH() external view returns (bytes32)
 
 | Name | Type | Description |
 |---|---|---|
-|  | bytes32 | - |
+| - | bytes32 | - |
 
 ### approve
 ```solidity
@@ -55,7 +55,7 @@ approve(address to, uint256 tokenId) external nonpayable
 
 ### balanceOf
 ```solidity
-balanceOf(address owner) external view returns (uint256)
+balanceOf(address owner) external view returns (uint256 -)
 ```
 
             
@@ -72,11 +72,11 @@ balanceOf(address owner) external view returns (uint256)
 
 | Name | Type | Description |
 |---|---|---|
-|  | uint256 | - |
+| - | uint256 | - |
 
 ### baseURI
 ```solidity
-baseURI() external view returns (string)
+baseURI() external view returns (string -)
 ```
 
             
@@ -87,11 +87,11 @@ baseURI() external view returns (string)
 
 | Name | Type | Description |
 |---|---|---|
-|  | string | - |
+| - | string | - |
 
 ### getApproved
 ```solidity
-getApproved(uint256 tokenId) external view returns (address)
+getApproved(uint256 tokenId) external view returns (address -)
 ```
 
             
@@ -108,11 +108,11 @@ getApproved(uint256 tokenId) external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 ### isApprovedForAll
 ```solidity
-isApprovedForAll(address owner, address operator) external view returns (bool)
+isApprovedForAll(address owner, address operator) external view returns (bool -)
 ```
 
             
@@ -130,11 +130,11 @@ isApprovedForAll(address owner, address operator) external view returns (bool)
 
 | Name | Type | Description |
 |---|---|---|
-|  | bool | - |
+| - | bool | - |
 
 ### name
 ```solidity
-name() external view returns (string)
+name() external view returns (string -)
 ```
 
             
@@ -145,11 +145,11 @@ name() external view returns (string)
 
 | Name | Type | Description |
 |---|---|---|
-|  | string | - |
+| - | string | - |
 
 ### ownerOf
 ```solidity
-ownerOf(uint256 tokenId) external view returns (address)
+ownerOf(uint256 tokenId) external view returns (address -)
 ```
 
             
@@ -166,7 +166,7 @@ ownerOf(uint256 tokenId) external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 ### permit
 ```solidity
@@ -240,7 +240,7 @@ setApprovalForAll(address operator, bool approved) external nonpayable
 
 ### supportsInterface
 ```solidity
-supportsInterface(bytes4 interfaceId) external view returns (bool)
+supportsInterface(bytes4 interfaceId) external view returns (bool -)
 ```
 
             
@@ -257,11 +257,11 @@ supportsInterface(bytes4 interfaceId) external view returns (bool)
 
 | Name | Type | Description |
 |---|---|---|
-|  | bool | - |
+| - | bool | - |
 
 ### symbol
 ```solidity
-symbol() external view returns (string)
+symbol() external view returns (string -)
 ```
 
             
@@ -272,11 +272,11 @@ symbol() external view returns (string)
 
 | Name | Type | Description |
 |---|---|---|
-|  | string | - |
+| - | string | - |
 
 ### tokenByIndex
 ```solidity
-tokenByIndex(uint256 index) external view returns (uint256)
+tokenByIndex(uint256 index) external view returns (uint256 -)
 ```
 
             
@@ -293,11 +293,11 @@ tokenByIndex(uint256 index) external view returns (uint256)
 
 | Name | Type | Description |
 |---|---|---|
-|  | uint256 | - |
+| - | uint256 | - |
 
 ### tokenOfOwnerByIndex
 ```solidity
-tokenOfOwnerByIndex(address owner, uint256 index) external view returns (uint256)
+tokenOfOwnerByIndex(address owner, uint256 index) external view returns (uint256 -)
 ```
 
             
@@ -315,11 +315,11 @@ tokenOfOwnerByIndex(address owner, uint256 index) external view returns (uint256
 
 | Name | Type | Description |
 |---|---|---|
-|  | uint256 | - |
+| - | uint256 | - |
 
 ### tokenURI
 ```solidity
-tokenURI(uint256 tokenId) external view returns (string)
+tokenURI(uint256 tokenId) external view returns (string -)
 ```
 
             
@@ -336,11 +336,11 @@ tokenURI(uint256 tokenId) external view returns (string)
 
 | Name | Type | Description |
 |---|---|---|
-|  | string | - |
+| - | string | - |
 
 ### totalSupply
 ```solidity
-totalSupply() external view returns (uint256)
+totalSupply() external view returns (uint256 -)
 ```
 
             
@@ -351,7 +351,7 @@ totalSupply() external view returns (uint256)
 
 | Name | Type | Description |
 |---|---|---|
-|  | uint256 | - |
+| - | uint256 | - |
 
 ### transferFrom
 ```solidity

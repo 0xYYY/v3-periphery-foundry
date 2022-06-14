@@ -7,7 +7,7 @@
 ## Methods
 ### addressToString
 ```solidity
-addressToString(address _address) external pure returns (string)
+addressToString(address _address) external pure returns (string -)
 ```
 
             
@@ -23,11 +23,11 @@ addressToString(address _address) external pure returns (string)
 
 | Name | Type | Description |
 |---|---|---|
-|  | string | - |
+| - | string | - |
 
 ### constructTokenURI
 ```solidity
-constructTokenURI((uint256,address,address,string,string,uint8,uint8,bool,int24,int24,int24,int24,uint24,address) params) external pure returns (string)
+constructTokenURI((uint256,address,address,string,string,uint8,uint8,bool,int24,int24,int24,int24,uint24,address) params) external pure returns (string -)
 ```
 
             
@@ -43,11 +43,11 @@ constructTokenURI((uint256,address,address,string,string,uint8,uint8,bool,int24,
 
 | Name | Type | Description |
 |---|---|---|
-|  | string | - |
+| - | string | - |
 
 ### feeToPercentString
 ```solidity
-feeToPercentString(uint24 fee) external pure returns (string)
+feeToPercentString(uint24 fee) external pure returns (string -)
 ```
 
             
@@ -63,11 +63,11 @@ feeToPercentString(uint24 fee) external pure returns (string)
 
 | Name | Type | Description |
 |---|---|---|
-|  | string | - |
+| - | string | - |
 
 ### fixedPointToDecimalString
 ```solidity
-fixedPointToDecimalString(uint160 sqrtRatioX96, uint8 token0Decimals, uint8 token1Decimals) external pure returns (string)
+fixedPointToDecimalString(uint160 sqrtRatioX96, uint8 token0Decimals, uint8 token1Decimals) external pure returns (string -)
 ```
 
             
@@ -85,11 +85,11 @@ fixedPointToDecimalString(uint160 sqrtRatioX96, uint8 token0Decimals, uint8 toke
 
 | Name | Type | Description |
 |---|---|---|
-|  | string | - |
+| - | string | - |
 
 ### generateSVGImage
 ```solidity
-generateSVGImage((uint256,address,address,string,string,uint8,uint8,bool,int24,int24,int24,int24,uint24,address) params) external pure returns (string)
+generateSVGImage((uint256,address,address,string,string,uint8,uint8,bool,int24,int24,int24,int24,uint24,address) params) external pure returns (string -)
 ```
 
             
@@ -105,11 +105,11 @@ generateSVGImage((uint256,address,address,string,string,uint8,uint8,bool,int24,i
 
 | Name | Type | Description |
 |---|---|---|
-|  | string | - |
+| - | string | - |
 
 ### getGasCostOfConstructTokenURI
 ```solidity
-getGasCostOfConstructTokenURI((uint256,address,address,string,string,uint8,uint8,bool,int24,int24,int24,int24,uint24,address) params) external view returns (uint256)
+getGasCostOfConstructTokenURI((uint256,address,address,string,string,uint8,uint8,bool,int24,int24,int24,int24,uint24,address) params) external view returns (uint256 -)
 ```
 
             
@@ -125,11 +125,11 @@ getGasCostOfConstructTokenURI((uint256,address,address,string,string,uint8,uint8
 
 | Name | Type | Description |
 |---|---|---|
-|  | uint256 | - |
+| - | uint256 | - |
 
 ### isRare
 ```solidity
-isRare(uint256 tokenId, address poolAddress) external pure returns (bool)
+isRare(uint256 tokenId, address poolAddress) external pure returns (bool -)
 ```
 
             
@@ -146,11 +146,11 @@ isRare(uint256 tokenId, address poolAddress) external pure returns (bool)
 
 | Name | Type | Description |
 |---|---|---|
-|  | bool | - |
+| - | bool | - |
 
 ### rangeLocation
 ```solidity
-rangeLocation(int24 tickLower, int24 tickUpper) external pure returns (string, string)
+rangeLocation(int24 tickLower, int24 tickUpper) external pure returns (string -, string -)
 ```
 
             
@@ -167,12 +167,12 @@ rangeLocation(int24 tickLower, int24 tickUpper) external pure returns (string, s
 
 | Name | Type | Description |
 |---|---|---|
-|  | string | - |
-|  | string | - |
+| - | string | - |
+| - | string | - |
 
 ### sliceTokenHex
 ```solidity
-sliceTokenHex(address token, uint256 offset) external pure returns (uint256)
+sliceTokenHex(address token, uint256 offset) external pure returns (uint256 -)
 ```
 
             
@@ -189,11 +189,11 @@ sliceTokenHex(address token, uint256 offset) external pure returns (uint256)
 
 | Name | Type | Description |
 |---|---|---|
-|  | uint256 | - |
+| - | uint256 | - |
 
 ### tickToDecimalString
 ```solidity
-tickToDecimalString(int24 tick, int24 tickSpacing, uint8 token0Decimals, uint8 token1Decimals, bool flipRatio) external pure returns (string)
+tickToDecimalString(int24 tick, int24 tickSpacing, uint8 token0Decimals, uint8 token1Decimals, bool flipRatio) external pure returns (string -)
 ```
 
             
@@ -213,11 +213,11 @@ tickToDecimalString(int24 tick, int24 tickSpacing, uint8 token0Decimals, uint8 t
 
 | Name | Type | Description |
 |---|---|---|
-|  | string | - |
+| - | string | - |
 
 ### tokenToColorHex
 ```solidity
-tokenToColorHex(address token, uint256 offset) external pure returns (string)
+tokenToColorHex(address token, uint256 offset) external pure returns (string -)
 ```
 
             
@@ -234,6 +234,6 @@ tokenToColorHex(address token, uint256 offset) external pure returns (string)
 
 | Name | Type | Description |
 |---|---|---|
-|  | string | - |
+| - | string | - |
 
 

@@ -10,7 +10,7 @@ These functions are not gas efficient and should _not_ be called on chain. Inste
 ## Methods
 ### WETH9
 ```solidity
-WETH9() external view returns (address)
+WETH9() external view returns (address -)
 ```
 
             
@@ -22,11 +22,11 @@ These functions are not gas efficient and should _not_ be called on chain. Inste
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 ### factory
 ```solidity
-factory() external view returns (address)
+factory() external view returns (address -)
 ```
 
             
@@ -38,7 +38,7 @@ These functions are not gas efficient and should _not_ be called on chain. Inste
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 ### quoteExactInput
 ```solidity

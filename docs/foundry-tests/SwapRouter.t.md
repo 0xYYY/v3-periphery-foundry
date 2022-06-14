@@ -58,7 +58,7 @@ exactInput(address[] tokens, uint256 amountIn, uint256 amountOutMinimum) externa
 
 ### factory
 ```solidity
-factory() external view returns (address)
+factory() external view returns (address -)
 ```
 
             
@@ -68,11 +68,11 @@ factory() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 ### getBalances
 ```solidity
-getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
+getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256) -)
 ```
 
             
@@ -88,11 +88,11 @@ getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,u
 
 | Name | Type | Description |
 |---|---|---|
-|  | (uint256,uint256,uint256,uint256) | - |
+| - | (uint256,uint256,uint256,uint256) | - |
 
 ### router
 ```solidity
-router() external view returns (address)
+router() external view returns (address -)
 ```
 
             
@@ -102,7 +102,7 @@ router() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 ### setUp
 ```solidity
@@ -114,7 +114,7 @@ setUp() external nonpayable
             
 ### weth9
 ```solidity
-weth9() external view returns (address)
+weth9() external view returns (address -)
 ```
 
             
@@ -124,7 +124,7 @@ weth9() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 
 
@@ -187,7 +187,7 @@ exactInput(address[] tokens, uint256 amountIn, uint256 amountOutMinimum) externa
 
 ### factory
 ```solidity
-factory() external view returns (address)
+factory() external view returns (address -)
 ```
 
             
@@ -197,11 +197,11 @@ factory() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 ### getBalances
 ```solidity
-getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
+getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256) -)
 ```
 
             
@@ -217,11 +217,11 @@ getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,u
 
 | Name | Type | Description |
 |---|---|---|
-|  | (uint256,uint256,uint256,uint256) | - |
+| - | (uint256,uint256,uint256,uint256) | - |
 
 ### router
 ```solidity
-router() external view returns (address)
+router() external view returns (address -)
 ```
 
             
@@ -231,7 +231,7 @@ router() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 ### setUp
 ```solidity
@@ -267,7 +267,7 @@ testZeroToOneToTwo() external nonpayable
             
 ### weth9
 ```solidity
-weth9() external view returns (address)
+weth9() external view returns (address -)
 ```
 
             
@@ -277,7 +277,7 @@ weth9() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 
 
@@ -340,7 +340,7 @@ exactInput(address[] tokens, uint256 amountIn, uint256 amountOutMinimum) externa
 
 ### factory
 ```solidity
-factory() external view returns (address)
+factory() external view returns (address -)
 ```
 
             
@@ -350,11 +350,11 @@ factory() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 ### getBalances
 ```solidity
-getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
+getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256) -)
 ```
 
             
@@ -370,11 +370,11 @@ getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,u
 
 | Name | Type | Description |
 |---|---|---|
-|  | (uint256,uint256,uint256,uint256) | - |
+| - | (uint256,uint256,uint256,uint256) | - |
 
 ### router
 ```solidity
-router() external view returns (address)
+router() external view returns (address -)
 ```
 
             
@@ -384,7 +384,7 @@ router() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 ### setUp
 ```solidity
@@ -412,7 +412,7 @@ testZeroToOne() external nonpayable
             
 ### weth9
 ```solidity
-weth9() external view returns (address)
+weth9() external view returns (address -)
 ```
 
             
@@ -422,7 +422,7 @@ weth9() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 
 
@@ -469,7 +469,7 @@ deployCode(string what) external nonpayable returns (address addr)
 
 ### factory
 ```solidity
-factory() external view returns (address)
+factory() external view returns (address -)
 ```
 
             
@@ -479,11 +479,11 @@ factory() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 ### getBalances
 ```solidity
-getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
+getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256) -)
 ```
 
             
@@ -499,11 +499,11 @@ getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,u
 
 | Name | Type | Description |
 |---|---|---|
-|  | (uint256,uint256,uint256,uint256) | - |
+| - | (uint256,uint256,uint256,uint256) | - |
 
 ### router
 ```solidity
-router() external view returns (address)
+router() external view returns (address -)
 ```
 
             
@@ -513,7 +513,7 @@ router() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 ### setUp
 ```solidity
@@ -525,7 +525,7 @@ setUp() external nonpayable
             
 ### weth9
 ```solidity
-weth9() external view returns (address)
+weth9() external view returns (address -)
 ```
 
             
@@ -535,6 +535,6 @@ weth9() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 

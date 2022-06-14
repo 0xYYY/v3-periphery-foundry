@@ -62,7 +62,7 @@ multicall(bytes[] data) external payable returns (bytes[] results)
 
 ### paid
 ```solidity
-paid() external view returns (uint256)
+paid() external view returns (uint256 -)
 ```
 
             
@@ -72,7 +72,7 @@ paid() external view returns (uint256)
 
 | Name | Type | Description |
 |---|---|---|
-|  | uint256 | - |
+| - | uint256 | - |
 
 ### pays
 ```solidity
@@ -84,7 +84,7 @@ pays() external payable
             
 ### returnSender
 ```solidity
-returnSender() external view returns (address)
+returnSender() external view returns (address -)
 ```
 
             
@@ -94,6 +94,6 @@ returnSender() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 

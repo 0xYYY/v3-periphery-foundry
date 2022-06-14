@@ -9,7 +9,7 @@ Uniswap V3 Swap Router
 ## Methods
 ### WETH9
 ```solidity
-WETH9() external view returns (address)
+WETH9() external view returns (address -)
 ```
 
             
@@ -20,7 +20,7 @@ WETH9() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 ### exactInput
 ```solidity
@@ -108,7 +108,7 @@ exactOutputSingle((address,address,uint24,address,uint256,uint256,uint256,uint16
 
 ### factory
 ```solidity
-factory() external view returns (address)
+factory() external view returns (address -)
 ```
 
             
@@ -119,7 +119,7 @@ factory() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 ### multicall
 ```solidity

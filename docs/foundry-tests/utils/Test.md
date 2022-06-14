@@ -35,7 +35,7 @@ deployCode(string what) external nonpayable returns (address addr)
 ## Methods
 ### addr
 ```solidity
-addr(uint256) external nonpayable returns (address)
+addr(uint256 -) external nonpayable returns (address -)
 ```
 
             
@@ -45,17 +45,17 @@ addr(uint256) external nonpayable returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-|  | uint256 | - |
+| - | uint256 | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 ### deal
 ```solidity
-deal(address, uint256) external nonpayable
+deal(address -, uint256 -) external nonpayable
 ```
 
             
@@ -65,12 +65,12 @@ deal(address, uint256) external nonpayable
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
-|  | uint256 | - |
+| - | address | - |
+| - | uint256 | - |
 
 ### expectEmit
 ```solidity
-expectEmit(bool, bool, bool, bool) external nonpayable
+expectEmit(bool -, bool -, bool -, bool -) external nonpayable
 ```
 
             
@@ -80,14 +80,14 @@ expectEmit(bool, bool, bool, bool) external nonpayable
 
 | Name | Type | Description |
 |---|---|---|
-|  | bool | - |
-|  | bool | - |
-|  | bool | - |
-|  | bool | - |
+| - | bool | - |
+| - | bool | - |
+| - | bool | - |
+| - | bool | - |
 
 ### expectRevert
 ```solidity
-expectRevert(bytes) external nonpayable
+expectRevert(bytes -) external nonpayable
 ```
 
             
@@ -97,11 +97,11 @@ expectRevert(bytes) external nonpayable
 
 | Name | Type | Description |
 |---|---|---|
-|  | bytes | - |
+| - | bytes | - |
 
 ### getCode
 ```solidity
-getCode(string) external nonpayable returns (bytes)
+getCode(string -) external nonpayable returns (bytes -)
 ```
 
             
@@ -111,17 +111,17 @@ getCode(string) external nonpayable returns (bytes)
 
 | Name | Type | Description |
 |---|---|---|
-|  | string | - |
+| - | string | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-|  | bytes | - |
+| - | bytes | - |
 
 ### prank
 ```solidity
-prank(address) external nonpayable
+prank(address -) external nonpayable
 ```
 
             
@@ -131,11 +131,11 @@ prank(address) external nonpayable
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 ### startPrank
 ```solidity
-startPrank(address) external nonpayable
+startPrank(address -) external nonpayable
 ```
 
             
@@ -145,7 +145,7 @@ startPrank(address) external nonpayable
 
 | Name | Type | Description |
 |---|---|---|
-|  | address | - |
+| - | address | - |
 
 ### stopPrank
 ```solidity
