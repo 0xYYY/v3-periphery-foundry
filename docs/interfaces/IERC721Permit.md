@@ -9,7 +9,7 @@ ERC721 with permit
 ## Methods
 ### DOMAIN_SEPARATOR
 ```solidity
-DOMAIN_SEPARATOR() external view returns (bytes32 -)
+DOMAIN_SEPARATOR() external view returns (bytes32)
 ```
 
             
@@ -24,7 +24,7 @@ DOMAIN_SEPARATOR() external view returns (bytes32 -)
 
 ### PERMIT_TYPEHASH
 ```solidity
-PERMIT_TYPEHASH() external pure returns (bytes32 -)
+PERMIT_TYPEHASH() external pure returns (bytes32)
 ```
 
             
@@ -97,7 +97,7 @@ getApproved(uint256 tokenId) external view returns (address operator)
 
 ### isApprovedForAll
 ```solidity
-isApprovedForAll(address owner, address operator) external view returns (bool -)
+isApprovedForAll(address owner, address operator) external view returns (bool)
 ```
 
             
@@ -210,7 +210,7 @@ setApprovalForAll(address operator, bool _approved) external nonpayable
 
 ### supportsInterface
 ```solidity
-supportsInterface(bytes4 interfaceId) external view returns (bool -)
+supportsInterface(bytes4 interfaceId) external view returns (bool)
 ```
 
             

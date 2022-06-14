@@ -7,7 +7,7 @@
 ## Methods
 ### liquidity
 ```solidity
-liquidity() external view returns (uint128 -)
+liquidity() external view returns (uint128)
 ```
 
             
@@ -21,7 +21,7 @@ liquidity() external view returns (uint128 -)
 
 ### observations
 ```solidity
-observations(uint256 index) external view returns (uint32 -, int56 -, uint160 -, bool -)
+observations(uint256 index) external view returns (uint32, int56, uint160, bool)
 ```
 
             
@@ -44,7 +44,7 @@ observations(uint256 index) external view returns (uint32 -, int56 -, uint160 -,
 
 ### slot0
 ```solidity
-slot0() external view returns (uint160 -, int24 -, uint16 -, uint16 -, uint16 -, uint8 -, bool -)
+slot0() external view returns (uint160, int24, uint16, uint16, uint16, uint8, bool)
 ```
 
             

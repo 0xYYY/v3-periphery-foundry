@@ -28,7 +28,7 @@ isValidSignature(bytes32 hash, bytes signature) external view returns (bytes4 ma
 
 ### owner
 ```solidity
-owner() external view returns (address -)
+owner() external view returns (address)
 ```
 
             

@@ -9,7 +9,7 @@ Describes NFT token positions
 ## Methods
 ### WETH9
 ```solidity
-WETH9() external view returns (address -)
+WETH9() external view returns (address)
 ```
 
             
@@ -24,7 +24,7 @@ WETH9() external view returns (address -)
 
 ### flipRatio
 ```solidity
-flipRatio(address token0, address token1, uint256 chainId) external view returns (bool -)
+flipRatio(address token0, address token1, uint256 chainId) external view returns (bool)
 ```
 
             
@@ -47,7 +47,7 @@ flipRatio(address token0, address token1, uint256 chainId) external view returns
 
 ### nativeCurrencyLabel
 ```solidity
-nativeCurrencyLabel() external view returns (string -)
+nativeCurrencyLabel() external view returns (string)
 ```
 
             
@@ -62,7 +62,7 @@ nativeCurrencyLabel() external view returns (string -)
 
 ### nativeCurrencyLabelBytes
 ```solidity
-nativeCurrencyLabelBytes() external view returns (bytes32 -)
+nativeCurrencyLabelBytes() external view returns (bytes32)
 ```
 
             
@@ -77,7 +77,7 @@ nativeCurrencyLabelBytes() external view returns (bytes32 -)
 
 ### tokenRatioPriority
 ```solidity
-tokenRatioPriority(address token, uint256 chainId) external view returns (int256 -)
+tokenRatioPriority(address token, uint256 chainId) external view returns (int256)
 ```
 
             
@@ -99,7 +99,7 @@ tokenRatioPriority(address token, uint256 chainId) external view returns (int256
 
 ### tokenURI
 ```solidity
-tokenURI(address positionManager, uint256 tokenId) external view returns (string -)
+tokenURI(address positionManager, uint256 tokenId) external view returns (string)
 ```
 
             

@@ -8,7 +8,7 @@ Creates and initializes V3 Pools
 ## Methods
 ### WETH9
 ```solidity
-WETH9() external view returns (address -)
+WETH9() external view returns (address)
 ```
 
             
@@ -45,7 +45,7 @@ createAndInitializePoolIfNecessary(address token0, address token1, uint24 fee, u
 
 ### factory
 ```solidity
-factory() external view returns (address -)
+factory() external view returns (address)
 ```
 
             

@@ -29,7 +29,7 @@ consult(address pool, uint32 secondsAgo) external view returns (int24 arithmetic
 
 ### getBlockStartingTickAndLiquidity
 ```solidity
-getBlockStartingTickAndLiquidity(address pool) external view returns (int24 -, uint128 -)
+getBlockStartingTickAndLiquidity(address pool) external view returns (int24, uint128)
 ```
 
             
@@ -71,7 +71,7 @@ getChainedPrice(address[] tokens, int24[] ticks) external view returns (int256 s
 
 ### getGasCostOfConsult
 ```solidity
-getGasCostOfConsult(address pool, uint32 period) external view returns (uint256 -)
+getGasCostOfConsult(address pool, uint32 period) external view returns (uint256)
 ```
 
             
@@ -92,7 +92,7 @@ getGasCostOfConsult(address pool, uint32 period) external view returns (uint256 
 
 ### getGasCostOfGetQuoteAtTick
 ```solidity
-getGasCostOfGetQuoteAtTick(int24 tick, uint128 baseAmount, address baseToken, address quoteToken) external view returns (uint256 -)
+getGasCostOfGetQuoteAtTick(int24 tick, uint128 baseAmount, address baseToken, address quoteToken) external view returns (uint256)
 ```
 
             

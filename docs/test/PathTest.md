@@ -29,7 +29,7 @@ decodeFirstPool(bytes path) external pure returns (address tokenA, address token
 
 ### getFirstPool
 ```solidity
-getFirstPool(bytes path) external pure returns (bytes -)
+getFirstPool(bytes path) external pure returns (bytes)
 ```
 
             
@@ -49,7 +49,7 @@ getFirstPool(bytes path) external pure returns (bytes -)
 
 ### getGasCostOfDecodeFirstPool
 ```solidity
-getGasCostOfDecodeFirstPool(bytes path) external view returns (uint256 -)
+getGasCostOfDecodeFirstPool(bytes path) external view returns (uint256)
 ```
 
             
@@ -69,7 +69,7 @@ getGasCostOfDecodeFirstPool(bytes path) external view returns (uint256 -)
 
 ### hasMultiplePools
 ```solidity
-hasMultiplePools(bytes path) external pure returns (bool -)
+hasMultiplePools(bytes path) external pure returns (bool)
 ```
 
             
@@ -89,7 +89,7 @@ hasMultiplePools(bytes path) external pure returns (bool -)
 
 ### skipToken
 ```solidity
-skipToken(bytes path) external pure returns (bytes -)
+skipToken(bytes path) external pure returns (bytes)
 ```
 
             

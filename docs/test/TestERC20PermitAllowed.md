@@ -7,7 +7,7 @@
 ## Methods
 ### DOMAIN_SEPARATOR
 ```solidity
-DOMAIN_SEPARATOR() external view returns (bytes32 -)
+DOMAIN_SEPARATOR() external view returns (bytes32)
 ```
 
             
@@ -21,7 +21,7 @@ DOMAIN_SEPARATOR() external view returns (bytes32 -)
 
 ### allowance
 ```solidity
-allowance(address owner, address spender) external view returns (uint256 -)
+allowance(address owner, address spender) external view returns (uint256)
 ```
 
             
@@ -42,7 +42,7 @@ allowance(address owner, address spender) external view returns (uint256 -)
 
 ### approve
 ```solidity
-approve(address spender, uint256 amount) external nonpayable returns (bool -)
+approve(address spender, uint256 amount) external nonpayable returns (bool)
 ```
 
             
@@ -63,7 +63,7 @@ approve(address spender, uint256 amount) external nonpayable returns (bool -)
 
 ### balanceOf
 ```solidity
-balanceOf(address account) external view returns (uint256 -)
+balanceOf(address account) external view returns (uint256)
 ```
 
             
@@ -83,7 +83,7 @@ balanceOf(address account) external view returns (uint256 -)
 
 ### decimals
 ```solidity
-decimals() external view returns (uint8 -)
+decimals() external view returns (uint8)
 ```
 
             
@@ -97,7 +97,7 @@ decimals() external view returns (uint8 -)
 
 ### decreaseAllowance
 ```solidity
-decreaseAllowance(address spender, uint256 subtractedValue) external nonpayable returns (bool -)
+decreaseAllowance(address spender, uint256 subtractedValue) external nonpayable returns (bool)
 ```
 
             
@@ -118,7 +118,7 @@ decreaseAllowance(address spender, uint256 subtractedValue) external nonpayable 
 
 ### increaseAllowance
 ```solidity
-increaseAllowance(address spender, uint256 addedValue) external nonpayable returns (bool -)
+increaseAllowance(address spender, uint256 addedValue) external nonpayable returns (bool)
 ```
 
             
@@ -139,7 +139,7 @@ increaseAllowance(address spender, uint256 addedValue) external nonpayable retur
 
 ### name
 ```solidity
-name() external view returns (string -)
+name() external view returns (string)
 ```
 
             
@@ -153,7 +153,7 @@ name() external view returns (string -)
 
 ### nonces
 ```solidity
-nonces(address owner) external view returns (uint256 -)
+nonces(address owner) external view returns (uint256)
 ```
 
             
@@ -213,7 +213,7 @@ permit(address owner, address spender, uint256 value, uint256 deadline, uint8 v,
 
 ### symbol
 ```solidity
-symbol() external view returns (string -)
+symbol() external view returns (string)
 ```
 
             
@@ -227,7 +227,7 @@ symbol() external view returns (string -)
 
 ### totalSupply
 ```solidity
-totalSupply() external view returns (uint256 -)
+totalSupply() external view returns (uint256)
 ```
 
             
@@ -241,7 +241,7 @@ totalSupply() external view returns (uint256 -)
 
 ### transfer
 ```solidity
-transfer(address recipient, uint256 amount) external nonpayable returns (bool -)
+transfer(address recipient, uint256 amount) external nonpayable returns (bool)
 ```
 
             
@@ -262,7 +262,7 @@ transfer(address recipient, uint256 amount) external nonpayable returns (bool -)
 
 ### transferFrom
 ```solidity
-transferFrom(address sender, address recipient, uint256 amount) external nonpayable returns (bool -)
+transferFrom(address sender, address recipient, uint256 amount) external nonpayable returns (bool)
 ```
 
             
