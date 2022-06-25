@@ -15,7 +15,6 @@ WETH9() external view returns (address)
             
 
             
-*Functions that return immutable state of the router*
 #### Return Values
 
 | Name | Type | Description |
@@ -30,7 +29,6 @@ factory() external view returns (address)
             
 
             
-*Functions that return immutable state of the router*
 #### Return Values
 
 | Name | Type | Description |

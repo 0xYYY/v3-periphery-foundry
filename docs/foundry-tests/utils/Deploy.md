@@ -267,6 +267,7 @@ allowance(address owner, address spender) external view returns (uint256)
             
 
             
+*Returns the current allowance given to a spender by an owner*
 #### Parameters
 
 | Name | Type | Description |
@@ -288,6 +289,7 @@ approve(address spender, uint256 amount) external nonpayable returns (bool)
             
 
             
+*Sets the allowance of a spender from the `msg.sender` to the value `amount`*
 #### Parameters
 
 | Name | Type | Description |
@@ -309,6 +311,7 @@ balanceOf(address account) external view returns (uint256)
             
 
             
+*Returns the balance of a token*
 #### Parameters
 
 | Name | Type | Description |
@@ -337,6 +340,7 @@ transfer(address recipient, uint256 amount) external nonpayable returns (bool)
             
 
             
+*Transfers the amount of token from the `msg.sender` to the recipient*
 #### Parameters
 
 | Name | Type | Description |
@@ -358,6 +362,7 @@ transferFrom(address sender, address recipient, uint256 amount) external nonpaya
             
 
             
+*Transfers `amount` tokens from `sender` to `recipient` up to the allowance given to the `msg.sender`*
 #### Parameters
 
 | Name | Type | Description |
@@ -371,5 +376,40 @@ transferFrom(address sender, address recipient, uint256 amount) external nonpaya
 | Name | Type | Description |
 |---|---|---|
 | - | bool | - |
+
+### Events
+### Approval
+```solidity
+Approval(address owner, address spender, uint256 value)
+```
+
+            
+
+            
+*Event emitted when the approval amount for the spender of a given owner's tokens changes.*
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| owner | address |true| - |
+| spender | address |true| - |
+| value | uint256 |false| - |
+
+### Transfer
+```solidity
+Transfer(address from, address to, uint256 value)
+```
+
+            
+
+            
+*Event emitted when tokens are transferred from one address to another, either via `#transfer` or `#transferFrom`.*
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| from | address |true| - |
+| to | address |true| - |
+| value | uint256 |false| - |
 
 

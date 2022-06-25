@@ -39,16 +39,20 @@ refundETH() external payable
 ```
 
             
+Useful for bundling with mint or increase liquidity that uses ether, or exact output swaps that use ether for the input amount
 
             
+*Refunds any ETH balance held by this contract to the `msg.sender`*
 ### sweepToken
 ```solidity
 sweepToken(address token, uint256 amountMinimum, address recipient) external payable
 ```
 
             
+The amountMinimum parameter prevents malicious contracts from stealing the token from users
 
             
+*Transfers the full amount of a token held by this contract to recipient*
 #### Parameters
 
 | Name | Type | Description |
@@ -63,8 +67,10 @@ sweepTokenWithFee(address token, uint256 amountMinimum, address recipient, uint2
 ```
 
             
+The amountMinimum parameter prevents malicious contracts from stealing the token from users
 
             
+*Transfers the full amount of a token held by this contract to recipient, with a percentage between 0 (exclusive) and 1 (inclusive) going to feeRecipient*
 #### Parameters
 
 | Name | Type | Description |
@@ -81,8 +87,10 @@ unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
 
             
+The amountMinimum parameter prevents malicious contracts from stealing WETH9 from users.
 
             
+*Unwraps the contract's WETH9 balance and sends it to recipient as ETH.*
 #### Parameters
 
 | Name | Type | Description |
@@ -96,8 +104,10 @@ unwrapWETH9WithFee(uint256 amountMinimum, address recipient, uint256 feeBips, ad
 ```
 
             
+The amountMinimum parameter prevents malicious contracts from stealing WETH9 from users.
 
             
+*Unwraps the contract's WETH9 balance and sends it to recipient as ETH, with a percentage between 0 (exclusive), and 1 (inclusive) going to feeRecipient*
 #### Parameters
 
 | Name | Type | Description |

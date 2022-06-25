@@ -13,9 +13,10 @@ permit(address holder, address spender, uint256 nonce, uint256 expiry, bool allo
 ```
 
             
+This is the permit interface used by DAI and CHAI
 
             
-*Interface used by DAI/CHAI for permit*
+*Approve the spender to spend some tokens via the holder signature*
 #### Parameters
 
 | Name | Type | Description |

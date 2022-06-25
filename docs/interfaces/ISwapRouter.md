@@ -15,7 +15,7 @@ exactInput((bytes,address,uint256,uint256,uint256) params) external payable retu
             
 
             
-*Functions for swapping tokens via Uniswap V3*
+*Swaps `amountIn` of one token for as much as possible of another along the specified path*
 #### Parameters
 
 | Name | Type | Description |
@@ -36,7 +36,7 @@ exactInputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160
             
 
             
-*Functions for swapping tokens via Uniswap V3*
+*Swaps `amountIn` of one token for as much as possible of another token*
 #### Parameters
 
 | Name | Type | Description |
@@ -57,7 +57,7 @@ exactOutput((bytes,address,uint256,uint256,uint256) params) external payable ret
             
 
             
-*Functions for swapping tokens via Uniswap V3*
+*Swaps as little as possible of one token for `amountOut` of another along the specified path (reversed)*
 #### Parameters
 
 | Name | Type | Description |
@@ -78,7 +78,7 @@ exactOutputSingle((address,address,uint24,address,uint256,uint256,uint256,uint16
             
 
             
-*Functions for swapping tokens via Uniswap V3*
+*Swaps as little as possible of one token for `amountOut` of another token*
 #### Parameters
 
 | Name | Type | Description |
@@ -97,9 +97,10 @@ uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes data) exte
 ```
 
             
+In the implementation you must pay the pool tokens owed for the swap. The caller of this method must be checked to be a UniswapV3Pool deployed by the canonical UniswapV3Factory. amount0Delta and amount1Delta can both be 0 if no tokens were swapped.
 
             
-*Functions for swapping tokens via Uniswap V3*
+*Called to `msg.sender` after executing a swap via IUniswapV3Pool#swap.*
 #### Parameters
 
 | Name | Type | Description |

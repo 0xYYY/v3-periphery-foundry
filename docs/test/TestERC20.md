@@ -11,6 +11,7 @@ DOMAIN_SEPARATOR() external view returns (bytes32)
 ```
 
             
+See {IERC20Permit-DOMAIN_SEPARATOR}.
 
             
 #### Return Values
@@ -25,6 +26,7 @@ allowance(address owner, address spender) external view returns (uint256)
 ```
 
             
+See {IERC20-allowance}.
 
             
 #### Parameters
@@ -46,6 +48,7 @@ approve(address spender, uint256 amount) external nonpayable returns (bool)
 ```
 
             
+See {IERC20-approve}. Requirements: - `spender` cannot be the zero address.
 
             
 #### Parameters
@@ -67,6 +70,7 @@ balanceOf(address account) external view returns (uint256)
 ```
 
             
+See {IERC20-balanceOf}.
 
             
 #### Parameters
@@ -87,6 +91,7 @@ decimals() external view returns (uint8)
 ```
 
             
+Returns the number of decimals used to get its user representation. For example, if `decimals` equals `2`, a balance of `505` tokens should be displayed to a user as `5,05` (`505 / 10 ** 2`). Tokens usually opt for a value of 18, imitating the relationship between Ether and Wei. This is the value {ERC20} uses, unless {_setupDecimals} is called. NOTE: This information is only used for _display_ purposes: it in no way affects any of the arithmetic of the contract, including {IERC20-balanceOf} and {IERC20-transfer}.
 
             
 #### Return Values
@@ -101,6 +106,7 @@ decreaseAllowance(address spender, uint256 subtractedValue) external nonpayable 
 ```
 
             
+Atomically decreases the allowance granted to `spender` by the caller. This is an alternative to {approve} that can be used as a mitigation for problems described in {IERC20-approve}. Emits an {Approval} event indicating the updated allowance. Requirements: - `spender` cannot be the zero address. - `spender` must have allowance for the caller of at least `subtractedValue`.
 
             
 #### Parameters
@@ -122,6 +128,7 @@ increaseAllowance(address spender, uint256 addedValue) external nonpayable retur
 ```
 
             
+Atomically increases the allowance granted to `spender` by the caller. This is an alternative to {approve} that can be used as a mitigation for problems described in {IERC20-approve}. Emits an {Approval} event indicating the updated allowance. Requirements: - `spender` cannot be the zero address.
 
             
 #### Parameters
@@ -143,6 +150,7 @@ name() external view returns (string)
 ```
 
             
+Returns the name of the token.
 
             
 #### Return Values
@@ -157,6 +165,7 @@ nonces(address owner) external view returns (uint256)
 ```
 
             
+See {IERC20Permit-nonces}.
 
             
 #### Parameters
@@ -177,6 +186,7 @@ permit(address owner, address spender, uint256 value, uint256 deadline, uint8 v,
 ```
 
             
+See {IERC20Permit-permit}.
 
             
 #### Parameters
@@ -197,6 +207,7 @@ symbol() external view returns (string)
 ```
 
             
+Returns the symbol of the token, usually a shorter version of the name.
 
             
 #### Return Values
@@ -211,6 +222,7 @@ totalSupply() external view returns (uint256)
 ```
 
             
+See {IERC20-totalSupply}.
 
             
 #### Return Values
@@ -225,6 +237,7 @@ transfer(address recipient, uint256 amount) external nonpayable returns (bool)
 ```
 
             
+See {IERC20-transfer}. Requirements: - `recipient` cannot be the zero address. - the caller must have a balance of at least `amount`.
 
             
 #### Parameters
@@ -246,6 +259,7 @@ transferFrom(address sender, address recipient, uint256 amount) external nonpaya
 ```
 
             
+See {IERC20-transferFrom}. Emits an {Approval} event indicating the updated allowance. This is not required by the EIP. See the note at the beginning of {ERC20}. Requirements: - `sender` and `recipient` cannot be the zero address. - `sender` must have a balance of at least `amount`. - the caller must have allowance for ``sender``'s tokens of at least `amount`.
 
             
 #### Parameters
@@ -261,5 +275,38 @@ transferFrom(address sender, address recipient, uint256 amount) external nonpaya
 | Name | Type | Description |
 |---|---|---|
 | - | bool | - |
+
+### Events
+### Approval
+```solidity
+Approval(address owner, address spender, uint256 value)
+```
+
+            
+
+            
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| owner | address |true| - |
+| spender | address |true| - |
+| value | uint256 |false| - |
+
+### Transfer
+```solidity
+Transfer(address from, address to, uint256 value)
+```
+
+            
+
+            
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| from | address |true| - |
+| to | address |true| - |
+| value | uint256 |false| - |
 
 

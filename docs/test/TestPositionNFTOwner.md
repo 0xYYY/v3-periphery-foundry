@@ -11,8 +11,10 @@ isValidSignature(bytes32 hash, bytes signature) external view returns (bytes4 ma
 ```
 
             
+MUST return the bytes4 magic value 0x1626ba7e when function passes. MUST NOT modify state (using STATICCALL for solc < 0.5, view modifier for solc > 0.5). MUST allow external calls.
 
             
+*Returns whether the provided signature is valid for the provided data*
 #### Parameters
 
 | Name | Type | Description |

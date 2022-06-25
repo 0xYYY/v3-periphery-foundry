@@ -15,7 +15,7 @@ DOMAIN_SEPARATOR() external view returns (bytes32)
             
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
+*The domain separator used in the permit signature*
 #### Return Values
 
 | Name | Type | Description |
@@ -30,7 +30,7 @@ PERMIT_TYPEHASH() external view returns (bytes32)
             
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
+*The permit typehash used in the permit signature*
 #### Return Values
 
 | Name | Type | Description |
@@ -45,7 +45,6 @@ WETH9() external view returns (address)
             
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
 #### Return Values
 
 | Name | Type | Description |
@@ -58,9 +57,9 @@ approve(address to, uint256 tokenId) external nonpayable
 ```
 
             
+See {IERC721-approve}.
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
 #### Parameters
 
 | Name | Type | Description |
@@ -74,9 +73,9 @@ balanceOf(address owner) external view returns (uint256)
 ```
 
             
+See {IERC721-balanceOf}.
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
 #### Parameters
 
 | Name | Type | Description |
@@ -95,9 +94,9 @@ baseURI() external pure returns (string)
 ```
 
             
+Returns the base URI set via {_setBaseURI}. This will be automatically added as a prefix in {tokenURI} to each token's URI, or to the token ID if no specific URI is set for that token ID.
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
 #### Return Values
 
 | Name | Type | Description |
@@ -112,7 +111,7 @@ burn(uint256 tokenId) external payable
             
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
+*Burns a token ID, which deletes it from the NFT contract. The token must have 0 liquidity and all tokens must be collected first.*
 #### Parameters
 
 | Name | Type | Description |
@@ -127,7 +126,7 @@ collect((uint256,address,uint128,uint128) params) external payable returns (uint
             
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
+*Collects up to a maximum amount of fees owed to a specific position to the recipient*
 #### Parameters
 
 | Name | Type | Description |
@@ -147,9 +146,10 @@ createAndInitializePoolIfNecessary(address token0, address token1, uint24 fee, u
 ```
 
             
+This method can be bundled with others via IMulticall for the first action (e.g. mint) performed against a pool
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
+*Creates a new pool if it does not exist, then initializes if not initialized*
 #### Parameters
 
 | Name | Type | Description |
@@ -173,7 +173,7 @@ decreaseLiquidity((uint256,uint128,uint256,uint256,uint256) params) external pay
             
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
+*Decreases the amount of liquidity in a position and accounts it to the position*
 #### Parameters
 
 | Name | Type | Description |
@@ -195,7 +195,6 @@ factory() external view returns (address)
             
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
 #### Return Values
 
 | Name | Type | Description |
@@ -208,9 +207,9 @@ getApproved(uint256 tokenId) external view returns (address)
 ```
 
             
+Returns the account approved for `tokenId` token. Requirements: - `tokenId` must exist.
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
 #### Parameters
 
 | Name | Type | Description |
@@ -231,7 +230,7 @@ increaseLiquidity((uint256,uint256,uint256,uint256,uint256,uint256) params) exte
             
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
+*Increases the amount of liquidity in a position, with tokens paid by the `msg.sender`*
 #### Parameters
 
 | Name | Type | Description |
@@ -252,9 +251,9 @@ isApprovedForAll(address owner, address operator) external view returns (bool)
 ```
 
             
+See {IERC721-isApprovedForAll}.
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
 #### Parameters
 
 | Name | Type | Description |
@@ -274,9 +273,10 @@ mint((address,address,uint24,int24,int24,uint256,uint256,uint256,uint256,address
 ```
 
             
+Call this when the pool does exist and is initialized. Note that if the pool is created but not initialized a method does not exist, i.e. the pool is assumed to be initialized.
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
+*Creates a new position wrapped in a NFT*
 #### Parameters
 
 | Name | Type | Description |
@@ -298,9 +298,10 @@ multicall(bytes[] data) external payable returns (bytes[] results)
 ```
 
             
+The `msg.value` should not be trusted for any method callable from multicall.
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
+*Call multiple functions in the current contract and return the data from all of them if they all succeed*
 #### Parameters
 
 | Name | Type | Description |
@@ -319,9 +320,9 @@ name() external view returns (string)
 ```
 
             
+See {IERC721Metadata-name}.
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
 #### Return Values
 
 | Name | Type | Description |
@@ -334,9 +335,9 @@ ownerOf(uint256 tokenId) external view returns (address)
 ```
 
             
+See {IERC721-ownerOf}.
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
 #### Parameters
 
 | Name | Type | Description |
@@ -357,7 +358,7 @@ permit(address spender, uint256 tokenId, uint256 deadline, uint8 v, bytes32 r, b
             
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
+*Approve of a specific token ID for spending by spender via signature*
 #### Parameters
 
 | Name | Type | Description |
@@ -375,9 +376,10 @@ positions(uint256 tokenId) external view returns (uint96 nonce, address operator
 ```
 
             
+Throws if the token ID is not valid.
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
+*Returns the position information associated with a given token ID.*
 #### Parameters
 
 | Name | Type | Description |
@@ -407,18 +409,19 @@ refundETH() external payable
 ```
 
             
+Useful for bundling with mint or increase liquidity that uses ether, or exact output swaps that use ether for the input amount
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
+*Refunds any ETH balance held by this contract to the `msg.sender`*
 ### safeTransferFrom
 ```solidity
 safeTransferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
 
             
+See {IERC721-safeTransferFrom}.
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
 #### Parameters
 
 | Name | Type | Description |
@@ -432,9 +435,9 @@ safeTransferFrom(address from, address to, uint256 tokenId, bytes _data) externa
 ```
 
             
+See {IERC721-safeTransferFrom}.
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
 #### Parameters
 
 | Name | Type | Description |
@@ -450,9 +453,10 @@ selfPermit(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, b
 ```
 
             
+The `owner` is always msg.sender and the `spender` is always address(this).
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
+*Permits this contract to spend a given token from `msg.sender`*
 #### Parameters
 
 | Name | Type | Description |
@@ -470,9 +474,10 @@ selfPermitAllowed(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32
 ```
 
             
+The `owner` is always msg.sender and the `spender` is always address(this)
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
+*Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter*
 #### Parameters
 
 | Name | Type | Description |
@@ -490,9 +495,10 @@ selfPermitAllowedIfNecessary(address token, uint256 nonce, uint256 expiry, uint8
 ```
 
             
+The `owner` is always msg.sender and the `spender` is always address(this) Can be used instead of #selfPermitAllowed to prevent calls from failing due to a frontrun of a call to #selfPermitAllowed.
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
+*Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter*
 #### Parameters
 
 | Name | Type | Description |
@@ -510,9 +516,10 @@ selfPermitIfNecessary(address token, uint256 value, uint256 deadline, uint8 v, b
 ```
 
             
+The `owner` is always msg.sender and the `spender` is always address(this). Can be used instead of #selfPermit to prevent calls from failing due to a frontrun of a call to #selfPermit
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
+*Permits this contract to spend a given token from `msg.sender`*
 #### Parameters
 
 | Name | Type | Description |
@@ -530,9 +537,9 @@ setApprovalForAll(address operator, bool approved) external nonpayable
 ```
 
             
+See {IERC721-setApprovalForAll}.
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
 #### Parameters
 
 | Name | Type | Description |
@@ -546,9 +553,9 @@ supportsInterface(bytes4 interfaceId) external view returns (bool)
 ```
 
             
+See {IERC165-supportsInterface}. Time complexity O(1), guaranteed to always use less than 30 000 gas.
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
 #### Parameters
 
 | Name | Type | Description |
@@ -567,9 +574,10 @@ sweepToken(address token, uint256 amountMinimum, address recipient) external pay
 ```
 
             
+The amountMinimum parameter prevents malicious contracts from stealing the token from users
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
+*Transfers the full amount of a token held by this contract to recipient*
 #### Parameters
 
 | Name | Type | Description |
@@ -584,9 +592,9 @@ symbol() external view returns (string)
 ```
 
             
+See {IERC721Metadata-symbol}.
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
 #### Return Values
 
 | Name | Type | Description |
@@ -599,9 +607,9 @@ tokenByIndex(uint256 index) external view returns (uint256)
 ```
 
             
+See {IERC721Enumerable-tokenByIndex}.
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
 #### Parameters
 
 | Name | Type | Description |
@@ -620,9 +628,9 @@ tokenOfOwnerByIndex(address owner, uint256 index) external view returns (uint256
 ```
 
             
+See {IERC721Enumerable-tokenOfOwnerByIndex}.
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
 #### Parameters
 
 | Name | Type | Description |
@@ -644,7 +652,6 @@ tokenURI(uint256 tokenId) external view returns (string)
             
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
 #### Parameters
 
 | Name | Type | Description |
@@ -663,9 +670,9 @@ totalSupply() external view returns (uint256)
 ```
 
             
+See {IERC721Enumerable-totalSupply}.
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
 #### Return Values
 
 | Name | Type | Description |
@@ -678,9 +685,9 @@ transferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
 
             
+See {IERC721-transferFrom}.
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
 #### Parameters
 
 | Name | Type | Description |
@@ -695,9 +702,10 @@ uniswapV3MintCallback(uint256 amount0Owed, uint256 amount1Owed, bytes data) exte
 ```
 
             
+In the implementation you must pay the pool tokens owed for the minted liquidity. The caller of this method must be checked to be a UniswapV3Pool deployed by the canonical UniswapV3Factory.
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
+*Called to `msg.sender` after minting liquidity to a position from IUniswapV3Pool#mint.*
 #### Parameters
 
 | Name | Type | Description |
@@ -712,14 +720,118 @@ unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
 
             
+The amountMinimum parameter prevents malicious contracts from stealing WETH9 from users.
 
             
-*Wraps Uniswap V3 positions in the ERC721 non-fungible token interface*
+*Unwraps the contract's WETH9 balance and sends it to recipient as ETH.*
 #### Parameters
 
 | Name | Type | Description |
 |---|---|---|
 | amountMinimum | uint256 | The minimum amount of WETH9 to unwrap |
 | recipient | address | The address receiving ETH |
+
+### Events
+### Approval
+```solidity
+Approval(address owner, address approved, uint256 tokenId)
+```
+
+            
+
+            
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| owner | address |true| - |
+| approved | address |true| - |
+| tokenId | uint256 |true| - |
+
+### ApprovalForAll
+```solidity
+ApprovalForAll(address owner, address operator, bool approved)
+```
+
+            
+
+            
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| owner | address |true| - |
+| operator | address |true| - |
+| approved | bool |false| - |
+
+### Collect
+```solidity
+Collect(uint256 tokenId, address recipient, uint256 amount0, uint256 amount1)
+```
+
+            
+
+            
+*Emitted when tokens are collected for a position NFT*
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| tokenId | uint256 |true| - |
+| recipient | address |false| - |
+| amount0 | uint256 |false| - |
+| amount1 | uint256 |false| - |
+
+### DecreaseLiquidity
+```solidity
+DecreaseLiquidity(uint256 tokenId, uint128 liquidity, uint256 amount0, uint256 amount1)
+```
+
+            
+
+            
+*Emitted when liquidity is decreased for a position NFT*
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| tokenId | uint256 |true| - |
+| liquidity | uint128 |false| - |
+| amount0 | uint256 |false| - |
+| amount1 | uint256 |false| - |
+
+### IncreaseLiquidity
+```solidity
+IncreaseLiquidity(uint256 tokenId, uint128 liquidity, uint256 amount0, uint256 amount1)
+```
+
+            
+
+            
+*Emitted when liquidity is increased for a position NFT*
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| tokenId | uint256 |true| - |
+| liquidity | uint128 |false| - |
+| amount0 | uint256 |false| - |
+| amount1 | uint256 |false| - |
+
+### Transfer
+```solidity
+Transfer(address from, address to, uint256 tokenId)
+```
+
+            
+
+            
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| from | address |true| - |
+| to | address |true| - |
+| tokenId | uint256 |true| - |
 
 

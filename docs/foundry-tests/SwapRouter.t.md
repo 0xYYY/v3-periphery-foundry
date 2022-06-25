@@ -279,6 +279,23 @@ weth9() external view returns (address)
 |---|---|---|
 | - | address | - |
 
+### Events
+### Transfer
+```solidity
+Transfer(address from, address to, uint256 amount)
+```
+
+            
+
+            
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| from | address |true| - |
+| to | address |true| - |
+| amount | uint256 |false| - |
+
 
 
 # SinglePool.sol

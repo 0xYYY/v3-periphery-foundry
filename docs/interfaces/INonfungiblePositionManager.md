@@ -15,7 +15,7 @@ DOMAIN_SEPARATOR() external view returns (bytes32)
             
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
+*The domain separator used in the permit signature*
 #### Return Values
 
 | Name | Type | Description |
@@ -30,7 +30,7 @@ PERMIT_TYPEHASH() external pure returns (bytes32)
             
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
+*The permit typehash used in the permit signature*
 #### Return Values
 
 | Name | Type | Description |
@@ -45,7 +45,6 @@ WETH9() external view returns (address)
             
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
 #### Return Values
 
 | Name | Type | Description |
@@ -58,9 +57,9 @@ approve(address to, uint256 tokenId) external nonpayable
 ```
 
             
+Gives permission to `to` to transfer `tokenId` token to another account. The approval is cleared when the token is transferred. Only a single account can be approved at a time, so approving the zero address clears previous approvals. Requirements: - The caller must own the token or be an approved operator. - `tokenId` must exist. Emits an {Approval} event.
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
 #### Parameters
 
 | Name | Type | Description |
@@ -74,9 +73,9 @@ balanceOf(address owner) external view returns (uint256 balance)
 ```
 
             
+Returns the number of tokens in ``owner``'s account.
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
 #### Parameters
 
 | Name | Type | Description |
@@ -97,7 +96,7 @@ burn(uint256 tokenId) external payable
             
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
+*Burns a token ID, which deletes it from the NFT contract. The token must have 0 liquidity and all tokens must be collected first.*
 #### Parameters
 
 | Name | Type | Description |
@@ -112,7 +111,7 @@ collect((uint256,address,uint128,uint128) params) external payable returns (uint
             
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
+*Collects up to a maximum amount of fees owed to a specific position to the recipient*
 #### Parameters
 
 | Name | Type | Description |
@@ -132,9 +131,10 @@ createAndInitializePoolIfNecessary(address token0, address token1, uint24 fee, u
 ```
 
             
+This method can be bundled with others via IMulticall for the first action (e.g. mint) performed against a pool
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
+*Creates a new pool if it does not exist, then initializes if not initialized*
 #### Parameters
 
 | Name | Type | Description |
@@ -158,7 +158,7 @@ decreaseLiquidity((uint256,uint128,uint256,uint256,uint256) params) external pay
             
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
+*Decreases the amount of liquidity in a position and accounts it to the position*
 #### Parameters
 
 | Name | Type | Description |
@@ -180,7 +180,6 @@ factory() external view returns (address)
             
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
 #### Return Values
 
 | Name | Type | Description |
@@ -193,9 +192,9 @@ getApproved(uint256 tokenId) external view returns (address operator)
 ```
 
             
+Returns the account approved for `tokenId` token. Requirements: - `tokenId` must exist.
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
 #### Parameters
 
 | Name | Type | Description |
@@ -216,7 +215,7 @@ increaseLiquidity((uint256,uint256,uint256,uint256,uint256,uint256) params) exte
             
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
+*Increases the amount of liquidity in a position, with tokens paid by the `msg.sender`*
 #### Parameters
 
 | Name | Type | Description |
@@ -237,9 +236,9 @@ isApprovedForAll(address owner, address operator) external view returns (bool)
 ```
 
             
+Returns if the `operator` is allowed to manage all of the assets of `owner`. See {setApprovalForAll}
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
 #### Parameters
 
 | Name | Type | Description |
@@ -259,9 +258,10 @@ mint((address,address,uint24,int24,int24,uint256,uint256,uint256,uint256,address
 ```
 
             
+Call this when the pool does exist and is initialized. Note that if the pool is created but not initialized a method does not exist, i.e. the pool is assumed to be initialized.
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
+*Creates a new position wrapped in a NFT*
 #### Parameters
 
 | Name | Type | Description |
@@ -283,9 +283,9 @@ name() external view returns (string)
 ```
 
             
+Returns the token collection name.
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
 #### Return Values
 
 | Name | Type | Description |
@@ -298,9 +298,9 @@ ownerOf(uint256 tokenId) external view returns (address owner)
 ```
 
             
+Returns the owner of the `tokenId` token. Requirements: - `tokenId` must exist.
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
 #### Parameters
 
 | Name | Type | Description |
@@ -321,7 +321,7 @@ permit(address spender, uint256 tokenId, uint256 deadline, uint8 v, bytes32 r, b
             
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
+*Approve of a specific token ID for spending by spender via signature*
 #### Parameters
 
 | Name | Type | Description |
@@ -339,9 +339,10 @@ positions(uint256 tokenId) external view returns (uint96 nonce, address operator
 ```
 
             
+Throws if the token ID is not valid.
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
+*Returns the position information associated with a given token ID.*
 #### Parameters
 
 | Name | Type | Description |
@@ -371,18 +372,19 @@ refundETH() external payable
 ```
 
             
+Useful for bundling with mint or increase liquidity that uses ether, or exact output swaps that use ether for the input amount
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
+*Refunds any ETH balance held by this contract to the `msg.sender`*
 ### safeTransferFrom
 ```solidity
 safeTransferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
 
             
+Safely transfers `tokenId` token from `from` to `to`, checking first that contract recipients are aware of the ERC721 protocol to prevent tokens from being forever locked. Requirements: - `from` cannot be the zero address. - `to` cannot be the zero address. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must be have been allowed to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer. Emits a {Transfer} event.
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
 #### Parameters
 
 | Name | Type | Description |
@@ -396,9 +398,9 @@ safeTransferFrom(address from, address to, uint256 tokenId, bytes data) external
 ```
 
             
+Safely transfers `tokenId` token from `from` to `to`. Requirements: - `from` cannot be the zero address. - `to` cannot be the zero address. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer. Emits a {Transfer} event.
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
 #### Parameters
 
 | Name | Type | Description |
@@ -414,9 +416,9 @@ setApprovalForAll(address operator, bool _approved) external nonpayable
 ```
 
             
+Approve or remove `operator` as an operator for the caller. Operators can call {transferFrom} or {safeTransferFrom} for any token owned by the caller. Requirements: - The `operator` cannot be the caller. Emits an {ApprovalForAll} event.
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
 #### Parameters
 
 | Name | Type | Description |
@@ -430,9 +432,9 @@ supportsInterface(bytes4 interfaceId) external view returns (bool)
 ```
 
             
+Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas.
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
 #### Parameters
 
 | Name | Type | Description |
@@ -451,9 +453,10 @@ sweepToken(address token, uint256 amountMinimum, address recipient) external pay
 ```
 
             
+The amountMinimum parameter prevents malicious contracts from stealing the token from users
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
+*Transfers the full amount of a token held by this contract to recipient*
 #### Parameters
 
 | Name | Type | Description |
@@ -468,9 +471,9 @@ symbol() external view returns (string)
 ```
 
             
+Returns the token collection symbol.
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
 #### Return Values
 
 | Name | Type | Description |
@@ -483,9 +486,9 @@ tokenByIndex(uint256 index) external view returns (uint256)
 ```
 
             
+Returns a token ID at a given `index` of all the tokens stored by the contract. Use along with {totalSupply} to enumerate all tokens.
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
 #### Parameters
 
 | Name | Type | Description |
@@ -504,9 +507,9 @@ tokenOfOwnerByIndex(address owner, uint256 index) external view returns (uint256
 ```
 
             
+Returns a token ID owned by `owner` at a given `index` of its token list. Use along with {balanceOf} to enumerate all of ``owner``'s tokens.
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
 #### Parameters
 
 | Name | Type | Description |
@@ -526,9 +529,9 @@ tokenURI(uint256 tokenId) external view returns (string)
 ```
 
             
+Returns the Uniform Resource Identifier (URI) for `tokenId` token.
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
 #### Parameters
 
 | Name | Type | Description |
@@ -547,9 +550,9 @@ totalSupply() external view returns (uint256)
 ```
 
             
+Returns the total amount of tokens stored by the contract.
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
 #### Return Values
 
 | Name | Type | Description |
@@ -562,9 +565,9 @@ transferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
 
             
+Transfers `tokenId` token from `from` to `to`. WARNING: Usage of this method is discouraged, use {safeTransferFrom} whenever possible. Requirements: - `from` cannot be the zero address. - `to` cannot be the zero address. - `tokenId` token must be owned by `from`. - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}. Emits a {Transfer} event.
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
 #### Parameters
 
 | Name | Type | Description |
@@ -579,14 +582,120 @@ unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
 
             
+The amountMinimum parameter prevents malicious contracts from stealing WETH9 from users.
 
             
-*Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
+*Unwraps the contract's WETH9 balance and sends it to recipient as ETH.*
 #### Parameters
 
 | Name | Type | Description |
 |---|---|---|
 | amountMinimum | uint256 | The minimum amount of WETH9 to unwrap |
 | recipient | address | The address receiving ETH |
+
+### Events
+### Approval
+```solidity
+Approval(address owner, address approved, uint256 tokenId)
+```
+
+            
+
+            
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| owner | address |true| - |
+| approved | address |true| - |
+| tokenId | uint256 |true| - |
+
+### ApprovalForAll
+```solidity
+ApprovalForAll(address owner, address operator, bool approved)
+```
+
+            
+
+            
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| owner | address |true| - |
+| operator | address |true| - |
+| approved | bool |false| - |
+
+### Collect
+```solidity
+Collect(uint256 tokenId, address recipient, uint256 amount0, uint256 amount1)
+```
+
+            
+The amounts reported may not be exactly equivalent to the amounts transferred, due to rounding behavior
+
+            
+*Emitted when tokens are collected for a position NFT*
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| tokenId | uint256 |true| The ID of the token for which underlying tokens were collected |
+| recipient | address |false| The address of the account that received the collected tokens |
+| amount0 | uint256 |false| The amount of token0 owed to the position that was collected |
+| amount1 | uint256 |false| The amount of token1 owed to the position that was collected |
+
+### DecreaseLiquidity
+```solidity
+DecreaseLiquidity(uint256 tokenId, uint128 liquidity, uint256 amount0, uint256 amount1)
+```
+
+            
+
+            
+*Emitted when liquidity is decreased for a position NFT*
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| tokenId | uint256 |true| The ID of the token for which liquidity was decreased |
+| liquidity | uint128 |false| The amount by which liquidity for the NFT position was decreased |
+| amount0 | uint256 |false| The amount of token0 that was accounted for the decrease in liquidity |
+| amount1 | uint256 |false| The amount of token1 that was accounted for the decrease in liquidity |
+
+### IncreaseLiquidity
+```solidity
+IncreaseLiquidity(uint256 tokenId, uint128 liquidity, uint256 amount0, uint256 amount1)
+```
+
+            
+Also emitted when a token is minted
+
+            
+*Emitted when liquidity is increased for a position NFT*
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| tokenId | uint256 |true| The ID of the token for which liquidity was increased |
+| liquidity | uint128 |false| The amount by which liquidity for the NFT position was increased |
+| amount0 | uint256 |false| The amount of token0 that was paid for the increase in liquidity |
+| amount1 | uint256 |false| The amount of token1 that was paid for the increase in liquidity |
+
+### Transfer
+```solidity
+Transfer(address from, address to, uint256 tokenId)
+```
+
+            
+
+            
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| from | address |true| - |
+| to | address |true| - |
+| tokenId | uint256 |true| - |
 
 

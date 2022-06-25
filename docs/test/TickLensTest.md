@@ -35,6 +35,7 @@ getPopulatedTicksInWord(address pool, int16 tickBitmapIndex) external view retur
             
 
             
+*Get all the tick data for the populated ticks from a word of the tick bitmap of a pool*
 #### Parameters
 
 | Name | Type | Description |

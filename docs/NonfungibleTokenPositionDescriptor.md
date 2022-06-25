@@ -15,7 +15,6 @@ WETH9() external view returns (address)
             
 
             
-*Produces a string containing the data URI for a JSON metadata string*
 #### Return Values
 
 | Name | Type | Description |
@@ -30,7 +29,6 @@ flipRatio(address token0, address token1, uint256 chainId) external view returns
             
 
             
-*Produces a string containing the data URI for a JSON metadata string*
 #### Parameters
 
 | Name | Type | Description |
@@ -53,7 +51,7 @@ nativeCurrencyLabel() external view returns (string)
             
 
             
-*Produces a string containing the data URI for a JSON metadata string*
+*Returns the native currency label as a string*
 #### Return Values
 
 | Name | Type | Description |
@@ -68,7 +66,6 @@ nativeCurrencyLabelBytes() external view returns (bytes32)
             
 
             
-*Produces a string containing the data URI for a JSON metadata string*
 #### Return Values
 
 | Name | Type | Description |
@@ -83,7 +80,6 @@ tokenRatioPriority(address token, uint256 chainId) external view returns (int256
             
 
             
-*Produces a string containing the data URI for a JSON metadata string*
 #### Parameters
 
 | Name | Type | Description |
@@ -103,9 +99,10 @@ tokenURI(address positionManager, uint256 tokenId) external view returns (string
 ```
 
             
+Note this URI may be a data: URI with the JSON contents directly inlined
 
             
-*Produces a string containing the data URI for a JSON metadata string*
+*Produces the URI describing a particular token ID for a position manager*
 #### Parameters
 
 | Name | Type | Description |

@@ -14,10 +14,8 @@ WETH9() external view returns (address)
 ```
 
             
-These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
 
             
-*Allows getting the expected amount out or amount in for a given swap without executing the swap*
 #### Return Values
 
 | Name | Type | Description |
@@ -30,10 +28,8 @@ factory() external view returns (address)
 ```
 
             
-These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
 
             
-*Allows getting the expected amount out or amount in for a given swap without executing the swap*
 #### Return Values
 
 | Name | Type | Description |
@@ -46,10 +42,9 @@ quoteExactInput(bytes path, uint256 amountIn) external nonpayable returns (uint2
 ```
 
             
-These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
 
             
-*Allows getting the expected amount out or amount in for a given swap without executing the swap*
+*Returns the amount out received for a given exact input swap without executing the swap*
 #### Parameters
 
 | Name | Type | Description |
@@ -72,10 +67,9 @@ quoteExactInputSingle((address,address,uint256,uint24,uint160) params) external 
 ```
 
             
-These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
 
             
-*Allows getting the expected amount out or amount in for a given swap without executing the swap*
+*Returns the amount out received for a given exact input but for a swap of a single pool*
 #### Parameters
 
 | Name | Type | Description |
@@ -97,10 +91,9 @@ quoteExactOutput(bytes path, uint256 amountOut) external nonpayable returns (uin
 ```
 
             
-These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
 
             
-*Allows getting the expected amount out or amount in for a given swap without executing the swap*
+*Returns the amount in required for a given exact output swap without executing the swap*
 #### Parameters
 
 | Name | Type | Description |
@@ -123,10 +116,9 @@ quoteExactOutputSingle((address,address,uint256,uint24,uint160) params) external
 ```
 
             
-These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
 
             
-*Allows getting the expected amount out or amount in for a given swap without executing the swap*
+*Returns the amount in required to receive the given exact output amount but for a swap of a single pool*
 #### Parameters
 
 | Name | Type | Description |
@@ -148,10 +140,10 @@ uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes path) exte
 ```
 
             
-These functions are not gas efficient and should _not_ be called on chain. Instead, optimistically execute the swap and check the amounts in the callback.
+In the implementation you must pay the pool tokens owed for the swap. The caller of this method must be checked to be a UniswapV3Pool deployed by the canonical UniswapV3Factory. amount0Delta and amount1Delta can both be 0 if no tokens were swapped.
 
             
-*Allows getting the expected amount out or amount in for a given swap without executing the swap*
+*Called to `msg.sender` after executing a swap via IUniswapV3Pool#swap.*
 #### Parameters
 
 | Name | Type | Description |

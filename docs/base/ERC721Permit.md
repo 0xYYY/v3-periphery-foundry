@@ -15,7 +15,7 @@ DOMAIN_SEPARATOR() external view returns (bytes32)
             
 
             
-*Nonfungible tokens that support an approve via signature, i.e. permit*
+*The domain separator used in the permit signature*
 #### Return Values
 
 | Name | Type | Description |
@@ -30,7 +30,7 @@ PERMIT_TYPEHASH() external view returns (bytes32)
             
 
             
-*Nonfungible tokens that support an approve via signature, i.e. permit*
+*The permit typehash used in the permit signature*
 #### Return Values
 
 | Name | Type | Description |
@@ -43,9 +43,9 @@ approve(address to, uint256 tokenId) external nonpayable
 ```
 
             
+See {IERC721-approve}.
 
             
-*Nonfungible tokens that support an approve via signature, i.e. permit*
 #### Parameters
 
 | Name | Type | Description |
@@ -59,9 +59,9 @@ balanceOf(address owner) external view returns (uint256)
 ```
 
             
+See {IERC721-balanceOf}.
 
             
-*Nonfungible tokens that support an approve via signature, i.e. permit*
 #### Parameters
 
 | Name | Type | Description |
@@ -80,9 +80,9 @@ baseURI() external view returns (string)
 ```
 
             
+Returns the base URI set via {_setBaseURI}. This will be automatically added as a prefix in {tokenURI} to each token's URI, or to the token ID if no specific URI is set for that token ID.
 
             
-*Nonfungible tokens that support an approve via signature, i.e. permit*
 #### Return Values
 
 | Name | Type | Description |
@@ -95,9 +95,9 @@ getApproved(uint256 tokenId) external view returns (address)
 ```
 
             
+See {IERC721-getApproved}.
 
             
-*Nonfungible tokens that support an approve via signature, i.e. permit*
 #### Parameters
 
 | Name | Type | Description |
@@ -116,9 +116,9 @@ isApprovedForAll(address owner, address operator) external view returns (bool)
 ```
 
             
+See {IERC721-isApprovedForAll}.
 
             
-*Nonfungible tokens that support an approve via signature, i.e. permit*
 #### Parameters
 
 | Name | Type | Description |
@@ -138,9 +138,9 @@ name() external view returns (string)
 ```
 
             
+See {IERC721Metadata-name}.
 
             
-*Nonfungible tokens that support an approve via signature, i.e. permit*
 #### Return Values
 
 | Name | Type | Description |
@@ -153,9 +153,9 @@ ownerOf(uint256 tokenId) external view returns (address)
 ```
 
             
+See {IERC721-ownerOf}.
 
             
-*Nonfungible tokens that support an approve via signature, i.e. permit*
 #### Parameters
 
 | Name | Type | Description |
@@ -176,7 +176,7 @@ permit(address spender, uint256 tokenId, uint256 deadline, uint8 v, bytes32 r, b
             
 
             
-*Nonfungible tokens that support an approve via signature, i.e. permit*
+*Approve of a specific token ID for spending by spender via signature*
 #### Parameters
 
 | Name | Type | Description |
@@ -194,9 +194,9 @@ safeTransferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
 
             
+See {IERC721-safeTransferFrom}.
 
             
-*Nonfungible tokens that support an approve via signature, i.e. permit*
 #### Parameters
 
 | Name | Type | Description |
@@ -210,9 +210,9 @@ safeTransferFrom(address from, address to, uint256 tokenId, bytes _data) externa
 ```
 
             
+See {IERC721-safeTransferFrom}.
 
             
-*Nonfungible tokens that support an approve via signature, i.e. permit*
 #### Parameters
 
 | Name | Type | Description |
@@ -228,9 +228,9 @@ setApprovalForAll(address operator, bool approved) external nonpayable
 ```
 
             
+See {IERC721-setApprovalForAll}.
 
             
-*Nonfungible tokens that support an approve via signature, i.e. permit*
 #### Parameters
 
 | Name | Type | Description |
@@ -244,9 +244,9 @@ supportsInterface(bytes4 interfaceId) external view returns (bool)
 ```
 
             
+See {IERC165-supportsInterface}. Time complexity O(1), guaranteed to always use less than 30 000 gas.
 
             
-*Nonfungible tokens that support an approve via signature, i.e. permit*
 #### Parameters
 
 | Name | Type | Description |
@@ -265,9 +265,9 @@ symbol() external view returns (string)
 ```
 
             
+See {IERC721Metadata-symbol}.
 
             
-*Nonfungible tokens that support an approve via signature, i.e. permit*
 #### Return Values
 
 | Name | Type | Description |
@@ -280,9 +280,9 @@ tokenByIndex(uint256 index) external view returns (uint256)
 ```
 
             
+See {IERC721Enumerable-tokenByIndex}.
 
             
-*Nonfungible tokens that support an approve via signature, i.e. permit*
 #### Parameters
 
 | Name | Type | Description |
@@ -301,9 +301,9 @@ tokenOfOwnerByIndex(address owner, uint256 index) external view returns (uint256
 ```
 
             
+See {IERC721Enumerable-tokenOfOwnerByIndex}.
 
             
-*Nonfungible tokens that support an approve via signature, i.e. permit*
 #### Parameters
 
 | Name | Type | Description |
@@ -323,9 +323,9 @@ tokenURI(uint256 tokenId) external view returns (string)
 ```
 
             
+See {IERC721Metadata-tokenURI}.
 
             
-*Nonfungible tokens that support an approve via signature, i.e. permit*
 #### Parameters
 
 | Name | Type | Description |
@@ -344,9 +344,9 @@ totalSupply() external view returns (uint256)
 ```
 
             
+See {IERC721Enumerable-totalSupply}.
 
             
-*Nonfungible tokens that support an approve via signature, i.e. permit*
 #### Return Values
 
 | Name | Type | Description |
@@ -359,9 +359,9 @@ transferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
 
             
+See {IERC721-transferFrom}.
 
             
-*Nonfungible tokens that support an approve via signature, i.e. permit*
 #### Parameters
 
 | Name | Type | Description |
@@ -369,5 +369,54 @@ transferFrom(address from, address to, uint256 tokenId) external nonpayable
 | from | address | - |
 | to | address | - |
 | tokenId | uint256 | - |
+
+### Events
+### Approval
+```solidity
+Approval(address owner, address approved, uint256 tokenId)
+```
+
+            
+
+            
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| owner | address |true| - |
+| approved | address |true| - |
+| tokenId | uint256 |true| - |
+
+### ApprovalForAll
+```solidity
+ApprovalForAll(address owner, address operator, bool approved)
+```
+
+            
+
+            
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| owner | address |true| - |
+| operator | address |true| - |
+| approved | bool |false| - |
+
+### Transfer
+```solidity
+Transfer(address from, address to, uint256 tokenId)
+```
+
+            
+
+            
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| from | address |true| - |
+| to | address |true| - |
+| tokenId | uint256 |true| - |
 
 

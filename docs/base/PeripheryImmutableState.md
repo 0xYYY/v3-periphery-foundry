@@ -15,7 +15,6 @@ WETH9() external view returns (address)
             
 
             
-*Immutable state used by periphery contracts*
 #### Return Values
 
 | Name | Type | Description |
@@ -30,7 +29,6 @@ factory() external view returns (address)
             
 
             
-*Immutable state used by periphery contracts*
 #### Return Values
 
 | Name | Type | Description |

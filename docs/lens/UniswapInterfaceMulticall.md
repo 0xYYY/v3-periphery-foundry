@@ -14,7 +14,6 @@ getCurrentBlockTimestamp() external view returns (uint256 timestamp)
             
 
             
-*A fork of Multicall2 specifically tailored for the Uniswap Interface*
 #### Return Values
 
 | Name | Type | Description |
@@ -29,7 +28,6 @@ getEthBalance(address addr) external view returns (uint256 balance)
             
 
             
-*A fork of Multicall2 specifically tailored for the Uniswap Interface*
 #### Parameters
 
 | Name | Type | Description |
@@ -50,7 +48,6 @@ multicall((address,uint256,bytes)[] calls) external nonpayable returns (uint256 
             
 
             
-*A fork of Multicall2 specifically tailored for the Uniswap Interface*
 #### Parameters
 
 | Name | Type | Description |

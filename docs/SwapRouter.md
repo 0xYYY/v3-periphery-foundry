@@ -15,7 +15,6 @@ WETH9() external view returns (address)
             
 
             
-*Router for stateless execution of swaps against Uniswap V3*
 #### Return Values
 
 | Name | Type | Description |
@@ -30,7 +29,7 @@ exactInput((bytes,address,uint256,uint256,uint256) params) external payable retu
             
 
             
-*Router for stateless execution of swaps against Uniswap V3*
+*Swaps `amountIn` of one token for as much as possible of another along the specified path*
 #### Parameters
 
 | Name | Type | Description |
@@ -51,7 +50,7 @@ exactInputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160
             
 
             
-*Router for stateless execution of swaps against Uniswap V3*
+*Swaps `amountIn` of one token for as much as possible of another token*
 #### Parameters
 
 | Name | Type | Description |
@@ -72,7 +71,7 @@ exactOutput((bytes,address,uint256,uint256,uint256) params) external payable ret
             
 
             
-*Router for stateless execution of swaps against Uniswap V3*
+*Swaps as little as possible of one token for `amountOut` of another along the specified path (reversed)*
 #### Parameters
 
 | Name | Type | Description |
@@ -93,7 +92,7 @@ exactOutputSingle((address,address,uint24,address,uint256,uint256,uint256,uint16
             
 
             
-*Router for stateless execution of swaps against Uniswap V3*
+*Swaps as little as possible of one token for `amountOut` of another token*
 #### Parameters
 
 | Name | Type | Description |
@@ -114,7 +113,6 @@ factory() external view returns (address)
             
 
             
-*Router for stateless execution of swaps against Uniswap V3*
 #### Return Values
 
 | Name | Type | Description |
@@ -127,9 +125,10 @@ multicall(bytes[] data) external payable returns (bytes[] results)
 ```
 
             
+The `msg.value` should not be trusted for any method callable from multicall.
 
             
-*Router for stateless execution of swaps against Uniswap V3*
+*Call multiple functions in the current contract and return the data from all of them if they all succeed*
 #### Parameters
 
 | Name | Type | Description |
@@ -148,18 +147,20 @@ refundETH() external payable
 ```
 
             
+Useful for bundling with mint or increase liquidity that uses ether, or exact output swaps that use ether for the input amount
 
             
-*Router for stateless execution of swaps against Uniswap V3*
+*Refunds any ETH balance held by this contract to the `msg.sender`*
 ### selfPermit
 ```solidity
 selfPermit(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
 
             
+The `owner` is always msg.sender and the `spender` is always address(this).
 
             
-*Router for stateless execution of swaps against Uniswap V3*
+*Permits this contract to spend a given token from `msg.sender`*
 #### Parameters
 
 | Name | Type | Description |
@@ -177,9 +178,10 @@ selfPermitAllowed(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32
 ```
 
             
+The `owner` is always msg.sender and the `spender` is always address(this)
 
             
-*Router for stateless execution of swaps against Uniswap V3*
+*Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter*
 #### Parameters
 
 | Name | Type | Description |
@@ -197,9 +199,10 @@ selfPermitAllowedIfNecessary(address token, uint256 nonce, uint256 expiry, uint8
 ```
 
             
+The `owner` is always msg.sender and the `spender` is always address(this) Can be used instead of #selfPermitAllowed to prevent calls from failing due to a frontrun of a call to #selfPermitAllowed.
 
             
-*Router for stateless execution of swaps against Uniswap V3*
+*Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter*
 #### Parameters
 
 | Name | Type | Description |
@@ -217,9 +220,10 @@ selfPermitIfNecessary(address token, uint256 value, uint256 deadline, uint8 v, b
 ```
 
             
+The `owner` is always msg.sender and the `spender` is always address(this). Can be used instead of #selfPermit to prevent calls from failing due to a frontrun of a call to #selfPermit
 
             
-*Router for stateless execution of swaps against Uniswap V3*
+*Permits this contract to spend a given token from `msg.sender`*
 #### Parameters
 
 | Name | Type | Description |
@@ -237,9 +241,10 @@ sweepToken(address token, uint256 amountMinimum, address recipient) external pay
 ```
 
             
+The amountMinimum parameter prevents malicious contracts from stealing the token from users
 
             
-*Router for stateless execution of swaps against Uniswap V3*
+*Transfers the full amount of a token held by this contract to recipient*
 #### Parameters
 
 | Name | Type | Description |
@@ -254,9 +259,10 @@ sweepTokenWithFee(address token, uint256 amountMinimum, address recipient, uint2
 ```
 
             
+The amountMinimum parameter prevents malicious contracts from stealing the token from users
 
             
-*Router for stateless execution of swaps against Uniswap V3*
+*Transfers the full amount of a token held by this contract to recipient, with a percentage between 0 (exclusive) and 1 (inclusive) going to feeRecipient*
 #### Parameters
 
 | Name | Type | Description |
@@ -273,9 +279,10 @@ uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes _data) ext
 ```
 
             
+In the implementation you must pay the pool tokens owed for the swap. The caller of this method must be checked to be a UniswapV3Pool deployed by the canonical UniswapV3Factory. amount0Delta and amount1Delta can both be 0 if no tokens were swapped.
 
             
-*Router for stateless execution of swaps against Uniswap V3*
+*Called to `msg.sender` after executing a swap via IUniswapV3Pool#swap.*
 #### Parameters
 
 | Name | Type | Description |
@@ -290,9 +297,10 @@ unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
 
             
+The amountMinimum parameter prevents malicious contracts from stealing WETH9 from users.
 
             
-*Router for stateless execution of swaps against Uniswap V3*
+*Unwraps the contract's WETH9 balance and sends it to recipient as ETH.*
 #### Parameters
 
 | Name | Type | Description |
@@ -306,9 +314,10 @@ unwrapWETH9WithFee(uint256 amountMinimum, address recipient, uint256 feeBips, ad
 ```
 
             
+The amountMinimum parameter prevents malicious contracts from stealing WETH9 from users.
 
             
-*Router for stateless execution of swaps against Uniswap V3*
+*Unwraps the contract's WETH9 balance and sends it to recipient as ETH, with a percentage between 0 (exclusive), and 1 (inclusive) going to feeRecipient*
 #### Parameters
 
 | Name | Type | Description |

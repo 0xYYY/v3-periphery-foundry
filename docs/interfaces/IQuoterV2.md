@@ -14,10 +14,9 @@ quoteExactInput(bytes path, uint256 amountIn) external nonpayable returns (uint2
 ```
 
             
-These functions are not marked view because they rely on calling non-view functions and reverting to compute the result. They are also not gas efficient and should not be called on-chain.
 
             
-*Supports quoting the calculated amounts from exact input or exact output swaps.For each pool also tells you the number of initialized ticks crossed and the sqrt price of the pool after the swap.*
+*Returns the amount out received for a given exact input swap without executing the swap*
 #### Parameters
 
 | Name | Type | Description |
@@ -40,10 +39,9 @@ quoteExactInputSingle((address,address,uint256,uint24,uint160) params) external 
 ```
 
             
-These functions are not marked view because they rely on calling non-view functions and reverting to compute the result. They are also not gas efficient and should not be called on-chain.
 
             
-*Supports quoting the calculated amounts from exact input or exact output swaps.For each pool also tells you the number of initialized ticks crossed and the sqrt price of the pool after the swap.*
+*Returns the amount out received for a given exact input but for a swap of a single pool*
 #### Parameters
 
 | Name | Type | Description |
@@ -65,10 +63,9 @@ quoteExactOutput(bytes path, uint256 amountOut) external nonpayable returns (uin
 ```
 
             
-These functions are not marked view because they rely on calling non-view functions and reverting to compute the result. They are also not gas efficient and should not be called on-chain.
 
             
-*Supports quoting the calculated amounts from exact input or exact output swaps.For each pool also tells you the number of initialized ticks crossed and the sqrt price of the pool after the swap.*
+*Returns the amount in required for a given exact output swap without executing the swap*
 #### Parameters
 
 | Name | Type | Description |
@@ -91,10 +88,9 @@ quoteExactOutputSingle((address,address,uint256,uint24,uint160) params) external
 ```
 
             
-These functions are not marked view because they rely on calling non-view functions and reverting to compute the result. They are also not gas efficient and should not be called on-chain.
 
             
-*Supports quoting the calculated amounts from exact input or exact output swaps.For each pool also tells you the number of initialized ticks crossed and the sqrt price of the pool after the swap.*
+*Returns the amount in required to receive the given exact output amount but for a swap of a single pool*
 #### Parameters
 
 | Name | Type | Description |

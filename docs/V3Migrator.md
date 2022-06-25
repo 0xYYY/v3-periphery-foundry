@@ -26,8 +26,10 @@ createAndInitializePoolIfNecessary(address token0, address token1, uint24 fee, u
 ```
 
             
+This method can be bundled with others via IMulticall for the first action (e.g. mint) performed against a pool
 
             
+*Creates a new pool if it does not exist, then initializes if not initialized*
 #### Parameters
 
 | Name | Type | Description |
@@ -63,8 +65,10 @@ migrate((address,uint256,uint8,address,address,uint24,int24,int24,uint256,uint25
 ```
 
             
+Slippage protection is enforced via `amount{0,1}Min`, which should be a discount of the expected values of the maximum amount of v3 liquidity that the v2 liquidity can get. For the special case of migrating to an out-of-range position, `amount{0,1}Min` may be set to 0, enforcing that the position remains out of range
 
             
+*Migrates liquidity to v3 by burning v2 liquidity and minting a new position for v3*
 #### Parameters
 
 | Name | Type | Description |
@@ -77,8 +81,10 @@ multicall(bytes[] data) external payable returns (bytes[] results)
 ```
 
             
+The `msg.value` should not be trusted for any method callable from multicall.
 
             
+*Call multiple functions in the current contract and return the data from all of them if they all succeed*
 #### Parameters
 
 | Name | Type | Description |
@@ -111,8 +117,10 @@ selfPermit(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, b
 ```
 
             
+The `owner` is always msg.sender and the `spender` is always address(this).
 
             
+*Permits this contract to spend a given token from `msg.sender`*
 #### Parameters
 
 | Name | Type | Description |
@@ -130,8 +138,10 @@ selfPermitAllowed(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32
 ```
 
             
+The `owner` is always msg.sender and the `spender` is always address(this)
 
             
+*Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter*
 #### Parameters
 
 | Name | Type | Description |
@@ -149,8 +159,10 @@ selfPermitAllowedIfNecessary(address token, uint256 nonce, uint256 expiry, uint8
 ```
 
             
+The `owner` is always msg.sender and the `spender` is always address(this) Can be used instead of #selfPermitAllowed to prevent calls from failing due to a frontrun of a call to #selfPermitAllowed.
 
             
+*Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter*
 #### Parameters
 
 | Name | Type | Description |
@@ -168,8 +180,10 @@ selfPermitIfNecessary(address token, uint256 value, uint256 deadline, uint8 v, b
 ```
 
             
+The `owner` is always msg.sender and the `spender` is always address(this). Can be used instead of #selfPermit to prevent calls from failing due to a frontrun of a call to #selfPermit
 
             
+*Permits this contract to spend a given token from `msg.sender`*
 #### Parameters
 
 | Name | Type | Description |

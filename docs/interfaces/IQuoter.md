@@ -14,10 +14,9 @@ quoteExactInput(bytes path, uint256 amountIn) external nonpayable returns (uint2
 ```
 
             
-These functions are not marked view because they rely on calling non-view functions and reverting to compute the result. They are also not gas efficient and should not be called on-chain.
 
             
-*Supports quoting the calculated amounts from exact input or exact output swaps*
+*Returns the amount out received for a given exact input swap without executing the swap*
 #### Parameters
 
 | Name | Type | Description |
@@ -37,10 +36,9 @@ quoteExactInputSingle(address tokenIn, address tokenOut, uint24 fee, uint256 amo
 ```
 
             
-These functions are not marked view because they rely on calling non-view functions and reverting to compute the result. They are also not gas efficient and should not be called on-chain.
 
             
-*Supports quoting the calculated amounts from exact input or exact output swaps*
+*Returns the amount out received for a given exact input but for a swap of a single pool*
 #### Parameters
 
 | Name | Type | Description |
@@ -63,10 +61,9 @@ quoteExactOutput(bytes path, uint256 amountOut) external nonpayable returns (uin
 ```
 
             
-These functions are not marked view because they rely on calling non-view functions and reverting to compute the result. They are also not gas efficient and should not be called on-chain.
 
             
-*Supports quoting the calculated amounts from exact input or exact output swaps*
+*Returns the amount in required for a given exact output swap without executing the swap*
 #### Parameters
 
 | Name | Type | Description |
@@ -86,10 +83,9 @@ quoteExactOutputSingle(address tokenIn, address tokenOut, uint24 fee, uint256 am
 ```
 
             
-These functions are not marked view because they rely on calling non-view functions and reverting to compute the result. They are also not gas efficient and should not be called on-chain.
 
             
-*Supports quoting the calculated amounts from exact input or exact output swaps*
+*Returns the amount in required to receive the given exact output amount but for a swap of a single pool*
 #### Parameters
 
 | Name | Type | Description |

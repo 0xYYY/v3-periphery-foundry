@@ -15,7 +15,6 @@ WETH9() external view returns (address)
             
 
             
-*Internal functions for safely managing liquidity in Uniswap V3*
 #### Return Values
 
 | Name | Type | Description |
@@ -30,7 +29,6 @@ factory() external view returns (address)
             
 
             
-*Internal functions for safely managing liquidity in Uniswap V3*
 #### Return Values
 
 | Name | Type | Description |
@@ -43,18 +41,20 @@ refundETH() external payable
 ```
 
             
+Useful for bundling with mint or increase liquidity that uses ether, or exact output swaps that use ether for the input amount
 
             
-*Internal functions for safely managing liquidity in Uniswap V3*
+*Refunds any ETH balance held by this contract to the `msg.sender`*
 ### sweepToken
 ```solidity
 sweepToken(address token, uint256 amountMinimum, address recipient) external payable
 ```
 
             
+The amountMinimum parameter prevents malicious contracts from stealing the token from users
 
             
-*Internal functions for safely managing liquidity in Uniswap V3*
+*Transfers the full amount of a token held by this contract to recipient*
 #### Parameters
 
 | Name | Type | Description |
@@ -69,9 +69,10 @@ uniswapV3MintCallback(uint256 amount0Owed, uint256 amount1Owed, bytes data) exte
 ```
 
             
+In the implementation you must pay the pool tokens owed for the minted liquidity. The caller of this method must be checked to be a UniswapV3Pool deployed by the canonical UniswapV3Factory.
 
             
-*Internal functions for safely managing liquidity in Uniswap V3*
+*Called to `msg.sender` after minting liquidity to a position from IUniswapV3Pool#mint.*
 #### Parameters
 
 | Name | Type | Description |
@@ -86,9 +87,10 @@ unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
 
             
+The amountMinimum parameter prevents malicious contracts from stealing WETH9 from users.
 
             
-*Internal functions for safely managing liquidity in Uniswap V3*
+*Unwraps the contract's WETH9 balance and sends it to recipient as ETH.*
 #### Parameters
 
 | Name | Type | Description |

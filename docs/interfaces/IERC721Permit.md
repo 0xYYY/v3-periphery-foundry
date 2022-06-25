@@ -15,7 +15,7 @@ DOMAIN_SEPARATOR() external view returns (bytes32)
             
 
             
-*Extension to ERC721 that includes a permit function for signature based approvals*
+*The domain separator used in the permit signature*
 #### Return Values
 
 | Name | Type | Description |
@@ -30,7 +30,7 @@ PERMIT_TYPEHASH() external pure returns (bytes32)
             
 
             
-*Extension to ERC721 that includes a permit function for signature based approvals*
+*The permit typehash used in the permit signature*
 #### Return Values
 
 | Name | Type | Description |
@@ -43,9 +43,9 @@ approve(address to, uint256 tokenId) external nonpayable
 ```
 
             
+Gives permission to `to` to transfer `tokenId` token to another account. The approval is cleared when the token is transferred. Only a single account can be approved at a time, so approving the zero address clears previous approvals. Requirements: - The caller must own the token or be an approved operator. - `tokenId` must exist. Emits an {Approval} event.
 
             
-*Extension to ERC721 that includes a permit function for signature based approvals*
 #### Parameters
 
 | Name | Type | Description |
@@ -59,9 +59,9 @@ balanceOf(address owner) external view returns (uint256 balance)
 ```
 
             
+Returns the number of tokens in ``owner``'s account.
 
             
-*Extension to ERC721 that includes a permit function for signature based approvals*
 #### Parameters
 
 | Name | Type | Description |
@@ -80,9 +80,9 @@ getApproved(uint256 tokenId) external view returns (address operator)
 ```
 
             
+Returns the account approved for `tokenId` token. Requirements: - `tokenId` must exist.
 
             
-*Extension to ERC721 that includes a permit function for signature based approvals*
 #### Parameters
 
 | Name | Type | Description |
@@ -101,9 +101,9 @@ isApprovedForAll(address owner, address operator) external view returns (bool)
 ```
 
             
+Returns if the `operator` is allowed to manage all of the assets of `owner`. See {setApprovalForAll}
 
             
-*Extension to ERC721 that includes a permit function for signature based approvals*
 #### Parameters
 
 | Name | Type | Description |
@@ -123,9 +123,9 @@ ownerOf(uint256 tokenId) external view returns (address owner)
 ```
 
             
+Returns the owner of the `tokenId` token. Requirements: - `tokenId` must exist.
 
             
-*Extension to ERC721 that includes a permit function for signature based approvals*
 #### Parameters
 
 | Name | Type | Description |
@@ -146,7 +146,7 @@ permit(address spender, uint256 tokenId, uint256 deadline, uint8 v, bytes32 r, b
             
 
             
-*Extension to ERC721 that includes a permit function for signature based approvals*
+*Approve of a specific token ID for spending by spender via signature*
 #### Parameters
 
 | Name | Type | Description |
@@ -164,9 +164,9 @@ safeTransferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
 
             
+Safely transfers `tokenId` token from `from` to `to`, checking first that contract recipients are aware of the ERC721 protocol to prevent tokens from being forever locked. Requirements: - `from` cannot be the zero address. - `to` cannot be the zero address. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must be have been allowed to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer. Emits a {Transfer} event.
 
             
-*Extension to ERC721 that includes a permit function for signature based approvals*
 #### Parameters
 
 | Name | Type | Description |
@@ -180,9 +180,9 @@ safeTransferFrom(address from, address to, uint256 tokenId, bytes data) external
 ```
 
             
+Safely transfers `tokenId` token from `from` to `to`. Requirements: - `from` cannot be the zero address. - `to` cannot be the zero address. - `tokenId` token must exist and be owned by `from`. - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}. - If `to` refers to a smart contract, it must implement {IERC721Receiver-onERC721Received}, which is called upon a safe transfer. Emits a {Transfer} event.
 
             
-*Extension to ERC721 that includes a permit function for signature based approvals*
 #### Parameters
 
 | Name | Type | Description |
@@ -198,9 +198,9 @@ setApprovalForAll(address operator, bool _approved) external nonpayable
 ```
 
             
+Approve or remove `operator` as an operator for the caller. Operators can call {transferFrom} or {safeTransferFrom} for any token owned by the caller. Requirements: - The `operator` cannot be the caller. Emits an {ApprovalForAll} event.
 
             
-*Extension to ERC721 that includes a permit function for signature based approvals*
 #### Parameters
 
 | Name | Type | Description |
@@ -214,9 +214,9 @@ supportsInterface(bytes4 interfaceId) external view returns (bool)
 ```
 
             
+Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas.
 
             
-*Extension to ERC721 that includes a permit function for signature based approvals*
 #### Parameters
 
 | Name | Type | Description |
@@ -235,9 +235,9 @@ transferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
 
             
+Transfers `tokenId` token from `from` to `to`. WARNING: Usage of this method is discouraged, use {safeTransferFrom} whenever possible. Requirements: - `from` cannot be the zero address. - `to` cannot be the zero address. - `tokenId` token must be owned by `from`. - If the caller is not `from`, it must be approved to move this token by either {approve} or {setApprovalForAll}. Emits a {Transfer} event.
 
             
-*Extension to ERC721 that includes a permit function for signature based approvals*
 #### Parameters
 
 | Name | Type | Description |
@@ -245,5 +245,54 @@ transferFrom(address from, address to, uint256 tokenId) external nonpayable
 | from | address | - |
 | to | address | - |
 | tokenId | uint256 | - |
+
+### Events
+### Approval
+```solidity
+Approval(address owner, address approved, uint256 tokenId)
+```
+
+            
+
+            
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| owner | address |true| - |
+| approved | address |true| - |
+| tokenId | uint256 |true| - |
+
+### ApprovalForAll
+```solidity
+ApprovalForAll(address owner, address operator, bool approved)
+```
+
+            
+
+            
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| owner | address |true| - |
+| operator | address |true| - |
+| approved | bool |false| - |
+
+### Transfer
+```solidity
+Transfer(address from, address to, uint256 tokenId)
+```
+
+            
+
+            
+#### Parameters
+
+| Name | Type | Indexed | Description |
+|---|---|---|---|
+| from | address |true| - |
+| to | address |true| - |
+| tokenId | uint256 |true| - |
 
 

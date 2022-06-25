@@ -12,9 +12,10 @@ selfPermit(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, b
 ```
 
             
-Same as SelfPermit but not abstract
+The `owner` is always msg.sender and the `spender` is always address(this).
 
             
+*Permits this contract to spend a given token from `msg.sender`*
 #### Parameters
 
 | Name | Type | Description |
@@ -32,9 +33,10 @@ selfPermitAllowed(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32
 ```
 
             
-Same as SelfPermit but not abstract
+The `owner` is always msg.sender and the `spender` is always address(this)
 
             
+*Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter*
 #### Parameters
 
 | Name | Type | Description |
@@ -52,9 +54,10 @@ selfPermitAllowedIfNecessary(address token, uint256 nonce, uint256 expiry, uint8
 ```
 
             
-Same as SelfPermit but not abstract
+The `owner` is always msg.sender and the `spender` is always address(this) Can be used instead of #selfPermitAllowed to prevent calls from failing due to a frontrun of a call to #selfPermitAllowed.
 
             
+*Permits this contract to spend the sender's tokens for permit signatures that have the `allowed` parameter*
 #### Parameters
 
 | Name | Type | Description |
@@ -72,9 +75,10 @@ selfPermitIfNecessary(address token, uint256 value, uint256 deadline, uint8 v, b
 ```
 
             
-Same as SelfPermit but not abstract
+The `owner` is always msg.sender and the `spender` is always address(this). Can be used instead of #selfPermit to prevent calls from failing due to a frontrun of a call to #selfPermit
 
             
+*Permits this contract to spend a given token from `msg.sender`*
 #### Parameters
 
 | Name | Type | Description |

@@ -15,7 +15,6 @@ WETH9() external view returns (address)
             
 
             
-*An example contract using the Uniswap V3 flash function*
 #### Return Values
 
 | Name | Type | Description |
@@ -30,7 +29,6 @@ factory() external view returns (address)
             
 
             
-*An example contract using the Uniswap V3 flash function*
 #### Return Values
 
 | Name | Type | Description |
@@ -45,7 +43,7 @@ initFlash((address,address,uint24,uint256,uint256,uint24,uint24) params) externa
             
 
             
-*An example contract using the Uniswap V3 flash function*
+*Calls the pools flash function with data needed in `uniswapV3FlashCallback`*
 #### Parameters
 
 | Name | Type | Description |
@@ -58,9 +56,10 @@ refundETH() external payable
 ```
 
             
+Useful for bundling with mint or increase liquidity that uses ether, or exact output swaps that use ether for the input amount
 
             
-*An example contract using the Uniswap V3 flash function*
+*Refunds any ETH balance held by this contract to the `msg.sender`*
 ### swapRouter
 ```solidity
 swapRouter() external view returns (address)
@@ -69,7 +68,6 @@ swapRouter() external view returns (address)
             
 
             
-*An example contract using the Uniswap V3 flash function*
 #### Return Values
 
 | Name | Type | Description |
@@ -82,9 +80,10 @@ sweepToken(address token, uint256 amountMinimum, address recipient) external pay
 ```
 
             
+The amountMinimum parameter prevents malicious contracts from stealing the token from users
 
             
-*An example contract using the Uniswap V3 flash function*
+*Transfers the full amount of a token held by this contract to recipient*
 #### Parameters
 
 | Name | Type | Description |
@@ -99,9 +98,10 @@ uniswapV3FlashCallback(uint256 fee0, uint256 fee1, bytes data) external nonpayab
 ```
 
             
+fails if the flash is not profitable, meaning the amountOut from the flash is less than the amount borrowed
 
             
-*An example contract using the Uniswap V3 flash function*
+*implements the callback called from flash*
 #### Parameters
 
 | Name | Type | Description |
@@ -116,9 +116,10 @@ unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
 
             
+The amountMinimum parameter prevents malicious contracts from stealing WETH9 from users.
 
             
-*An example contract using the Uniswap V3 flash function*
+*Unwraps the contract's WETH9 balance and sends it to recipient as ETH.*
 #### Parameters
 
 | Name | Type | Description |

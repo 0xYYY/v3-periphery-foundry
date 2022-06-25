@@ -46,8 +46,10 @@ multicall(bytes[] data) external payable returns (bytes[] results)
 ```
 
             
+The `msg.value` should not be trusted for any method callable from multicall.
 
             
+*Call multiple functions in the current contract and return the data from all of them if they all succeed*
 #### Parameters
 
 | Name | Type | Description |

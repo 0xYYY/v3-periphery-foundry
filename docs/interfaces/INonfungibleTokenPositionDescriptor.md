@@ -12,8 +12,10 @@ tokenURI(address positionManager, uint256 tokenId) external view returns (string
 ```
 
             
+Note this URI may be a data: URI with the JSON contents directly inlined
 
             
+*Produces the URI describing a particular token ID for a position manager*
 #### Parameters
 
 | Name | Type | Description |

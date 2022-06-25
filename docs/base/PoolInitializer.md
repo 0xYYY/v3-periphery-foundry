@@ -26,8 +26,10 @@ createAndInitializePoolIfNecessary(address token0, address token1, uint24 fee, u
 ```
 
             
+This method can be bundled with others via IMulticall for the first action (e.g. mint) performed against a pool
 
             
+*Creates a new pool if it does not exist, then initializes if not initialized*
 #### Parameters
 
 | Name | Type | Description |
