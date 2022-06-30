@@ -7,7 +7,7 @@
 ## Methods
 ### functionThatReturnsTuple
 ```solidity
-functionThatReturnsTuple(uint256 a, uint256 b) external pure returns ((uint256,uint256) tuple)
+function functionThatReturnsTuple(uint256 a, uint256 b) external pure returns ((uint256,uint256) tuple)
 ```
 
             
@@ -28,7 +28,7 @@ functionThatReturnsTuple(uint256 a, uint256 b) external pure returns ((uint256,u
 
 ### functionThatRevertsWithError
 ```solidity
-functionThatRevertsWithError(string error) external pure
+function functionThatRevertsWithError(string error) external pure
 ```
 
             
@@ -42,7 +42,7 @@ functionThatRevertsWithError(string error) external pure
 
 ### multicall
 ```solidity
-multicall(bytes[] data) external payable returns (bytes[] results)
+function multicall(bytes[] data) external payable returns (bytes[] results)
 ```
 
             
@@ -64,7 +64,7 @@ The `msg.value` should not be trusted for any method callable from multicall.
 
 ### paid
 ```solidity
-paid() external view returns (uint256)
+function paid() external view returns (uint256)
 ```
 
             
@@ -78,7 +78,7 @@ paid() external view returns (uint256)
 
 ### pays
 ```solidity
-pays() external payable
+function pays() external payable
 ```
 
             
@@ -86,7 +86,7 @@ pays() external payable
             
 ### returnSender
 ```solidity
-returnSender() external view returns (address)
+function returnSender() external view returns (address)
 ```
 
             

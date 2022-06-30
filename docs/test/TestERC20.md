@@ -7,7 +7,7 @@
 ## Methods
 ### DOMAIN_SEPARATOR
 ```solidity
-DOMAIN_SEPARATOR() external view returns (bytes32)
+function DOMAIN_SEPARATOR() external view returns (bytes32)
 ```
 
             
@@ -22,7 +22,7 @@ See {IERC20Permit-DOMAIN_SEPARATOR}.
 
 ### allowance
 ```solidity
-allowance(address owner, address spender) external view returns (uint256)
+function allowance(address owner, address spender) external view returns (uint256)
 ```
 
             
@@ -44,7 +44,7 @@ See {IERC20-allowance}.
 
 ### approve
 ```solidity
-approve(address spender, uint256 amount) external nonpayable returns (bool)
+function approve(address spender, uint256 amount) external nonpayable returns (bool)
 ```
 
             
@@ -66,7 +66,7 @@ See {IERC20-approve}. Requirements: - `spender` cannot be the zero address.
 
 ### balanceOf
 ```solidity
-balanceOf(address account) external view returns (uint256)
+function balanceOf(address account) external view returns (uint256)
 ```
 
             
@@ -87,7 +87,7 @@ See {IERC20-balanceOf}.
 
 ### decimals
 ```solidity
-decimals() external view returns (uint8)
+function decimals() external view returns (uint8)
 ```
 
             
@@ -102,7 +102,7 @@ Returns the number of decimals used to get its user representation. For example,
 
 ### decreaseAllowance
 ```solidity
-decreaseAllowance(address spender, uint256 subtractedValue) external nonpayable returns (bool)
+function decreaseAllowance(address spender, uint256 subtractedValue) external nonpayable returns (bool)
 ```
 
             
@@ -124,7 +124,7 @@ Atomically decreases the allowance granted to `spender` by the caller. This is a
 
 ### increaseAllowance
 ```solidity
-increaseAllowance(address spender, uint256 addedValue) external nonpayable returns (bool)
+function increaseAllowance(address spender, uint256 addedValue) external nonpayable returns (bool)
 ```
 
             
@@ -146,7 +146,7 @@ Atomically increases the allowance granted to `spender` by the caller. This is a
 
 ### name
 ```solidity
-name() external view returns (string)
+function name() external view returns (string)
 ```
 
             
@@ -161,7 +161,7 @@ Returns the name of the token.
 
 ### nonces
 ```solidity
-nonces(address owner) external view returns (uint256)
+function nonces(address owner) external view returns (uint256)
 ```
 
             
@@ -182,7 +182,7 @@ See {IERC20Permit-nonces}.
 
 ### permit
 ```solidity
-permit(address owner, address spender, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external nonpayable
+function permit(address owner, address spender, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external nonpayable
 ```
 
             
@@ -203,7 +203,7 @@ See {IERC20Permit-permit}.
 
 ### symbol
 ```solidity
-symbol() external view returns (string)
+function symbol() external view returns (string)
 ```
 
             
@@ -218,7 +218,7 @@ Returns the symbol of the token, usually a shorter version of the name.
 
 ### totalSupply
 ```solidity
-totalSupply() external view returns (uint256)
+function totalSupply() external view returns (uint256)
 ```
 
             
@@ -233,7 +233,7 @@ See {IERC20-totalSupply}.
 
 ### transfer
 ```solidity
-transfer(address recipient, uint256 amount) external nonpayable returns (bool)
+function transfer(address recipient, uint256 amount) external nonpayable returns (bool)
 ```
 
             
@@ -255,7 +255,7 @@ See {IERC20-transfer}. Requirements: - `recipient` cannot be the zero address. -
 
 ### transferFrom
 ```solidity
-transferFrom(address sender, address recipient, uint256 amount) external nonpayable returns (bool)
+function transferFrom(address sender, address recipient, uint256 amount) external nonpayable returns (bool)
 ```
 
             
@@ -279,7 +279,7 @@ See {IERC20-transferFrom}. Emits an {Approval} event indicating the updated allo
 ### Events
 ### Approval
 ```solidity
-Approval(address owner, address spender, uint256 value)
+event Approval(address owner, address spender, uint256 value)
 ```
 
             
@@ -295,7 +295,7 @@ Approval(address owner, address spender, uint256 value)
 
 ### Transfer
 ```solidity
-Transfer(address from, address to, uint256 value)
+event Transfer(address from, address to, uint256 value)
 ```
 
             

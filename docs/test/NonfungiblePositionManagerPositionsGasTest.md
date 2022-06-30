@@ -7,7 +7,7 @@
 ## Methods
 ### getGasCostOfPositions
 ```solidity
-getGasCostOfPositions(uint256 tokenId) external view returns (uint256)
+function getGasCostOfPositions(uint256 tokenId) external view returns (uint256)
 ```
 
             

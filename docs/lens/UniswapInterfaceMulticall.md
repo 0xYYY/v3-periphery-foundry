@@ -8,7 +8,7 @@
 ## Methods
 ### getCurrentBlockTimestamp
 ```solidity
-getCurrentBlockTimestamp() external view returns (uint256 timestamp)
+function getCurrentBlockTimestamp() external view returns (uint256 timestamp)
 ```
 
             
@@ -22,7 +22,7 @@ getCurrentBlockTimestamp() external view returns (uint256 timestamp)
 
 ### getEthBalance
 ```solidity
-getEthBalance(address addr) external view returns (uint256 balance)
+function getEthBalance(address addr) external view returns (uint256 balance)
 ```
 
             
@@ -42,7 +42,7 @@ getEthBalance(address addr) external view returns (uint256 balance)
 
 ### multicall
 ```solidity
-multicall((address,uint256,bytes)[] calls) external nonpayable returns (uint256 blockNumber, (bool,uint256,bytes)[] returnData)
+function multicall((address,uint256,bytes)[] calls) external nonpayable returns (uint256 blockNumber, (bool,uint256,bytes)[] returnData)
 ```
 
             

@@ -9,7 +9,7 @@ Non-fungible token for positions
 ## Methods
 ### DOMAIN_SEPARATOR
 ```solidity
-DOMAIN_SEPARATOR() external view returns (bytes32)
+function DOMAIN_SEPARATOR() external view returns (bytes32)
 ```
 
             
@@ -24,7 +24,7 @@ DOMAIN_SEPARATOR() external view returns (bytes32)
 
 ### PERMIT_TYPEHASH
 ```solidity
-PERMIT_TYPEHASH() external pure returns (bytes32)
+function PERMIT_TYPEHASH() external pure returns (bytes32)
 ```
 
             
@@ -39,7 +39,7 @@ PERMIT_TYPEHASH() external pure returns (bytes32)
 
 ### WETH9
 ```solidity
-WETH9() external view returns (address)
+function WETH9() external view returns (address)
 ```
 
             
@@ -53,7 +53,7 @@ WETH9() external view returns (address)
 
 ### approve
 ```solidity
-approve(address to, uint256 tokenId) external nonpayable
+function approve(address to, uint256 tokenId) external nonpayable
 ```
 
             
@@ -69,7 +69,7 @@ Gives permission to `to` to transfer `tokenId` token to another account. The app
 
 ### balanceOf
 ```solidity
-balanceOf(address owner) external view returns (uint256 balance)
+function balanceOf(address owner) external view returns (uint256 balance)
 ```
 
             
@@ -90,7 +90,7 @@ Returns the number of tokens in ``owner``'s account.
 
 ### burn
 ```solidity
-burn(uint256 tokenId) external payable
+function burn(uint256 tokenId) external payable
 ```
 
             
@@ -105,7 +105,7 @@ burn(uint256 tokenId) external payable
 
 ### collect
 ```solidity
-collect((uint256,address,uint128,uint128) params) external payable returns (uint256 amount0, uint256 amount1)
+function collect((uint256,address,uint128,uint128) params) external payable returns (uint256 amount0, uint256 amount1)
 ```
 
             
@@ -127,7 +127,7 @@ collect((uint256,address,uint128,uint128) params) external payable returns (uint
 
 ### createAndInitializePoolIfNecessary
 ```solidity
-createAndInitializePoolIfNecessary(address token0, address token1, uint24 fee, uint160 sqrtPriceX96) external payable returns (address pool)
+function createAndInitializePoolIfNecessary(address token0, address token1, uint24 fee, uint160 sqrtPriceX96) external payable returns (address pool)
 ```
 
             
@@ -152,7 +152,7 @@ This method can be bundled with others via IMulticall for the first action (e.g.
 
 ### decreaseLiquidity
 ```solidity
-decreaseLiquidity((uint256,uint128,uint256,uint256,uint256) params) external payable returns (uint256 amount0, uint256 amount1)
+function decreaseLiquidity((uint256,uint128,uint256,uint256,uint256) params) external payable returns (uint256 amount0, uint256 amount1)
 ```
 
             
@@ -174,7 +174,7 @@ decreaseLiquidity((uint256,uint128,uint256,uint256,uint256) params) external pay
 
 ### factory
 ```solidity
-factory() external view returns (address)
+function factory() external view returns (address)
 ```
 
             
@@ -188,7 +188,7 @@ factory() external view returns (address)
 
 ### getApproved
 ```solidity
-getApproved(uint256 tokenId) external view returns (address operator)
+function getApproved(uint256 tokenId) external view returns (address operator)
 ```
 
             
@@ -209,7 +209,7 @@ Returns the account approved for `tokenId` token. Requirements: - `tokenId` must
 
 ### increaseLiquidity
 ```solidity
-increaseLiquidity((uint256,uint256,uint256,uint256,uint256,uint256) params) external payable returns (uint128 liquidity, uint256 amount0, uint256 amount1)
+function increaseLiquidity((uint256,uint256,uint256,uint256,uint256,uint256) params) external payable returns (uint128 liquidity, uint256 amount0, uint256 amount1)
 ```
 
             
@@ -232,7 +232,7 @@ increaseLiquidity((uint256,uint256,uint256,uint256,uint256,uint256) params) exte
 
 ### isApprovedForAll
 ```solidity
-isApprovedForAll(address owner, address operator) external view returns (bool)
+function isApprovedForAll(address owner, address operator) external view returns (bool)
 ```
 
             
@@ -254,7 +254,7 @@ Returns if the `operator` is allowed to manage all of the assets of `owner`. See
 
 ### mint
 ```solidity
-mint((address,address,uint24,int24,int24,uint256,uint256,uint256,uint256,address,uint256) params) external payable returns (uint256 tokenId, uint128 liquidity, uint256 amount0, uint256 amount1)
+function mint((address,address,uint24,int24,int24,uint256,uint256,uint256,uint256,address,uint256) params) external payable returns (uint256 tokenId, uint128 liquidity, uint256 amount0, uint256 amount1)
 ```
 
             
@@ -279,7 +279,7 @@ Call this when the pool does exist and is initialized. Note that if the pool is 
 
 ### name
 ```solidity
-name() external view returns (string)
+function name() external view returns (string)
 ```
 
             
@@ -294,7 +294,7 @@ Returns the token collection name.
 
 ### ownerOf
 ```solidity
-ownerOf(uint256 tokenId) external view returns (address owner)
+function ownerOf(uint256 tokenId) external view returns (address owner)
 ```
 
             
@@ -315,7 +315,7 @@ Returns the owner of the `tokenId` token. Requirements: - `tokenId` must exist.
 
 ### permit
 ```solidity
-permit(address spender, uint256 tokenId, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
+function permit(address spender, uint256 tokenId, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
 
             
@@ -335,7 +335,7 @@ permit(address spender, uint256 tokenId, uint256 deadline, uint8 v, bytes32 r, b
 
 ### positions
 ```solidity
-positions(uint256 tokenId) external view returns (uint96 nonce, address operator, address token0, address token1, uint24 fee, int24 tickLower, int24 tickUpper, uint128 liquidity, uint256 feeGrowthInside0LastX128, uint256 feeGrowthInside1LastX128, uint128 tokensOwed0, uint128 tokensOwed1)
+function positions(uint256 tokenId) external view returns (uint96 nonce, address operator, address token0, address token1, uint24 fee, int24 tickLower, int24 tickUpper, uint128 liquidity, uint256 feeGrowthInside0LastX128, uint256 feeGrowthInside1LastX128, uint128 tokensOwed0, uint128 tokensOwed1)
 ```
 
             
@@ -368,7 +368,7 @@ Throws if the token ID is not valid.
 
 ### refundETH
 ```solidity
-refundETH() external payable
+function refundETH() external payable
 ```
 
             
@@ -378,7 +378,7 @@ Useful for bundling with mint or increase liquidity that uses ether, or exact ou
 *Refunds any ETH balance held by this contract to the `msg.sender`*
 ### safeTransferFrom
 ```solidity
-safeTransferFrom(address from, address to, uint256 tokenId) external nonpayable
+function safeTransferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
 
             
@@ -394,7 +394,7 @@ Safely transfers `tokenId` token from `from` to `to`, checking first that contra
 | tokenId | uint256 | - |
 
 ```solidity
-safeTransferFrom(address from, address to, uint256 tokenId, bytes data) external nonpayable
+function safeTransferFrom(address from, address to, uint256 tokenId, bytes data) external nonpayable
 ```
 
             
@@ -412,7 +412,7 @@ Safely transfers `tokenId` token from `from` to `to`. Requirements: - `from` can
 
 ### setApprovalForAll
 ```solidity
-setApprovalForAll(address operator, bool _approved) external nonpayable
+function setApprovalForAll(address operator, bool _approved) external nonpayable
 ```
 
             
@@ -428,7 +428,7 @@ Approve or remove `operator` as an operator for the caller. Operators can call {
 
 ### supportsInterface
 ```solidity
-supportsInterface(bytes4 interfaceId) external view returns (bool)
+function supportsInterface(bytes4 interfaceId) external view returns (bool)
 ```
 
             
@@ -449,7 +449,7 @@ Returns true if this contract implements the interface defined by `interfaceId`.
 
 ### sweepToken
 ```solidity
-sweepToken(address token, uint256 amountMinimum, address recipient) external payable
+function sweepToken(address token, uint256 amountMinimum, address recipient) external payable
 ```
 
             
@@ -467,7 +467,7 @@ The amountMinimum parameter prevents malicious contracts from stealing the token
 
 ### symbol
 ```solidity
-symbol() external view returns (string)
+function symbol() external view returns (string)
 ```
 
             
@@ -482,7 +482,7 @@ Returns the token collection symbol.
 
 ### tokenByIndex
 ```solidity
-tokenByIndex(uint256 index) external view returns (uint256)
+function tokenByIndex(uint256 index) external view returns (uint256)
 ```
 
             
@@ -503,7 +503,7 @@ Returns a token ID at a given `index` of all the tokens stored by the contract. 
 
 ### tokenOfOwnerByIndex
 ```solidity
-tokenOfOwnerByIndex(address owner, uint256 index) external view returns (uint256 tokenId)
+function tokenOfOwnerByIndex(address owner, uint256 index) external view returns (uint256 tokenId)
 ```
 
             
@@ -525,7 +525,7 @@ Returns a token ID owned by `owner` at a given `index` of its token list. Use al
 
 ### tokenURI
 ```solidity
-tokenURI(uint256 tokenId) external view returns (string)
+function tokenURI(uint256 tokenId) external view returns (string)
 ```
 
             
@@ -546,7 +546,7 @@ Returns the Uniform Resource Identifier (URI) for `tokenId` token.
 
 ### totalSupply
 ```solidity
-totalSupply() external view returns (uint256)
+function totalSupply() external view returns (uint256)
 ```
 
             
@@ -561,7 +561,7 @@ Returns the total amount of tokens stored by the contract.
 
 ### transferFrom
 ```solidity
-transferFrom(address from, address to, uint256 tokenId) external nonpayable
+function transferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
 
             
@@ -578,7 +578,7 @@ Transfers `tokenId` token from `from` to `to`. WARNING: Usage of this method is 
 
 ### unwrapWETH9
 ```solidity
-unwrapWETH9(uint256 amountMinimum, address recipient) external payable
+function unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
 
             
@@ -596,7 +596,7 @@ The amountMinimum parameter prevents malicious contracts from stealing WETH9 fro
 ### Events
 ### Approval
 ```solidity
-Approval(address owner, address approved, uint256 tokenId)
+event Approval(address owner, address approved, uint256 tokenId)
 ```
 
             
@@ -612,7 +612,7 @@ Approval(address owner, address approved, uint256 tokenId)
 
 ### ApprovalForAll
 ```solidity
-ApprovalForAll(address owner, address operator, bool approved)
+event ApprovalForAll(address owner, address operator, bool approved)
 ```
 
             
@@ -628,7 +628,7 @@ ApprovalForAll(address owner, address operator, bool approved)
 
 ### Collect
 ```solidity
-Collect(uint256 tokenId, address recipient, uint256 amount0, uint256 amount1)
+event Collect(uint256 tokenId, address recipient, uint256 amount0, uint256 amount1)
 ```
 
             
@@ -647,7 +647,7 @@ The amounts reported may not be exactly equivalent to the amounts transferred, d
 
 ### DecreaseLiquidity
 ```solidity
-DecreaseLiquidity(uint256 tokenId, uint128 liquidity, uint256 amount0, uint256 amount1)
+event DecreaseLiquidity(uint256 tokenId, uint128 liquidity, uint256 amount0, uint256 amount1)
 ```
 
             
@@ -665,7 +665,7 @@ DecreaseLiquidity(uint256 tokenId, uint128 liquidity, uint256 amount0, uint256 a
 
 ### IncreaseLiquidity
 ```solidity
-IncreaseLiquidity(uint256 tokenId, uint128 liquidity, uint256 amount0, uint256 amount1)
+event IncreaseLiquidity(uint256 tokenId, uint128 liquidity, uint256 amount0, uint256 amount1)
 ```
 
             
@@ -684,7 +684,7 @@ Also emitted when a token is minted
 
 ### Transfer
 ```solidity
-Transfer(address from, address to, uint256 tokenId)
+event Transfer(address from, address to, uint256 tokenId)
 ```
 
             

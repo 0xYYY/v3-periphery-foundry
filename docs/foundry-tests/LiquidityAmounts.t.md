@@ -7,7 +7,7 @@
 ## Methods
 ### testAmountsForPriceAbove
 ```solidity
-testAmountsForPriceAbove() external pure
+function testAmountsForPriceAbove() external pure
 ```
 
             
@@ -15,7 +15,7 @@ testAmountsForPriceAbove() external pure
             
 ### testAmountsForPriceBelow
 ```solidity
-testAmountsForPriceBelow() external pure
+function testAmountsForPriceBelow() external pure
 ```
 
             
@@ -23,7 +23,7 @@ testAmountsForPriceBelow() external pure
             
 ### testAmountsForPriceInside
 ```solidity
-testAmountsForPriceInside() external pure
+function testAmountsForPriceInside() external pure
 ```
 
             
@@ -31,7 +31,7 @@ testAmountsForPriceInside() external pure
             
 ### testAmountsForPriceOnLowerBoundary
 ```solidity
-testAmountsForPriceOnLowerBoundary() external pure
+function testAmountsForPriceOnLowerBoundary() external pure
 ```
 
             
@@ -39,7 +39,7 @@ testAmountsForPriceOnLowerBoundary() external pure
             
 ### testAmountsForPriceOnUpperBoundary
 ```solidity
-testAmountsForPriceOnUpperBoundary() external pure
+function testAmountsForPriceOnUpperBoundary() external pure
 ```
 
             
@@ -55,7 +55,7 @@ testAmountsForPriceOnUpperBoundary() external pure
 ## Methods
 ### testAmountsForPriceAbove
 ```solidity
-testAmountsForPriceAbove() external pure
+function testAmountsForPriceAbove() external pure
 ```
 
             
@@ -63,7 +63,7 @@ testAmountsForPriceAbove() external pure
             
 ### testAmountsForPriceBelow
 ```solidity
-testAmountsForPriceBelow() external pure
+function testAmountsForPriceBelow() external pure
 ```
 
             
@@ -71,7 +71,7 @@ testAmountsForPriceBelow() external pure
             
 ### testAmountsForPriceEqualToLowerBoundary
 ```solidity
-testAmountsForPriceEqualToLowerBoundary() external pure
+function testAmountsForPriceEqualToLowerBoundary() external pure
 ```
 
             
@@ -79,7 +79,7 @@ testAmountsForPriceEqualToLowerBoundary() external pure
             
 ### testAmountsForPriceEqualToUpperBoundary
 ```solidity
-testAmountsForPriceEqualToUpperBoundary() external pure
+function testAmountsForPriceEqualToUpperBoundary() external pure
 ```
 
             
@@ -87,7 +87,7 @@ testAmountsForPriceEqualToUpperBoundary() external pure
             
 ### testAmountsForPriceInside
 ```solidity
-testAmountsForPriceInside() external pure
+function testAmountsForPriceInside() external pure
 ```
 
             

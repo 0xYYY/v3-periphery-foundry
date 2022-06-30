@@ -8,7 +8,7 @@ Interface for WETH9
 ## Methods
 ### allowance
 ```solidity
-allowance(address owner, address spender) external view returns (uint256)
+function allowance(address owner, address spender) external view returns (uint256)
 ```
 
             
@@ -30,7 +30,7 @@ Returns the remaining number of tokens that `spender` will be allowed to spend o
 
 ### approve
 ```solidity
-approve(address spender, uint256 amount) external nonpayable returns (bool)
+function approve(address spender, uint256 amount) external nonpayable returns (bool)
 ```
 
             
@@ -52,7 +52,7 @@ Sets `amount` as the allowance of `spender` over the caller's tokens. Returns a 
 
 ### balanceOf
 ```solidity
-balanceOf(address account) external view returns (uint256)
+function balanceOf(address account) external view returns (uint256)
 ```
 
             
@@ -73,7 +73,7 @@ Returns the amount of tokens owned by `account`.
 
 ### deposit
 ```solidity
-deposit() external payable
+function deposit() external payable
 ```
 
             
@@ -82,7 +82,7 @@ deposit() external payable
 *Deposit ether to get wrapped ether*
 ### totalSupply
 ```solidity
-totalSupply() external view returns (uint256)
+function totalSupply() external view returns (uint256)
 ```
 
             
@@ -97,7 +97,7 @@ Returns the amount of tokens in existence.
 
 ### transfer
 ```solidity
-transfer(address recipient, uint256 amount) external nonpayable returns (bool)
+function transfer(address recipient, uint256 amount) external nonpayable returns (bool)
 ```
 
             
@@ -119,7 +119,7 @@ Moves `amount` tokens from the caller's account to `recipient`. Returns a boolea
 
 ### transferFrom
 ```solidity
-transferFrom(address sender, address recipient, uint256 amount) external nonpayable returns (bool)
+function transferFrom(address sender, address recipient, uint256 amount) external nonpayable returns (bool)
 ```
 
             
@@ -142,7 +142,7 @@ Moves `amount` tokens from `sender` to `recipient` using the allowance mechanism
 
 ### withdraw
 ```solidity
-withdraw(uint256) external nonpayable
+function withdraw(uint256) external nonpayable
 ```
 
             
@@ -158,7 +158,7 @@ withdraw(uint256) external nonpayable
 ### Events
 ### Approval
 ```solidity
-Approval(address owner, address spender, uint256 value)
+event Approval(address owner, address spender, uint256 value)
 ```
 
             
@@ -174,7 +174,7 @@ Approval(address owner, address spender, uint256 value)
 
 ### Transfer
 ```solidity
-Transfer(address from, address to, uint256 value)
+event Transfer(address from, address to, uint256 value)
 ```
 
             

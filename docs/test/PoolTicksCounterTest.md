@@ -7,7 +7,7 @@
 ## Methods
 ### countInitializedTicksCrossed
 ```solidity
-countInitializedTicksCrossed(address pool, int24 tickBefore, int24 tickAfter) external view returns (uint32 initializedTicksCrossed)
+function countInitializedTicksCrossed(address pool, int24 tickBefore, int24 tickAfter) external view returns (uint32 initializedTicksCrossed)
 ```
 
             

@@ -7,7 +7,7 @@
 ## Methods
 ### verifyCallback
 ```solidity
-verifyCallback(address factory, address tokenA, address tokenB, uint24 fee) external view returns (address pool)
+function verifyCallback(address factory, address tokenA, address tokenB, uint24 fee) external view returns (address pool)
 ```
 
             

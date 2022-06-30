@@ -10,7 +10,7 @@ These functions are expected to be embedded in multicalls to allow EOAs to appro
 ## Methods
 ### selfPermit
 ```solidity
-selfPermit(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
+function selfPermit(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
 
             
@@ -31,7 +31,7 @@ The `owner` is always msg.sender and the `spender` is always address(this).
 
 ### selfPermitAllowed
 ```solidity
-selfPermitAllowed(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
+function selfPermitAllowed(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
 ```
 
             
@@ -52,7 +52,7 @@ The `owner` is always msg.sender and the `spender` is always address(this)
 
 ### selfPermitAllowedIfNecessary
 ```solidity
-selfPermitAllowedIfNecessary(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
+function selfPermitAllowedIfNecessary(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
 ```
 
             
@@ -73,7 +73,7 @@ The `owner` is always msg.sender and the `spender` is always address(this) Can b
 
 ### selfPermitIfNecessary
 ```solidity
-selfPermitIfNecessary(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
+function selfPermitIfNecessary(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
 
             

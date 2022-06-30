@@ -7,7 +7,7 @@
 ## Methods
 ### WETH9
 ```solidity
-WETH9() external view returns (address)
+function WETH9() external view returns (address)
 ```
 
             
@@ -21,7 +21,7 @@ WETH9() external view returns (address)
 
 ### exactInput
 ```solidity
-exactInput((bytes,address,uint256,uint256,uint256) params) external payable returns (uint256 amountOut)
+function exactInput((bytes,address,uint256,uint256,uint256) params) external payable returns (uint256 amountOut)
 ```
 
             
@@ -42,7 +42,7 @@ exactInput((bytes,address,uint256,uint256,uint256) params) external payable retu
 
 ### exactInputSingle
 ```solidity
-exactInputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160) params) external payable returns (uint256 amountOut)
+function exactInputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160) params) external payable returns (uint256 amountOut)
 ```
 
             
@@ -63,7 +63,7 @@ exactInputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160
 
 ### exactOutput
 ```solidity
-exactOutput((bytes,address,uint256,uint256,uint256) params) external payable returns (uint256 amountIn)
+function exactOutput((bytes,address,uint256,uint256,uint256) params) external payable returns (uint256 amountIn)
 ```
 
             
@@ -84,7 +84,7 @@ exactOutput((bytes,address,uint256,uint256,uint256) params) external payable ret
 
 ### exactOutputSingle
 ```solidity
-exactOutputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160) params) external payable returns (uint256 amountIn)
+function exactOutputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160) params) external payable returns (uint256 amountIn)
 ```
 
             
@@ -105,7 +105,7 @@ exactOutputSingle((address,address,uint24,address,uint256,uint256,uint256,uint16
 
 ### factory
 ```solidity
-factory() external view returns (address)
+function factory() external view returns (address)
 ```
 
             
@@ -119,7 +119,7 @@ factory() external view returns (address)
 
 ### multicall
 ```solidity
-multicall(bytes[] data) external payable returns (bytes[] results)
+function multicall(bytes[] data) external payable returns (bytes[] results)
 ```
 
             
@@ -141,7 +141,7 @@ The `msg.value` should not be trusted for any method callable from multicall.
 
 ### refundETH
 ```solidity
-refundETH() external payable
+function refundETH() external payable
 ```
 
             
@@ -151,7 +151,7 @@ Useful for bundling with mint or increase liquidity that uses ether, or exact ou
 *Refunds any ETH balance held by this contract to the `msg.sender`*
 ### selfPermit
 ```solidity
-selfPermit(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
+function selfPermit(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
 
             
@@ -172,7 +172,7 @@ The `owner` is always msg.sender and the `spender` is always address(this).
 
 ### selfPermitAllowed
 ```solidity
-selfPermitAllowed(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
+function selfPermitAllowed(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
 ```
 
             
@@ -193,7 +193,7 @@ The `owner` is always msg.sender and the `spender` is always address(this)
 
 ### selfPermitAllowedIfNecessary
 ```solidity
-selfPermitAllowedIfNecessary(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
+function selfPermitAllowedIfNecessary(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
 ```
 
             
@@ -214,7 +214,7 @@ The `owner` is always msg.sender and the `spender` is always address(this) Can b
 
 ### selfPermitIfNecessary
 ```solidity
-selfPermitIfNecessary(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
+function selfPermitIfNecessary(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
 
             
@@ -235,7 +235,7 @@ The `owner` is always msg.sender and the `spender` is always address(this). Can 
 
 ### setTime
 ```solidity
-setTime(uint256 _time) external nonpayable
+function setTime(uint256 _time) external nonpayable
 ```
 
             
@@ -249,7 +249,7 @@ setTime(uint256 _time) external nonpayable
 
 ### sweepToken
 ```solidity
-sweepToken(address token, uint256 amountMinimum, address recipient) external payable
+function sweepToken(address token, uint256 amountMinimum, address recipient) external payable
 ```
 
             
@@ -267,7 +267,7 @@ The amountMinimum parameter prevents malicious contracts from stealing the token
 
 ### sweepTokenWithFee
 ```solidity
-sweepTokenWithFee(address token, uint256 amountMinimum, address recipient, uint256 feeBips, address feeRecipient) external payable
+function sweepTokenWithFee(address token, uint256 amountMinimum, address recipient, uint256 feeBips, address feeRecipient) external payable
 ```
 
             
@@ -287,7 +287,7 @@ The amountMinimum parameter prevents malicious contracts from stealing the token
 
 ### uniswapV3SwapCallback
 ```solidity
-uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes _data) external nonpayable
+function uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes _data) external nonpayable
 ```
 
             
@@ -305,7 +305,7 @@ In the implementation you must pay the pool tokens owed for the swap. The caller
 
 ### unwrapWETH9
 ```solidity
-unwrapWETH9(uint256 amountMinimum, address recipient) external payable
+function unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
 
             
@@ -322,7 +322,7 @@ The amountMinimum parameter prevents malicious contracts from stealing WETH9 fro
 
 ### unwrapWETH9WithFee
 ```solidity
-unwrapWETH9WithFee(uint256 amountMinimum, address recipient, uint256 feeBips, address feeRecipient) external payable
+function unwrapWETH9WithFee(uint256 amountMinimum, address recipient, uint256 feeBips, address feeRecipient) external payable
 ```
 
             

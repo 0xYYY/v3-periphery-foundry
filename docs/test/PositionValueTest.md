@@ -7,7 +7,7 @@
 ## Methods
 ### fees
 ```solidity
-fees(address nft, uint256 tokenId) external view returns (uint256 amount0, uint256 amount1)
+function fees(address nft, uint256 tokenId) external view returns (uint256 amount0, uint256 amount1)
 ```
 
             
@@ -29,7 +29,7 @@ fees(address nft, uint256 tokenId) external view returns (uint256 amount0, uint2
 
 ### feesGas
 ```solidity
-feesGas(address nft, uint256 tokenId) external view returns (uint256)
+function feesGas(address nft, uint256 tokenId) external view returns (uint256)
 ```
 
             
@@ -50,7 +50,7 @@ feesGas(address nft, uint256 tokenId) external view returns (uint256)
 
 ### principal
 ```solidity
-principal(address nft, uint256 tokenId, uint160 sqrtRatioX96) external view returns (uint256 amount0, uint256 amount1)
+function principal(address nft, uint256 tokenId, uint160 sqrtRatioX96) external view returns (uint256 amount0, uint256 amount1)
 ```
 
             
@@ -73,7 +73,7 @@ principal(address nft, uint256 tokenId, uint160 sqrtRatioX96) external view retu
 
 ### principalGas
 ```solidity
-principalGas(address nft, uint256 tokenId, uint160 sqrtRatioX96) external view returns (uint256)
+function principalGas(address nft, uint256 tokenId, uint160 sqrtRatioX96) external view returns (uint256)
 ```
 
             
@@ -95,7 +95,7 @@ principalGas(address nft, uint256 tokenId, uint160 sqrtRatioX96) external view r
 
 ### total
 ```solidity
-total(address nft, uint256 tokenId, uint160 sqrtRatioX96) external view returns (uint256 amount0, uint256 amount1)
+function total(address nft, uint256 tokenId, uint160 sqrtRatioX96) external view returns (uint256 amount0, uint256 amount1)
 ```
 
             
@@ -118,7 +118,7 @@ total(address nft, uint256 tokenId, uint160 sqrtRatioX96) external view returns 
 
 ### totalGas
 ```solidity
-totalGas(address nft, uint256 tokenId, uint160 sqrtRatioX96) external view returns (uint256)
+function totalGas(address nft, uint256 tokenId, uint160 sqrtRatioX96) external view returns (uint256)
 ```
 
             

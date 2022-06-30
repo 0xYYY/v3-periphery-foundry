@@ -7,7 +7,7 @@
 ## Methods
 ### createPool
 ```solidity
-createPool(address tokenAddressA, address tokenAddressB) external nonpayable
+function createPool(address tokenAddressA, address tokenAddressB) external nonpayable
 ```
 
             
@@ -22,7 +22,7 @@ createPool(address tokenAddressA, address tokenAddressB) external nonpayable
 
 ### deployCode
 ```solidity
-deployCode(string what) external nonpayable returns (address addr)
+function deployCode(string what) external nonpayable returns (address addr)
 ```
 
             
@@ -42,7 +42,7 @@ deployCode(string what) external nonpayable returns (address addr)
 
 ### exactInput
 ```solidity
-exactInput(address[] tokens, uint256 amountIn, uint256 amountOutMinimum) external nonpayable
+function exactInput(address[] tokens, uint256 amountIn, uint256 amountOutMinimum) external nonpayable
 ```
 
             
@@ -58,7 +58,7 @@ exactInput(address[] tokens, uint256 amountIn, uint256 amountOutMinimum) externa
 
 ### factory
 ```solidity
-factory() external view returns (address)
+function factory() external view returns (address)
 ```
 
             
@@ -72,7 +72,7 @@ factory() external view returns (address)
 
 ### getBalances
 ```solidity
-getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
+function getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
 ```
 
             
@@ -92,7 +92,7 @@ getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,u
 
 ### router
 ```solidity
-router() external view returns (address)
+function router() external view returns (address)
 ```
 
             
@@ -106,7 +106,7 @@ router() external view returns (address)
 
 ### setUp
 ```solidity
-setUp() external nonpayable
+function setUp() external nonpayable
 ```
 
             
@@ -114,7 +114,7 @@ setUp() external nonpayable
             
 ### weth9
 ```solidity
-weth9() external view returns (address)
+function weth9() external view returns (address)
 ```
 
             
@@ -136,7 +136,7 @@ weth9() external view returns (address)
 ## Methods
 ### createPool
 ```solidity
-createPool(address tokenAddressA, address tokenAddressB) external nonpayable
+function createPool(address tokenAddressA, address tokenAddressB) external nonpayable
 ```
 
             
@@ -151,7 +151,7 @@ createPool(address tokenAddressA, address tokenAddressB) external nonpayable
 
 ### deployCode
 ```solidity
-deployCode(string what) external nonpayable returns (address addr)
+function deployCode(string what) external nonpayable returns (address addr)
 ```
 
             
@@ -171,7 +171,7 @@ deployCode(string what) external nonpayable returns (address addr)
 
 ### exactInput
 ```solidity
-exactInput(address[] tokens, uint256 amountIn, uint256 amountOutMinimum) external nonpayable
+function exactInput(address[] tokens, uint256 amountIn, uint256 amountOutMinimum) external nonpayable
 ```
 
             
@@ -187,7 +187,7 @@ exactInput(address[] tokens, uint256 amountIn, uint256 amountOutMinimum) externa
 
 ### factory
 ```solidity
-factory() external view returns (address)
+function factory() external view returns (address)
 ```
 
             
@@ -201,7 +201,7 @@ factory() external view returns (address)
 
 ### getBalances
 ```solidity
-getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
+function getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
 ```
 
             
@@ -221,7 +221,7 @@ getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,u
 
 ### router
 ```solidity
-router() external view returns (address)
+function router() external view returns (address)
 ```
 
             
@@ -235,7 +235,7 @@ router() external view returns (address)
 
 ### setUp
 ```solidity
-setUp() external nonpayable
+function setUp() external nonpayable
 ```
 
             
@@ -243,7 +243,7 @@ setUp() external nonpayable
             
 ### testEvents
 ```solidity
-testEvents() external nonpayable
+function testEvents() external nonpayable
 ```
 
             
@@ -251,7 +251,7 @@ testEvents() external nonpayable
             
 ### testTwoToOneToZero
 ```solidity
-testTwoToOneToZero() external nonpayable
+function testTwoToOneToZero() external nonpayable
 ```
 
             
@@ -259,7 +259,7 @@ testTwoToOneToZero() external nonpayable
             
 ### testZeroToOneToTwo
 ```solidity
-testZeroToOneToTwo() external nonpayable
+function testZeroToOneToTwo() external nonpayable
 ```
 
             
@@ -267,7 +267,7 @@ testZeroToOneToTwo() external nonpayable
             
 ### weth9
 ```solidity
-weth9() external view returns (address)
+function weth9() external view returns (address)
 ```
 
             
@@ -282,7 +282,7 @@ weth9() external view returns (address)
 ### Events
 ### Transfer
 ```solidity
-Transfer(address from, address to, uint256 amount)
+event Transfer(address from, address to, uint256 amount)
 ```
 
             
@@ -306,7 +306,7 @@ Transfer(address from, address to, uint256 amount)
 ## Methods
 ### createPool
 ```solidity
-createPool(address tokenAddressA, address tokenAddressB) external nonpayable
+function createPool(address tokenAddressA, address tokenAddressB) external nonpayable
 ```
 
             
@@ -321,7 +321,7 @@ createPool(address tokenAddressA, address tokenAddressB) external nonpayable
 
 ### deployCode
 ```solidity
-deployCode(string what) external nonpayable returns (address addr)
+function deployCode(string what) external nonpayable returns (address addr)
 ```
 
             
@@ -341,7 +341,7 @@ deployCode(string what) external nonpayable returns (address addr)
 
 ### exactInput
 ```solidity
-exactInput(address[] tokens, uint256 amountIn, uint256 amountOutMinimum) external nonpayable
+function exactInput(address[] tokens, uint256 amountIn, uint256 amountOutMinimum) external nonpayable
 ```
 
             
@@ -357,7 +357,7 @@ exactInput(address[] tokens, uint256 amountIn, uint256 amountOutMinimum) externa
 
 ### factory
 ```solidity
-factory() external view returns (address)
+function factory() external view returns (address)
 ```
 
             
@@ -371,7 +371,7 @@ factory() external view returns (address)
 
 ### getBalances
 ```solidity
-getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
+function getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
 ```
 
             
@@ -391,7 +391,7 @@ getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,u
 
 ### router
 ```solidity
-router() external view returns (address)
+function router() external view returns (address)
 ```
 
             
@@ -405,7 +405,7 @@ router() external view returns (address)
 
 ### setUp
 ```solidity
-setUp() external nonpayable
+function setUp() external nonpayable
 ```
 
             
@@ -413,7 +413,7 @@ setUp() external nonpayable
             
 ### testOneToZero
 ```solidity
-testOneToZero() external nonpayable
+function testOneToZero() external nonpayable
 ```
 
             
@@ -421,7 +421,7 @@ testOneToZero() external nonpayable
             
 ### testZeroToOne
 ```solidity
-testZeroToOne() external nonpayable
+function testZeroToOne() external nonpayable
 ```
 
             
@@ -429,7 +429,7 @@ testZeroToOne() external nonpayable
             
 ### weth9
 ```solidity
-weth9() external view returns (address)
+function weth9() external view returns (address)
 ```
 
             
@@ -451,7 +451,7 @@ weth9() external view returns (address)
 ## Methods
 ### createPool
 ```solidity
-createPool(address tokenAddressA, address tokenAddressB) external nonpayable
+function createPool(address tokenAddressA, address tokenAddressB) external nonpayable
 ```
 
             
@@ -466,7 +466,7 @@ createPool(address tokenAddressA, address tokenAddressB) external nonpayable
 
 ### deployCode
 ```solidity
-deployCode(string what) external nonpayable returns (address addr)
+function deployCode(string what) external nonpayable returns (address addr)
 ```
 
             
@@ -486,7 +486,7 @@ deployCode(string what) external nonpayable returns (address addr)
 
 ### factory
 ```solidity
-factory() external view returns (address)
+function factory() external view returns (address)
 ```
 
             
@@ -500,7 +500,7 @@ factory() external view returns (address)
 
 ### getBalances
 ```solidity
-getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
+function getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
 ```
 
             
@@ -520,7 +520,7 @@ getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,u
 
 ### router
 ```solidity
-router() external view returns (address)
+function router() external view returns (address)
 ```
 
             
@@ -534,7 +534,7 @@ router() external view returns (address)
 
 ### setUp
 ```solidity
-setUp() external nonpayable
+function setUp() external nonpayable
 ```
 
             
@@ -542,7 +542,7 @@ setUp() external nonpayable
             
 ### weth9
 ```solidity
-weth9() external view returns (address)
+function weth9() external view returns (address)
 ```
 
             

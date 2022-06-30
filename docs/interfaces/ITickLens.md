@@ -10,7 +10,7 @@ This avoids the waterfall of fetching the tick bitmap, parsing the bitmap to kno
 ## Methods
 ### getPopulatedTicksInWord
 ```solidity
-getPopulatedTicksInWord(address pool, int16 tickBitmapIndex) external view returns ((int24,int128,uint128)[] populatedTicks)
+function getPopulatedTicksInWord(address pool, int16 tickBitmapIndex) external view returns ((int24,int128,uint128)[] populatedTicks)
 ```
 
             

@@ -8,7 +8,7 @@ Uniswap V3 Migrator
 ## Methods
 ### WETH9
 ```solidity
-WETH9() external view returns (address)
+function WETH9() external view returns (address)
 ```
 
             
@@ -22,7 +22,7 @@ WETH9() external view returns (address)
 
 ### createAndInitializePoolIfNecessary
 ```solidity
-createAndInitializePoolIfNecessary(address token0, address token1, uint24 fee, uint160 sqrtPriceX96) external payable returns (address pool)
+function createAndInitializePoolIfNecessary(address token0, address token1, uint24 fee, uint160 sqrtPriceX96) external payable returns (address pool)
 ```
 
             
@@ -47,7 +47,7 @@ This method can be bundled with others via IMulticall for the first action (e.g.
 
 ### factory
 ```solidity
-factory() external view returns (address)
+function factory() external view returns (address)
 ```
 
             
@@ -61,7 +61,7 @@ factory() external view returns (address)
 
 ### migrate
 ```solidity
-migrate((address,uint256,uint8,address,address,uint24,int24,int24,uint256,uint256,address,uint256,bool) params) external nonpayable
+function migrate((address,uint256,uint8,address,address,uint24,int24,int24,uint256,uint256,address,uint256,bool) params) external nonpayable
 ```
 
             
@@ -77,7 +77,7 @@ Slippage protection is enforced via `amount{0,1}Min`, which should be a discount
 
 ### multicall
 ```solidity
-multicall(bytes[] data) external payable returns (bytes[] results)
+function multicall(bytes[] data) external payable returns (bytes[] results)
 ```
 
             
@@ -99,7 +99,7 @@ The `msg.value` should not be trusted for any method callable from multicall.
 
 ### nonfungiblePositionManager
 ```solidity
-nonfungiblePositionManager() external view returns (address)
+function nonfungiblePositionManager() external view returns (address)
 ```
 
             
@@ -113,7 +113,7 @@ nonfungiblePositionManager() external view returns (address)
 
 ### selfPermit
 ```solidity
-selfPermit(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
+function selfPermit(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
 
             
@@ -134,7 +134,7 @@ The `owner` is always msg.sender and the `spender` is always address(this).
 
 ### selfPermitAllowed
 ```solidity
-selfPermitAllowed(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
+function selfPermitAllowed(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
 ```
 
             
@@ -155,7 +155,7 @@ The `owner` is always msg.sender and the `spender` is always address(this)
 
 ### selfPermitAllowedIfNecessary
 ```solidity
-selfPermitAllowedIfNecessary(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
+function selfPermitAllowedIfNecessary(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
 ```
 
             
@@ -176,7 +176,7 @@ The `owner` is always msg.sender and the `spender` is always address(this) Can b
 
 ### selfPermitIfNecessary
 ```solidity
-selfPermitIfNecessary(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
+function selfPermitIfNecessary(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
 
             

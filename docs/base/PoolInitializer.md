@@ -8,7 +8,7 @@ Creates and initializes V3 Pools
 ## Methods
 ### WETH9
 ```solidity
-WETH9() external view returns (address)
+function WETH9() external view returns (address)
 ```
 
             
@@ -22,7 +22,7 @@ WETH9() external view returns (address)
 
 ### createAndInitializePoolIfNecessary
 ```solidity
-createAndInitializePoolIfNecessary(address token0, address token1, uint24 fee, uint160 sqrtPriceX96) external payable returns (address pool)
+function createAndInitializePoolIfNecessary(address token0, address token1, uint24 fee, uint160 sqrtPriceX96) external payable returns (address pool)
 ```
 
             
@@ -47,7 +47,7 @@ This method can be bundled with others via IMulticall for the first action (e.g.
 
 ### factory
 ```solidity
-factory() external view returns (address)
+function factory() external view returns (address)
 ```
 
             

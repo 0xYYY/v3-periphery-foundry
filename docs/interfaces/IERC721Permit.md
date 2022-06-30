@@ -9,7 +9,7 @@ ERC721 with permit
 ## Methods
 ### DOMAIN_SEPARATOR
 ```solidity
-DOMAIN_SEPARATOR() external view returns (bytes32)
+function DOMAIN_SEPARATOR() external view returns (bytes32)
 ```
 
             
@@ -24,7 +24,7 @@ DOMAIN_SEPARATOR() external view returns (bytes32)
 
 ### PERMIT_TYPEHASH
 ```solidity
-PERMIT_TYPEHASH() external pure returns (bytes32)
+function PERMIT_TYPEHASH() external pure returns (bytes32)
 ```
 
             
@@ -39,7 +39,7 @@ PERMIT_TYPEHASH() external pure returns (bytes32)
 
 ### approve
 ```solidity
-approve(address to, uint256 tokenId) external nonpayable
+function approve(address to, uint256 tokenId) external nonpayable
 ```
 
             
@@ -55,7 +55,7 @@ Gives permission to `to` to transfer `tokenId` token to another account. The app
 
 ### balanceOf
 ```solidity
-balanceOf(address owner) external view returns (uint256 balance)
+function balanceOf(address owner) external view returns (uint256 balance)
 ```
 
             
@@ -76,7 +76,7 @@ Returns the number of tokens in ``owner``'s account.
 
 ### getApproved
 ```solidity
-getApproved(uint256 tokenId) external view returns (address operator)
+function getApproved(uint256 tokenId) external view returns (address operator)
 ```
 
             
@@ -97,7 +97,7 @@ Returns the account approved for `tokenId` token. Requirements: - `tokenId` must
 
 ### isApprovedForAll
 ```solidity
-isApprovedForAll(address owner, address operator) external view returns (bool)
+function isApprovedForAll(address owner, address operator) external view returns (bool)
 ```
 
             
@@ -119,7 +119,7 @@ Returns if the `operator` is allowed to manage all of the assets of `owner`. See
 
 ### ownerOf
 ```solidity
-ownerOf(uint256 tokenId) external view returns (address owner)
+function ownerOf(uint256 tokenId) external view returns (address owner)
 ```
 
             
@@ -140,7 +140,7 @@ Returns the owner of the `tokenId` token. Requirements: - `tokenId` must exist.
 
 ### permit
 ```solidity
-permit(address spender, uint256 tokenId, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
+function permit(address spender, uint256 tokenId, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
 
             
@@ -160,7 +160,7 @@ permit(address spender, uint256 tokenId, uint256 deadline, uint8 v, bytes32 r, b
 
 ### safeTransferFrom
 ```solidity
-safeTransferFrom(address from, address to, uint256 tokenId) external nonpayable
+function safeTransferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
 
             
@@ -176,7 +176,7 @@ Safely transfers `tokenId` token from `from` to `to`, checking first that contra
 | tokenId | uint256 | - |
 
 ```solidity
-safeTransferFrom(address from, address to, uint256 tokenId, bytes data) external nonpayable
+function safeTransferFrom(address from, address to, uint256 tokenId, bytes data) external nonpayable
 ```
 
             
@@ -194,7 +194,7 @@ Safely transfers `tokenId` token from `from` to `to`. Requirements: - `from` can
 
 ### setApprovalForAll
 ```solidity
-setApprovalForAll(address operator, bool _approved) external nonpayable
+function setApprovalForAll(address operator, bool _approved) external nonpayable
 ```
 
             
@@ -210,7 +210,7 @@ Approve or remove `operator` as an operator for the caller. Operators can call {
 
 ### supportsInterface
 ```solidity
-supportsInterface(bytes4 interfaceId) external view returns (bool)
+function supportsInterface(bytes4 interfaceId) external view returns (bool)
 ```
 
             
@@ -231,7 +231,7 @@ Returns true if this contract implements the interface defined by `interfaceId`.
 
 ### transferFrom
 ```solidity
-transferFrom(address from, address to, uint256 tokenId) external nonpayable
+function transferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
 
             
@@ -249,7 +249,7 @@ Transfers `tokenId` token from `from` to `to`. WARNING: Usage of this method is 
 ### Events
 ### Approval
 ```solidity
-Approval(address owner, address approved, uint256 tokenId)
+event Approval(address owner, address approved, uint256 tokenId)
 ```
 
             
@@ -265,7 +265,7 @@ Approval(address owner, address approved, uint256 tokenId)
 
 ### ApprovalForAll
 ```solidity
-ApprovalForAll(address owner, address operator, bool approved)
+event ApprovalForAll(address owner, address operator, bool approved)
 ```
 
             
@@ -281,7 +281,7 @@ ApprovalForAll(address owner, address operator, bool approved)
 
 ### Transfer
 ```solidity
-Transfer(address from, address to, uint256 tokenId)
+event Transfer(address from, address to, uint256 tokenId)
 ```
 
             

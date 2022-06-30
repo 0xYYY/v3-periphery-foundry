@@ -9,7 +9,7 @@ Multicall
 ## Methods
 ### multicall
 ```solidity
-multicall(bytes[] data) external payable returns (bytes[] results)
+function multicall(bytes[] data) external payable returns (bytes[] results)
 ```
 
             

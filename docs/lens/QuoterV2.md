@@ -10,7 +10,7 @@ These functions are not gas efficient and should _not_ be called on chain. Inste
 ## Methods
 ### WETH9
 ```solidity
-WETH9() external view returns (address)
+function WETH9() external view returns (address)
 ```
 
             
@@ -24,7 +24,7 @@ WETH9() external view returns (address)
 
 ### factory
 ```solidity
-factory() external view returns (address)
+function factory() external view returns (address)
 ```
 
             
@@ -38,7 +38,7 @@ factory() external view returns (address)
 
 ### quoteExactInput
 ```solidity
-quoteExactInput(bytes path, uint256 amountIn) external nonpayable returns (uint256 amountOut, uint160[] sqrtPriceX96AfterList, uint32[] initializedTicksCrossedList, uint256 gasEstimate)
+function quoteExactInput(bytes path, uint256 amountIn) external nonpayable returns (uint256 amountOut, uint160[] sqrtPriceX96AfterList, uint32[] initializedTicksCrossedList, uint256 gasEstimate)
 ```
 
             
@@ -63,7 +63,7 @@ quoteExactInput(bytes path, uint256 amountIn) external nonpayable returns (uint2
 
 ### quoteExactInputSingle
 ```solidity
-quoteExactInputSingle((address,address,uint256,uint24,uint160) params) external nonpayable returns (uint256 amountOut, uint160 sqrtPriceX96After, uint32 initializedTicksCrossed, uint256 gasEstimate)
+function quoteExactInputSingle((address,address,uint256,uint24,uint160) params) external nonpayable returns (uint256 amountOut, uint160 sqrtPriceX96After, uint32 initializedTicksCrossed, uint256 gasEstimate)
 ```
 
             
@@ -87,7 +87,7 @@ quoteExactInputSingle((address,address,uint256,uint24,uint160) params) external 
 
 ### quoteExactOutput
 ```solidity
-quoteExactOutput(bytes path, uint256 amountOut) external nonpayable returns (uint256 amountIn, uint160[] sqrtPriceX96AfterList, uint32[] initializedTicksCrossedList, uint256 gasEstimate)
+function quoteExactOutput(bytes path, uint256 amountOut) external nonpayable returns (uint256 amountIn, uint160[] sqrtPriceX96AfterList, uint32[] initializedTicksCrossedList, uint256 gasEstimate)
 ```
 
             
@@ -112,7 +112,7 @@ quoteExactOutput(bytes path, uint256 amountOut) external nonpayable returns (uin
 
 ### quoteExactOutputSingle
 ```solidity
-quoteExactOutputSingle((address,address,uint256,uint24,uint160) params) external nonpayable returns (uint256 amountIn, uint160 sqrtPriceX96After, uint32 initializedTicksCrossed, uint256 gasEstimate)
+function quoteExactOutputSingle((address,address,uint256,uint24,uint160) params) external nonpayable returns (uint256 amountIn, uint160 sqrtPriceX96After, uint32 initializedTicksCrossed, uint256 gasEstimate)
 ```
 
             
@@ -136,7 +136,7 @@ quoteExactOutputSingle((address,address,uint256,uint24,uint160) params) external
 
 ### uniswapV3SwapCallback
 ```solidity
-uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes path) external view
+function uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes path) external view
 ```
 
             

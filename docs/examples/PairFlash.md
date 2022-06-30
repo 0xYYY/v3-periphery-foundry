@@ -9,7 +9,7 @@ Flash contract implementation
 ## Methods
 ### WETH9
 ```solidity
-WETH9() external view returns (address)
+function WETH9() external view returns (address)
 ```
 
             
@@ -23,7 +23,7 @@ WETH9() external view returns (address)
 
 ### factory
 ```solidity
-factory() external view returns (address)
+function factory() external view returns (address)
 ```
 
             
@@ -37,7 +37,7 @@ factory() external view returns (address)
 
 ### initFlash
 ```solidity
-initFlash((address,address,uint24,uint256,uint256,uint24,uint24) params) external nonpayable
+function initFlash((address,address,uint24,uint256,uint256,uint24,uint24) params) external nonpayable
 ```
 
             
@@ -52,7 +52,7 @@ initFlash((address,address,uint24,uint256,uint256,uint24,uint24) params) externa
 
 ### refundETH
 ```solidity
-refundETH() external payable
+function refundETH() external payable
 ```
 
             
@@ -62,7 +62,7 @@ Useful for bundling with mint or increase liquidity that uses ether, or exact ou
 *Refunds any ETH balance held by this contract to the `msg.sender`*
 ### swapRouter
 ```solidity
-swapRouter() external view returns (address)
+function swapRouter() external view returns (address)
 ```
 
             
@@ -76,7 +76,7 @@ swapRouter() external view returns (address)
 
 ### sweepToken
 ```solidity
-sweepToken(address token, uint256 amountMinimum, address recipient) external payable
+function sweepToken(address token, uint256 amountMinimum, address recipient) external payable
 ```
 
             
@@ -94,7 +94,7 @@ The amountMinimum parameter prevents malicious contracts from stealing the token
 
 ### uniswapV3FlashCallback
 ```solidity
-uniswapV3FlashCallback(uint256 fee0, uint256 fee1, bytes data) external nonpayable
+function uniswapV3FlashCallback(uint256 fee0, uint256 fee1, bytes data) external nonpayable
 ```
 
             
@@ -112,7 +112,7 @@ fails if the flash is not profitable, meaning the amountOut from the flash is le
 
 ### unwrapWETH9
 ```solidity
-unwrapWETH9(uint256 amountMinimum, address recipient) external payable
+function unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
 
             

@@ -10,7 +10,7 @@ These functions are not marked view because they rely on calling non-view functi
 ## Methods
 ### quoteExactInput
 ```solidity
-quoteExactInput(bytes path, uint256 amountIn) external nonpayable returns (uint256 amountOut)
+function quoteExactInput(bytes path, uint256 amountIn) external nonpayable returns (uint256 amountOut)
 ```
 
             
@@ -32,7 +32,7 @@ quoteExactInput(bytes path, uint256 amountIn) external nonpayable returns (uint2
 
 ### quoteExactInputSingle
 ```solidity
-quoteExactInputSingle(address tokenIn, address tokenOut, uint24 fee, uint256 amountIn, uint160 sqrtPriceLimitX96) external nonpayable returns (uint256 amountOut)
+function quoteExactInputSingle(address tokenIn, address tokenOut, uint24 fee, uint256 amountIn, uint160 sqrtPriceLimitX96) external nonpayable returns (uint256 amountOut)
 ```
 
             
@@ -57,7 +57,7 @@ quoteExactInputSingle(address tokenIn, address tokenOut, uint24 fee, uint256 amo
 
 ### quoteExactOutput
 ```solidity
-quoteExactOutput(bytes path, uint256 amountOut) external nonpayable returns (uint256 amountIn)
+function quoteExactOutput(bytes path, uint256 amountOut) external nonpayable returns (uint256 amountIn)
 ```
 
             
@@ -79,7 +79,7 @@ quoteExactOutput(bytes path, uint256 amountOut) external nonpayable returns (uin
 
 ### quoteExactOutputSingle
 ```solidity
-quoteExactOutputSingle(address tokenIn, address tokenOut, uint24 fee, uint256 amountOut, uint160 sqrtPriceLimitX96) external nonpayable returns (uint256 amountIn)
+function quoteExactOutputSingle(address tokenIn, address tokenOut, uint24 fee, uint256 amountOut, uint160 sqrtPriceLimitX96) external nonpayable returns (uint256 amountIn)
 ```
 
             

@@ -8,7 +8,7 @@ Tick Lens contract
 ## Methods
 ### getPopulatedTicksInWord
 ```solidity
-getPopulatedTicksInWord(address pool, int16 tickBitmapIndex) external view returns ((int24,int128,uint128)[] populatedTicks)
+function getPopulatedTicksInWord(address pool, int16 tickBitmapIndex) external view returns ((int24,int128,uint128)[] populatedTicks)
 ```
 
             

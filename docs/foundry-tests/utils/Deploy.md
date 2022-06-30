@@ -7,7 +7,7 @@
 ## Methods
 ### deployCode
 ```solidity
-deployCode(string what) external nonpayable returns (address addr)
+function deployCode(string what) external nonpayable returns (address addr)
 ```
 
             
@@ -27,7 +27,7 @@ deployCode(string what) external nonpayable returns (address addr)
 
 ### factory
 ```solidity
-factory() external view returns (address)
+function factory() external view returns (address)
 ```
 
             
@@ -41,7 +41,7 @@ factory() external view returns (address)
 
 ### router
 ```solidity
-router() external view returns (address)
+function router() external view returns (address)
 ```
 
             
@@ -55,7 +55,7 @@ router() external view returns (address)
 
 ### setUp
 ```solidity
-setUp() external nonpayable
+function setUp() external nonpayable
 ```
 
             
@@ -63,7 +63,7 @@ setUp() external nonpayable
             
 ### weth9
 ```solidity
-weth9() external view returns (address)
+function weth9() external view returns (address)
 ```
 
             
@@ -85,7 +85,7 @@ weth9() external view returns (address)
 ## Methods
 ### deployCode
 ```solidity
-deployCode(string what) external nonpayable returns (address addr)
+function deployCode(string what) external nonpayable returns (address addr)
 ```
 
             
@@ -105,7 +105,7 @@ deployCode(string what) external nonpayable returns (address addr)
 
 ### factory
 ```solidity
-factory() external view returns (address)
+function factory() external view returns (address)
 ```
 
             
@@ -119,7 +119,7 @@ factory() external view returns (address)
 
 ### getBalances
 ```solidity
-getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
+function getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
 ```
 
             
@@ -139,7 +139,7 @@ getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,u
 
 ### router
 ```solidity
-router() external view returns (address)
+function router() external view returns (address)
 ```
 
             
@@ -153,7 +153,7 @@ router() external view returns (address)
 
 ### setUp
 ```solidity
-setUp() external nonpayable
+function setUp() external nonpayable
 ```
 
             
@@ -161,7 +161,7 @@ setUp() external nonpayable
             
 ### weth9
 ```solidity
-weth9() external view returns (address)
+function weth9() external view returns (address)
 ```
 
             
@@ -183,7 +183,7 @@ weth9() external view returns (address)
 ## Methods
 ### deployCode
 ```solidity
-deployCode(string what) external nonpayable returns (address addr)
+function deployCode(string what) external nonpayable returns (address addr)
 ```
 
             
@@ -203,7 +203,7 @@ deployCode(string what) external nonpayable returns (address addr)
 
 ### factory
 ```solidity
-factory() external view returns (address)
+function factory() external view returns (address)
 ```
 
             
@@ -217,7 +217,7 @@ factory() external view returns (address)
 
 ### router
 ```solidity
-router() external view returns (address)
+function router() external view returns (address)
 ```
 
             
@@ -231,7 +231,7 @@ router() external view returns (address)
 
 ### setUp
 ```solidity
-setUp() external nonpayable
+function setUp() external nonpayable
 ```
 
             
@@ -239,7 +239,7 @@ setUp() external nonpayable
             
 ### weth9
 ```solidity
-weth9() external view returns (address)
+function weth9() external view returns (address)
 ```
 
             
@@ -261,7 +261,7 @@ weth9() external view returns (address)
 ## Methods
 ### allowance
 ```solidity
-allowance(address owner, address spender) external view returns (uint256)
+function allowance(address owner, address spender) external view returns (uint256)
 ```
 
             
@@ -283,7 +283,7 @@ allowance(address owner, address spender) external view returns (uint256)
 
 ### approve
 ```solidity
-approve(address spender, uint256 amount) external nonpayable returns (bool)
+function approve(address spender, uint256 amount) external nonpayable returns (bool)
 ```
 
             
@@ -305,7 +305,7 @@ approve(address spender, uint256 amount) external nonpayable returns (bool)
 
 ### balanceOf
 ```solidity
-balanceOf(address account) external view returns (uint256)
+function balanceOf(address account) external view returns (uint256)
 ```
 
             
@@ -326,7 +326,7 @@ balanceOf(address account) external view returns (uint256)
 
 ### deposit
 ```solidity
-deposit() external payable
+function deposit() external payable
 ```
 
             
@@ -334,7 +334,7 @@ deposit() external payable
             
 ### transfer
 ```solidity
-transfer(address recipient, uint256 amount) external nonpayable returns (bool)
+function transfer(address recipient, uint256 amount) external nonpayable returns (bool)
 ```
 
             
@@ -356,7 +356,7 @@ transfer(address recipient, uint256 amount) external nonpayable returns (bool)
 
 ### transferFrom
 ```solidity
-transferFrom(address sender, address recipient, uint256 amount) external nonpayable returns (bool)
+function transferFrom(address sender, address recipient, uint256 amount) external nonpayable returns (bool)
 ```
 
             
@@ -380,7 +380,7 @@ transferFrom(address sender, address recipient, uint256 amount) external nonpaya
 ### Events
 ### Approval
 ```solidity
-Approval(address owner, address spender, uint256 value)
+event Approval(address owner, address spender, uint256 value)
 ```
 
             
@@ -397,7 +397,7 @@ Approval(address owner, address spender, uint256 value)
 
 ### Transfer
 ```solidity
-Transfer(address from, address to, uint256 value)
+event Transfer(address from, address to, uint256 value)
 ```
 
             

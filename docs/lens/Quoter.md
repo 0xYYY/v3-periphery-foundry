@@ -10,7 +10,7 @@ These functions are not gas efficient and should _not_ be called on chain. Inste
 ## Methods
 ### WETH9
 ```solidity
-WETH9() external view returns (address)
+function WETH9() external view returns (address)
 ```
 
             
@@ -24,7 +24,7 @@ WETH9() external view returns (address)
 
 ### factory
 ```solidity
-factory() external view returns (address)
+function factory() external view returns (address)
 ```
 
             
@@ -38,7 +38,7 @@ factory() external view returns (address)
 
 ### quoteExactInput
 ```solidity
-quoteExactInput(bytes path, uint256 amountIn) external nonpayable returns (uint256 amountOut)
+function quoteExactInput(bytes path, uint256 amountIn) external nonpayable returns (uint256 amountOut)
 ```
 
             
@@ -60,7 +60,7 @@ quoteExactInput(bytes path, uint256 amountIn) external nonpayable returns (uint2
 
 ### quoteExactInputSingle
 ```solidity
-quoteExactInputSingle(address tokenIn, address tokenOut, uint24 fee, uint256 amountIn, uint160 sqrtPriceLimitX96) external nonpayable returns (uint256 amountOut)
+function quoteExactInputSingle(address tokenIn, address tokenOut, uint24 fee, uint256 amountIn, uint160 sqrtPriceLimitX96) external nonpayable returns (uint256 amountOut)
 ```
 
             
@@ -85,7 +85,7 @@ quoteExactInputSingle(address tokenIn, address tokenOut, uint24 fee, uint256 amo
 
 ### quoteExactOutput
 ```solidity
-quoteExactOutput(bytes path, uint256 amountOut) external nonpayable returns (uint256 amountIn)
+function quoteExactOutput(bytes path, uint256 amountOut) external nonpayable returns (uint256 amountIn)
 ```
 
             
@@ -107,7 +107,7 @@ quoteExactOutput(bytes path, uint256 amountOut) external nonpayable returns (uin
 
 ### quoteExactOutputSingle
 ```solidity
-quoteExactOutputSingle(address tokenIn, address tokenOut, uint24 fee, uint256 amountOut, uint160 sqrtPriceLimitX96) external nonpayable returns (uint256 amountIn)
+function quoteExactOutputSingle(address tokenIn, address tokenOut, uint24 fee, uint256 amountOut, uint160 sqrtPriceLimitX96) external nonpayable returns (uint256 amountIn)
 ```
 
             
@@ -132,7 +132,7 @@ quoteExactOutputSingle(address tokenIn, address tokenOut, uint24 fee, uint256 am
 
 ### uniswapV3SwapCallback
 ```solidity
-uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes path) external view
+function uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes path) external view
 ```
 
             

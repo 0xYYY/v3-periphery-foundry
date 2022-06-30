@@ -7,7 +7,7 @@
 ## Methods
 ### isValidSignature
 ```solidity
-isValidSignature(bytes32 hash, bytes signature) external view returns (bytes4 magicValue)
+function isValidSignature(bytes32 hash, bytes signature) external view returns (bytes4 magicValue)
 ```
 
             
@@ -30,7 +30,7 @@ MUST return the bytes4 magic value 0x1626ba7e when function passes. MUST NOT mod
 
 ### owner
 ```solidity
-owner() external view returns (address)
+function owner() external view returns (address)
 ```
 
             
@@ -44,7 +44,7 @@ owner() external view returns (address)
 
 ### setOwner
 ```solidity
-setOwner(address _owner) external nonpayable
+function setOwner(address _owner) external nonpayable
 ```
 
             

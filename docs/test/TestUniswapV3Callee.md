@@ -7,7 +7,7 @@
 ## Methods
 ### swap0ForExact1
 ```solidity
-swap0ForExact1(address pool, uint256 amount1Out, address recipient, uint160 sqrtPriceLimitX96) external nonpayable
+function swap0ForExact1(address pool, uint256 amount1Out, address recipient, uint160 sqrtPriceLimitX96) external nonpayable
 ```
 
             
@@ -24,7 +24,7 @@ swap0ForExact1(address pool, uint256 amount1Out, address recipient, uint160 sqrt
 
 ### swap1ForExact0
 ```solidity
-swap1ForExact0(address pool, uint256 amount0Out, address recipient, uint160 sqrtPriceLimitX96) external nonpayable
+function swap1ForExact0(address pool, uint256 amount0Out, address recipient, uint160 sqrtPriceLimitX96) external nonpayable
 ```
 
             
@@ -41,7 +41,7 @@ swap1ForExact0(address pool, uint256 amount0Out, address recipient, uint160 sqrt
 
 ### swapExact0For1
 ```solidity
-swapExact0For1(address pool, uint256 amount0In, address recipient, uint160 sqrtPriceLimitX96) external nonpayable
+function swapExact0For1(address pool, uint256 amount0In, address recipient, uint160 sqrtPriceLimitX96) external nonpayable
 ```
 
             
@@ -58,7 +58,7 @@ swapExact0For1(address pool, uint256 amount0In, address recipient, uint160 sqrtP
 
 ### swapExact1For0
 ```solidity
-swapExact1For0(address pool, uint256 amount1In, address recipient, uint160 sqrtPriceLimitX96) external nonpayable
+function swapExact1For0(address pool, uint256 amount1In, address recipient, uint160 sqrtPriceLimitX96) external nonpayable
 ```
 
             
@@ -75,7 +75,7 @@ swapExact1For0(address pool, uint256 amount1In, address recipient, uint160 sqrtP
 
 ### uniswapV3SwapCallback
 ```solidity
-uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes data) external nonpayable
+function uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes data) external nonpayable
 ```
 
             

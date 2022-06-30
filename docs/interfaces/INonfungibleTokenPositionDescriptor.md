@@ -8,7 +8,7 @@ Describes position NFT tokens via URI
 ## Methods
 ### tokenURI
 ```solidity
-tokenURI(address positionManager, uint256 tokenId) external view returns (string)
+function tokenURI(address positionManager, uint256 tokenId) external view returns (string)
 ```
 
             

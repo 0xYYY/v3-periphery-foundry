@@ -9,7 +9,7 @@ ERC721 with permit
 ## Methods
 ### DOMAIN_SEPARATOR
 ```solidity
-DOMAIN_SEPARATOR() external view returns (bytes32)
+function DOMAIN_SEPARATOR() external view returns (bytes32)
 ```
 
             
@@ -24,7 +24,7 @@ DOMAIN_SEPARATOR() external view returns (bytes32)
 
 ### PERMIT_TYPEHASH
 ```solidity
-PERMIT_TYPEHASH() external view returns (bytes32)
+function PERMIT_TYPEHASH() external view returns (bytes32)
 ```
 
             
@@ -39,7 +39,7 @@ PERMIT_TYPEHASH() external view returns (bytes32)
 
 ### approve
 ```solidity
-approve(address to, uint256 tokenId) external nonpayable
+function approve(address to, uint256 tokenId) external nonpayable
 ```
 
             
@@ -55,7 +55,7 @@ See {IERC721-approve}.
 
 ### balanceOf
 ```solidity
-balanceOf(address owner) external view returns (uint256)
+function balanceOf(address owner) external view returns (uint256)
 ```
 
             
@@ -76,7 +76,7 @@ See {IERC721-balanceOf}.
 
 ### baseURI
 ```solidity
-baseURI() external view returns (string)
+function baseURI() external view returns (string)
 ```
 
             
@@ -91,7 +91,7 @@ Returns the base URI set via {_setBaseURI}. This will be automatically added as 
 
 ### getApproved
 ```solidity
-getApproved(uint256 tokenId) external view returns (address)
+function getApproved(uint256 tokenId) external view returns (address)
 ```
 
             
@@ -112,7 +112,7 @@ See {IERC721-getApproved}.
 
 ### isApprovedForAll
 ```solidity
-isApprovedForAll(address owner, address operator) external view returns (bool)
+function isApprovedForAll(address owner, address operator) external view returns (bool)
 ```
 
             
@@ -134,7 +134,7 @@ See {IERC721-isApprovedForAll}.
 
 ### name
 ```solidity
-name() external view returns (string)
+function name() external view returns (string)
 ```
 
             
@@ -149,7 +149,7 @@ See {IERC721Metadata-name}.
 
 ### ownerOf
 ```solidity
-ownerOf(uint256 tokenId) external view returns (address)
+function ownerOf(uint256 tokenId) external view returns (address)
 ```
 
             
@@ -170,7 +170,7 @@ See {IERC721-ownerOf}.
 
 ### permit
 ```solidity
-permit(address spender, uint256 tokenId, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
+function permit(address spender, uint256 tokenId, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
 
             
@@ -190,7 +190,7 @@ permit(address spender, uint256 tokenId, uint256 deadline, uint8 v, bytes32 r, b
 
 ### safeTransferFrom
 ```solidity
-safeTransferFrom(address from, address to, uint256 tokenId) external nonpayable
+function safeTransferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
 
             
@@ -206,7 +206,7 @@ See {IERC721-safeTransferFrom}.
 | tokenId | uint256 | - |
 
 ```solidity
-safeTransferFrom(address from, address to, uint256 tokenId, bytes _data) external nonpayable
+function safeTransferFrom(address from, address to, uint256 tokenId, bytes _data) external nonpayable
 ```
 
             
@@ -224,7 +224,7 @@ See {IERC721-safeTransferFrom}.
 
 ### setApprovalForAll
 ```solidity
-setApprovalForAll(address operator, bool approved) external nonpayable
+function setApprovalForAll(address operator, bool approved) external nonpayable
 ```
 
             
@@ -240,7 +240,7 @@ See {IERC721-setApprovalForAll}.
 
 ### supportsInterface
 ```solidity
-supportsInterface(bytes4 interfaceId) external view returns (bool)
+function supportsInterface(bytes4 interfaceId) external view returns (bool)
 ```
 
             
@@ -261,7 +261,7 @@ See {IERC165-supportsInterface}. Time complexity O(1), guaranteed to always use 
 
 ### symbol
 ```solidity
-symbol() external view returns (string)
+function symbol() external view returns (string)
 ```
 
             
@@ -276,7 +276,7 @@ See {IERC721Metadata-symbol}.
 
 ### tokenByIndex
 ```solidity
-tokenByIndex(uint256 index) external view returns (uint256)
+function tokenByIndex(uint256 index) external view returns (uint256)
 ```
 
             
@@ -297,7 +297,7 @@ See {IERC721Enumerable-tokenByIndex}.
 
 ### tokenOfOwnerByIndex
 ```solidity
-tokenOfOwnerByIndex(address owner, uint256 index) external view returns (uint256)
+function tokenOfOwnerByIndex(address owner, uint256 index) external view returns (uint256)
 ```
 
             
@@ -319,7 +319,7 @@ See {IERC721Enumerable-tokenOfOwnerByIndex}.
 
 ### tokenURI
 ```solidity
-tokenURI(uint256 tokenId) external view returns (string)
+function tokenURI(uint256 tokenId) external view returns (string)
 ```
 
             
@@ -340,7 +340,7 @@ See {IERC721Metadata-tokenURI}.
 
 ### totalSupply
 ```solidity
-totalSupply() external view returns (uint256)
+function totalSupply() external view returns (uint256)
 ```
 
             
@@ -355,7 +355,7 @@ See {IERC721Enumerable-totalSupply}.
 
 ### transferFrom
 ```solidity
-transferFrom(address from, address to, uint256 tokenId) external nonpayable
+function transferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
 
             
@@ -373,7 +373,7 @@ See {IERC721-transferFrom}.
 ### Events
 ### Approval
 ```solidity
-Approval(address owner, address approved, uint256 tokenId)
+event Approval(address owner, address approved, uint256 tokenId)
 ```
 
             
@@ -389,7 +389,7 @@ Approval(address owner, address approved, uint256 tokenId)
 
 ### ApprovalForAll
 ```solidity
-ApprovalForAll(address owner, address operator, bool approved)
+event ApprovalForAll(address owner, address operator, bool approved)
 ```
 
             
@@ -405,7 +405,7 @@ ApprovalForAll(address owner, address operator, bool approved)
 
 ### Transfer
 ```solidity
-Transfer(address from, address to, uint256 tokenId)
+event Transfer(address from, address to, uint256 tokenId)
 ```
 
             

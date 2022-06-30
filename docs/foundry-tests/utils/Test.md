@@ -7,7 +7,7 @@
 ## Methods
 ### deployCode
 ```solidity
-deployCode(string what) external nonpayable returns (address addr)
+function deployCode(string what) external nonpayable returns (address addr)
 ```
 
             
@@ -35,7 +35,7 @@ deployCode(string what) external nonpayable returns (address addr)
 ## Methods
 ### addr
 ```solidity
-addr(uint256) external nonpayable returns (address)
+function addr(uint256) external nonpayable returns (address)
 ```
 
             
@@ -55,7 +55,7 @@ addr(uint256) external nonpayable returns (address)
 
 ### deal
 ```solidity
-deal(address, uint256) external nonpayable
+function deal(address, uint256) external nonpayable
 ```
 
             
@@ -70,7 +70,7 @@ deal(address, uint256) external nonpayable
 
 ### expectEmit
 ```solidity
-expectEmit(bool, bool, bool, bool) external nonpayable
+function expectEmit(bool, bool, bool, bool) external nonpayable
 ```
 
             
@@ -87,7 +87,7 @@ expectEmit(bool, bool, bool, bool) external nonpayable
 
 ### expectRevert
 ```solidity
-expectRevert(bytes) external nonpayable
+function expectRevert(bytes) external nonpayable
 ```
 
             
@@ -101,7 +101,7 @@ expectRevert(bytes) external nonpayable
 
 ### getCode
 ```solidity
-getCode(string) external nonpayable returns (bytes)
+function getCode(string) external nonpayable returns (bytes)
 ```
 
             
@@ -121,7 +121,7 @@ getCode(string) external nonpayable returns (bytes)
 
 ### prank
 ```solidity
-prank(address) external nonpayable
+function prank(address) external nonpayable
 ```
 
             
@@ -135,7 +135,7 @@ prank(address) external nonpayable
 
 ### startPrank
 ```solidity
-startPrank(address) external nonpayable
+function startPrank(address) external nonpayable
 ```
 
             
@@ -149,7 +149,7 @@ startPrank(address) external nonpayable
 
 ### stopPrank
 ```solidity
-stopPrank() external nonpayable
+function stopPrank() external nonpayable
 ```
 
             

@@ -7,7 +7,7 @@
 ## Methods
 ### WETH9
 ```solidity
-WETH9() external view returns (address)
+function WETH9() external view returns (address)
 ```
 
             
@@ -21,7 +21,7 @@ WETH9() external view returns (address)
 
 ### factory
 ```solidity
-factory() external view returns (address)
+function factory() external view returns (address)
 ```
 
             
@@ -35,7 +35,7 @@ factory() external view returns (address)
 
 ### refundETH
 ```solidity
-refundETH() external payable
+function refundETH() external payable
 ```
 
             
@@ -45,7 +45,7 @@ Useful for bundling with mint or increase liquidity that uses ether, or exact ou
 *Refunds any ETH balance held by this contract to the `msg.sender`*
 ### sweepToken
 ```solidity
-sweepToken(address token, uint256 amountMinimum, address recipient) external payable
+function sweepToken(address token, uint256 amountMinimum, address recipient) external payable
 ```
 
             
@@ -63,7 +63,7 @@ The amountMinimum parameter prevents malicious contracts from stealing the token
 
 ### sweepTokenWithFee
 ```solidity
-sweepTokenWithFee(address token, uint256 amountMinimum, address recipient, uint256 feeBips, address feeRecipient) external payable
+function sweepTokenWithFee(address token, uint256 amountMinimum, address recipient, uint256 feeBips, address feeRecipient) external payable
 ```
 
             
@@ -83,7 +83,7 @@ The amountMinimum parameter prevents malicious contracts from stealing the token
 
 ### unwrapWETH9
 ```solidity
-unwrapWETH9(uint256 amountMinimum, address recipient) external payable
+function unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
 
             
@@ -100,7 +100,7 @@ The amountMinimum parameter prevents malicious contracts from stealing WETH9 fro
 
 ### unwrapWETH9WithFee
 ```solidity
-unwrapWETH9WithFee(uint256 amountMinimum, address recipient, uint256 feeBips, address feeRecipient) external payable
+function unwrapWETH9WithFee(uint256 amountMinimum, address recipient, uint256 feeBips, address feeRecipient) external payable
 ```
 
             

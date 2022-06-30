@@ -7,7 +7,7 @@
 ## Methods
 ### POOL_INIT_CODE_HASH
 ```solidity
-POOL_INIT_CODE_HASH() external pure returns (bytes32)
+function POOL_INIT_CODE_HASH() external pure returns (bytes32)
 ```
 
             
@@ -21,7 +21,7 @@ POOL_INIT_CODE_HASH() external pure returns (bytes32)
 
 ### computeAddress
 ```solidity
-computeAddress(address factory, address token0, address token1, uint24 fee) external pure returns (address)
+function computeAddress(address factory, address token0, address token1, uint24 fee) external pure returns (address)
 ```
 
             
@@ -44,7 +44,7 @@ computeAddress(address factory, address token0, address token1, uint24 fee) exte
 
 ### getGasCostOfComputeAddress
 ```solidity
-getGasCostOfComputeAddress(address factory, address token0, address token1, uint24 fee) external view returns (uint256)
+function getGasCostOfComputeAddress(address factory, address token0, address token1, uint24 fee) external view returns (uint256)
 ```
 
             

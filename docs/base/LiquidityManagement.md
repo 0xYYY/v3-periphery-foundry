@@ -9,7 +9,7 @@ Liquidity management functions
 ## Methods
 ### WETH9
 ```solidity
-WETH9() external view returns (address)
+function WETH9() external view returns (address)
 ```
 
             
@@ -23,7 +23,7 @@ WETH9() external view returns (address)
 
 ### factory
 ```solidity
-factory() external view returns (address)
+function factory() external view returns (address)
 ```
 
             
@@ -37,7 +37,7 @@ factory() external view returns (address)
 
 ### refundETH
 ```solidity
-refundETH() external payable
+function refundETH() external payable
 ```
 
             
@@ -47,7 +47,7 @@ Useful for bundling with mint or increase liquidity that uses ether, or exact ou
 *Refunds any ETH balance held by this contract to the `msg.sender`*
 ### sweepToken
 ```solidity
-sweepToken(address token, uint256 amountMinimum, address recipient) external payable
+function sweepToken(address token, uint256 amountMinimum, address recipient) external payable
 ```
 
             
@@ -65,7 +65,7 @@ The amountMinimum parameter prevents malicious contracts from stealing the token
 
 ### uniswapV3MintCallback
 ```solidity
-uniswapV3MintCallback(uint256 amount0Owed, uint256 amount1Owed, bytes data) external nonpayable
+function uniswapV3MintCallback(uint256 amount0Owed, uint256 amount1Owed, bytes data) external nonpayable
 ```
 
             
@@ -83,7 +83,7 @@ In the implementation you must pay the pool tokens owed for the minted liquidity
 
 ### unwrapWETH9
 ```solidity
-unwrapWETH9(uint256 amountMinimum, address recipient) external payable
+function unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
 
             

@@ -7,7 +7,7 @@
 ## Methods
 ### consult
 ```solidity
-consult(address pool, uint32 secondsAgo) external view returns (int24 arithmeticMeanTick, uint128 harmonicMeanLiquidity)
+function consult(address pool, uint32 secondsAgo) external view returns (int24 arithmeticMeanTick, uint128 harmonicMeanLiquidity)
 ```
 
             
@@ -29,7 +29,7 @@ consult(address pool, uint32 secondsAgo) external view returns (int24 arithmetic
 
 ### getBlockStartingTickAndLiquidity
 ```solidity
-getBlockStartingTickAndLiquidity(address pool) external view returns (int24, uint128)
+function getBlockStartingTickAndLiquidity(address pool) external view returns (int24, uint128)
 ```
 
             
@@ -50,7 +50,7 @@ getBlockStartingTickAndLiquidity(address pool) external view returns (int24, uin
 
 ### getChainedPrice
 ```solidity
-getChainedPrice(address[] tokens, int24[] ticks) external view returns (int256 syntheticTick)
+function getChainedPrice(address[] tokens, int24[] ticks) external view returns (int256 syntheticTick)
 ```
 
             
@@ -71,7 +71,7 @@ getChainedPrice(address[] tokens, int24[] ticks) external view returns (int256 s
 
 ### getGasCostOfConsult
 ```solidity
-getGasCostOfConsult(address pool, uint32 period) external view returns (uint256)
+function getGasCostOfConsult(address pool, uint32 period) external view returns (uint256)
 ```
 
             
@@ -92,7 +92,7 @@ getGasCostOfConsult(address pool, uint32 period) external view returns (uint256)
 
 ### getGasCostOfGetQuoteAtTick
 ```solidity
-getGasCostOfGetQuoteAtTick(int24 tick, uint128 baseAmount, address baseToken, address quoteToken) external view returns (uint256)
+function getGasCostOfGetQuoteAtTick(int24 tick, uint128 baseAmount, address baseToken, address quoteToken) external view returns (uint256)
 ```
 
             
@@ -115,7 +115,7 @@ getGasCostOfGetQuoteAtTick(int24 tick, uint128 baseAmount, address baseToken, ad
 
 ### getOldestObservationSecondsAgo
 ```solidity
-getOldestObservationSecondsAgo(address pool) external view returns (uint32 secondsAgo, uint32 currentTimestamp)
+function getOldestObservationSecondsAgo(address pool) external view returns (uint32 secondsAgo, uint32 currentTimestamp)
 ```
 
             
@@ -136,7 +136,7 @@ getOldestObservationSecondsAgo(address pool) external view returns (uint32 secon
 
 ### getQuoteAtTick
 ```solidity
-getQuoteAtTick(int24 tick, uint128 baseAmount, address baseToken, address quoteToken) external pure returns (uint256 quoteAmount)
+function getQuoteAtTick(int24 tick, uint128 baseAmount, address baseToken, address quoteToken) external pure returns (uint256 quoteAmount)
 ```
 
             
@@ -159,7 +159,7 @@ getQuoteAtTick(int24 tick, uint128 baseAmount, address baseToken, address quoteT
 
 ### getWeightedArithmeticMeanTick
 ```solidity
-getWeightedArithmeticMeanTick((int24,uint128)[] observations) external pure returns (int24 arithmeticMeanWeightedTick)
+function getWeightedArithmeticMeanTick((int24,uint128)[] observations) external pure returns (int24 arithmeticMeanWeightedTick)
 ```
 
             

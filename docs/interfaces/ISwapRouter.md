@@ -9,7 +9,7 @@ Router token swapping functionality
 ## Methods
 ### exactInput
 ```solidity
-exactInput((bytes,address,uint256,uint256,uint256) params) external payable returns (uint256 amountOut)
+function exactInput((bytes,address,uint256,uint256,uint256) params) external payable returns (uint256 amountOut)
 ```
 
             
@@ -30,7 +30,7 @@ exactInput((bytes,address,uint256,uint256,uint256) params) external payable retu
 
 ### exactInputSingle
 ```solidity
-exactInputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160) params) external payable returns (uint256 amountOut)
+function exactInputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160) params) external payable returns (uint256 amountOut)
 ```
 
             
@@ -51,7 +51,7 @@ exactInputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160
 
 ### exactOutput
 ```solidity
-exactOutput((bytes,address,uint256,uint256,uint256) params) external payable returns (uint256 amountIn)
+function exactOutput((bytes,address,uint256,uint256,uint256) params) external payable returns (uint256 amountIn)
 ```
 
             
@@ -72,7 +72,7 @@ exactOutput((bytes,address,uint256,uint256,uint256) params) external payable ret
 
 ### exactOutputSingle
 ```solidity
-exactOutputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160) params) external payable returns (uint256 amountIn)
+function exactOutputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160) params) external payable returns (uint256 amountIn)
 ```
 
             
@@ -93,7 +93,7 @@ exactOutputSingle((address,address,uint24,address,uint256,uint256,uint256,uint16
 
 ### uniswapV3SwapCallback
 ```solidity
-uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes data) external nonpayable
+function uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes data) external nonpayable
 ```
 
             

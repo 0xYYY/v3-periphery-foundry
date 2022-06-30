@@ -7,7 +7,7 @@
 ## Methods
 ### encode
 ```solidity
-encode(bytes data) external pure returns (string)
+function encode(bytes data) external pure returns (string)
 ```
 
             
@@ -27,7 +27,7 @@ encode(bytes data) external pure returns (string)
 
 ### getGasCostOfEncode
 ```solidity
-getGasCostOfEncode(bytes data) external view returns (uint256)
+function getGasCostOfEncode(bytes data) external view returns (uint256)
 ```
 
             

@@ -7,7 +7,7 @@
 ## Methods
 ### constructTokenURI
 ```solidity
-constructTokenURI((uint256,address,address,string,string,uint8,uint8,bool,int24,int24,int24,int24,uint24,address) params) external pure returns (string)
+function constructTokenURI((uint256,address,address,string,string,uint8,uint8,bool,int24,int24,int24,int24,uint24,address) params) external pure returns (string)
 ```
 
             

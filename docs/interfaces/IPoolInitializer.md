@@ -9,7 +9,7 @@ Creates and initializes V3 Pools
 ## Methods
 ### createAndInitializePoolIfNecessary
 ```solidity
-createAndInitializePoolIfNecessary(address token0, address token1, uint24 fee, uint160 sqrtPriceX96) external payable returns (address pool)
+function createAndInitializePoolIfNecessary(address token0, address token1, uint24 fee, uint160 sqrtPriceX96) external payable returns (address pool)
 ```
 
             
