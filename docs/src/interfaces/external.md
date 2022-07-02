@@ -1,0 +1,3 @@
+- [IERC1271](interfaces/external/IERC1271.md)
+- [IERC20PermitAllowed](interfaces/external/IERC20PermitAllowed.md)
+- [IWETH9](interfaces/external/IWETH9.md)

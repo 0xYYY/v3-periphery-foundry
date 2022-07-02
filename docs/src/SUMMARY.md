@@ -13,8 +13,10 @@
     - [PeripheryValidation](base/PeripheryValidation.md)
     - [PoolInitializer](base/PoolInitializer.md)
     - [SelfPermit](base/SelfPermit.md)
+    
 - [examples](examples.md)
     - [PairFlash](examples/PairFlash.md)
+    
 - [foundry-tests](foundry-tests.md)
     - [LiquidityAmounts.t](foundry-tests/LiquidityAmounts.t.md)
     - [SwapRouter.t](foundry-tests/SwapRouter.t.md)
@@ -22,6 +24,8 @@
         - [Deploy](foundry-tests/utils/Deploy.md)
         - [Path](foundry-tests/utils/Path.md)
         - [Test](foundry-tests/utils/Test.md)
+        
+    
 - [interfaces](interfaces.md)
     - [IERC20Metadata](interfaces/IERC20Metadata.md)
     - [IERC721Permit](interfaces/IERC721Permit.md)
@@ -42,11 +46,14 @@
         - [IERC1271](interfaces/external/IERC1271.md)
         - [IERC20PermitAllowed](interfaces/external/IERC20PermitAllowed.md)
         - [IWETH9](interfaces/external/IWETH9.md)
+        
+    
 - [lens](lens.md)
     - [Quoter](lens/Quoter.md)
     - [QuoterV2](lens/QuoterV2.md)
     - [TickLens](lens/TickLens.md)
     - [UniswapInterfaceMulticall](lens/UniswapInterfaceMulticall.md)
+    
 - [libraries](libraries.md)
     - [BytesLib](libraries/BytesLib.md)
     - [CallbackValidation](libraries/CallbackValidation.md)
@@ -64,6 +71,7 @@
     - [SqrtPriceMathPartial](libraries/SqrtPriceMathPartial.md)
     - [TokenRatioSortOrder](libraries/TokenRatioSortOrder.md)
     - [TransferHelper](libraries/TransferHelper.md)
+    
 - [test](test.md)
     - [Base64Test](test/Base64Test.md)
     - [LiquidityAmountsTest](test/LiquidityAmountsTest.md)
@@ -88,3 +96,4 @@
     - [TestPositionNFTOwner](test/TestPositionNFTOwner.md)
     - [TestUniswapV3Callee](test/TestUniswapV3Callee.md)
     - [TickLensTest](test/TickLensTest.md)
+    
