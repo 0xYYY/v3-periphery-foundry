@@ -1,3 +1,3 @@
-- [Deploy](foundry-tests/utils/Deploy.md)
-- [Path](foundry-tests/utils/Path.md)
-- [Test](foundry-tests/utils/Test.md)
+- [Deploy](utils/Deploy.md)
+- [Path](utils/Path.md)
+- [Test](utils/Test.md)
