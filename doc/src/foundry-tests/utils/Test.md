@@ -1,11 +1,11 @@
 
-# Test.sol
+# `Test`
 
     
 
     
 ## Methods
-### deployCode
+### `deployCode`
 ```solidity
 function deployCode(string what) external nonpayable returns (address addr)
 ```
@@ -17,23 +17,23 @@ function deployCode(string what) external nonpayable returns (address addr)
 
 | Name | Type | Description |
 |---|---|---|
-| what | string | - |
+| `what` | `string` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| addr | address | - |
+| `addr` | `address` | - |
 
 
 
-# Vm.sol
+# `Vm`
 
     
 
     
 ## Methods
-### addr
+### `addr`
 ```solidity
 function addr(uint256) external nonpayable returns (address)
 ```
@@ -45,15 +45,15 @@ function addr(uint256) external nonpayable returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### deal
+### `deal`
 ```solidity
 function deal(address, uint256) external nonpayable
 ```
@@ -65,10 +65,10 @@ function deal(address, uint256) external nonpayable
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
-| - | uint256 | - |
+| `-` | `address` | - |
+| `-` | `uint256` | - |
 
-### expectEmit
+### `expectEmit`
 ```solidity
 function expectEmit(bool, bool, bool, bool) external nonpayable
 ```
@@ -80,12 +80,12 @@ function expectEmit(bool, bool, bool, bool) external nonpayable
 
 | Name | Type | Description |
 |---|---|---|
-| - | bool | - |
-| - | bool | - |
-| - | bool | - |
-| - | bool | - |
+| `-` | `bool` | - |
+| `-` | `bool` | - |
+| `-` | `bool` | - |
+| `-` | `bool` | - |
 
-### expectRevert
+### `expectRevert`
 ```solidity
 function expectRevert(bytes) external nonpayable
 ```
@@ -97,9 +97,9 @@ function expectRevert(bytes) external nonpayable
 
 | Name | Type | Description |
 |---|---|---|
-| - | bytes | - |
+| `-` | `bytes` | - |
 
-### getCode
+### `getCode`
 ```solidity
 function getCode(string) external nonpayable returns (bytes)
 ```
@@ -111,15 +111,15 @@ function getCode(string) external nonpayable returns (bytes)
 
 | Name | Type | Description |
 |---|---|---|
-| - | string | - |
+| `-` | `string` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | bytes | - |
+| `-` | `bytes` | - |
 
-### prank
+### `prank`
 ```solidity
 function prank(address) external nonpayable
 ```
@@ -131,9 +131,9 @@ function prank(address) external nonpayable
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### startPrank
+### `startPrank`
 ```solidity
 function startPrank(address) external nonpayable
 ```
@@ -145,9 +145,9 @@ function startPrank(address) external nonpayable
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### stopPrank
+### `stopPrank`
 ```solidity
 function stopPrank() external nonpayable
 ```

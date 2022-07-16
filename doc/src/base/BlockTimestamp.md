@@ -1,5 +1,5 @@
 
-# BlockTimestamp.sol
+# `BlockTimestamp`
 
     
 Function for getting block timestamp

@@ -1,11 +1,11 @@
 
-# TestERC20Metadata.sol
+# `TestERC20Metadata`
 
     
 
     
 ## Methods
-### DOMAIN_SEPARATOR
+### `DOMAIN_SEPARATOR`
 ```solidity
 function DOMAIN_SEPARATOR() external view returns (bytes32)
 ```
@@ -18,9 +18,9 @@ See {IERC20Permit-DOMAIN_SEPARATOR}.
 
 | Name | Type | Description |
 |---|---|---|
-| - | bytes32 | - |
+| `-` | `bytes32` | - |
 
-### allowance
+### `allowance`
 ```solidity
 function allowance(address owner, address spender) external view returns (uint256)
 ```
@@ -33,16 +33,16 @@ See {IERC20-allowance}.
 
 | Name | Type | Description |
 |---|---|---|
-| owner | address | - |
-| spender | address | - |
+| `owner` | `address` | - |
+| `spender` | `address` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### approve
+### `approve`
 ```solidity
 function approve(address spender, uint256 amount) external nonpayable returns (bool)
 ```
@@ -55,16 +55,16 @@ See {IERC20-approve}. Requirements: - `spender` cannot be the zero address.
 
 | Name | Type | Description |
 |---|---|---|
-| spender | address | - |
-| amount | uint256 | - |
+| `spender` | `address` | - |
+| `amount` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | bool | - |
+| `-` | `bool` | - |
 
-### balanceOf
+### `balanceOf`
 ```solidity
 function balanceOf(address account) external view returns (uint256)
 ```
@@ -77,15 +77,15 @@ See {IERC20-balanceOf}.
 
 | Name | Type | Description |
 |---|---|---|
-| account | address | - |
+| `account` | `address` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### decimals
+### `decimals`
 ```solidity
 function decimals() external view returns (uint8)
 ```
@@ -98,9 +98,9 @@ Returns the number of decimals used to get its user representation. For example,
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint8 | - |
+| `-` | `uint8` | - |
 
-### decreaseAllowance
+### `decreaseAllowance`
 ```solidity
 function decreaseAllowance(address spender, uint256 subtractedValue) external nonpayable returns (bool)
 ```
@@ -113,16 +113,16 @@ Atomically decreases the allowance granted to `spender` by the caller. This is a
 
 | Name | Type | Description |
 |---|---|---|
-| spender | address | - |
-| subtractedValue | uint256 | - |
+| `spender` | `address` | - |
+| `subtractedValue` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | bool | - |
+| `-` | `bool` | - |
 
-### increaseAllowance
+### `increaseAllowance`
 ```solidity
 function increaseAllowance(address spender, uint256 addedValue) external nonpayable returns (bool)
 ```
@@ -135,16 +135,16 @@ Atomically increases the allowance granted to `spender` by the caller. This is a
 
 | Name | Type | Description |
 |---|---|---|
-| spender | address | - |
-| addedValue | uint256 | - |
+| `spender` | `address` | - |
+| `addedValue` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | bool | - |
+| `-` | `bool` | - |
 
-### name
+### `name`
 ```solidity
 function name() external view returns (string)
 ```
@@ -157,9 +157,9 @@ Returns the name of the token.
 
 | Name | Type | Description |
 |---|---|---|
-| - | string | - |
+| `-` | `string` | - |
 
-### nonces
+### `nonces`
 ```solidity
 function nonces(address owner) external view returns (uint256)
 ```
@@ -172,15 +172,15 @@ See {IERC20Permit-nonces}.
 
 | Name | Type | Description |
 |---|---|---|
-| owner | address | - |
+| `owner` | `address` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### permit
+### `permit`
 ```solidity
 function permit(address owner, address spender, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external nonpayable
 ```
@@ -193,15 +193,15 @@ See {IERC20Permit-permit}.
 
 | Name | Type | Description |
 |---|---|---|
-| owner | address | - |
-| spender | address | - |
-| value | uint256 | - |
-| deadline | uint256 | - |
-| v | uint8 | - |
-| r | bytes32 | - |
-| s | bytes32 | - |
+| `owner` | `address` | - |
+| `spender` | `address` | - |
+| `value` | `uint256` | - |
+| `deadline` | `uint256` | - |
+| `v` | `uint8` | - |
+| `r` | `bytes32` | - |
+| `s` | `bytes32` | - |
 
-### symbol
+### `symbol`
 ```solidity
 function symbol() external view returns (string)
 ```
@@ -214,9 +214,9 @@ Returns the symbol of the token, usually a shorter version of the name.
 
 | Name | Type | Description |
 |---|---|---|
-| - | string | - |
+| `-` | `string` | - |
 
-### totalSupply
+### `totalSupply`
 ```solidity
 function totalSupply() external view returns (uint256)
 ```
@@ -229,9 +229,9 @@ See {IERC20-totalSupply}.
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### transfer
+### `transfer`
 ```solidity
 function transfer(address recipient, uint256 amount) external nonpayable returns (bool)
 ```
@@ -244,16 +244,16 @@ See {IERC20-transfer}. Requirements: - `recipient` cannot be the zero address. -
 
 | Name | Type | Description |
 |---|---|---|
-| recipient | address | - |
-| amount | uint256 | - |
+| `recipient` | `address` | - |
+| `amount` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | bool | - |
+| `-` | `bool` | - |
 
-### transferFrom
+### `transferFrom`
 ```solidity
 function transferFrom(address sender, address recipient, uint256 amount) external nonpayable returns (bool)
 ```
@@ -266,18 +266,18 @@ See {IERC20-transferFrom}. Emits an {Approval} event indicating the updated allo
 
 | Name | Type | Description |
 |---|---|---|
-| sender | address | - |
-| recipient | address | - |
-| amount | uint256 | - |
+| `sender` | `address` | - |
+| `recipient` | `address` | - |
+| `amount` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | bool | - |
+| `-` | `bool` | - |
 
 ### Events
-### Approval
+### `Approval`
 ```solidity
 event Approval(address owner, address spender, uint256 value)
 ```
@@ -289,11 +289,11 @@ event Approval(address owner, address spender, uint256 value)
 
 | Name | Type | Indexed | Description |
 |---|---|---|---|
-| owner | address |true| - |
-| spender | address |true| - |
-| value | uint256 |false| - |
+| `owner` | `address` |`true`| - |
+| `spender` | `address` |`true`| - |
+| `value` | `uint256` |`false`| - |
 
-### Transfer
+### `Transfer`
 ```solidity
 event Transfer(address from, address to, uint256 value)
 ```
@@ -305,8 +305,8 @@ event Transfer(address from, address to, uint256 value)
 
 | Name | Type | Indexed | Description |
 |---|---|---|---|
-| from | address |true| - |
-| to | address |true| - |
-| value | uint256 |false| - |
+| `from` | `address` |`true`| - |
+| `to` | `address` |`true`| - |
+| `value` | `uint256` |`false`| - |
 
 

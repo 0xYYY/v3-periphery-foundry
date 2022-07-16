@@ -1,11 +1,11 @@
 
-# PoolAddressTest.sol
+# `PoolAddressTest`
 
     
 
     
 ## Methods
-### POOL_INIT_CODE_HASH
+### `POOL_INIT_CODE_HASH`
 ```solidity
 function POOL_INIT_CODE_HASH() external pure returns (bytes32)
 ```
@@ -17,9 +17,9 @@ function POOL_INIT_CODE_HASH() external pure returns (bytes32)
 
 | Name | Type | Description |
 |---|---|---|
-| - | bytes32 | - |
+| `-` | `bytes32` | - |
 
-### computeAddress
+### `computeAddress`
 ```solidity
 function computeAddress(address factory, address token0, address token1, uint24 fee) external pure returns (address)
 ```
@@ -31,18 +31,18 @@ function computeAddress(address factory, address token0, address token1, uint24 
 
 | Name | Type | Description |
 |---|---|---|
-| factory | address | - |
-| token0 | address | - |
-| token1 | address | - |
-| fee | uint24 | - |
+| `factory` | `address` | - |
+| `token0` | `address` | - |
+| `token1` | `address` | - |
+| `fee` | `uint24` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### getGasCostOfComputeAddress
+### `getGasCostOfComputeAddress`
 ```solidity
 function getGasCostOfComputeAddress(address factory, address token0, address token1, uint24 fee) external view returns (uint256)
 ```
@@ -54,15 +54,15 @@ function getGasCostOfComputeAddress(address factory, address token0, address tok
 
 | Name | Type | Description |
 |---|---|---|
-| factory | address | - |
-| token0 | address | - |
-| token1 | address | - |
-| fee | uint24 | - |
+| `factory` | `address` | - |
+| `token0` | `address` | - |
+| `token1` | `address` | - |
+| `fee` | `uint24` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
 

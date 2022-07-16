@@ -1,11 +1,11 @@
 
-# MockTimeSwapRouter.sol
+# `MockTimeSwapRouter`
 
     
 
     
 ## Methods
-### WETH9
+### `WETH9`
 ```solidity
 function WETH9() external view returns (address)
 ```
@@ -17,9 +17,9 @@ function WETH9() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### exactInput
+### `exactInput`
 ```solidity
 function exactInput((bytes,address,uint256,uint256,uint256) params) external payable returns (uint256 amountOut)
 ```
@@ -32,15 +32,15 @@ function exactInput((bytes,address,uint256,uint256,uint256) params) external pay
 
 | Name | Type | Description |
 |---|---|---|
-| params | (bytes,address,uint256,uint256,uint256) | The parameters necessary for the multi-hop swap, encoded as `ExactInputParams` in calldata |
+| `params` | `(bytes,address,uint256,uint256,uint256)` | The parameters necessary for the multi-hop swap, encoded as `ExactInputParams` in calldata |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amountOut | uint256 | The amount of the received token |
+| `amountOut` | `uint256` | The amount of the received token |
 
-### exactInputSingle
+### `exactInputSingle`
 ```solidity
 function exactInputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160) params) external payable returns (uint256 amountOut)
 ```
@@ -53,15 +53,15 @@ function exactInputSingle((address,address,uint24,address,uint256,uint256,uint25
 
 | Name | Type | Description |
 |---|---|---|
-| params | (address,address,uint24,address,uint256,uint256,uint256,uint160) | The parameters necessary for the swap, encoded as `ExactInputSingleParams` in calldata |
+| `params` | `(address,address,uint24,address,uint256,uint256,uint256,uint160)` | The parameters necessary for the swap, encoded as `ExactInputSingleParams` in calldata |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amountOut | uint256 | The amount of the received token |
+| `amountOut` | `uint256` | The amount of the received token |
 
-### exactOutput
+### `exactOutput`
 ```solidity
 function exactOutput((bytes,address,uint256,uint256,uint256) params) external payable returns (uint256 amountIn)
 ```
@@ -74,15 +74,15 @@ function exactOutput((bytes,address,uint256,uint256,uint256) params) external pa
 
 | Name | Type | Description |
 |---|---|---|
-| params | (bytes,address,uint256,uint256,uint256) | The parameters necessary for the multi-hop swap, encoded as `ExactOutputParams` in calldata |
+| `params` | `(bytes,address,uint256,uint256,uint256)` | The parameters necessary for the multi-hop swap, encoded as `ExactOutputParams` in calldata |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amountIn | uint256 | The amount of the input token |
+| `amountIn` | `uint256` | The amount of the input token |
 
-### exactOutputSingle
+### `exactOutputSingle`
 ```solidity
 function exactOutputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160) params) external payable returns (uint256 amountIn)
 ```
@@ -95,15 +95,15 @@ function exactOutputSingle((address,address,uint24,address,uint256,uint256,uint2
 
 | Name | Type | Description |
 |---|---|---|
-| params | (address,address,uint24,address,uint256,uint256,uint256,uint160) | The parameters necessary for the swap, encoded as `ExactOutputSingleParams` in calldata |
+| `params` | `(address,address,uint24,address,uint256,uint256,uint256,uint160)` | The parameters necessary for the swap, encoded as `ExactOutputSingleParams` in calldata |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amountIn | uint256 | The amount of the input token |
+| `amountIn` | `uint256` | The amount of the input token |
 
-### factory
+### `factory`
 ```solidity
 function factory() external view returns (address)
 ```
@@ -115,9 +115,9 @@ function factory() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### multicall
+### `multicall`
 ```solidity
 function multicall(bytes[] data) external payable returns (bytes[] results)
 ```
@@ -131,15 +131,15 @@ The `msg.value` should not be trusted for any method callable from multicall.
 
 | Name | Type | Description |
 |---|---|---|
-| data | bytes[] | The encoded function data for each of the calls to make to this contract |
+| `data` | `bytes[]` | The encoded function data for each of the calls to make to this contract |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| results | bytes[] | The results from each of the calls passed in via data |
+| `results` | `bytes[]` | The results from each of the calls passed in via data |
 
-### refundETH
+### `refundETH`
 ```solidity
 function refundETH() external payable
 ```
@@ -149,7 +149,7 @@ Useful for bundling with mint or increase liquidity that uses ether, or exact ou
 
             
 *Refunds any ETH balance held by this contract to the `msg.sender`*
-### selfPermit
+### `selfPermit`
 ```solidity
 function selfPermit(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
@@ -163,14 +163,14 @@ The `owner` is always msg.sender and the `spender` is always address(this).
 
 | Name | Type | Description |
 |---|---|---|
-| token | address | The address of the token spent |
-| value | uint256 | The amount that can be spent of token |
-| deadline | uint256 | A timestamp, the current blocktime must be less than or equal to this timestamp |
-| v | uint8 | Must produce valid secp256k1 signature from the holder along with `r` and `s` |
-| r | bytes32 | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
-| s | bytes32 | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
+| `token` | `address` | The address of the token spent |
+| `value` | `uint256` | The amount that can be spent of token |
+| `deadline` | `uint256` | A timestamp, the current blocktime must be less than or equal to this timestamp |
+| `v` | `uint8` | Must produce valid secp256k1 signature from the holder along with `r` and `s` |
+| `r` | `bytes32` | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
+| `s` | `bytes32` | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
 
-### selfPermitAllowed
+### `selfPermitAllowed`
 ```solidity
 function selfPermitAllowed(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
 ```
@@ -184,14 +184,14 @@ The `owner` is always msg.sender and the `spender` is always address(this)
 
 | Name | Type | Description |
 |---|---|---|
-| token | address | The address of the token spent |
-| nonce | uint256 | The current nonce of the owner |
-| expiry | uint256 | The timestamp at which the permit is no longer valid |
-| v | uint8 | Must produce valid secp256k1 signature from the holder along with `r` and `s` |
-| r | bytes32 | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
-| s | bytes32 | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
+| `token` | `address` | The address of the token spent |
+| `nonce` | `uint256` | The current nonce of the owner |
+| `expiry` | `uint256` | The timestamp at which the permit is no longer valid |
+| `v` | `uint8` | Must produce valid secp256k1 signature from the holder along with `r` and `s` |
+| `r` | `bytes32` | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
+| `s` | `bytes32` | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
 
-### selfPermitAllowedIfNecessary
+### `selfPermitAllowedIfNecessary`
 ```solidity
 function selfPermitAllowedIfNecessary(address token, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) external payable
 ```
@@ -205,14 +205,14 @@ The `owner` is always msg.sender and the `spender` is always address(this) Can b
 
 | Name | Type | Description |
 |---|---|---|
-| token | address | The address of the token spent |
-| nonce | uint256 | The current nonce of the owner |
-| expiry | uint256 | The timestamp at which the permit is no longer valid |
-| v | uint8 | Must produce valid secp256k1 signature from the holder along with `r` and `s` |
-| r | bytes32 | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
-| s | bytes32 | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
+| `token` | `address` | The address of the token spent |
+| `nonce` | `uint256` | The current nonce of the owner |
+| `expiry` | `uint256` | The timestamp at which the permit is no longer valid |
+| `v` | `uint8` | Must produce valid secp256k1 signature from the holder along with `r` and `s` |
+| `r` | `bytes32` | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
+| `s` | `bytes32` | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
 
-### selfPermitIfNecessary
+### `selfPermitIfNecessary`
 ```solidity
 function selfPermitIfNecessary(address token, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
@@ -226,14 +226,14 @@ The `owner` is always msg.sender and the `spender` is always address(this). Can 
 
 | Name | Type | Description |
 |---|---|---|
-| token | address | The address of the token spent |
-| value | uint256 | The amount that can be spent of token |
-| deadline | uint256 | A timestamp, the current blocktime must be less than or equal to this timestamp |
-| v | uint8 | Must produce valid secp256k1 signature from the holder along with `r` and `s` |
-| r | bytes32 | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
-| s | bytes32 | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
+| `token` | `address` | The address of the token spent |
+| `value` | `uint256` | The amount that can be spent of token |
+| `deadline` | `uint256` | A timestamp, the current blocktime must be less than or equal to this timestamp |
+| `v` | `uint8` | Must produce valid secp256k1 signature from the holder along with `r` and `s` |
+| `r` | `bytes32` | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
+| `s` | `bytes32` | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
 
-### setTime
+### `setTime`
 ```solidity
 function setTime(uint256 _time) external nonpayable
 ```
@@ -245,9 +245,9 @@ function setTime(uint256 _time) external nonpayable
 
 | Name | Type | Description |
 |---|---|---|
-| _time | uint256 | - |
+| `_time` | `uint256` | - |
 
-### sweepToken
+### `sweepToken`
 ```solidity
 function sweepToken(address token, uint256 amountMinimum, address recipient) external payable
 ```
@@ -261,11 +261,11 @@ The amountMinimum parameter prevents malicious contracts from stealing the token
 
 | Name | Type | Description |
 |---|---|---|
-| token | address | The contract address of the token which will be transferred to `recipient` |
-| amountMinimum | uint256 | The minimum amount of token required for a transfer |
-| recipient | address | The destination address of the token |
+| `token` | `address` | The contract address of the token which will be transferred to `recipient` |
+| `amountMinimum` | `uint256` | The minimum amount of token required for a transfer |
+| `recipient` | `address` | The destination address of the token |
 
-### sweepTokenWithFee
+### `sweepTokenWithFee`
 ```solidity
 function sweepTokenWithFee(address token, uint256 amountMinimum, address recipient, uint256 feeBips, address feeRecipient) external payable
 ```
@@ -279,13 +279,13 @@ The amountMinimum parameter prevents malicious contracts from stealing the token
 
 | Name | Type | Description |
 |---|---|---|
-| token | address | - |
-| amountMinimum | uint256 | - |
-| recipient | address | - |
-| feeBips | uint256 | - |
-| feeRecipient | address | - |
+| `token` | `address` | - |
+| `amountMinimum` | `uint256` | - |
+| `recipient` | `address` | - |
+| `feeBips` | `uint256` | - |
+| `feeRecipient` | `address` | - |
 
-### uniswapV3SwapCallback
+### `uniswapV3SwapCallback`
 ```solidity
 function uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes _data) external nonpayable
 ```
@@ -299,11 +299,11 @@ In the implementation you must pay the pool tokens owed for the swap. The caller
 
 | Name | Type | Description |
 |---|---|---|
-| amount0Delta | int256 | The amount of token0 that was sent (negative) or must be received (positive) by the pool by the end of the swap. If positive, the callback must send that amount of token0 to the pool. |
-| amount1Delta | int256 | The amount of token1 that was sent (negative) or must be received (positive) by the pool by the end of the swap. If positive, the callback must send that amount of token1 to the pool. |
-| _data | bytes | - |
+| `amount0Delta` | `int256` | The amount of token0 that was sent (negative) or must be received (positive) by the pool by the end of the swap. If positive, the callback must send that amount of token0 to the pool. |
+| `amount1Delta` | `int256` | The amount of token1 that was sent (negative) or must be received (positive) by the pool by the end of the swap. If positive, the callback must send that amount of token1 to the pool. |
+| `_data` | `bytes` | - |
 
-### unwrapWETH9
+### `unwrapWETH9`
 ```solidity
 function unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
@@ -317,10 +317,10 @@ The amountMinimum parameter prevents malicious contracts from stealing WETH9 fro
 
 | Name | Type | Description |
 |---|---|---|
-| amountMinimum | uint256 | The minimum amount of WETH9 to unwrap |
-| recipient | address | The address receiving ETH |
+| `amountMinimum` | `uint256` | The minimum amount of WETH9 to unwrap |
+| `recipient` | `address` | The address receiving ETH |
 
-### unwrapWETH9WithFee
+### `unwrapWETH9WithFee`
 ```solidity
 function unwrapWETH9WithFee(uint256 amountMinimum, address recipient, uint256 feeBips, address feeRecipient) external payable
 ```
@@ -334,9 +334,9 @@ The amountMinimum parameter prevents malicious contracts from stealing WETH9 fro
 
 | Name | Type | Description |
 |---|---|---|
-| amountMinimum | uint256 | - |
-| recipient | address | - |
-| feeBips | uint256 | - |
-| feeRecipient | address | - |
+| `amountMinimum` | `uint256` | - |
+| `recipient` | `address` | - |
+| `feeBips` | `uint256` | - |
+| `feeRecipient` | `address` | - |
 
 

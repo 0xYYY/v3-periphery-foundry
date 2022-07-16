@@ -1,11 +1,11 @@
 
-# Base64Test.sol
+# `Base64Test`
 
     
 
     
 ## Methods
-### encode
+### `encode`
 ```solidity
 function encode(bytes data) external pure returns (string)
 ```
@@ -17,15 +17,15 @@ function encode(bytes data) external pure returns (string)
 
 | Name | Type | Description |
 |---|---|---|
-| data | bytes | - |
+| `data` | `bytes` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | string | - |
+| `-` | `string` | - |
 
-### getGasCostOfEncode
+### `getGasCostOfEncode`
 ```solidity
 function getGasCostOfEncode(bytes data) external view returns (uint256)
 ```
@@ -37,12 +37,12 @@ function getGasCostOfEncode(bytes data) external view returns (uint256)
 
 | Name | Type | Description |
 |---|---|---|
-| data | bytes | - |
+| `data` | `bytes` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
 

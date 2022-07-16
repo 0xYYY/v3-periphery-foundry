@@ -1,5 +1,5 @@
 
-# LiquidityAmounts.sol
+# `LiquidityAmounts`
 
     
 Liquidity amount functions

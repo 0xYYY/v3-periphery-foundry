@@ -1,5 +1,5 @@
 
-# IQuoter.sol
+# `IQuoter`
 
     
 Quoter Interface
@@ -8,7 +8,7 @@ These functions are not marked view because they rely on calling non-view functi
     
 *Supports quoting the calculated amounts from exact input or exact output swaps*
 ## Methods
-### quoteExactInput
+### `quoteExactInput`
 ```solidity
 function quoteExactInput(bytes path, uint256 amountIn) external nonpayable returns (uint256 amountOut)
 ```
@@ -21,16 +21,16 @@ function quoteExactInput(bytes path, uint256 amountIn) external nonpayable retur
 
 | Name | Type | Description |
 |---|---|---|
-| path | bytes | The path of the swap, i.e. each token pair and the pool fee |
-| amountIn | uint256 | The amount of the first token to swap |
+| `path` | `bytes` | The path of the swap, i.e. each token pair and the pool fee |
+| `amountIn` | `uint256` | The amount of the first token to swap |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amountOut | uint256 | The amount of the last token that would be received |
+| `amountOut` | `uint256` | The amount of the last token that would be received |
 
-### quoteExactInputSingle
+### `quoteExactInputSingle`
 ```solidity
 function quoteExactInputSingle(address tokenIn, address tokenOut, uint24 fee, uint256 amountIn, uint160 sqrtPriceLimitX96) external nonpayable returns (uint256 amountOut)
 ```
@@ -43,19 +43,19 @@ function quoteExactInputSingle(address tokenIn, address tokenOut, uint24 fee, ui
 
 | Name | Type | Description |
 |---|---|---|
-| tokenIn | address | The token being swapped in |
-| tokenOut | address | The token being swapped out |
-| fee | uint24 | The fee of the token pool to consider for the pair |
-| amountIn | uint256 | The desired input amount |
-| sqrtPriceLimitX96 | uint160 | The price limit of the pool that cannot be exceeded by the swap |
+| `tokenIn` | `address` | The token being swapped in |
+| `tokenOut` | `address` | The token being swapped out |
+| `fee` | `uint24` | The fee of the token pool to consider for the pair |
+| `amountIn` | `uint256` | The desired input amount |
+| `sqrtPriceLimitX96` | `uint160` | The price limit of the pool that cannot be exceeded by the swap |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amountOut | uint256 | The amount of `tokenOut` that would be received |
+| `amountOut` | `uint256` | The amount of `tokenOut` that would be received |
 
-### quoteExactOutput
+### `quoteExactOutput`
 ```solidity
 function quoteExactOutput(bytes path, uint256 amountOut) external nonpayable returns (uint256 amountIn)
 ```
@@ -68,16 +68,16 @@ function quoteExactOutput(bytes path, uint256 amountOut) external nonpayable ret
 
 | Name | Type | Description |
 |---|---|---|
-| path | bytes | The path of the swap, i.e. each token pair and the pool fee. Path must be provided in reverse order |
-| amountOut | uint256 | The amount of the last token to receive |
+| `path` | `bytes` | The path of the swap, i.e. each token pair and the pool fee. Path must be provided in reverse order |
+| `amountOut` | `uint256` | The amount of the last token to receive |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amountIn | uint256 | The amount of first token required to be paid |
+| `amountIn` | `uint256` | The amount of first token required to be paid |
 
-### quoteExactOutputSingle
+### `quoteExactOutputSingle`
 ```solidity
 function quoteExactOutputSingle(address tokenIn, address tokenOut, uint24 fee, uint256 amountOut, uint160 sqrtPriceLimitX96) external nonpayable returns (uint256 amountIn)
 ```
@@ -90,16 +90,16 @@ function quoteExactOutputSingle(address tokenIn, address tokenOut, uint24 fee, u
 
 | Name | Type | Description |
 |---|---|---|
-| tokenIn | address | The token being swapped in |
-| tokenOut | address | The token being swapped out |
-| fee | uint24 | The fee of the token pool to consider for the pair |
-| amountOut | uint256 | The desired output amount |
-| sqrtPriceLimitX96 | uint160 | The price limit of the pool that cannot be exceeded by the swap |
+| `tokenIn` | `address` | The token being swapped in |
+| `tokenOut` | `address` | The token being swapped out |
+| `fee` | `uint24` | The fee of the token pool to consider for the pair |
+| `amountOut` | `uint256` | The desired output amount |
+| `sqrtPriceLimitX96` | `uint160` | The price limit of the pool that cannot be exceeded by the swap |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amountIn | uint256 | The amount required as the input for the swap in order to receive `amountOut` |
+| `amountIn` | `uint256` | The amount required as the input for the swap in order to receive `amountOut` |
 
 

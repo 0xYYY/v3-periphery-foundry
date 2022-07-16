@@ -1,11 +1,11 @@
 
-# GetAmountsForLiquidity.sol
+# `GetAmountsForLiquidity`
 
     
 
     
 ## Methods
-### testAmountsForPriceAbove
+### `testAmountsForPriceAbove`
 ```solidity
 function testAmountsForPriceAbove() external pure
 ```
@@ -13,7 +13,7 @@ function testAmountsForPriceAbove() external pure
             
 
             
-### testAmountsForPriceBelow
+### `testAmountsForPriceBelow`
 ```solidity
 function testAmountsForPriceBelow() external pure
 ```
@@ -21,7 +21,7 @@ function testAmountsForPriceBelow() external pure
             
 
             
-### testAmountsForPriceInside
+### `testAmountsForPriceInside`
 ```solidity
 function testAmountsForPriceInside() external pure
 ```
@@ -29,7 +29,7 @@ function testAmountsForPriceInside() external pure
             
 
             
-### testAmountsForPriceOnLowerBoundary
+### `testAmountsForPriceOnLowerBoundary`
 ```solidity
 function testAmountsForPriceOnLowerBoundary() external pure
 ```
@@ -37,7 +37,7 @@ function testAmountsForPriceOnLowerBoundary() external pure
             
 
             
-### testAmountsForPriceOnUpperBoundary
+### `testAmountsForPriceOnUpperBoundary`
 ```solidity
 function testAmountsForPriceOnUpperBoundary() external pure
 ```
@@ -47,13 +47,13 @@ function testAmountsForPriceOnUpperBoundary() external pure
             
 
 
-# GetLiquidityForAmounts.sol
+# `GetLiquidityForAmounts`
 
     
 
     
 ## Methods
-### testAmountsForPriceAbove
+### `testAmountsForPriceAbove`
 ```solidity
 function testAmountsForPriceAbove() external pure
 ```
@@ -61,7 +61,7 @@ function testAmountsForPriceAbove() external pure
             
 
             
-### testAmountsForPriceBelow
+### `testAmountsForPriceBelow`
 ```solidity
 function testAmountsForPriceBelow() external pure
 ```
@@ -69,7 +69,7 @@ function testAmountsForPriceBelow() external pure
             
 
             
-### testAmountsForPriceEqualToLowerBoundary
+### `testAmountsForPriceEqualToLowerBoundary`
 ```solidity
 function testAmountsForPriceEqualToLowerBoundary() external pure
 ```
@@ -77,7 +77,7 @@ function testAmountsForPriceEqualToLowerBoundary() external pure
             
 
             
-### testAmountsForPriceEqualToUpperBoundary
+### `testAmountsForPriceEqualToUpperBoundary`
 ```solidity
 function testAmountsForPriceEqualToUpperBoundary() external pure
 ```
@@ -85,7 +85,7 @@ function testAmountsForPriceEqualToUpperBoundary() external pure
             
 
             
-### testAmountsForPriceInside
+### `testAmountsForPriceInside`
 ```solidity
 function testAmountsForPriceInside() external pure
 ```

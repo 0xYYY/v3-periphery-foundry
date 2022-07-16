@@ -1,12 +1,12 @@
 
-# UniswapInterfaceMulticall.sol
+# `UniswapInterfaceMulticall`
 
     
 
     
 *A fork of Multicall2 specifically tailored for the Uniswap Interface*
 ## Methods
-### getCurrentBlockTimestamp
+### `getCurrentBlockTimestamp`
 ```solidity
 function getCurrentBlockTimestamp() external view returns (uint256 timestamp)
 ```
@@ -18,9 +18,9 @@ function getCurrentBlockTimestamp() external view returns (uint256 timestamp)
 
 | Name | Type | Description |
 |---|---|---|
-| timestamp | uint256 | - |
+| `timestamp` | `uint256` | - |
 
-### getEthBalance
+### `getEthBalance`
 ```solidity
 function getEthBalance(address addr) external view returns (uint256 balance)
 ```
@@ -32,15 +32,15 @@ function getEthBalance(address addr) external view returns (uint256 balance)
 
 | Name | Type | Description |
 |---|---|---|
-| addr | address | - |
+| `addr` | `address` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| balance | uint256 | - |
+| `balance` | `uint256` | - |
 
-### multicall
+### `multicall`
 ```solidity
 function multicall((address,uint256,bytes)[] calls) external nonpayable returns (uint256 blockNumber, (bool,uint256,bytes)[] returnData)
 ```
@@ -52,13 +52,13 @@ function multicall((address,uint256,bytes)[] calls) external nonpayable returns 
 
 | Name | Type | Description |
 |---|---|---|
-| calls | (address,uint256,bytes)[] | - |
+| `calls` | `(address,uint256,bytes)[]` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| blockNumber | uint256 | - |
-| returnData | (bool,uint256,bytes)[] | - |
+| `blockNumber` | `uint256` | - |
+| `returnData` | `(bool,uint256,bytes)[]` | - |
 
 

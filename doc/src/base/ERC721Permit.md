@@ -1,5 +1,5 @@
 
-# ERC721Permit.sol
+# `ERC721Permit`
 
     
 ERC721 with permit
@@ -7,7 +7,7 @@ ERC721 with permit
     
 *Nonfungible tokens that support an approve via signature, i.e. permit*
 ## Methods
-### DOMAIN_SEPARATOR
+### `DOMAIN_SEPARATOR`
 ```solidity
 function DOMAIN_SEPARATOR() external view returns (bytes32)
 ```
@@ -20,9 +20,9 @@ function DOMAIN_SEPARATOR() external view returns (bytes32)
 
 | Name | Type | Description |
 |---|---|---|
-| - | bytes32 | - |
+| `-` | `bytes32` | - |
 
-### PERMIT_TYPEHASH
+### `PERMIT_TYPEHASH`
 ```solidity
 function PERMIT_TYPEHASH() external view returns (bytes32)
 ```
@@ -35,9 +35,9 @@ function PERMIT_TYPEHASH() external view returns (bytes32)
 
 | Name | Type | Description |
 |---|---|---|
-| - | bytes32 | - |
+| `-` | `bytes32` | - |
 
-### approve
+### `approve`
 ```solidity
 function approve(address to, uint256 tokenId) external nonpayable
 ```
@@ -50,10 +50,10 @@ See {IERC721-approve}.
 
 | Name | Type | Description |
 |---|---|---|
-| to | address | - |
-| tokenId | uint256 | - |
+| `to` | `address` | - |
+| `tokenId` | `uint256` | - |
 
-### balanceOf
+### `balanceOf`
 ```solidity
 function balanceOf(address owner) external view returns (uint256)
 ```
@@ -66,15 +66,15 @@ See {IERC721-balanceOf}.
 
 | Name | Type | Description |
 |---|---|---|
-| owner | address | - |
+| `owner` | `address` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### baseURI
+### `baseURI`
 ```solidity
 function baseURI() external view returns (string)
 ```
@@ -87,9 +87,9 @@ Returns the base URI set via {_setBaseURI}. This will be automatically added as 
 
 | Name | Type | Description |
 |---|---|---|
-| - | string | - |
+| `-` | `string` | - |
 
-### getApproved
+### `getApproved`
 ```solidity
 function getApproved(uint256 tokenId) external view returns (address)
 ```
@@ -102,15 +102,15 @@ See {IERC721-getApproved}.
 
 | Name | Type | Description |
 |---|---|---|
-| tokenId | uint256 | - |
+| `tokenId` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### isApprovedForAll
+### `isApprovedForAll`
 ```solidity
 function isApprovedForAll(address owner, address operator) external view returns (bool)
 ```
@@ -123,16 +123,16 @@ See {IERC721-isApprovedForAll}.
 
 | Name | Type | Description |
 |---|---|---|
-| owner | address | - |
-| operator | address | - |
+| `owner` | `address` | - |
+| `operator` | `address` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | bool | - |
+| `-` | `bool` | - |
 
-### name
+### `name`
 ```solidity
 function name() external view returns (string)
 ```
@@ -145,9 +145,9 @@ See {IERC721Metadata-name}.
 
 | Name | Type | Description |
 |---|---|---|
-| - | string | - |
+| `-` | `string` | - |
 
-### ownerOf
+### `ownerOf`
 ```solidity
 function ownerOf(uint256 tokenId) external view returns (address)
 ```
@@ -160,15 +160,15 @@ See {IERC721-ownerOf}.
 
 | Name | Type | Description |
 |---|---|---|
-| tokenId | uint256 | - |
+| `tokenId` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### permit
+### `permit`
 ```solidity
 function permit(address spender, uint256 tokenId, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
@@ -181,14 +181,14 @@ function permit(address spender, uint256 tokenId, uint256 deadline, uint8 v, byt
 
 | Name | Type | Description |
 |---|---|---|
-| spender | address | The account that is being approved |
-| tokenId | uint256 | The ID of the token that is being approved for spending |
-| deadline | uint256 | The deadline timestamp by which the call must be mined for the approve to work |
-| v | uint8 | Must produce valid secp256k1 signature from the holder along with `r` and `s` |
-| r | bytes32 | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
-| s | bytes32 | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
+| `spender` | `address` | The account that is being approved |
+| `tokenId` | `uint256` | The ID of the token that is being approved for spending |
+| `deadline` | `uint256` | The deadline timestamp by which the call must be mined for the approve to work |
+| `v` | `uint8` | Must produce valid secp256k1 signature from the holder along with `r` and `s` |
+| `r` | `bytes32` | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
+| `s` | `bytes32` | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
 
-### safeTransferFrom
+### `safeTransferFrom`
 ```solidity
 function safeTransferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
@@ -201,9 +201,9 @@ See {IERC721-safeTransferFrom}.
 
 | Name | Type | Description |
 |---|---|---|
-| from | address | - |
-| to | address | - |
-| tokenId | uint256 | - |
+| `from` | `address` | - |
+| `to` | `address` | - |
+| `tokenId` | `uint256` | - |
 
 ```solidity
 function safeTransferFrom(address from, address to, uint256 tokenId, bytes _data) external nonpayable
@@ -217,12 +217,12 @@ See {IERC721-safeTransferFrom}.
 
 | Name | Type | Description |
 |---|---|---|
-| from | address | - |
-| to | address | - |
-| tokenId | uint256 | - |
-| _data | bytes | - |
+| `from` | `address` | - |
+| `to` | `address` | - |
+| `tokenId` | `uint256` | - |
+| `_data` | `bytes` | - |
 
-### setApprovalForAll
+### `setApprovalForAll`
 ```solidity
 function setApprovalForAll(address operator, bool approved) external nonpayable
 ```
@@ -235,10 +235,10 @@ See {IERC721-setApprovalForAll}.
 
 | Name | Type | Description |
 |---|---|---|
-| operator | address | - |
-| approved | bool | - |
+| `operator` | `address` | - |
+| `approved` | `bool` | - |
 
-### supportsInterface
+### `supportsInterface`
 ```solidity
 function supportsInterface(bytes4 interfaceId) external view returns (bool)
 ```
@@ -251,15 +251,15 @@ See {IERC165-supportsInterface}. Time complexity O(1), guaranteed to always use 
 
 | Name | Type | Description |
 |---|---|---|
-| interfaceId | bytes4 | - |
+| `interfaceId` | `bytes4` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | bool | - |
+| `-` | `bool` | - |
 
-### symbol
+### `symbol`
 ```solidity
 function symbol() external view returns (string)
 ```
@@ -272,9 +272,9 @@ See {IERC721Metadata-symbol}.
 
 | Name | Type | Description |
 |---|---|---|
-| - | string | - |
+| `-` | `string` | - |
 
-### tokenByIndex
+### `tokenByIndex`
 ```solidity
 function tokenByIndex(uint256 index) external view returns (uint256)
 ```
@@ -287,15 +287,15 @@ See {IERC721Enumerable-tokenByIndex}.
 
 | Name | Type | Description |
 |---|---|---|
-| index | uint256 | - |
+| `index` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### tokenOfOwnerByIndex
+### `tokenOfOwnerByIndex`
 ```solidity
 function tokenOfOwnerByIndex(address owner, uint256 index) external view returns (uint256)
 ```
@@ -308,16 +308,16 @@ See {IERC721Enumerable-tokenOfOwnerByIndex}.
 
 | Name | Type | Description |
 |---|---|---|
-| owner | address | - |
-| index | uint256 | - |
+| `owner` | `address` | - |
+| `index` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### tokenURI
+### `tokenURI`
 ```solidity
 function tokenURI(uint256 tokenId) external view returns (string)
 ```
@@ -330,15 +330,15 @@ See {IERC721Metadata-tokenURI}.
 
 | Name | Type | Description |
 |---|---|---|
-| tokenId | uint256 | - |
+| `tokenId` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | string | - |
+| `-` | `string` | - |
 
-### totalSupply
+### `totalSupply`
 ```solidity
 function totalSupply() external view returns (uint256)
 ```
@@ -351,9 +351,9 @@ See {IERC721Enumerable-totalSupply}.
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### transferFrom
+### `transferFrom`
 ```solidity
 function transferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
@@ -366,12 +366,12 @@ See {IERC721-transferFrom}.
 
 | Name | Type | Description |
 |---|---|---|
-| from | address | - |
-| to | address | - |
-| tokenId | uint256 | - |
+| `from` | `address` | - |
+| `to` | `address` | - |
+| `tokenId` | `uint256` | - |
 
 ### Events
-### Approval
+### `Approval`
 ```solidity
 event Approval(address owner, address approved, uint256 tokenId)
 ```
@@ -383,11 +383,11 @@ event Approval(address owner, address approved, uint256 tokenId)
 
 | Name | Type | Indexed | Description |
 |---|---|---|---|
-| owner | address |true| - |
-| approved | address |true| - |
-| tokenId | uint256 |true| - |
+| `owner` | `address` |`true`| - |
+| `approved` | `address` |`true`| - |
+| `tokenId` | `uint256` |`true`| - |
 
-### ApprovalForAll
+### `ApprovalForAll`
 ```solidity
 event ApprovalForAll(address owner, address operator, bool approved)
 ```
@@ -399,11 +399,11 @@ event ApprovalForAll(address owner, address operator, bool approved)
 
 | Name | Type | Indexed | Description |
 |---|---|---|---|
-| owner | address |true| - |
-| operator | address |true| - |
-| approved | bool |false| - |
+| `owner` | `address` |`true`| - |
+| `operator` | `address` |`true`| - |
+| `approved` | `bool` |`false`| - |
 
-### Transfer
+### `Transfer`
 ```solidity
 event Transfer(address from, address to, uint256 tokenId)
 ```
@@ -415,8 +415,8 @@ event Transfer(address from, address to, uint256 tokenId)
 
 | Name | Type | Indexed | Description |
 |---|---|---|---|
-| from | address |true| - |
-| to | address |true| - |
-| tokenId | uint256 |true| - |
+| `from` | `address` |`true`| - |
+| `to` | `address` |`true`| - |
+| `tokenId` | `uint256` |`true`| - |
 
 

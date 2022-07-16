@@ -1,5 +1,5 @@
 
-# INonfungiblePositionManager.sol
+# `INonfungiblePositionManager`
 
     
 Non-fungible token for positions
@@ -7,7 +7,7 @@ Non-fungible token for positions
     
 *Wraps Uniswap V3 positions in a non-fungible token interface which allows for them to be transferred and authorized.*
 ## Methods
-### DOMAIN_SEPARATOR
+### `DOMAIN_SEPARATOR`
 ```solidity
 function DOMAIN_SEPARATOR() external view returns (bytes32)
 ```
@@ -20,9 +20,9 @@ function DOMAIN_SEPARATOR() external view returns (bytes32)
 
 | Name | Type | Description |
 |---|---|---|
-| - | bytes32 | - |
+| `-` | `bytes32` | - |
 
-### PERMIT_TYPEHASH
+### `PERMIT_TYPEHASH`
 ```solidity
 function PERMIT_TYPEHASH() external pure returns (bytes32)
 ```
@@ -35,9 +35,9 @@ function PERMIT_TYPEHASH() external pure returns (bytes32)
 
 | Name | Type | Description |
 |---|---|---|
-| - | bytes32 | - |
+| `-` | `bytes32` | - |
 
-### WETH9
+### `WETH9`
 ```solidity
 function WETH9() external view returns (address)
 ```
@@ -49,9 +49,9 @@ function WETH9() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### approve
+### `approve`
 ```solidity
 function approve(address to, uint256 tokenId) external nonpayable
 ```
@@ -64,10 +64,10 @@ Gives permission to `to` to transfer `tokenId` token to another account. The app
 
 | Name | Type | Description |
 |---|---|---|
-| to | address | - |
-| tokenId | uint256 | - |
+| `to` | `address` | - |
+| `tokenId` | `uint256` | - |
 
-### balanceOf
+### `balanceOf`
 ```solidity
 function balanceOf(address owner) external view returns (uint256 balance)
 ```
@@ -80,15 +80,15 @@ Returns the number of tokens in ``owner``'s account.
 
 | Name | Type | Description |
 |---|---|---|
-| owner | address | - |
+| `owner` | `address` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| balance | uint256 | - |
+| `balance` | `uint256` | - |
 
-### burn
+### `burn`
 ```solidity
 function burn(uint256 tokenId) external payable
 ```
@@ -101,9 +101,9 @@ function burn(uint256 tokenId) external payable
 
 | Name | Type | Description |
 |---|---|---|
-| tokenId | uint256 | The ID of the token that is being burned |
+| `tokenId` | `uint256` | The ID of the token that is being burned |
 
-### collect
+### `collect`
 ```solidity
 function collect((uint256,address,uint128,uint128) params) external payable returns (uint256 amount0, uint256 amount1)
 ```
@@ -116,16 +116,16 @@ function collect((uint256,address,uint128,uint128) params) external payable retu
 
 | Name | Type | Description |
 |---|---|---|
-| params | (uint256,address,uint128,uint128) | tokenId The ID of the NFT for which tokens are being collected, recipient The account that should receive the tokens, amount0Max The maximum amount of token0 to collect, amount1Max The maximum amount of token1 to collect |
+| `params` | `(uint256,address,uint128,uint128)` | tokenId The ID of the NFT for which tokens are being collected, recipient The account that should receive the tokens, amount0Max The maximum amount of token0 to collect, amount1Max The maximum amount of token1 to collect |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amount0 | uint256 | The amount of fees collected in token0 |
-| amount1 | uint256 | The amount of fees collected in token1 |
+| `amount0` | `uint256` | The amount of fees collected in token0 |
+| `amount1` | `uint256` | The amount of fees collected in token1 |
 
-### createAndInitializePoolIfNecessary
+### `createAndInitializePoolIfNecessary`
 ```solidity
 function createAndInitializePoolIfNecessary(address token0, address token1, uint24 fee, uint160 sqrtPriceX96) external payable returns (address pool)
 ```
@@ -139,18 +139,18 @@ This method can be bundled with others via IMulticall for the first action (e.g.
 
 | Name | Type | Description |
 |---|---|---|
-| token0 | address | The contract address of token0 of the pool |
-| token1 | address | The contract address of token1 of the pool |
-| fee | uint24 | The fee amount of the v3 pool for the specified token pair |
-| sqrtPriceX96 | uint160 | The initial square root price of the pool as a Q64.96 value |
+| `token0` | `address` | The contract address of token0 of the pool |
+| `token1` | `address` | The contract address of token1 of the pool |
+| `fee` | `uint24` | The fee amount of the v3 pool for the specified token pair |
+| `sqrtPriceX96` | `uint160` | The initial square root price of the pool as a Q64.96 value |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| pool | address | Returns the pool address based on the pair of tokens and fee, will return the newly created pool address if necessary |
+| `pool` | `address` | Returns the pool address based on the pair of tokens and fee, will return the newly created pool address if necessary |
 
-### decreaseLiquidity
+### `decreaseLiquidity`
 ```solidity
 function decreaseLiquidity((uint256,uint128,uint256,uint256,uint256) params) external payable returns (uint256 amount0, uint256 amount1)
 ```
@@ -163,16 +163,16 @@ function decreaseLiquidity((uint256,uint128,uint256,uint256,uint256) params) ext
 
 | Name | Type | Description |
 |---|---|---|
-| params | (uint256,uint128,uint256,uint256,uint256) | tokenId The ID of the token for which liquidity is being decreased, amount The amount by which liquidity will be decreased, amount0Min The minimum amount of token0 that should be accounted for the burned liquidity, amount1Min The minimum amount of token1 that should be accounted for the burned liquidity, deadline The time by which the transaction must be included to effect the change |
+| `params` | `(uint256,uint128,uint256,uint256,uint256)` | tokenId The ID of the token for which liquidity is being decreased, amount The amount by which liquidity will be decreased, amount0Min The minimum amount of token0 that should be accounted for the burned liquidity, amount1Min The minimum amount of token1 that should be accounted for the burned liquidity, deadline The time by which the transaction must be included to effect the change |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amount0 | uint256 | The amount of token0 accounted to the position's tokens owed |
-| amount1 | uint256 | The amount of token1 accounted to the position's tokens owed |
+| `amount0` | `uint256` | The amount of token0 accounted to the position's tokens owed |
+| `amount1` | `uint256` | The amount of token1 accounted to the position's tokens owed |
 
-### factory
+### `factory`
 ```solidity
 function factory() external view returns (address)
 ```
@@ -184,9 +184,9 @@ function factory() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### getApproved
+### `getApproved`
 ```solidity
 function getApproved(uint256 tokenId) external view returns (address operator)
 ```
@@ -199,15 +199,15 @@ Returns the account approved for `tokenId` token. Requirements: - `tokenId` must
 
 | Name | Type | Description |
 |---|---|---|
-| tokenId | uint256 | - |
+| `tokenId` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| operator | address | - |
+| `operator` | `address` | - |
 
-### increaseLiquidity
+### `increaseLiquidity`
 ```solidity
 function increaseLiquidity((uint256,uint256,uint256,uint256,uint256,uint256) params) external payable returns (uint128 liquidity, uint256 amount0, uint256 amount1)
 ```
@@ -220,17 +220,17 @@ function increaseLiquidity((uint256,uint256,uint256,uint256,uint256,uint256) par
 
 | Name | Type | Description |
 |---|---|---|
-| params | (uint256,uint256,uint256,uint256,uint256,uint256) | tokenId The ID of the token for which liquidity is being increased, amount0Desired The desired amount of token0 to be spent, amount1Desired The desired amount of token1 to be spent, amount0Min The minimum amount of token0 to spend, which serves as a slippage check, amount1Min The minimum amount of token1 to spend, which serves as a slippage check, deadline The time by which the transaction must be included to effect the change |
+| `params` | `(uint256,uint256,uint256,uint256,uint256,uint256)` | tokenId The ID of the token for which liquidity is being increased, amount0Desired The desired amount of token0 to be spent, amount1Desired The desired amount of token1 to be spent, amount0Min The minimum amount of token0 to spend, which serves as a slippage check, amount1Min The minimum amount of token1 to spend, which serves as a slippage check, deadline The time by which the transaction must be included to effect the change |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| liquidity | uint128 | The new liquidity amount as a result of the increase |
-| amount0 | uint256 | The amount of token0 to acheive resulting liquidity |
-| amount1 | uint256 | The amount of token1 to acheive resulting liquidity |
+| `liquidity` | `uint128` | The new liquidity amount as a result of the increase |
+| `amount0` | `uint256` | The amount of token0 to acheive resulting liquidity |
+| `amount1` | `uint256` | The amount of token1 to acheive resulting liquidity |
 
-### isApprovedForAll
+### `isApprovedForAll`
 ```solidity
 function isApprovedForAll(address owner, address operator) external view returns (bool)
 ```
@@ -243,16 +243,16 @@ Returns if the `operator` is allowed to manage all of the assets of `owner`. See
 
 | Name | Type | Description |
 |---|---|---|
-| owner | address | - |
-| operator | address | - |
+| `owner` | `address` | - |
+| `operator` | `address` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | bool | - |
+| `-` | `bool` | - |
 
-### mint
+### `mint`
 ```solidity
 function mint((address,address,uint24,int24,int24,uint256,uint256,uint256,uint256,address,uint256) params) external payable returns (uint256 tokenId, uint128 liquidity, uint256 amount0, uint256 amount1)
 ```
@@ -266,18 +266,18 @@ Call this when the pool does exist and is initialized. Note that if the pool is 
 
 | Name | Type | Description |
 |---|---|---|
-| params | (address,address,uint24,int24,int24,uint256,uint256,uint256,uint256,address,uint256) | The params necessary to mint a position, encoded as `MintParams` in calldata |
+| `params` | `(address,address,uint24,int24,int24,uint256,uint256,uint256,uint256,address,uint256)` | The params necessary to mint a position, encoded as `MintParams` in calldata |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| tokenId | uint256 | The ID of the token that represents the minted position |
-| liquidity | uint128 | The amount of liquidity for this position |
-| amount0 | uint256 | The amount of token0 |
-| amount1 | uint256 | The amount of token1 |
+| `tokenId` | `uint256` | The ID of the token that represents the minted position |
+| `liquidity` | `uint128` | The amount of liquidity for this position |
+| `amount0` | `uint256` | The amount of token0 |
+| `amount1` | `uint256` | The amount of token1 |
 
-### name
+### `name`
 ```solidity
 function name() external view returns (string)
 ```
@@ -290,9 +290,9 @@ Returns the token collection name.
 
 | Name | Type | Description |
 |---|---|---|
-| - | string | - |
+| `-` | `string` | - |
 
-### ownerOf
+### `ownerOf`
 ```solidity
 function ownerOf(uint256 tokenId) external view returns (address owner)
 ```
@@ -305,15 +305,15 @@ Returns the owner of the `tokenId` token. Requirements: - `tokenId` must exist.
 
 | Name | Type | Description |
 |---|---|---|
-| tokenId | uint256 | - |
+| `tokenId` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| owner | address | - |
+| `owner` | `address` | - |
 
-### permit
+### `permit`
 ```solidity
 function permit(address spender, uint256 tokenId, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
@@ -326,14 +326,14 @@ function permit(address spender, uint256 tokenId, uint256 deadline, uint8 v, byt
 
 | Name | Type | Description |
 |---|---|---|
-| spender | address | The account that is being approved |
-| tokenId | uint256 | The ID of the token that is being approved for spending |
-| deadline | uint256 | The deadline timestamp by which the call must be mined for the approve to work |
-| v | uint8 | Must produce valid secp256k1 signature from the holder along with `r` and `s` |
-| r | bytes32 | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
-| s | bytes32 | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
+| `spender` | `address` | The account that is being approved |
+| `tokenId` | `uint256` | The ID of the token that is being approved for spending |
+| `deadline` | `uint256` | The deadline timestamp by which the call must be mined for the approve to work |
+| `v` | `uint8` | Must produce valid secp256k1 signature from the holder along with `r` and `s` |
+| `r` | `bytes32` | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
+| `s` | `bytes32` | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
 
-### positions
+### `positions`
 ```solidity
 function positions(uint256 tokenId) external view returns (uint96 nonce, address operator, address token0, address token1, uint24 fee, int24 tickLower, int24 tickUpper, uint128 liquidity, uint256 feeGrowthInside0LastX128, uint256 feeGrowthInside1LastX128, uint128 tokensOwed0, uint128 tokensOwed1)
 ```
@@ -347,26 +347,26 @@ Throws if the token ID is not valid.
 
 | Name | Type | Description |
 |---|---|---|
-| tokenId | uint256 | The ID of the token that represents the position |
+| `tokenId` | `uint256` | The ID of the token that represents the position |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| nonce | uint96 | The nonce for permits |
-| operator | address | The address that is approved for spending |
-| token0 | address | The address of the token0 for a specific pool |
-| token1 | address | The address of the token1 for a specific pool |
-| fee | uint24 | The fee associated with the pool |
-| tickLower | int24 | The lower end of the tick range for the position |
-| tickUpper | int24 | The higher end of the tick range for the position |
-| liquidity | uint128 | The liquidity of the position |
-| feeGrowthInside0LastX128 | uint256 | The fee growth of token0 as of the last action on the individual position |
-| feeGrowthInside1LastX128 | uint256 | The fee growth of token1 as of the last action on the individual position |
-| tokensOwed0 | uint128 | The uncollected amount of token0 owed to the position as of the last computation |
-| tokensOwed1 | uint128 | The uncollected amount of token1 owed to the position as of the last computation |
+| `nonce` | `uint96` | The nonce for permits |
+| `operator` | `address` | The address that is approved for spending |
+| `token0` | `address` | The address of the token0 for a specific pool |
+| `token1` | `address` | The address of the token1 for a specific pool |
+| `fee` | `uint24` | The fee associated with the pool |
+| `tickLower` | `int24` | The lower end of the tick range for the position |
+| `tickUpper` | `int24` | The higher end of the tick range for the position |
+| `liquidity` | `uint128` | The liquidity of the position |
+| `feeGrowthInside0LastX128` | `uint256` | The fee growth of token0 as of the last action on the individual position |
+| `feeGrowthInside1LastX128` | `uint256` | The fee growth of token1 as of the last action on the individual position |
+| `tokensOwed0` | `uint128` | The uncollected amount of token0 owed to the position as of the last computation |
+| `tokensOwed1` | `uint128` | The uncollected amount of token1 owed to the position as of the last computation |
 
-### refundETH
+### `refundETH`
 ```solidity
 function refundETH() external payable
 ```
@@ -376,7 +376,7 @@ Useful for bundling with mint or increase liquidity that uses ether, or exact ou
 
             
 *Refunds any ETH balance held by this contract to the `msg.sender`*
-### safeTransferFrom
+### `safeTransferFrom`
 ```solidity
 function safeTransferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
@@ -389,9 +389,9 @@ Safely transfers `tokenId` token from `from` to `to`, checking first that contra
 
 | Name | Type | Description |
 |---|---|---|
-| from | address | - |
-| to | address | - |
-| tokenId | uint256 | - |
+| `from` | `address` | - |
+| `to` | `address` | - |
+| `tokenId` | `uint256` | - |
 
 ```solidity
 function safeTransferFrom(address from, address to, uint256 tokenId, bytes data) external nonpayable
@@ -405,12 +405,12 @@ Safely transfers `tokenId` token from `from` to `to`. Requirements: - `from` can
 
 | Name | Type | Description |
 |---|---|---|
-| from | address | - |
-| to | address | - |
-| tokenId | uint256 | - |
-| data | bytes | - |
+| `from` | `address` | - |
+| `to` | `address` | - |
+| `tokenId` | `uint256` | - |
+| `data` | `bytes` | - |
 
-### setApprovalForAll
+### `setApprovalForAll`
 ```solidity
 function setApprovalForAll(address operator, bool _approved) external nonpayable
 ```
@@ -423,10 +423,10 @@ Approve or remove `operator` as an operator for the caller. Operators can call {
 
 | Name | Type | Description |
 |---|---|---|
-| operator | address | - |
-| _approved | bool | - |
+| `operator` | `address` | - |
+| `_approved` | `bool` | - |
 
-### supportsInterface
+### `supportsInterface`
 ```solidity
 function supportsInterface(bytes4 interfaceId) external view returns (bool)
 ```
@@ -439,15 +439,15 @@ Returns true if this contract implements the interface defined by `interfaceId`.
 
 | Name | Type | Description |
 |---|---|---|
-| interfaceId | bytes4 | - |
+| `interfaceId` | `bytes4` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | bool | - |
+| `-` | `bool` | - |
 
-### sweepToken
+### `sweepToken`
 ```solidity
 function sweepToken(address token, uint256 amountMinimum, address recipient) external payable
 ```
@@ -461,11 +461,11 @@ The amountMinimum parameter prevents malicious contracts from stealing the token
 
 | Name | Type | Description |
 |---|---|---|
-| token | address | The contract address of the token which will be transferred to `recipient` |
-| amountMinimum | uint256 | The minimum amount of token required for a transfer |
-| recipient | address | The destination address of the token |
+| `token` | `address` | The contract address of the token which will be transferred to `recipient` |
+| `amountMinimum` | `uint256` | The minimum amount of token required for a transfer |
+| `recipient` | `address` | The destination address of the token |
 
-### symbol
+### `symbol`
 ```solidity
 function symbol() external view returns (string)
 ```
@@ -478,9 +478,9 @@ Returns the token collection symbol.
 
 | Name | Type | Description |
 |---|---|---|
-| - | string | - |
+| `-` | `string` | - |
 
-### tokenByIndex
+### `tokenByIndex`
 ```solidity
 function tokenByIndex(uint256 index) external view returns (uint256)
 ```
@@ -493,15 +493,15 @@ Returns a token ID at a given `index` of all the tokens stored by the contract. 
 
 | Name | Type | Description |
 |---|---|---|
-| index | uint256 | - |
+| `index` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### tokenOfOwnerByIndex
+### `tokenOfOwnerByIndex`
 ```solidity
 function tokenOfOwnerByIndex(address owner, uint256 index) external view returns (uint256 tokenId)
 ```
@@ -514,16 +514,16 @@ Returns a token ID owned by `owner` at a given `index` of its token list. Use al
 
 | Name | Type | Description |
 |---|---|---|
-| owner | address | - |
-| index | uint256 | - |
+| `owner` | `address` | - |
+| `index` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| tokenId | uint256 | - |
+| `tokenId` | `uint256` | - |
 
-### tokenURI
+### `tokenURI`
 ```solidity
 function tokenURI(uint256 tokenId) external view returns (string)
 ```
@@ -536,15 +536,15 @@ Returns the Uniform Resource Identifier (URI) for `tokenId` token.
 
 | Name | Type | Description |
 |---|---|---|
-| tokenId | uint256 | - |
+| `tokenId` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | string | - |
+| `-` | `string` | - |
 
-### totalSupply
+### `totalSupply`
 ```solidity
 function totalSupply() external view returns (uint256)
 ```
@@ -557,9 +557,9 @@ Returns the total amount of tokens stored by the contract.
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### transferFrom
+### `transferFrom`
 ```solidity
 function transferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
@@ -572,11 +572,11 @@ Transfers `tokenId` token from `from` to `to`. WARNING: Usage of this method is 
 
 | Name | Type | Description |
 |---|---|---|
-| from | address | - |
-| to | address | - |
-| tokenId | uint256 | - |
+| `from` | `address` | - |
+| `to` | `address` | - |
+| `tokenId` | `uint256` | - |
 
-### unwrapWETH9
+### `unwrapWETH9`
 ```solidity
 function unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
@@ -590,11 +590,11 @@ The amountMinimum parameter prevents malicious contracts from stealing WETH9 fro
 
 | Name | Type | Description |
 |---|---|---|
-| amountMinimum | uint256 | The minimum amount of WETH9 to unwrap |
-| recipient | address | The address receiving ETH |
+| `amountMinimum` | `uint256` | The minimum amount of WETH9 to unwrap |
+| `recipient` | `address` | The address receiving ETH |
 
 ### Events
-### Approval
+### `Approval`
 ```solidity
 event Approval(address owner, address approved, uint256 tokenId)
 ```
@@ -606,11 +606,11 @@ event Approval(address owner, address approved, uint256 tokenId)
 
 | Name | Type | Indexed | Description |
 |---|---|---|---|
-| owner | address |true| - |
-| approved | address |true| - |
-| tokenId | uint256 |true| - |
+| `owner` | `address` |`true`| - |
+| `approved` | `address` |`true`| - |
+| `tokenId` | `uint256` |`true`| - |
 
-### ApprovalForAll
+### `ApprovalForAll`
 ```solidity
 event ApprovalForAll(address owner, address operator, bool approved)
 ```
@@ -622,11 +622,11 @@ event ApprovalForAll(address owner, address operator, bool approved)
 
 | Name | Type | Indexed | Description |
 |---|---|---|---|
-| owner | address |true| - |
-| operator | address |true| - |
-| approved | bool |false| - |
+| `owner` | `address` |`true`| - |
+| `operator` | `address` |`true`| - |
+| `approved` | `bool` |`false`| - |
 
-### Collect
+### `Collect`
 ```solidity
 event Collect(uint256 tokenId, address recipient, uint256 amount0, uint256 amount1)
 ```
@@ -640,12 +640,12 @@ The amounts reported may not be exactly equivalent to the amounts transferred, d
 
 | Name | Type | Indexed | Description |
 |---|---|---|---|
-| tokenId | uint256 |true| The ID of the token for which underlying tokens were collected |
-| recipient | address |false| The address of the account that received the collected tokens |
-| amount0 | uint256 |false| The amount of token0 owed to the position that was collected |
-| amount1 | uint256 |false| The amount of token1 owed to the position that was collected |
+| `tokenId` | `uint256` |`true`| The ID of the token for which underlying tokens were collected |
+| `recipient` | `address` |`false`| The address of the account that received the collected tokens |
+| `amount0` | `uint256` |`false`| The amount of token0 owed to the position that was collected |
+| `amount1` | `uint256` |`false`| The amount of token1 owed to the position that was collected |
 
-### DecreaseLiquidity
+### `DecreaseLiquidity`
 ```solidity
 event DecreaseLiquidity(uint256 tokenId, uint128 liquidity, uint256 amount0, uint256 amount1)
 ```
@@ -658,12 +658,12 @@ event DecreaseLiquidity(uint256 tokenId, uint128 liquidity, uint256 amount0, uin
 
 | Name | Type | Indexed | Description |
 |---|---|---|---|
-| tokenId | uint256 |true| The ID of the token for which liquidity was decreased |
-| liquidity | uint128 |false| The amount by which liquidity for the NFT position was decreased |
-| amount0 | uint256 |false| The amount of token0 that was accounted for the decrease in liquidity |
-| amount1 | uint256 |false| The amount of token1 that was accounted for the decrease in liquidity |
+| `tokenId` | `uint256` |`true`| The ID of the token for which liquidity was decreased |
+| `liquidity` | `uint128` |`false`| The amount by which liquidity for the NFT position was decreased |
+| `amount0` | `uint256` |`false`| The amount of token0 that was accounted for the decrease in liquidity |
+| `amount1` | `uint256` |`false`| The amount of token1 that was accounted for the decrease in liquidity |
 
-### IncreaseLiquidity
+### `IncreaseLiquidity`
 ```solidity
 event IncreaseLiquidity(uint256 tokenId, uint128 liquidity, uint256 amount0, uint256 amount1)
 ```
@@ -677,12 +677,12 @@ Also emitted when a token is minted
 
 | Name | Type | Indexed | Description |
 |---|---|---|---|
-| tokenId | uint256 |true| The ID of the token for which liquidity was increased |
-| liquidity | uint128 |false| The amount by which liquidity for the NFT position was increased |
-| amount0 | uint256 |false| The amount of token0 that was paid for the increase in liquidity |
-| amount1 | uint256 |false| The amount of token1 that was paid for the increase in liquidity |
+| `tokenId` | `uint256` |`true`| The ID of the token for which liquidity was increased |
+| `liquidity` | `uint128` |`false`| The amount by which liquidity for the NFT position was increased |
+| `amount0` | `uint256` |`false`| The amount of token0 that was paid for the increase in liquidity |
+| `amount1` | `uint256` |`false`| The amount of token1 that was paid for the increase in liquidity |
 
-### Transfer
+### `Transfer`
 ```solidity
 event Transfer(address from, address to, uint256 tokenId)
 ```
@@ -694,8 +694,8 @@ event Transfer(address from, address to, uint256 tokenId)
 
 | Name | Type | Indexed | Description |
 |---|---|---|---|
-| from | address |true| - |
-| to | address |true| - |
-| tokenId | uint256 |true| - |
+| `from` | `address` |`true`| - |
+| `to` | `address` |`true`| - |
+| `tokenId` | `uint256` |`true`| - |
 
 

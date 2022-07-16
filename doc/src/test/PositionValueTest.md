@@ -1,11 +1,11 @@
 
-# PositionValueTest.sol
+# `PositionValueTest`
 
     
 
     
 ## Methods
-### fees
+### `fees`
 ```solidity
 function fees(address nft, uint256 tokenId) external view returns (uint256 amount0, uint256 amount1)
 ```
@@ -17,17 +17,17 @@ function fees(address nft, uint256 tokenId) external view returns (uint256 amoun
 
 | Name | Type | Description |
 |---|---|---|
-| nft | address | - |
-| tokenId | uint256 | - |
+| `nft` | `address` | - |
+| `tokenId` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amount0 | uint256 | - |
-| amount1 | uint256 | - |
+| `amount0` | `uint256` | - |
+| `amount1` | `uint256` | - |
 
-### feesGas
+### `feesGas`
 ```solidity
 function feesGas(address nft, uint256 tokenId) external view returns (uint256)
 ```
@@ -39,16 +39,16 @@ function feesGas(address nft, uint256 tokenId) external view returns (uint256)
 
 | Name | Type | Description |
 |---|---|---|
-| nft | address | - |
-| tokenId | uint256 | - |
+| `nft` | `address` | - |
+| `tokenId` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### principal
+### `principal`
 ```solidity
 function principal(address nft, uint256 tokenId, uint160 sqrtRatioX96) external view returns (uint256 amount0, uint256 amount1)
 ```
@@ -60,18 +60,18 @@ function principal(address nft, uint256 tokenId, uint160 sqrtRatioX96) external 
 
 | Name | Type | Description |
 |---|---|---|
-| nft | address | - |
-| tokenId | uint256 | - |
-| sqrtRatioX96 | uint160 | - |
+| `nft` | `address` | - |
+| `tokenId` | `uint256` | - |
+| `sqrtRatioX96` | `uint160` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amount0 | uint256 | - |
-| amount1 | uint256 | - |
+| `amount0` | `uint256` | - |
+| `amount1` | `uint256` | - |
 
-### principalGas
+### `principalGas`
 ```solidity
 function principalGas(address nft, uint256 tokenId, uint160 sqrtRatioX96) external view returns (uint256)
 ```
@@ -83,17 +83,17 @@ function principalGas(address nft, uint256 tokenId, uint160 sqrtRatioX96) extern
 
 | Name | Type | Description |
 |---|---|---|
-| nft | address | - |
-| tokenId | uint256 | - |
-| sqrtRatioX96 | uint160 | - |
+| `nft` | `address` | - |
+| `tokenId` | `uint256` | - |
+| `sqrtRatioX96` | `uint160` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### total
+### `total`
 ```solidity
 function total(address nft, uint256 tokenId, uint160 sqrtRatioX96) external view returns (uint256 amount0, uint256 amount1)
 ```
@@ -105,18 +105,18 @@ function total(address nft, uint256 tokenId, uint160 sqrtRatioX96) external view
 
 | Name | Type | Description |
 |---|---|---|
-| nft | address | - |
-| tokenId | uint256 | - |
-| sqrtRatioX96 | uint160 | - |
+| `nft` | `address` | - |
+| `tokenId` | `uint256` | - |
+| `sqrtRatioX96` | `uint160` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amount0 | uint256 | - |
-| amount1 | uint256 | - |
+| `amount0` | `uint256` | - |
+| `amount1` | `uint256` | - |
 
-### totalGas
+### `totalGas`
 ```solidity
 function totalGas(address nft, uint256 tokenId, uint160 sqrtRatioX96) external view returns (uint256)
 ```
@@ -128,14 +128,14 @@ function totalGas(address nft, uint256 tokenId, uint160 sqrtRatioX96) external v
 
 | Name | Type | Description |
 |---|---|---|
-| nft | address | - |
-| tokenId | uint256 | - |
-| sqrtRatioX96 | uint160 | - |
+| `nft` | `address` | - |
+| `tokenId` | `uint256` | - |
+| `sqrtRatioX96` | `uint160` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
 

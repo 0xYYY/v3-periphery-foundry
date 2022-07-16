@@ -1,11 +1,11 @@
 
-# NonfungiblePositionManagerPositionsGasTest.sol
+# `NonfungiblePositionManagerPositionsGasTest`
 
     
 
     
 ## Methods
-### getGasCostOfPositions
+### `getGasCostOfPositions`
 ```solidity
 function getGasCostOfPositions(uint256 tokenId) external view returns (uint256)
 ```
@@ -17,12 +17,12 @@ function getGasCostOfPositions(uint256 tokenId) external view returns (uint256)
 
 | Name | Type | Description |
 |---|---|---|
-| tokenId | uint256 | - |
+| `tokenId` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
 

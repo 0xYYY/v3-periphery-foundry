@@ -1,11 +1,11 @@
 
-# PathsTest.sol
+# `PathsTest`
 
     
 
     
 ## Methods
-### testRoundtrip
+### `testRoundtrip`
 ```solidity
 function testRoundtrip() external nonpayable
 ```

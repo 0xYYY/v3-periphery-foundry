@@ -1,5 +1,5 @@
 
-# IERC20Metadata.sol
+# `IERC20Metadata`
 
     
 IERC20MetadataInterface for ERC20 Metadata
@@ -7,7 +7,7 @@ IERC20MetadataInterface for ERC20 Metadata
     
 *Extension to IERC20 that includes token metadata*
 ## Methods
-### allowance
+### `allowance`
 ```solidity
 function allowance(address owner, address spender) external view returns (uint256)
 ```
@@ -20,16 +20,16 @@ Returns the remaining number of tokens that `spender` will be allowed to spend o
 
 | Name | Type | Description |
 |---|---|---|
-| owner | address | - |
-| spender | address | - |
+| `owner` | `address` | - |
+| `spender` | `address` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### approve
+### `approve`
 ```solidity
 function approve(address spender, uint256 amount) external nonpayable returns (bool)
 ```
@@ -42,16 +42,16 @@ Sets `amount` as the allowance of `spender` over the caller's tokens. Returns a 
 
 | Name | Type | Description |
 |---|---|---|
-| spender | address | - |
-| amount | uint256 | - |
+| `spender` | `address` | - |
+| `amount` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | bool | - |
+| `-` | `bool` | - |
 
-### balanceOf
+### `balanceOf`
 ```solidity
 function balanceOf(address account) external view returns (uint256)
 ```
@@ -64,15 +64,15 @@ Returns the amount of tokens owned by `account`.
 
 | Name | Type | Description |
 |---|---|---|
-| account | address | - |
+| `account` | `address` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### decimals
+### `decimals`
 ```solidity
 function decimals() external view returns (uint8)
 ```
@@ -84,9 +84,9 @@ function decimals() external view returns (uint8)
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint8 | - |
+| `-` | `uint8` | - |
 
-### name
+### `name`
 ```solidity
 function name() external view returns (string)
 ```
@@ -98,9 +98,9 @@ function name() external view returns (string)
 
 | Name | Type | Description |
 |---|---|---|
-| - | string | - |
+| `-` | `string` | - |
 
-### symbol
+### `symbol`
 ```solidity
 function symbol() external view returns (string)
 ```
@@ -112,9 +112,9 @@ function symbol() external view returns (string)
 
 | Name | Type | Description |
 |---|---|---|
-| - | string | - |
+| `-` | `string` | - |
 
-### totalSupply
+### `totalSupply`
 ```solidity
 function totalSupply() external view returns (uint256)
 ```
@@ -127,9 +127,9 @@ Returns the amount of tokens in existence.
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### transfer
+### `transfer`
 ```solidity
 function transfer(address recipient, uint256 amount) external nonpayable returns (bool)
 ```
@@ -142,16 +142,16 @@ Moves `amount` tokens from the caller's account to `recipient`. Returns a boolea
 
 | Name | Type | Description |
 |---|---|---|
-| recipient | address | - |
-| amount | uint256 | - |
+| `recipient` | `address` | - |
+| `amount` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | bool | - |
+| `-` | `bool` | - |
 
-### transferFrom
+### `transferFrom`
 ```solidity
 function transferFrom(address sender, address recipient, uint256 amount) external nonpayable returns (bool)
 ```
@@ -164,18 +164,18 @@ Moves `amount` tokens from `sender` to `recipient` using the allowance mechanism
 
 | Name | Type | Description |
 |---|---|---|
-| sender | address | - |
-| recipient | address | - |
-| amount | uint256 | - |
+| `sender` | `address` | - |
+| `recipient` | `address` | - |
+| `amount` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | bool | - |
+| `-` | `bool` | - |
 
 ### Events
-### Approval
+### `Approval`
 ```solidity
 event Approval(address owner, address spender, uint256 value)
 ```
@@ -187,11 +187,11 @@ event Approval(address owner, address spender, uint256 value)
 
 | Name | Type | Indexed | Description |
 |---|---|---|---|
-| owner | address |true| - |
-| spender | address |true| - |
-| value | uint256 |false| - |
+| `owner` | `address` |`true`| - |
+| `spender` | `address` |`true`| - |
+| `value` | `uint256` |`false`| - |
 
-### Transfer
+### `Transfer`
 ```solidity
 event Transfer(address from, address to, uint256 value)
 ```
@@ -203,8 +203,8 @@ event Transfer(address from, address to, uint256 value)
 
 | Name | Type | Indexed | Description |
 |---|---|---|---|
-| from | address |true| - |
-| to | address |true| - |
-| value | uint256 |false| - |
+| `from` | `address` |`true`| - |
+| `to` | `address` |`true`| - |
+| `value` | `uint256` |`false`| - |
 
 

@@ -1,11 +1,11 @@
 
-# PathTest.sol
+# `PathTest`
 
     
 
     
 ## Methods
-### decodeFirstPool
+### `decodeFirstPool`
 ```solidity
 function decodeFirstPool(bytes path) external pure returns (address tokenA, address tokenB, uint24 fee)
 ```
@@ -17,17 +17,17 @@ function decodeFirstPool(bytes path) external pure returns (address tokenA, addr
 
 | Name | Type | Description |
 |---|---|---|
-| path | bytes | - |
+| `path` | `bytes` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| tokenA | address | - |
-| tokenB | address | - |
-| fee | uint24 | - |
+| `tokenA` | `address` | - |
+| `tokenB` | `address` | - |
+| `fee` | `uint24` | - |
 
-### getFirstPool
+### `getFirstPool`
 ```solidity
 function getFirstPool(bytes path) external pure returns (bytes)
 ```
@@ -39,15 +39,15 @@ function getFirstPool(bytes path) external pure returns (bytes)
 
 | Name | Type | Description |
 |---|---|---|
-| path | bytes | - |
+| `path` | `bytes` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | bytes | - |
+| `-` | `bytes` | - |
 
-### getGasCostOfDecodeFirstPool
+### `getGasCostOfDecodeFirstPool`
 ```solidity
 function getGasCostOfDecodeFirstPool(bytes path) external view returns (uint256)
 ```
@@ -59,15 +59,15 @@ function getGasCostOfDecodeFirstPool(bytes path) external view returns (uint256)
 
 | Name | Type | Description |
 |---|---|---|
-| path | bytes | - |
+| `path` | `bytes` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### hasMultiplePools
+### `hasMultiplePools`
 ```solidity
 function hasMultiplePools(bytes path) external pure returns (bool)
 ```
@@ -79,15 +79,15 @@ function hasMultiplePools(bytes path) external pure returns (bool)
 
 | Name | Type | Description |
 |---|---|---|
-| path | bytes | - |
+| `path` | `bytes` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | bool | - |
+| `-` | `bool` | - |
 
-### skipToken
+### `skipToken`
 ```solidity
 function skipToken(bytes path) external pure returns (bytes)
 ```
@@ -99,12 +99,12 @@ function skipToken(bytes path) external pure returns (bytes)
 
 | Name | Type | Description |
 |---|---|---|
-| path | bytes | - |
+| `path` | `bytes` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | bytes | - |
+| `-` | `bytes` | - |
 
 

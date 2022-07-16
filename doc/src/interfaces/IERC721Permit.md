@@ -1,5 +1,5 @@
 
-# IERC721Permit.sol
+# `IERC721Permit`
 
     
 ERC721 with permit
@@ -7,7 +7,7 @@ ERC721 with permit
     
 *Extension to ERC721 that includes a permit function for signature based approvals*
 ## Methods
-### DOMAIN_SEPARATOR
+### `DOMAIN_SEPARATOR`
 ```solidity
 function DOMAIN_SEPARATOR() external view returns (bytes32)
 ```
@@ -20,9 +20,9 @@ function DOMAIN_SEPARATOR() external view returns (bytes32)
 
 | Name | Type | Description |
 |---|---|---|
-| - | bytes32 | - |
+| `-` | `bytes32` | - |
 
-### PERMIT_TYPEHASH
+### `PERMIT_TYPEHASH`
 ```solidity
 function PERMIT_TYPEHASH() external pure returns (bytes32)
 ```
@@ -35,9 +35,9 @@ function PERMIT_TYPEHASH() external pure returns (bytes32)
 
 | Name | Type | Description |
 |---|---|---|
-| - | bytes32 | - |
+| `-` | `bytes32` | - |
 
-### approve
+### `approve`
 ```solidity
 function approve(address to, uint256 tokenId) external nonpayable
 ```
@@ -50,10 +50,10 @@ Gives permission to `to` to transfer `tokenId` token to another account. The app
 
 | Name | Type | Description |
 |---|---|---|
-| to | address | - |
-| tokenId | uint256 | - |
+| `to` | `address` | - |
+| `tokenId` | `uint256` | - |
 
-### balanceOf
+### `balanceOf`
 ```solidity
 function balanceOf(address owner) external view returns (uint256 balance)
 ```
@@ -66,15 +66,15 @@ Returns the number of tokens in ``owner``'s account.
 
 | Name | Type | Description |
 |---|---|---|
-| owner | address | - |
+| `owner` | `address` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| balance | uint256 | - |
+| `balance` | `uint256` | - |
 
-### getApproved
+### `getApproved`
 ```solidity
 function getApproved(uint256 tokenId) external view returns (address operator)
 ```
@@ -87,15 +87,15 @@ Returns the account approved for `tokenId` token. Requirements: - `tokenId` must
 
 | Name | Type | Description |
 |---|---|---|
-| tokenId | uint256 | - |
+| `tokenId` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| operator | address | - |
+| `operator` | `address` | - |
 
-### isApprovedForAll
+### `isApprovedForAll`
 ```solidity
 function isApprovedForAll(address owner, address operator) external view returns (bool)
 ```
@@ -108,16 +108,16 @@ Returns if the `operator` is allowed to manage all of the assets of `owner`. See
 
 | Name | Type | Description |
 |---|---|---|
-| owner | address | - |
-| operator | address | - |
+| `owner` | `address` | - |
+| `operator` | `address` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | bool | - |
+| `-` | `bool` | - |
 
-### ownerOf
+### `ownerOf`
 ```solidity
 function ownerOf(uint256 tokenId) external view returns (address owner)
 ```
@@ -130,15 +130,15 @@ Returns the owner of the `tokenId` token. Requirements: - `tokenId` must exist.
 
 | Name | Type | Description |
 |---|---|---|
-| tokenId | uint256 | - |
+| `tokenId` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| owner | address | - |
+| `owner` | `address` | - |
 
-### permit
+### `permit`
 ```solidity
 function permit(address spender, uint256 tokenId, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external payable
 ```
@@ -151,14 +151,14 @@ function permit(address spender, uint256 tokenId, uint256 deadline, uint8 v, byt
 
 | Name | Type | Description |
 |---|---|---|
-| spender | address | The account that is being approved |
-| tokenId | uint256 | The ID of the token that is being approved for spending |
-| deadline | uint256 | The deadline timestamp by which the call must be mined for the approve to work |
-| v | uint8 | Must produce valid secp256k1 signature from the holder along with `r` and `s` |
-| r | bytes32 | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
-| s | bytes32 | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
+| `spender` | `address` | The account that is being approved |
+| `tokenId` | `uint256` | The ID of the token that is being approved for spending |
+| `deadline` | `uint256` | The deadline timestamp by which the call must be mined for the approve to work |
+| `v` | `uint8` | Must produce valid secp256k1 signature from the holder along with `r` and `s` |
+| `r` | `bytes32` | Must produce valid secp256k1 signature from the holder along with `v` and `s` |
+| `s` | `bytes32` | Must produce valid secp256k1 signature from the holder along with `r` and `v` |
 
-### safeTransferFrom
+### `safeTransferFrom`
 ```solidity
 function safeTransferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
@@ -171,9 +171,9 @@ Safely transfers `tokenId` token from `from` to `to`, checking first that contra
 
 | Name | Type | Description |
 |---|---|---|
-| from | address | - |
-| to | address | - |
-| tokenId | uint256 | - |
+| `from` | `address` | - |
+| `to` | `address` | - |
+| `tokenId` | `uint256` | - |
 
 ```solidity
 function safeTransferFrom(address from, address to, uint256 tokenId, bytes data) external nonpayable
@@ -187,12 +187,12 @@ Safely transfers `tokenId` token from `from` to `to`. Requirements: - `from` can
 
 | Name | Type | Description |
 |---|---|---|
-| from | address | - |
-| to | address | - |
-| tokenId | uint256 | - |
-| data | bytes | - |
+| `from` | `address` | - |
+| `to` | `address` | - |
+| `tokenId` | `uint256` | - |
+| `data` | `bytes` | - |
 
-### setApprovalForAll
+### `setApprovalForAll`
 ```solidity
 function setApprovalForAll(address operator, bool _approved) external nonpayable
 ```
@@ -205,10 +205,10 @@ Approve or remove `operator` as an operator for the caller. Operators can call {
 
 | Name | Type | Description |
 |---|---|---|
-| operator | address | - |
-| _approved | bool | - |
+| `operator` | `address` | - |
+| `_approved` | `bool` | - |
 
-### supportsInterface
+### `supportsInterface`
 ```solidity
 function supportsInterface(bytes4 interfaceId) external view returns (bool)
 ```
@@ -221,15 +221,15 @@ Returns true if this contract implements the interface defined by `interfaceId`.
 
 | Name | Type | Description |
 |---|---|---|
-| interfaceId | bytes4 | - |
+| `interfaceId` | `bytes4` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | bool | - |
+| `-` | `bool` | - |
 
-### transferFrom
+### `transferFrom`
 ```solidity
 function transferFrom(address from, address to, uint256 tokenId) external nonpayable
 ```
@@ -242,12 +242,12 @@ Transfers `tokenId` token from `from` to `to`. WARNING: Usage of this method is 
 
 | Name | Type | Description |
 |---|---|---|
-| from | address | - |
-| to | address | - |
-| tokenId | uint256 | - |
+| `from` | `address` | - |
+| `to` | `address` | - |
+| `tokenId` | `uint256` | - |
 
 ### Events
-### Approval
+### `Approval`
 ```solidity
 event Approval(address owner, address approved, uint256 tokenId)
 ```
@@ -259,11 +259,11 @@ event Approval(address owner, address approved, uint256 tokenId)
 
 | Name | Type | Indexed | Description |
 |---|---|---|---|
-| owner | address |true| - |
-| approved | address |true| - |
-| tokenId | uint256 |true| - |
+| `owner` | `address` |`true`| - |
+| `approved` | `address` |`true`| - |
+| `tokenId` | `uint256` |`true`| - |
 
-### ApprovalForAll
+### `ApprovalForAll`
 ```solidity
 event ApprovalForAll(address owner, address operator, bool approved)
 ```
@@ -275,11 +275,11 @@ event ApprovalForAll(address owner, address operator, bool approved)
 
 | Name | Type | Indexed | Description |
 |---|---|---|---|
-| owner | address |true| - |
-| operator | address |true| - |
-| approved | bool |false| - |
+| `owner` | `address` |`true`| - |
+| `operator` | `address` |`true`| - |
+| `approved` | `bool` |`false`| - |
 
-### Transfer
+### `Transfer`
 ```solidity
 event Transfer(address from, address to, uint256 tokenId)
 ```
@@ -291,8 +291,8 @@ event Transfer(address from, address to, uint256 tokenId)
 
 | Name | Type | Indexed | Description |
 |---|---|---|---|
-| from | address |true| - |
-| to | address |true| - |
-| tokenId | uint256 |true| - |
+| `from` | `address` |`true`| - |
+| `to` | `address` |`true`| - |
+| `tokenId` | `uint256` |`true`| - |
 
 

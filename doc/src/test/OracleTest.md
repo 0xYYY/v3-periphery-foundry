@@ -1,11 +1,11 @@
 
-# OracleTest.sol
+# `OracleTest`
 
     
 
     
 ## Methods
-### consult
+### `consult`
 ```solidity
 function consult(address pool, uint32 secondsAgo) external view returns (int24 arithmeticMeanTick, uint128 harmonicMeanLiquidity)
 ```
@@ -17,17 +17,17 @@ function consult(address pool, uint32 secondsAgo) external view returns (int24 a
 
 | Name | Type | Description |
 |---|---|---|
-| pool | address | - |
-| secondsAgo | uint32 | - |
+| `pool` | `address` | - |
+| `secondsAgo` | `uint32` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| arithmeticMeanTick | int24 | - |
-| harmonicMeanLiquidity | uint128 | - |
+| `arithmeticMeanTick` | `int24` | - |
+| `harmonicMeanLiquidity` | `uint128` | - |
 
-### getBlockStartingTickAndLiquidity
+### `getBlockStartingTickAndLiquidity`
 ```solidity
 function getBlockStartingTickAndLiquidity(address pool) external view returns (int24, uint128)
 ```
@@ -39,16 +39,16 @@ function getBlockStartingTickAndLiquidity(address pool) external view returns (i
 
 | Name | Type | Description |
 |---|---|---|
-| pool | address | - |
+| `pool` | `address` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | int24 | - |
-| - | uint128 | - |
+| `-` | `int24` | - |
+| `-` | `uint128` | - |
 
-### getChainedPrice
+### `getChainedPrice`
 ```solidity
 function getChainedPrice(address[] tokens, int24[] ticks) external view returns (int256 syntheticTick)
 ```
@@ -60,16 +60,16 @@ function getChainedPrice(address[] tokens, int24[] ticks) external view returns 
 
 | Name | Type | Description |
 |---|---|---|
-| tokens | address[] | - |
-| ticks | int24[] | - |
+| `tokens` | `address[]` | - |
+| `ticks` | `int24[]` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| syntheticTick | int256 | - |
+| `syntheticTick` | `int256` | - |
 
-### getGasCostOfConsult
+### `getGasCostOfConsult`
 ```solidity
 function getGasCostOfConsult(address pool, uint32 period) external view returns (uint256)
 ```
@@ -81,16 +81,16 @@ function getGasCostOfConsult(address pool, uint32 period) external view returns 
 
 | Name | Type | Description |
 |---|---|---|
-| pool | address | - |
-| period | uint32 | - |
+| `pool` | `address` | - |
+| `period` | `uint32` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### getGasCostOfGetQuoteAtTick
+### `getGasCostOfGetQuoteAtTick`
 ```solidity
 function getGasCostOfGetQuoteAtTick(int24 tick, uint128 baseAmount, address baseToken, address quoteToken) external view returns (uint256)
 ```
@@ -102,18 +102,18 @@ function getGasCostOfGetQuoteAtTick(int24 tick, uint128 baseAmount, address base
 
 | Name | Type | Description |
 |---|---|---|
-| tick | int24 | - |
-| baseAmount | uint128 | - |
-| baseToken | address | - |
-| quoteToken | address | - |
+| `tick` | `int24` | - |
+| `baseAmount` | `uint128` | - |
+| `baseToken` | `address` | - |
+| `quoteToken` | `address` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### getOldestObservationSecondsAgo
+### `getOldestObservationSecondsAgo`
 ```solidity
 function getOldestObservationSecondsAgo(address pool) external view returns (uint32 secondsAgo, uint32 currentTimestamp)
 ```
@@ -125,16 +125,16 @@ function getOldestObservationSecondsAgo(address pool) external view returns (uin
 
 | Name | Type | Description |
 |---|---|---|
-| pool | address | - |
+| `pool` | `address` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| secondsAgo | uint32 | - |
-| currentTimestamp | uint32 | - |
+| `secondsAgo` | `uint32` | - |
+| `currentTimestamp` | `uint32` | - |
 
-### getQuoteAtTick
+### `getQuoteAtTick`
 ```solidity
 function getQuoteAtTick(int24 tick, uint128 baseAmount, address baseToken, address quoteToken) external pure returns (uint256 quoteAmount)
 ```
@@ -146,18 +146,18 @@ function getQuoteAtTick(int24 tick, uint128 baseAmount, address baseToken, addre
 
 | Name | Type | Description |
 |---|---|---|
-| tick | int24 | - |
-| baseAmount | uint128 | - |
-| baseToken | address | - |
-| quoteToken | address | - |
+| `tick` | `int24` | - |
+| `baseAmount` | `uint128` | - |
+| `baseToken` | `address` | - |
+| `quoteToken` | `address` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| quoteAmount | uint256 | - |
+| `quoteAmount` | `uint256` | - |
 
-### getWeightedArithmeticMeanTick
+### `getWeightedArithmeticMeanTick`
 ```solidity
 function getWeightedArithmeticMeanTick((int24,uint128)[] observations) external pure returns (int24 arithmeticMeanWeightedTick)
 ```
@@ -169,12 +169,12 @@ function getWeightedArithmeticMeanTick((int24,uint128)[] observations) external 
 
 | Name | Type | Description |
 |---|---|---|
-| observations | (int24,uint128)[] | - |
+| `observations` | `(int24,uint128)[]` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| arithmeticMeanWeightedTick | int24 | - |
+| `arithmeticMeanWeightedTick` | `int24` | - |
 
 

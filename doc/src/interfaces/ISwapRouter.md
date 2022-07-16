@@ -1,5 +1,5 @@
 
-# ISwapRouter.sol
+# `ISwapRouter`
 
     
 Router token swapping functionality
@@ -7,7 +7,7 @@ Router token swapping functionality
     
 *Functions for swapping tokens via Uniswap V3*
 ## Methods
-### exactInput
+### `exactInput`
 ```solidity
 function exactInput((bytes,address,uint256,uint256,uint256) params) external payable returns (uint256 amountOut)
 ```
@@ -20,15 +20,15 @@ function exactInput((bytes,address,uint256,uint256,uint256) params) external pay
 
 | Name | Type | Description |
 |---|---|---|
-| params | (bytes,address,uint256,uint256,uint256) | The parameters necessary for the multi-hop swap, encoded as `ExactInputParams` in calldata |
+| `params` | `(bytes,address,uint256,uint256,uint256)` | The parameters necessary for the multi-hop swap, encoded as `ExactInputParams` in calldata |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amountOut | uint256 | The amount of the received token |
+| `amountOut` | `uint256` | The amount of the received token |
 
-### exactInputSingle
+### `exactInputSingle`
 ```solidity
 function exactInputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160) params) external payable returns (uint256 amountOut)
 ```
@@ -41,15 +41,15 @@ function exactInputSingle((address,address,uint24,address,uint256,uint256,uint25
 
 | Name | Type | Description |
 |---|---|---|
-| params | (address,address,uint24,address,uint256,uint256,uint256,uint160) | The parameters necessary for the swap, encoded as `ExactInputSingleParams` in calldata |
+| `params` | `(address,address,uint24,address,uint256,uint256,uint256,uint160)` | The parameters necessary for the swap, encoded as `ExactInputSingleParams` in calldata |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amountOut | uint256 | The amount of the received token |
+| `amountOut` | `uint256` | The amount of the received token |
 
-### exactOutput
+### `exactOutput`
 ```solidity
 function exactOutput((bytes,address,uint256,uint256,uint256) params) external payable returns (uint256 amountIn)
 ```
@@ -62,15 +62,15 @@ function exactOutput((bytes,address,uint256,uint256,uint256) params) external pa
 
 | Name | Type | Description |
 |---|---|---|
-| params | (bytes,address,uint256,uint256,uint256) | The parameters necessary for the multi-hop swap, encoded as `ExactOutputParams` in calldata |
+| `params` | `(bytes,address,uint256,uint256,uint256)` | The parameters necessary for the multi-hop swap, encoded as `ExactOutputParams` in calldata |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amountIn | uint256 | The amount of the input token |
+| `amountIn` | `uint256` | The amount of the input token |
 
-### exactOutputSingle
+### `exactOutputSingle`
 ```solidity
 function exactOutputSingle((address,address,uint24,address,uint256,uint256,uint256,uint160) params) external payable returns (uint256 amountIn)
 ```
@@ -83,15 +83,15 @@ function exactOutputSingle((address,address,uint24,address,uint256,uint256,uint2
 
 | Name | Type | Description |
 |---|---|---|
-| params | (address,address,uint24,address,uint256,uint256,uint256,uint160) | The parameters necessary for the swap, encoded as `ExactOutputSingleParams` in calldata |
+| `params` | `(address,address,uint24,address,uint256,uint256,uint256,uint160)` | The parameters necessary for the swap, encoded as `ExactOutputSingleParams` in calldata |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amountIn | uint256 | The amount of the input token |
+| `amountIn` | `uint256` | The amount of the input token |
 
-### uniswapV3SwapCallback
+### `uniswapV3SwapCallback`
 ```solidity
 function uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes data) external nonpayable
 ```
@@ -105,8 +105,8 @@ In the implementation you must pay the pool tokens owed for the swap. The caller
 
 | Name | Type | Description |
 |---|---|---|
-| amount0Delta | int256 | The amount of token0 that was sent (negative) or must be received (positive) by the pool by the end of the swap. If positive, the callback must send that amount of token0 to the pool. |
-| amount1Delta | int256 | The amount of token1 that was sent (negative) or must be received (positive) by the pool by the end of the swap. If positive, the callback must send that amount of token1 to the pool. |
-| data | bytes | Any data passed through by the caller via the IUniswapV3PoolActions#swap call |
+| `amount0Delta` | `int256` | The amount of token0 that was sent (negative) or must be received (positive) by the pool by the end of the swap. If positive, the callback must send that amount of token0 to the pool. |
+| `amount1Delta` | `int256` | The amount of token1 that was sent (negative) or must be received (positive) by the pool by the end of the swap. If positive, the callback must send that amount of token1 to the pool. |
+| `data` | `bytes` | Any data passed through by the caller via the IUniswapV3PoolActions#swap call |
 
 

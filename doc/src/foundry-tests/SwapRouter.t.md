@@ -1,11 +1,11 @@
 
-# ExactInput.sol
+# `ExactInput`
 
     
 
     
 ## Methods
-### createPool
+### `createPool`
 ```solidity
 function createPool(address tokenAddressA, address tokenAddressB) external nonpayable
 ```
@@ -17,10 +17,10 @@ function createPool(address tokenAddressA, address tokenAddressB) external nonpa
 
 | Name | Type | Description |
 |---|---|---|
-| tokenAddressA | address | - |
-| tokenAddressB | address | - |
+| `tokenAddressA` | `address` | - |
+| `tokenAddressB` | `address` | - |
 
-### deployCode
+### `deployCode`
 ```solidity
 function deployCode(string what) external nonpayable returns (address addr)
 ```
@@ -32,15 +32,15 @@ function deployCode(string what) external nonpayable returns (address addr)
 
 | Name | Type | Description |
 |---|---|---|
-| what | string | - |
+| `what` | `string` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| addr | address | - |
+| `addr` | `address` | - |
 
-### exactInput
+### `exactInput`
 ```solidity
 function exactInput(address[] tokens, uint256 amountIn, uint256 amountOutMinimum) external nonpayable
 ```
@@ -52,11 +52,11 @@ function exactInput(address[] tokens, uint256 amountIn, uint256 amountOutMinimum
 
 | Name | Type | Description |
 |---|---|---|
-| tokens | address[] | - |
-| amountIn | uint256 | - |
-| amountOutMinimum | uint256 | - |
+| `tokens` | `address[]` | - |
+| `amountIn` | `uint256` | - |
+| `amountOutMinimum` | `uint256` | - |
 
-### factory
+### `factory`
 ```solidity
 function factory() external view returns (address)
 ```
@@ -68,9 +68,9 @@ function factory() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### getBalances
+### `getBalances`
 ```solidity
 function getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
 ```
@@ -82,15 +82,15 @@ function getBalances(address who) external nonpayable returns ((uint256,uint256,
 
 | Name | Type | Description |
 |---|---|---|
-| who | address | - |
+| `who` | `address` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | (uint256,uint256,uint256,uint256) | - |
+| `-` | `(uint256,uint256,uint256,uint256)` | - |
 
-### router
+### `router`
 ```solidity
 function router() external view returns (address)
 ```
@@ -102,9 +102,9 @@ function router() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### setUp
+### `setUp`
 ```solidity
 function setUp() external nonpayable
 ```
@@ -112,7 +112,7 @@ function setUp() external nonpayable
             
 
             
-### weth9
+### `weth9`
 ```solidity
 function weth9() external view returns (address)
 ```
@@ -124,17 +124,17 @@ function weth9() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
 
 
-# MultiPool.sol
+# `MultiPool`
 
     
 
     
 ## Methods
-### createPool
+### `createPool`
 ```solidity
 function createPool(address tokenAddressA, address tokenAddressB) external nonpayable
 ```
@@ -146,10 +146,10 @@ function createPool(address tokenAddressA, address tokenAddressB) external nonpa
 
 | Name | Type | Description |
 |---|---|---|
-| tokenAddressA | address | - |
-| tokenAddressB | address | - |
+| `tokenAddressA` | `address` | - |
+| `tokenAddressB` | `address` | - |
 
-### deployCode
+### `deployCode`
 ```solidity
 function deployCode(string what) external nonpayable returns (address addr)
 ```
@@ -161,15 +161,15 @@ function deployCode(string what) external nonpayable returns (address addr)
 
 | Name | Type | Description |
 |---|---|---|
-| what | string | - |
+| `what` | `string` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| addr | address | - |
+| `addr` | `address` | - |
 
-### exactInput
+### `exactInput`
 ```solidity
 function exactInput(address[] tokens, uint256 amountIn, uint256 amountOutMinimum) external nonpayable
 ```
@@ -181,11 +181,11 @@ function exactInput(address[] tokens, uint256 amountIn, uint256 amountOutMinimum
 
 | Name | Type | Description |
 |---|---|---|
-| tokens | address[] | - |
-| amountIn | uint256 | - |
-| amountOutMinimum | uint256 | - |
+| `tokens` | `address[]` | - |
+| `amountIn` | `uint256` | - |
+| `amountOutMinimum` | `uint256` | - |
 
-### factory
+### `factory`
 ```solidity
 function factory() external view returns (address)
 ```
@@ -197,9 +197,9 @@ function factory() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### getBalances
+### `getBalances`
 ```solidity
 function getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
 ```
@@ -211,15 +211,15 @@ function getBalances(address who) external nonpayable returns ((uint256,uint256,
 
 | Name | Type | Description |
 |---|---|---|
-| who | address | - |
+| `who` | `address` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | (uint256,uint256,uint256,uint256) | - |
+| `-` | `(uint256,uint256,uint256,uint256)` | - |
 
-### router
+### `router`
 ```solidity
 function router() external view returns (address)
 ```
@@ -231,9 +231,9 @@ function router() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### setUp
+### `setUp`
 ```solidity
 function setUp() external nonpayable
 ```
@@ -241,7 +241,7 @@ function setUp() external nonpayable
             
 
             
-### testEvents
+### `testEvents`
 ```solidity
 function testEvents() external nonpayable
 ```
@@ -249,7 +249,7 @@ function testEvents() external nonpayable
             
 
             
-### testTwoToOneToZero
+### `testTwoToOneToZero`
 ```solidity
 function testTwoToOneToZero() external nonpayable
 ```
@@ -257,7 +257,7 @@ function testTwoToOneToZero() external nonpayable
             
 
             
-### testZeroToOneToTwo
+### `testZeroToOneToTwo`
 ```solidity
 function testZeroToOneToTwo() external nonpayable
 ```
@@ -265,7 +265,7 @@ function testZeroToOneToTwo() external nonpayable
             
 
             
-### weth9
+### `weth9`
 ```solidity
 function weth9() external view returns (address)
 ```
@@ -277,10 +277,10 @@ function weth9() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
 ### Events
-### Transfer
+### `Transfer`
 ```solidity
 event Transfer(address from, address to, uint256 amount)
 ```
@@ -292,19 +292,19 @@ event Transfer(address from, address to, uint256 amount)
 
 | Name | Type | Indexed | Description |
 |---|---|---|---|
-| from | address |true| - |
-| to | address |true| - |
-| amount | uint256 |false| - |
+| `from` | `address` |`true`| - |
+| `to` | `address` |`true`| - |
+| `amount` | `uint256` |`false`| - |
 
 
 
-# SinglePool.sol
+# `SinglePool`
 
     
 
     
 ## Methods
-### createPool
+### `createPool`
 ```solidity
 function createPool(address tokenAddressA, address tokenAddressB) external nonpayable
 ```
@@ -316,10 +316,10 @@ function createPool(address tokenAddressA, address tokenAddressB) external nonpa
 
 | Name | Type | Description |
 |---|---|---|
-| tokenAddressA | address | - |
-| tokenAddressB | address | - |
+| `tokenAddressA` | `address` | - |
+| `tokenAddressB` | `address` | - |
 
-### deployCode
+### `deployCode`
 ```solidity
 function deployCode(string what) external nonpayable returns (address addr)
 ```
@@ -331,15 +331,15 @@ function deployCode(string what) external nonpayable returns (address addr)
 
 | Name | Type | Description |
 |---|---|---|
-| what | string | - |
+| `what` | `string` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| addr | address | - |
+| `addr` | `address` | - |
 
-### exactInput
+### `exactInput`
 ```solidity
 function exactInput(address[] tokens, uint256 amountIn, uint256 amountOutMinimum) external nonpayable
 ```
@@ -351,11 +351,11 @@ function exactInput(address[] tokens, uint256 amountIn, uint256 amountOutMinimum
 
 | Name | Type | Description |
 |---|---|---|
-| tokens | address[] | - |
-| amountIn | uint256 | - |
-| amountOutMinimum | uint256 | - |
+| `tokens` | `address[]` | - |
+| `amountIn` | `uint256` | - |
+| `amountOutMinimum` | `uint256` | - |
 
-### factory
+### `factory`
 ```solidity
 function factory() external view returns (address)
 ```
@@ -367,9 +367,9 @@ function factory() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### getBalances
+### `getBalances`
 ```solidity
 function getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
 ```
@@ -381,15 +381,15 @@ function getBalances(address who) external nonpayable returns ((uint256,uint256,
 
 | Name | Type | Description |
 |---|---|---|
-| who | address | - |
+| `who` | `address` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | (uint256,uint256,uint256,uint256) | - |
+| `-` | `(uint256,uint256,uint256,uint256)` | - |
 
-### router
+### `router`
 ```solidity
 function router() external view returns (address)
 ```
@@ -401,9 +401,9 @@ function router() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### setUp
+### `setUp`
 ```solidity
 function setUp() external nonpayable
 ```
@@ -411,7 +411,7 @@ function setUp() external nonpayable
             
 
             
-### testOneToZero
+### `testOneToZero`
 ```solidity
 function testOneToZero() external nonpayable
 ```
@@ -419,7 +419,7 @@ function testOneToZero() external nonpayable
             
 
             
-### testZeroToOne
+### `testZeroToOne`
 ```solidity
 function testZeroToOne() external nonpayable
 ```
@@ -427,7 +427,7 @@ function testZeroToOne() external nonpayable
             
 
             
-### weth9
+### `weth9`
 ```solidity
 function weth9() external view returns (address)
 ```
@@ -439,17 +439,17 @@ function weth9() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
 
 
-# Swaps.sol
+# `Swaps`
 
     
 
     
 ## Methods
-### createPool
+### `createPool`
 ```solidity
 function createPool(address tokenAddressA, address tokenAddressB) external nonpayable
 ```
@@ -461,10 +461,10 @@ function createPool(address tokenAddressA, address tokenAddressB) external nonpa
 
 | Name | Type | Description |
 |---|---|---|
-| tokenAddressA | address | - |
-| tokenAddressB | address | - |
+| `tokenAddressA` | `address` | - |
+| `tokenAddressB` | `address` | - |
 
-### deployCode
+### `deployCode`
 ```solidity
 function deployCode(string what) external nonpayable returns (address addr)
 ```
@@ -476,15 +476,15 @@ function deployCode(string what) external nonpayable returns (address addr)
 
 | Name | Type | Description |
 |---|---|---|
-| what | string | - |
+| `what` | `string` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| addr | address | - |
+| `addr` | `address` | - |
 
-### factory
+### `factory`
 ```solidity
 function factory() external view returns (address)
 ```
@@ -496,9 +496,9 @@ function factory() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### getBalances
+### `getBalances`
 ```solidity
 function getBalances(address who) external nonpayable returns ((uint256,uint256,uint256,uint256))
 ```
@@ -510,15 +510,15 @@ function getBalances(address who) external nonpayable returns ((uint256,uint256,
 
 | Name | Type | Description |
 |---|---|---|
-| who | address | - |
+| `who` | `address` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | (uint256,uint256,uint256,uint256) | - |
+| `-` | `(uint256,uint256,uint256,uint256)` | - |
 
-### router
+### `router`
 ```solidity
 function router() external view returns (address)
 ```
@@ -530,9 +530,9 @@ function router() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### setUp
+### `setUp`
 ```solidity
 function setUp() external nonpayable
 ```
@@ -540,7 +540,7 @@ function setUp() external nonpayable
             
 
             
-### weth9
+### `weth9`
 ```solidity
 function weth9() external view returns (address)
 ```
@@ -552,6 +552,6 @@ function weth9() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
 

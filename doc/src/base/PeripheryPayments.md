@@ -1,11 +1,11 @@
 
-# PeripheryPayments.sol
+# `PeripheryPayments`
 
     
 
     
 ## Methods
-### WETH9
+### `WETH9`
 ```solidity
 function WETH9() external view returns (address)
 ```
@@ -17,9 +17,9 @@ function WETH9() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### factory
+### `factory`
 ```solidity
 function factory() external view returns (address)
 ```
@@ -31,9 +31,9 @@ function factory() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### refundETH
+### `refundETH`
 ```solidity
 function refundETH() external payable
 ```
@@ -43,7 +43,7 @@ Useful for bundling with mint or increase liquidity that uses ether, or exact ou
 
             
 *Refunds any ETH balance held by this contract to the `msg.sender`*
-### sweepToken
+### `sweepToken`
 ```solidity
 function sweepToken(address token, uint256 amountMinimum, address recipient) external payable
 ```
@@ -57,11 +57,11 @@ The amountMinimum parameter prevents malicious contracts from stealing the token
 
 | Name | Type | Description |
 |---|---|---|
-| token | address | The contract address of the token which will be transferred to `recipient` |
-| amountMinimum | uint256 | The minimum amount of token required for a transfer |
-| recipient | address | The destination address of the token |
+| `token` | `address` | The contract address of the token which will be transferred to `recipient` |
+| `amountMinimum` | `uint256` | The minimum amount of token required for a transfer |
+| `recipient` | `address` | The destination address of the token |
 
-### unwrapWETH9
+### `unwrapWETH9`
 ```solidity
 function unwrapWETH9(uint256 amountMinimum, address recipient) external payable
 ```
@@ -75,7 +75,7 @@ The amountMinimum parameter prevents malicious contracts from stealing WETH9 fro
 
 | Name | Type | Description |
 |---|---|---|
-| amountMinimum | uint256 | The minimum amount of WETH9 to unwrap |
-| recipient | address | The address receiving ETH |
+| `amountMinimum` | `uint256` | The minimum amount of WETH9 to unwrap |
+| `recipient` | `address` | The address receiving ETH |
 
 

@@ -1,5 +1,5 @@
 
-# Quoter.sol
+# `Quoter`
 
     
 Provides quotes for swaps
@@ -8,7 +8,7 @@ These functions are not gas efficient and should _not_ be called on chain. Inste
     
 *Allows getting the expected amount out or amount in for a given swap without executing the swap*
 ## Methods
-### WETH9
+### `WETH9`
 ```solidity
 function WETH9() external view returns (address)
 ```
@@ -20,9 +20,9 @@ function WETH9() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### factory
+### `factory`
 ```solidity
 function factory() external view returns (address)
 ```
@@ -34,9 +34,9 @@ function factory() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### quoteExactInput
+### `quoteExactInput`
 ```solidity
 function quoteExactInput(bytes path, uint256 amountIn) external nonpayable returns (uint256 amountOut)
 ```
@@ -49,16 +49,16 @@ function quoteExactInput(bytes path, uint256 amountIn) external nonpayable retur
 
 | Name | Type | Description |
 |---|---|---|
-| path | bytes | The path of the swap, i.e. each token pair and the pool fee |
-| amountIn | uint256 | The amount of the first token to swap |
+| `path` | `bytes` | The path of the swap, i.e. each token pair and the pool fee |
+| `amountIn` | `uint256` | The amount of the first token to swap |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amountOut | uint256 | The amount of the last token that would be received |
+| `amountOut` | `uint256` | The amount of the last token that would be received |
 
-### quoteExactInputSingle
+### `quoteExactInputSingle`
 ```solidity
 function quoteExactInputSingle(address tokenIn, address tokenOut, uint24 fee, uint256 amountIn, uint160 sqrtPriceLimitX96) external nonpayable returns (uint256 amountOut)
 ```
@@ -71,19 +71,19 @@ function quoteExactInputSingle(address tokenIn, address tokenOut, uint24 fee, ui
 
 | Name | Type | Description |
 |---|---|---|
-| tokenIn | address | The token being swapped in |
-| tokenOut | address | The token being swapped out |
-| fee | uint24 | The fee of the token pool to consider for the pair |
-| amountIn | uint256 | The desired input amount |
-| sqrtPriceLimitX96 | uint160 | The price limit of the pool that cannot be exceeded by the swap |
+| `tokenIn` | `address` | The token being swapped in |
+| `tokenOut` | `address` | The token being swapped out |
+| `fee` | `uint24` | The fee of the token pool to consider for the pair |
+| `amountIn` | `uint256` | The desired input amount |
+| `sqrtPriceLimitX96` | `uint160` | The price limit of the pool that cannot be exceeded by the swap |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amountOut | uint256 | The amount of `tokenOut` that would be received |
+| `amountOut` | `uint256` | The amount of `tokenOut` that would be received |
 
-### quoteExactOutput
+### `quoteExactOutput`
 ```solidity
 function quoteExactOutput(bytes path, uint256 amountOut) external nonpayable returns (uint256 amountIn)
 ```
@@ -96,16 +96,16 @@ function quoteExactOutput(bytes path, uint256 amountOut) external nonpayable ret
 
 | Name | Type | Description |
 |---|---|---|
-| path | bytes | The path of the swap, i.e. each token pair and the pool fee. Path must be provided in reverse order |
-| amountOut | uint256 | The amount of the last token to receive |
+| `path` | `bytes` | The path of the swap, i.e. each token pair and the pool fee. Path must be provided in reverse order |
+| `amountOut` | `uint256` | The amount of the last token to receive |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amountIn | uint256 | The amount of first token required to be paid |
+| `amountIn` | `uint256` | The amount of first token required to be paid |
 
-### quoteExactOutputSingle
+### `quoteExactOutputSingle`
 ```solidity
 function quoteExactOutputSingle(address tokenIn, address tokenOut, uint24 fee, uint256 amountOut, uint160 sqrtPriceLimitX96) external nonpayable returns (uint256 amountIn)
 ```
@@ -118,19 +118,19 @@ function quoteExactOutputSingle(address tokenIn, address tokenOut, uint24 fee, u
 
 | Name | Type | Description |
 |---|---|---|
-| tokenIn | address | The token being swapped in |
-| tokenOut | address | The token being swapped out |
-| fee | uint24 | The fee of the token pool to consider for the pair |
-| amountOut | uint256 | The desired output amount |
-| sqrtPriceLimitX96 | uint160 | The price limit of the pool that cannot be exceeded by the swap |
+| `tokenIn` | `address` | The token being swapped in |
+| `tokenOut` | `address` | The token being swapped out |
+| `fee` | `uint24` | The fee of the token pool to consider for the pair |
+| `amountOut` | `uint256` | The desired output amount |
+| `sqrtPriceLimitX96` | `uint160` | The price limit of the pool that cannot be exceeded by the swap |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amountIn | uint256 | The amount required as the input for the swap in order to receive `amountOut` |
+| `amountIn` | `uint256` | The amount required as the input for the swap in order to receive `amountOut` |
 
-### uniswapV3SwapCallback
+### `uniswapV3SwapCallback`
 ```solidity
 function uniswapV3SwapCallback(int256 amount0Delta, int256 amount1Delta, bytes path) external view
 ```
@@ -144,8 +144,8 @@ In the implementation you must pay the pool tokens owed for the swap. The caller
 
 | Name | Type | Description |
 |---|---|---|
-| amount0Delta | int256 | The amount of token0 that was sent (negative) or must be received (positive) by the pool by the end of the swap. If positive, the callback must send that amount of token0 to the pool. |
-| amount1Delta | int256 | The amount of token1 that was sent (negative) or must be received (positive) by the pool by the end of the swap. If positive, the callback must send that amount of token1 to the pool. |
-| path | bytes | - |
+| `amount0Delta` | `int256` | The amount of token0 that was sent (negative) or must be received (positive) by the pool by the end of the swap. If positive, the callback must send that amount of token0 to the pool. |
+| `amount1Delta` | `int256` | The amount of token1 that was sent (negative) or must be received (positive) by the pool by the end of the swap. If positive, the callback must send that amount of token1 to the pool. |
+| `path` | `bytes` | - |
 
 

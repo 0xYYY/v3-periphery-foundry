@@ -1,11 +1,11 @@
 
-# LiquidityAmountsTest.sol
+# `LiquidityAmountsTest`
 
     
 
     
 ## Methods
-### getAmount0ForLiquidity
+### `getAmount0ForLiquidity`
 ```solidity
 function getAmount0ForLiquidity(uint160 sqrtRatioAX96, uint160 sqrtRatioBX96, uint128 liquidity) external pure returns (uint256 amount0)
 ```
@@ -17,17 +17,17 @@ function getAmount0ForLiquidity(uint160 sqrtRatioAX96, uint160 sqrtRatioBX96, ui
 
 | Name | Type | Description |
 |---|---|---|
-| sqrtRatioAX96 | uint160 | - |
-| sqrtRatioBX96 | uint160 | - |
-| liquidity | uint128 | - |
+| `sqrtRatioAX96` | `uint160` | - |
+| `sqrtRatioBX96` | `uint160` | - |
+| `liquidity` | `uint128` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amount0 | uint256 | - |
+| `amount0` | `uint256` | - |
 
-### getAmount1ForLiquidity
+### `getAmount1ForLiquidity`
 ```solidity
 function getAmount1ForLiquidity(uint160 sqrtRatioAX96, uint160 sqrtRatioBX96, uint128 liquidity) external pure returns (uint256 amount1)
 ```
@@ -39,17 +39,17 @@ function getAmount1ForLiquidity(uint160 sqrtRatioAX96, uint160 sqrtRatioBX96, ui
 
 | Name | Type | Description |
 |---|---|---|
-| sqrtRatioAX96 | uint160 | - |
-| sqrtRatioBX96 | uint160 | - |
-| liquidity | uint128 | - |
+| `sqrtRatioAX96` | `uint160` | - |
+| `sqrtRatioBX96` | `uint160` | - |
+| `liquidity` | `uint128` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amount1 | uint256 | - |
+| `amount1` | `uint256` | - |
 
-### getAmountsForLiquidity
+### `getAmountsForLiquidity`
 ```solidity
 function getAmountsForLiquidity(uint160 sqrtRatioX96, uint160 sqrtRatioAX96, uint160 sqrtRatioBX96, uint128 liquidity) external pure returns (uint256 amount0, uint256 amount1)
 ```
@@ -61,19 +61,19 @@ function getAmountsForLiquidity(uint160 sqrtRatioX96, uint160 sqrtRatioAX96, uin
 
 | Name | Type | Description |
 |---|---|---|
-| sqrtRatioX96 | uint160 | - |
-| sqrtRatioAX96 | uint160 | - |
-| sqrtRatioBX96 | uint160 | - |
-| liquidity | uint128 | - |
+| `sqrtRatioX96` | `uint160` | - |
+| `sqrtRatioAX96` | `uint160` | - |
+| `sqrtRatioBX96` | `uint160` | - |
+| `liquidity` | `uint128` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| amount0 | uint256 | - |
-| amount1 | uint256 | - |
+| `amount0` | `uint256` | - |
+| `amount1` | `uint256` | - |
 
-### getGasCostOfGetAmount0ForLiquidity
+### `getGasCostOfGetAmount0ForLiquidity`
 ```solidity
 function getGasCostOfGetAmount0ForLiquidity(uint160 sqrtRatioAX96, uint160 sqrtRatioBX96, uint128 liquidity) external view returns (uint256)
 ```
@@ -85,17 +85,17 @@ function getGasCostOfGetAmount0ForLiquidity(uint160 sqrtRatioAX96, uint160 sqrtR
 
 | Name | Type | Description |
 |---|---|---|
-| sqrtRatioAX96 | uint160 | - |
-| sqrtRatioBX96 | uint160 | - |
-| liquidity | uint128 | - |
+| `sqrtRatioAX96` | `uint160` | - |
+| `sqrtRatioBX96` | `uint160` | - |
+| `liquidity` | `uint128` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### getGasCostOfGetAmount1ForLiquidity
+### `getGasCostOfGetAmount1ForLiquidity`
 ```solidity
 function getGasCostOfGetAmount1ForLiquidity(uint160 sqrtRatioAX96, uint160 sqrtRatioBX96, uint128 liquidity) external view returns (uint256)
 ```
@@ -107,17 +107,17 @@ function getGasCostOfGetAmount1ForLiquidity(uint160 sqrtRatioAX96, uint160 sqrtR
 
 | Name | Type | Description |
 |---|---|---|
-| sqrtRatioAX96 | uint160 | - |
-| sqrtRatioBX96 | uint160 | - |
-| liquidity | uint128 | - |
+| `sqrtRatioAX96` | `uint160` | - |
+| `sqrtRatioBX96` | `uint160` | - |
+| `liquidity` | `uint128` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### getGasCostOfGetAmountsForLiquidity
+### `getGasCostOfGetAmountsForLiquidity`
 ```solidity
 function getGasCostOfGetAmountsForLiquidity(uint160 sqrtRatioX96, uint160 sqrtRatioAX96, uint160 sqrtRatioBX96, uint128 liquidity) external view returns (uint256)
 ```
@@ -129,18 +129,18 @@ function getGasCostOfGetAmountsForLiquidity(uint160 sqrtRatioX96, uint160 sqrtRa
 
 | Name | Type | Description |
 |---|---|---|
-| sqrtRatioX96 | uint160 | - |
-| sqrtRatioAX96 | uint160 | - |
-| sqrtRatioBX96 | uint160 | - |
-| liquidity | uint128 | - |
+| `sqrtRatioX96` | `uint160` | - |
+| `sqrtRatioAX96` | `uint160` | - |
+| `sqrtRatioBX96` | `uint160` | - |
+| `liquidity` | `uint128` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### getGasCostOfGetLiquidityForAmount0
+### `getGasCostOfGetLiquidityForAmount0`
 ```solidity
 function getGasCostOfGetLiquidityForAmount0(uint160 sqrtRatioAX96, uint160 sqrtRatioBX96, uint256 amount0) external view returns (uint256)
 ```
@@ -152,17 +152,17 @@ function getGasCostOfGetLiquidityForAmount0(uint160 sqrtRatioAX96, uint160 sqrtR
 
 | Name | Type | Description |
 |---|---|---|
-| sqrtRatioAX96 | uint160 | - |
-| sqrtRatioBX96 | uint160 | - |
-| amount0 | uint256 | - |
+| `sqrtRatioAX96` | `uint160` | - |
+| `sqrtRatioBX96` | `uint160` | - |
+| `amount0` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### getGasCostOfGetLiquidityForAmount1
+### `getGasCostOfGetLiquidityForAmount1`
 ```solidity
 function getGasCostOfGetLiquidityForAmount1(uint160 sqrtRatioAX96, uint160 sqrtRatioBX96, uint256 amount1) external view returns (uint256)
 ```
@@ -174,17 +174,17 @@ function getGasCostOfGetLiquidityForAmount1(uint160 sqrtRatioAX96, uint160 sqrtR
 
 | Name | Type | Description |
 |---|---|---|
-| sqrtRatioAX96 | uint160 | - |
-| sqrtRatioBX96 | uint160 | - |
-| amount1 | uint256 | - |
+| `sqrtRatioAX96` | `uint160` | - |
+| `sqrtRatioBX96` | `uint160` | - |
+| `amount1` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### getGasCostOfGetLiquidityForAmounts
+### `getGasCostOfGetLiquidityForAmounts`
 ```solidity
 function getGasCostOfGetLiquidityForAmounts(uint160 sqrtRatioX96, uint160 sqrtRatioAX96, uint160 sqrtRatioBX96, uint256 amount0, uint256 amount1) external view returns (uint256)
 ```
@@ -196,19 +196,19 @@ function getGasCostOfGetLiquidityForAmounts(uint160 sqrtRatioX96, uint160 sqrtRa
 
 | Name | Type | Description |
 |---|---|---|
-| sqrtRatioX96 | uint160 | - |
-| sqrtRatioAX96 | uint160 | - |
-| sqrtRatioBX96 | uint160 | - |
-| amount0 | uint256 | - |
-| amount1 | uint256 | - |
+| `sqrtRatioX96` | `uint160` | - |
+| `sqrtRatioAX96` | `uint160` | - |
+| `sqrtRatioBX96` | `uint160` | - |
+| `amount0` | `uint256` | - |
+| `amount1` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint256 | - |
+| `-` | `uint256` | - |
 
-### getLiquidityForAmount0
+### `getLiquidityForAmount0`
 ```solidity
 function getLiquidityForAmount0(uint160 sqrtRatioAX96, uint160 sqrtRatioBX96, uint256 amount0) external pure returns (uint128 liquidity)
 ```
@@ -220,17 +220,17 @@ function getLiquidityForAmount0(uint160 sqrtRatioAX96, uint160 sqrtRatioBX96, ui
 
 | Name | Type | Description |
 |---|---|---|
-| sqrtRatioAX96 | uint160 | - |
-| sqrtRatioBX96 | uint160 | - |
-| amount0 | uint256 | - |
+| `sqrtRatioAX96` | `uint160` | - |
+| `sqrtRatioBX96` | `uint160` | - |
+| `amount0` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| liquidity | uint128 | - |
+| `liquidity` | `uint128` | - |
 
-### getLiquidityForAmount1
+### `getLiquidityForAmount1`
 ```solidity
 function getLiquidityForAmount1(uint160 sqrtRatioAX96, uint160 sqrtRatioBX96, uint256 amount1) external pure returns (uint128 liquidity)
 ```
@@ -242,17 +242,17 @@ function getLiquidityForAmount1(uint160 sqrtRatioAX96, uint160 sqrtRatioBX96, ui
 
 | Name | Type | Description |
 |---|---|---|
-| sqrtRatioAX96 | uint160 | - |
-| sqrtRatioBX96 | uint160 | - |
-| amount1 | uint256 | - |
+| `sqrtRatioAX96` | `uint160` | - |
+| `sqrtRatioBX96` | `uint160` | - |
+| `amount1` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| liquidity | uint128 | - |
+| `liquidity` | `uint128` | - |
 
-### getLiquidityForAmounts
+### `getLiquidityForAmounts`
 ```solidity
 function getLiquidityForAmounts(uint160 sqrtRatioX96, uint160 sqrtRatioAX96, uint160 sqrtRatioBX96, uint256 amount0, uint256 amount1) external pure returns (uint128 liquidity)
 ```
@@ -264,16 +264,16 @@ function getLiquidityForAmounts(uint160 sqrtRatioX96, uint160 sqrtRatioAX96, uin
 
 | Name | Type | Description |
 |---|---|---|
-| sqrtRatioX96 | uint160 | - |
-| sqrtRatioAX96 | uint160 | - |
-| sqrtRatioBX96 | uint160 | - |
-| amount0 | uint256 | - |
-| amount1 | uint256 | - |
+| `sqrtRatioX96` | `uint160` | - |
+| `sqrtRatioAX96` | `uint160` | - |
+| `sqrtRatioBX96` | `uint160` | - |
+| `amount0` | `uint256` | - |
+| `amount1` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| liquidity | uint128 | - |
+| `liquidity` | `uint128` | - |
 
 

@@ -1,5 +1,5 @@
 
-# SqrtPriceMathPartial.sol
+# `SqrtPriceMathPartial`
 
     
 Functions based on Q64.96 sqrt price and liquidity

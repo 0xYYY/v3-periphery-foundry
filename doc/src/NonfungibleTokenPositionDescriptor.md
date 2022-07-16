@@ -1,5 +1,5 @@
 
-# NonfungibleTokenPositionDescriptor.sol
+# `NonfungibleTokenPositionDescriptor`
 
     
 Describes NFT token positions
@@ -7,7 +7,7 @@ Describes NFT token positions
     
 *Produces a string containing the data URI for a JSON metadata string*
 ## Methods
-### WETH9
+### `WETH9`
 ```solidity
 function WETH9() external view returns (address)
 ```
@@ -19,9 +19,9 @@ function WETH9() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### flipRatio
+### `flipRatio`
 ```solidity
 function flipRatio(address token0, address token1, uint256 chainId) external view returns (bool)
 ```
@@ -33,17 +33,17 @@ function flipRatio(address token0, address token1, uint256 chainId) external vie
 
 | Name | Type | Description |
 |---|---|---|
-| token0 | address | - |
-| token1 | address | - |
-| chainId | uint256 | - |
+| `token0` | `address` | - |
+| `token1` | `address` | - |
+| `chainId` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | bool | - |
+| `-` | `bool` | - |
 
-### nativeCurrencyLabel
+### `nativeCurrencyLabel`
 ```solidity
 function nativeCurrencyLabel() external view returns (string)
 ```
@@ -56,9 +56,9 @@ function nativeCurrencyLabel() external view returns (string)
 
 | Name | Type | Description |
 |---|---|---|
-| - | string | - |
+| `-` | `string` | - |
 
-### nativeCurrencyLabelBytes
+### `nativeCurrencyLabelBytes`
 ```solidity
 function nativeCurrencyLabelBytes() external view returns (bytes32)
 ```
@@ -70,9 +70,9 @@ function nativeCurrencyLabelBytes() external view returns (bytes32)
 
 | Name | Type | Description |
 |---|---|---|
-| - | bytes32 | - |
+| `-` | `bytes32` | - |
 
-### tokenRatioPriority
+### `tokenRatioPriority`
 ```solidity
 function tokenRatioPriority(address token, uint256 chainId) external view returns (int256)
 ```
@@ -84,16 +84,16 @@ function tokenRatioPriority(address token, uint256 chainId) external view return
 
 | Name | Type | Description |
 |---|---|---|
-| token | address | - |
-| chainId | uint256 | - |
+| `token` | `address` | - |
+| `chainId` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | int256 | - |
+| `-` | `int256` | - |
 
-### tokenURI
+### `tokenURI`
 ```solidity
 function tokenURI(address positionManager, uint256 tokenId) external view returns (string)
 ```
@@ -107,13 +107,13 @@ Note this URI may be a data: URI with the JSON contents directly inlined
 
 | Name | Type | Description |
 |---|---|---|
-| positionManager | address | The position manager for which to describe the token |
-| tokenId | uint256 | The ID of the token for which to produce a description, which may not be valid |
+| `positionManager` | `address` | The position manager for which to describe the token |
+| `tokenId` | `uint256` | The ID of the token for which to produce a description, which may not be valid |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | string | - |
+| `-` | `string` | - |
 
 

@@ -1,5 +1,5 @@
 
-# Multicall.sol
+# `Multicall`
 
     
 Multicall
@@ -7,7 +7,7 @@ Multicall
     
 *Enables calling multiple methods in a single call to the contract*
 ## Methods
-### multicall
+### `multicall`
 ```solidity
 function multicall(bytes[] data) external payable returns (bytes[] results)
 ```
@@ -21,12 +21,12 @@ The `msg.value` should not be trusted for any method callable from multicall.
 
 | Name | Type | Description |
 |---|---|---|
-| data | bytes[] | The encoded function data for each of the calls to make to this contract |
+| `data` | `bytes[]` | The encoded function data for each of the calls to make to this contract |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| results | bytes[] | The results from each of the calls passed in via data |
+| `results` | `bytes[]` | The results from each of the calls passed in via data |
 
 

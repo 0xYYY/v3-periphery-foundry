@@ -1,11 +1,11 @@
 
-# MockObservations.sol
+# `MockObservations`
 
     
 
     
 ## Methods
-### liquidity
+### `liquidity`
 ```solidity
 function liquidity() external view returns (uint128)
 ```
@@ -17,9 +17,9 @@ function liquidity() external view returns (uint128)
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint128 | - |
+| `-` | `uint128` | - |
 
-### observations
+### `observations`
 ```solidity
 function observations(uint256 index) external view returns (uint32, int56, uint160, bool)
 ```
@@ -31,18 +31,18 @@ function observations(uint256 index) external view returns (uint32, int56, uint1
 
 | Name | Type | Description |
 |---|---|---|
-| index | uint256 | - |
+| `index` | `uint256` | - |
 
 #### Return Values
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint32 | - |
-| - | int56 | - |
-| - | uint160 | - |
-| - | bool | - |
+| `-` | `uint32` | - |
+| `-` | `int56` | - |
+| `-` | `uint160` | - |
+| `-` | `bool` | - |
 
-### slot0
+### `slot0`
 ```solidity
 function slot0() external view returns (uint160, int24, uint16, uint16, uint16, uint8, bool)
 ```
@@ -54,12 +54,12 @@ function slot0() external view returns (uint160, int24, uint16, uint16, uint16, 
 
 | Name | Type | Description |
 |---|---|---|
-| - | uint160 | - |
-| - | int24 | - |
-| - | uint16 | - |
-| - | uint16 | - |
-| - | uint16 | - |
-| - | uint8 | - |
-| - | bool | - |
+| `-` | `uint160` | - |
+| `-` | `int24` | - |
+| `-` | `uint16` | - |
+| `-` | `uint16` | - |
+| `-` | `uint16` | - |
+| `-` | `uint8` | - |
+| `-` | `bool` | - |
 
 

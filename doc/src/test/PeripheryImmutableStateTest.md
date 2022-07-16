@@ -1,11 +1,11 @@
 
-# PeripheryImmutableStateTest.sol
+# `PeripheryImmutableStateTest`
 
     
 
     
 ## Methods
-### WETH9
+### `WETH9`
 ```solidity
 function WETH9() external view returns (address)
 ```
@@ -17,9 +17,9 @@ function WETH9() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
-### factory
+### `factory`
 ```solidity
 function factory() external view returns (address)
 ```
@@ -31,6 +31,6 @@ function factory() external view returns (address)
 
 | Name | Type | Description |
 |---|---|---|
-| - | address | - |
+| `-` | `address` | - |
 
 
